@@ -9,7 +9,7 @@
 <meta property="og:title" content="BiteSterxBeast">
 <meta property="og:description" content="YouTuber, Editor.">
 <meta property="og:type" content="website">
-<link rel="icon" href="favicon.png">
+<link rel="icon" href="character.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
@@ -280,6 +280,9 @@
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
   .btn .ico { background: #1a0d05; width: 20px; height: 20px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 12px; }
+  .contact .btn { overflow-wrap: anywhere; }
+  .note { margin-top: 12px; color: var(--muted); }
 
   footer {
     text-align: center;
@@ -377,10 +380,17 @@
   <!-- CONTACT -->
   <section class="panel">
     <h2>Reach me here:</h2>
-    <a class="btn" href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">
-      <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>
-      Join the Discord
-    </a>
+    <div class="contact">
+      <a class="btn" href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>
+        Join the Discord
+      </a>
+      <a class="btn" href="mailto:bitesterxbeastbusiness@gmail.com">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/gmail.svg)"></span>
+        bitesterxbeastbusiness@gmail.com
+      </a>
+    </div>
+    <p class="note">Business inquiries go to the email.</p>
   </section>
 
   <footer>© 2026 BiteSterxBeast</footer>
