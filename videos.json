@@ -1,10 +1,286 @@
 {
-  "updated": "",
+  "updated": "2026-10-16T11:05:06+00:00",
   "best": [
-    { "id": "w99_cL4ZVP8", "title": "", "channel": "" },
-    { "id": "w42ptz9ZMIM", "title": "", "channel": "" },
-    { "id": "ztGM414eNXA", "title": "", "channel": "" }
+    {
+      "id": "w99_cL4ZVP8",
+      "title": "Running Geometry Dash on the Wii...",
+      "channel": "BiteSterxBeast Experiments"
+    },
+    {
+      "id": "w42ptz9ZMIM",
+      "title": "I beat this level BLINDFOLDED",
+      "channel": "BiteSterxBeast Experiments"
+    },
+    {
+      "id": "ztGM414eNXA",
+      "title": "Call Of Duty in Minecraft...",
+      "channel": "BitePlaysMC"
+    }
   ],
-  "recent": [],
-  "_cache": {}
+  "recent": [
+    {
+      "id": "7d6xjhh_Afk",
+      "title": "Geometry Dash Verity Song",
+      "channel": "Extras",
+      "published": "2026-10-13T19:05:41+00:00",
+      "type": "short"
+    },
+    {
+      "id": "ViYQZQIloD8",
+      "title": "Making Polargeist IMPOSSIBLE",
+      "channel": "Experiments",
+      "published": "2026-10-12T23:00:13+00:00",
+      "type": "short"
+    },
+    {
+      "id": "pqrQ9zW7d-k",
+      "title": "Gamemodes Vs Platform Jump Challenge! 🔥🤯",
+      "channel": "Main",
+      "published": "2026-10-12T19:01:39+00:00",
+      "type": "short"
+    },
+    {
+      "id": "G-z2zK0OSeU",
+      "title": "Theory Of Everything 2: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-10-12T14:00:23+00:00",
+      "type": "long"
+    },
+    {
+      "id": "aUZg6-X1eJ8",
+      "title": "Geometry Dash Kit Kit Kit",
+      "channel": "Extras",
+      "published": "2026-10-12T09:00:12+00:00",
+      "type": "short"
+    },
+    {
+      "id": "UWk0WQAchYk",
+      "title": "Gamemodes Vs Spike Crusher! 🤯💪",
+      "channel": "Main",
+      "published": "2026-10-12T07:00:39+00:00",
+      "type": "short"
+    },
+    {
+      "id": "xwyClhg4D4A",
+      "title": "Geometry Dash TRNDSTTR Edit",
+      "channel": "Extras",
+      "published": "2026-10-12T00:11:28+00:00",
+      "type": "short"
+    },
+    {
+      "id": "ztGM414eNXA",
+      "title": "Call Of Duty in Minecraft...",
+      "channel": "Minecraft",
+      "published": "2026-10-11T17:28:49+00:00",
+      "type": "long"
+    },
+    {
+      "id": "SrlmiVwJfNQ",
+      "title": "Gamemodes Vs IMPOSSIBLE Verity Spiral! 😂🤑",
+      "channel": "Main",
+      "published": "2026-10-09T19:02:05+00:00",
+      "type": "short"
+    },
+    {
+      "id": "_GyCYzgh5GA",
+      "title": "Gamemodes Vs Impossible Verity Parkour! 🤯😎",
+      "channel": "Main",
+      "published": "2026-10-08T19:01:37+00:00",
+      "type": "short"
+    },
+    {
+      "id": "lGLCRDmmEgk",
+      "title": "Verity vs EXTREME Wave Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-10-07T21:41:56+00:00",
+      "type": "short"
+    },
+    {
+      "id": "baxXT2v8DII",
+      "title": "EXTREME Verity Cube Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-10-02T18:01:55+00:00",
+      "type": "short"
+    },
+    {
+      "id": "XUEEjGQRA6o",
+      "title": "Blast Processing: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-10-02T14:00:38+00:00",
+      "type": "long"
+    },
+    {
+      "id": "wuqaiKWvUNs",
+      "title": "Verity Saved?! 🔥😎",
+      "channel": "Main",
+      "published": "2026-09-30T16:01:56+00:00",
+      "type": "short"
+    },
+    {
+      "id": "GdNpF6CkmNI",
+      "title": "Geometrical Dominator: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-09-30T14:00:23+00:00",
+      "type": "long"
+    },
+    {
+      "id": "CKrXAw-Haak",
+      "title": "Verity Monster Vs EXTREME Wave Challenge! 🔥🤯",
+      "channel": "Main",
+      "published": "2026-09-28T17:44:01+00:00",
+      "type": "short"
+    },
+    {
+      "id": "XCWpnoPCSYk",
+      "title": "Verity Vs EXTREME Cube Challenge! 🤯💪",
+      "channel": "Main",
+      "published": "2026-09-26T16:59:52+00:00",
+      "type": "short"
+    },
+    {
+      "id": "zKbmaoX8Dek",
+      "title": "Verity Vs IMPOSSIBLE Spider Challenge! 💪🔥",
+      "channel": "Main",
+      "published": "2026-09-21T20:19:03+00:00",
+      "type": "short"
+    },
+    {
+      "id": "yyDzXgLSxiw",
+      "title": "Deadlocked: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-09-11T14:00:03+00:00",
+      "type": "long"
+    },
+    {
+      "id": "_-8_vYrnS9o",
+      "title": "Easiest Plane Build 😱",
+      "channel": "Minecraft",
+      "published": "2026-09-10T16:05:09+00:00",
+      "type": "short"
+    },
+    {
+      "id": "tDCCU0GVp1Q",
+      "title": "Gamemode VS Speed Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2026-09-09T16:02:20+00:00",
+      "type": "short"
+    },
+    {
+      "id": "WgK5l6PoYf0",
+      "title": "I need food but... 😔",
+      "channel": "Minecraft",
+      "published": "2026-09-09T16:01:46+00:00",
+      "type": "short"
+    },
+    {
+      "id": "skaRND3HMWM",
+      "title": "Grass Vs Fungus 😱",
+      "channel": "Minecraft",
+      "published": "2026-09-08T22:29:08+00:00",
+      "type": "short"
+    },
+    {
+      "id": "RBc5JIefR18",
+      "title": "Never Letting Bro Build Again 😭",
+      "channel": "Minecraft",
+      "published": "2026-08-24T17:03:52+00:00",
+      "type": "short"
+    },
+    {
+      "id": "sjrNQRTbeHk",
+      "title": "Warden Isn't That Hard 😒",
+      "channel": "Minecraft",
+      "published": "2026-08-17T21:32:02+00:00",
+      "type": "short"
+    },
+    {
+      "id": "qyLGaxZILG4",
+      "title": "Making Stereo Madness IMPOSSIBLE",
+      "channel": "Experiments",
+      "published": "2026-08-13T15:18:41+00:00",
+      "type": "short"
+    },
+    {
+      "id": "SiUmjyTStHU",
+      "title": "I DESTROYED My Minecraft Server...",
+      "channel": "Minecraft",
+      "published": "2026-07-26T16:36:07+00:00",
+      "type": "long"
+    },
+    {
+      "id": "cSy4-n-X4Mo",
+      "title": "5 REASONS TO JOIN MY MINECRAFT SERVER👆",
+      "channel": "Minecraft",
+      "published": "2026-07-19T13:04:09+00:00",
+      "type": "short"
+    },
+    {
+      "id": "G2oEt7KELeo",
+      "title": "🔴 BiteMC Lifesteal SMP Live | Hanging with the Server",
+      "channel": "Minecraft",
+      "published": "2026-07-17T17:23:30+00:00",
+      "type": "long"
+    },
+    {
+      "id": "ayh7d0nGYnw",
+      "title": "🔴 BiteMC Lifesteal SMP Live | Hanging with the Server",
+      "channel": "Minecraft",
+      "published": "2026-07-17T17:08:58+00:00",
+      "type": "long"
+    }
+  ],
+  "_cache": {
+    "channels": {
+      "BiteSterxBeast": "UC3kTNhPTzAgL1okqfsyEMhg",
+      "BiteSterxBeastExperiments": "UCjzP7FU6g3WXMRgWJPWp7aA",
+      "BiteSterxBeastExtras": "UCPNT4l2KeOV1sjmK2fO8M3Q",
+      "BitePlaysMC": "UCHUeagSDY0qgEA_7VjHRjJw"
+    },
+    "types": {
+      "7d6xjhh_Afk": "short",
+      "ViYQZQIloD8": "short",
+      "pqrQ9zW7d-k": "short",
+      "G-z2zK0OSeU": "long",
+      "aUZg6-X1eJ8": "short",
+      "UWk0WQAchYk": "short",
+      "xwyClhg4D4A": "short",
+      "ztGM414eNXA": "long",
+      "SrlmiVwJfNQ": "short",
+      "_GyCYzgh5GA": "short",
+      "lGLCRDmmEgk": "short",
+      "baxXT2v8DII": "short",
+      "XUEEjGQRA6o": "long",
+      "wuqaiKWvUNs": "short",
+      "GdNpF6CkmNI": "long",
+      "CKrXAw-Haak": "short",
+      "XCWpnoPCSYk": "short",
+      "zKbmaoX8Dek": "short",
+      "yyDzXgLSxiw": "long",
+      "_-8_vYrnS9o": "short",
+      "tDCCU0GVp1Q": "short",
+      "WgK5l6PoYf0": "short",
+      "skaRND3HMWM": "short",
+      "RBc5JIefR18": "short",
+      "sjrNQRTbeHk": "short",
+      "qyLGaxZILG4": "short",
+      "SiUmjyTStHU": "long",
+      "cSy4-n-X4Mo": "short",
+      "G2oEt7KELeo": "long",
+      "ayh7d0nGYnw": "long"
+    },
+    "titles": {
+      "w99_cL4ZVP8": [
+        "Running Geometry Dash on the Wii...",
+        "BiteSterxBeast Experiments"
+      ],
+      "w42ptz9ZMIM": [
+        "I beat this level BLINDFOLDED",
+        "BiteSterxBeast Experiments"
+      ],
+      "ztGM414eNXA": [
+        "Call Of Duty in Minecraft...",
+        "BitePlaysMC"
+      ]
+    }
+  }
 }
