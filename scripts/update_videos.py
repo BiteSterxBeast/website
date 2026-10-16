@@ -1,22 +1,20 @@
 """
 Updates videos.json for bitesterxbeast.com.
 
-- Gets the newest uploads from all four channels with the YouTube Data API v3.
+- Reads the newest uploads from all four channels (public YouTube feeds, no API key).
 - Figures out which uploads are Shorts and which are long-form.
 - Reads best-videos.txt and looks up each video's title.
 
 Runs on GitHub Actions every 30 minutes (see .github/workflows/update-videos.yml).
-Needs a repository secret named YOUTUBE_API_KEY. Uses only the Python standard library.
-Uses about 300 of the API's 10,000 free daily quota units.
+Uses only the Python standard library.
 """
 
 import json
-import os
 import re
 import sys
 import urllib.error
-import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,121 +30,104 @@ CHANNELS = [
     ("Minecraft", "BitePlaysMC"),
 ]
 
-PER_CHANNEL = 15
 MAX_RECENT = 30
-SHORT_MAX_SECONDS = 180  # fallback rule if the Shorts check can't tell
 
-API = "https://www.googleapis.com/youtube/v3/"
-API_KEY = os.environ.get("YOUTUBE_API_KEY", "").strip()
-
-BROWSER_HEADERS = {
+HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "CONSENT=YES+1; SOCS=CAI",
+}
+
+NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "yt": "http://www.youtube.com/xml/schemas/2015",
+    "media": "http://search.yahoo.com/mrss/",
 }
 
 
-# ---------- YouTube Data API ----------
+# ---------- network helpers ----------
 
-def api(endpoint, **params):
-    params["key"] = API_KEY
-    url = API + endpoint + "?" + urllib.parse.urlencode(params)
-    try:
-        with urllib.request.urlopen(url, timeout=20) as r:
-            return json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        try:
-            msg = json.loads(body)["error"]["message"]
-        except Exception:
-            msg = body[:300]
-        raise RuntimeError(f"YouTube API {e.code}: {msg}") from None
+def get(url, timeout=20):
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", errors="replace")
 
-
-def channel_uploads_playlist(handle):
-    data = api("channels", part="contentDetails", forHandle="@" + handle)
-    items = data.get("items") or []
-    if not items:
-        raise RuntimeError(f"No channel found for @{handle}")
-    return items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
-
-
-def latest_uploads(playlist_id, label):
-    data = api("playlistItems", part="snippet,contentDetails",
-               playlistId=playlist_id, maxResults=PER_CHANNEL)
-    videos = []
-    for item in data.get("items", []):
-        vid = item["contentDetails"].get("videoId")
-        published = (item["contentDetails"].get("videoPublishedAt")
-                     or item["snippet"].get("publishedAt", ""))
-        title = item["snippet"].get("title", "")
-        if vid and title not in ("Private video", "Deleted video"):
-            videos.append({"id": vid, "title": title, "channel": label,
-                           "published": published})
-    return videos
-
-
-def video_details(ids):
-    """Returns {id: {title, channel, seconds, live}} for up to any number of ids."""
-    out = {}
-    ids = list(ids)
-    for i in range(0, len(ids), 50):
-        data = api("videos", part="snippet,contentDetails",
-                   id=",".join(ids[i:i + 50]), maxResults=50)
-        for item in data.get("items", []):
-            out[item["id"]] = {
-                "title": item["snippet"].get("title", ""),
-                "channel": item["snippet"].get("channelTitle", ""),
-                "seconds": parse_duration(item["contentDetails"].get("duration", "")),
-                "live": item["snippet"].get("liveBroadcastContent", "none"),
-            }
-    return out
-
-
-def parse_duration(iso):
-    m = re.fullmatch(r"P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", iso or "")
-    if not m:
-        return 0
-    d, h, mi, s = (int(x or 0) for x in m.groups())
-    return d * 86400 + h * 3600 + mi * 60 + s
-
-
-# ---------- Shorts check ----------
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, *args, **kwargs):
         return None
 
 
-_no_redirect = urllib.request.build_opener(_NoRedirect)
+_no_redirect_opener = urllib.request.build_opener(_NoRedirect)
 
 
-def shorts_url_status(video_id):
-    req = urllib.request.Request(f"https://www.youtube.com/shorts/{video_id}",
-                                 headers=BROWSER_HEADERS)
+def status_without_redirect(url, timeout=20):
+    req = urllib.request.Request(url, headers=HEADERS)
     try:
-        with _no_redirect.open(req, timeout=15) as r:
+        with _no_redirect_opener.open(req, timeout=timeout) as r:
             return r.status
     except urllib.error.HTTPError as e:
         return e.code
-    except Exception:
-        return None
 
 
-def detect_type(video_id, seconds):
-    """youtube.com/shorts/ID loads for a Short and redirects for a regular video.
-    If YouTube won't answer, fall back to length (Shorts are 3 minutes or less)."""
-    code = shorts_url_status(video_id)
+# ---------- YouTube lookups ----------
+
+CHANNEL_ID_PATTERNS = [
+    r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[\w-]{22})"',
+    r'"externalId":"(UC[\w-]{22})"',
+    r'<meta itemprop="identifier" content="(UC[\w-]{22})"',
+    r'"browseId":"(UC[\w-]{22})"',
+]
+
+
+def resolve_channel_id(handle):
+    html = get(f"https://www.youtube.com/@{handle}")
+    for pattern in CHANNEL_ID_PATTERNS:
+        m = re.search(pattern, html)
+        if m:
+            return m.group(1)
+    raise RuntimeError(f"Could not find channel ID for @{handle}")
+
+
+def parse_feed(xml_text, label):
+    root = ET.fromstring(xml_text)
+    videos = []
+    for entry in root.findall("atom:entry", NS):
+        vid = entry.findtext("yt:videoId", default="", namespaces=NS)
+        title = entry.findtext("atom:title", default="", namespaces=NS)
+        published = entry.findtext("atom:published", default="", namespaces=NS)
+        if vid:
+            videos.append({
+                "id": vid,
+                "title": title.strip(),
+                "channel": label,
+                "published": published,
+            })
+    return videos
+
+
+def fetch_feed(channel_id, label):
+    xml_text = get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}")
+    return parse_feed(xml_text, label)
+
+
+def detect_type(video_id):
+    """youtube.com/shorts/ID loads for a Short and redirects for a regular video."""
+    code = status_without_redirect(f"https://www.youtube.com/shorts/{video_id}")
     if code == 200:
         return "short"
     if code in (301, 302, 303, 307, 308):
         return "long"
-    if seconds:
-        return "short" if seconds <= SHORT_MAX_SECONDS else "long"
-    return None
+    return None  # unsure, try again next run
 
 
-# ---------- best-videos.txt ----------
+def oembed(video_id):
+    url = ("https://www.youtube.com/oembed?format=json&url="
+           f"https://www.youtube.com/watch?v={video_id}")
+    data = json.loads(get(url))
+    return data.get("title", ""), data.get("author_name", "")
+
 
 VIDEO_ID_PATTERNS = [
     r"[?&]v=([\w-]{11})",
@@ -193,91 +174,82 @@ def load_existing():
 
 def build(existing):
     cache = existing.get("_cache", {})
-    playlists = dict(cache.get("playlists", {}))
+    channel_ids = dict(cache.get("channels", {}))
     types = dict(cache.get("types", {}))
-    old_recent = existing.get("recent", [])
-    failures = 0
+    titles = dict(cache.get("titles", {}))
+    old_recent = {v["id"]: v for v in existing.get("recent", [])}
 
     # Recent uploads from every channel
     recent = []
     for label, handle in CHANNELS:
         try:
-            if handle not in playlists:
-                playlists[handle] = channel_uploads_playlist(handle)
-                print(f"@{handle} -> uploads playlist {playlists[handle]}")
-            vids = latest_uploads(playlists[handle], label)
-            print(f"{label}: {len(vids)} uploads")
-            recent.extend(vids)
+            if handle not in channel_ids:
+                channel_ids[handle] = resolve_channel_id(handle)
+                print(f"@{handle} -> {channel_ids[handle]}")
+            recent.extend(fetch_feed(channel_ids[handle], label))
         except Exception as e:
-            failures += 1
             print(f"WARNING: {label} (@{handle}) failed: {e}", file=sys.stderr)
-            recent.extend(v for v in old_recent if v.get("channel") == label)
+            # keep what we had for this channel so it doesn't vanish
+            recent.extend(v for v in old_recent.values() if v["channel"] == label)
 
+    # de-duplicate, newest first
     seen = {}
     for v in recent:
         seen[v["id"]] = v
-    recent = sorted(seen.values(), key=lambda v: v["published"], reverse=True)
-
-    best_ids = read_best_ids()
-
-    # One batched lookup for durations, live status and best-video titles
-    details = {}
-    try:
-        details = video_details({v["id"] for v in recent} | set(best_ids))
-    except Exception as e:
-        print(f"WARNING: video details failed: {e}", file=sys.stderr)
-
-    # drop upcoming premieres / live streams that haven't happened yet
-    recent = [v for v in recent if details.get(v["id"], {}).get("live") != "upcoming"]
-    recent = recent[:MAX_RECENT]
+    recent = sorted(seen.values(), key=lambda v: v["published"], reverse=True)[:MAX_RECENT]
 
     for v in recent:
         if v["id"] not in types:
-            t = detect_type(v["id"], details.get(v["id"], {}).get("seconds", 0))
-            if t:
-                types[v["id"]] = t
+            try:
+                t = detect_type(v["id"])
+                if t:
+                    types[v["id"]] = t
+            except Exception as e:
+                print(f"WARNING: type check failed for {v['id']}: {e}", file=sys.stderr)
         v["type"] = types.get(v["id"], "unknown")
 
+    # Best videos
     best = []
-    for vid in best_ids:
-        d = details.get(vid, {})
-        best.append({"id": vid, "title": d.get("title", ""), "channel": d.get("channel", "")})
+    for vid in read_best_ids():
+        if vid not in titles:
+            try:
+                titles[vid] = list(oembed(vid))
+            except Exception as e:
+                print(f"WARNING: title lookup failed for {vid}: {e}", file=sys.stderr)
+        title, author = titles.get(vid, ["", ""])
+        best.append({"id": vid, "title": title, "channel": author})
 
-    keep = {v["id"] for v in recent}
-    data = {
+    keep_ids = {v["id"] for v in recent}
+    best_ids = {b["id"] for b in best}
+    return {
         "best": best,
         "recent": recent,
         "_cache": {
-            "playlists": playlists,
-            "types": {k: t for k, t in types.items() if k in keep},
+            "channels": channel_ids,
+            "types": {k: v for k, v in types.items() if k in keep_ids},
+            "titles": {k: v for k, v in titles.items() if k in best_ids},
         },
     }
-    return data, failures
 
 
 def main():
-    if not API_KEY:
-        sys.exit("ERROR: the YOUTUBE_API_KEY secret is missing. "
-                 "Add it under Settings > Secrets and variables > Actions.")
-
     existing = load_existing()
-    data, failures = build(existing)
+    data = build(existing)
 
+    # only touch the file when something actually changed
     def comparable(d):
         return {k: d.get(k) for k in ("best", "recent", "_cache")}
 
-    if comparable(data) != comparable(existing):
-        data["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        ordered = {"updated": data["updated"], "best": data["best"],
-                   "recent": data["recent"], "_cache": data["_cache"]}
-        OUT_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n",
-                            encoding="utf-8")
-        print(f"Wrote {len(data['recent'])} recent and {len(data['best'])} best videos.")
-    else:
+    if comparable(data) == comparable(existing):
         print("No changes.")
+        return
 
-    if failures == len(CHANNELS):
-        sys.exit("ERROR: every channel failed. See the warnings above.")
+    data["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    ordered = {"updated": data["updated"], "best": data["best"],
+               "recent": data["recent"], "_cache": data["_cache"]}
+    OUT_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n",
+                        encoding="utf-8")
+    print(f"Wrote {len(data['recent'])} recent and {len(data['best'])} best videos.")
 
 
 if __name__ == "__main__":
