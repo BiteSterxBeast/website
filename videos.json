@@ -1,10 +1,44 @@
 {
-  "updated": "",
+  "updated": "2026-10-16T05:19:59+00:00",
   "best": [
-    { "id": "w99_cL4ZVP8", "title": "", "channel": "" },
-    { "id": "w42ptz9ZMIM", "title": "", "channel": "" },
-    { "id": "ztGM414eNXA", "title": "", "channel": "" }
+    {
+      "id": "w99_cL4ZVP8",
+      "title": "Running Geometry Dash on the Wii...",
+      "channel": "BiteSterxBeast Experiments"
+    },
+    {
+      "id": "w42ptz9ZMIM",
+      "title": "I beat this level BLINDFOLDED",
+      "channel": "BiteSterxBeast Experiments"
+    },
+    {
+      "id": "ztGM414eNXA",
+      "title": "Call Of Duty in Minecraft...",
+      "channel": "BitePlaysMC"
+    }
   ],
   "recent": [],
-  "_cache": {}
+  "_cache": {
+    "channels": {
+      "BiteSterxBeast": "UC3kTNhPTzAgL1okqfsyEMhg",
+      "BiteSterxBeastExperiments": "UCjzP7FU6g3WXMRgWJPWp7aA",
+      "BiteSterxBeastExtras": "UCPNT4l2KeOV1sjmK2fO8M3Q",
+      "BitePlaysMC": "UCHUeagSDY0qgEA_7VjHRjJw"
+    },
+    "types": {},
+    "titles": {
+      "w99_cL4ZVP8": [
+        "Running Geometry Dash on the Wii...",
+        "BiteSterxBeast Experiments"
+      ],
+      "w42ptz9ZMIM": [
+        "I beat this level BLINDFOLDED",
+        "BiteSterxBeast Experiments"
+      ],
+      "ztGM414eNXA": [
+        "Call Of Duty in Minecraft...",
+        "BitePlaysMC"
+      ]
+    }
+  }
 }
