@@ -4,144 +4,426 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BiteSterxBeast</title>
-<meta name="description" content="BiteSterxBeast — YouTube, projects, and editing.">
+<meta name="description" content="YouTuber, Editor.">
+<meta name="theme-color" content="#ff8000">
+<meta property="og:title" content="BiteSterxBeast">
+<meta property="og:description" content="YouTuber, Editor.">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0b0b0d;
-    --card: #15151a;
-    --border: #26262e;
-    --text: #f2f2f5;
-    --muted: #9a9aa6;
-    --red: #ff2a2a;
-    --red-glow: rgba(255, 42, 42, 0.35);
+    --panel: rgba(18, 10, 8, 0.74);
+    --panel-border: rgba(255, 255, 255, 0.10);
+    --text: #ffffff;
+    --muted: #e8d9cf;
+    --yellow: #ffe600;
+    --red: #ff2a00;
+    --char-w: 260px;
+    /* outline lightning bolt tile */
+    --bolts: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cpath transform='rotate(-28 32 32)' d='M26 8 L38 8 L33 22 L42 22 L28 46 L31 30 L22 30 Z' fill='none' stroke='rgba(90,40,0,0.42)' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { background: #ff4a00; }
+
   body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Inter', system-ui, sans-serif;
-    line-height: 1.6;
     min-height: 100vh;
+    color: var(--text);
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    background-image:
+      var(--bolts),
+      linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+    background-size: 64px 64px, 100% 100%;
+    background-position: 0 0, 0 0;
+    background-repeat: repeat, no-repeat;
+    animation: drift 12s linear infinite;
   }
+
+  /* bolts move bottom-left to top-right, gradient stays put */
+  @keyframes drift {
+    to { background-position: 64px -64px, 0 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+  }
+
   a { color: inherit; text-decoration: none; }
 
-  header {
-    position: relative;
-    text-align: center;
-    padding: 96px 16px 72px;
-    overflow: hidden;
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 56px 16px 40px;
   }
-  header::before {
-    content: "";
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding-right: calc(var(--char-w) + 24px);
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    -webkit-text-stroke: 6px #1a0d05;
+    paint-order: stroke fill;
+    text-shadow: 0 6px 0 rgba(26, 13, 5, 0.35);
+  }
+
+  .tagline {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 4px 14px;
+    background: rgba(18, 10, 8, 0.8);
+    border-radius: 999px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- SOCIALS ---------- */
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: rgba(18, 10, 8, 0.8);
+    border: 2px solid transparent;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  }
+  .social:hover,
+  .social:focus-visible {
+    transform: translateY(-3px);
+    border-color: var(--yellow);
+    box-shadow: 0 0 16px rgba(255, 230, 0, 0.55);
+    outline: none;
+  }
+
+  .ico {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+            mask: var(--icon) center / contain no-repeat;
+  }
+
+  .yt { position: relative; }
+  .yt > button { font: inherit; color: inherit; }
+
+  .menu {
     position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 30%, var(--red-glow), transparent 60%);
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 20;
+    min-width: 250px;
+    padding: 6px;
+    background: rgba(18, 10, 8, 0.95);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--yellow);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .yt.open .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .menu a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 9px;
+    line-height: 1.3;
+  }
+  .menu a:hover { background: rgba(255, 230, 0, 0.15); }
+  .menu b { display: block; font-weight: 800; }
+  .menu small { color: var(--muted); font-size: 0.82rem; }
+
+  /* ---------- PANELS ---------- */
+  .panel {
+    position: relative;
+    background: var(--panel);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid var(--panel-border);
+    border-radius: 20px;
+    padding: 28px;
+    margin-top: 24px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .panel:hover {
+    border-color: rgba(255, 230, 0, 0.55);
+    box-shadow: 0 0 24px rgba(255, 230, 0, 0.18);
+  }
+
+  h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+  }
+  h2 .bolt { color: var(--yellow); }
+
+  /* ---------- INTRO + CHARACTER ---------- */
+  .intro { margin-top: 28px; z-index: 2; }
+  .intro p { font-size: 1.2rem; font-weight: 800; }
+
+  /* clips the art at the panel's top edge so he leans over it */
+  .character {
+    position: absolute;
+    right: 24px;
+    bottom: 100%;
+    width: var(--char-w);
+    aspect-ratio: 1 / 0.93;
+    overflow: hidden;
     pointer-events: none;
   }
-  .bolt {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 16px;
-    filter: drop-shadow(0 0 12px var(--red));
-    animation: flicker 4s infinite;
+  .character img {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(0 0 2px #1a0d05) drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
   }
-  @keyframes flicker {
-    0%, 92%, 100% { opacity: 1; }
-    93% { opacity: 0.3; }
-    95% { opacity: 1; }
-    96% { opacity: 0.5; }
-  }
-  h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(3rem, 10vw, 6rem);
-    letter-spacing: 3px;
-    line-height: 1;
-  }
-  h1 span { color: var(--red); text-shadow: 0 0 20px var(--red-glow); }
-  .tagline { color: var(--muted); margin-top: 12px; font-size: 1.1rem; }
 
-  .btn {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 12px 28px;
-    background: var(--red);
-    color: #fff;
-    font-weight: 600;
-    border-radius: 8px;
-    box-shadow: 0 0 20px var(--red-glow);
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 30px var(--red); }
-
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 16px 80px;
+  /* ---------- VIDEOS ---------- */
+  .video-slot {
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    border: 2px dashed rgba(255, 255, 255, 0.22);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    place-items: center;
+    color: var(--muted);
+    text-align: center;
+    overflow: hidden;
+  }
+  .video-slot iframe { width: 100%; height: 100%; border: 0; }
+
+  /* ---------- PROJECTS ---------- */
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .tab {
+    font: inherit;
+    font-weight: 800;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid transparent;
+    border-radius: 999px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .tab:hover { border-color: rgba(255, 230, 0, 0.5); }
+  .tab.active {
+    background: var(--yellow);
+    color: #1a0d05;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
   }
   .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 28px;
-    transition: border-color 0.2s, transform 0.2s;
+    display: block;
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.15s, border-color 0.15s;
   }
-  .card:hover { border-color: var(--red); transform: translateY(-4px); }
-  .card h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--yellow);
   }
-  .card h2::before { content: "⚡ "; color: var(--red); }
-  .card p { color: var(--muted); }
-  .card .link { display: inline-block; margin-top: 14px; color: var(--red); font-weight: 600; }
+  .card h3 {
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+  }
+  .card p { color: var(--muted); margin-top: 6px; }
+  .card .go { display: inline-block; margin-top: 12px; color: var(--yellow); font-weight: 800; }
+  .card[hidden] { display: none; }
+
+  /* ---------- CONTACT ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: var(--yellow);
+    color: #1a0d05;
+    font-weight: 800;
+    border-radius: 12px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
+  .btn .ico { background: #1a0d05; width: 20px; height: 20px; }
 
   footer {
     text-align: center;
-    color: var(--muted);
-    font-size: 0.9rem;
-    padding: 24px 16px 40px;
-    border-top: 1px solid var(--border);
+    margin-top: 32px;
+    font-weight: 800;
+    color: #1a0d05;
+    opacity: 0.75;
+  }
+
+  /* ---------- MOBILE ---------- */
+  @media (max-width: 680px) {
+    :root { --char-w: 140px; }
+    .wrap { padding-top: 36px; }
+    .hero { padding-right: 0; text-align: center; }
+    .socials { justify-content: center; }
+    .menu { left: 50%; transform: translate(-50%, -6px); }
+    .yt.open .menu { transform: translate(-50%, 0); }
+    .intro { margin-top: calc(var(--char-w) * 0.93 + 12px); }
+    .character { right: 16px; }
+    .panel { padding: 22px; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <svg class="bolt" viewBox="0 0 24 24" fill="#ff2a2a" aria-hidden="true">
-    <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/>
-  </svg>
-  <h1>BITE<span>STERX</span>BEAST</h1>
-  <p class="tagline">YouTube · Projects · Editing</p>
-  <a class="btn" href="https://www.youtube.com/@BiteSterxBeast" target="_blank" rel="noopener">Watch on YouTube</a>
-</header>
+<div class="wrap">
 
-<main>
-  <div class="card">
-    <h2>YouTube</h2>
-    <p>Shorts, Geometry Dash, reactions, and more across my channels.</p>
-    <a class="link" href="https://www.youtube.com/@BiteSterxBeast" target="_blank" rel="noopener">Go to channel →</a>
-  </div>
-  <div class="card">
-    <h2>Projects</h2>
-    <p>Games, tools, mods, and the BiteMC Minecraft server.</p>
-    <span class="link">Coming soon</span>
-  </div>
-  <div class="card">
-    <h2>Editing</h2>
-    <p>Video editing work and what I can do for your content.</p>
-    <span class="link">Coming soon</span>
-  </div>
-</main>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>BiteSterxBeast</h1>
+    <div class="tagline">YouTuber, Editor</div>
 
-<footer>
-  © 2026 BiteSterxBeast
-</footer>
+    <nav class="socials" aria-label="Socials">
+      <div class="yt" id="yt">
+        <button class="social" aria-label="YouTube channels" aria-expanded="false" aria-haspopup="true" id="ytBtn">
+          <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/youtube.svg)"></span>
+        </button>
+        <div class="menu" role="menu">
+          <a href="https://www.youtube.com/@BiteSterxBeast" target="_blank" rel="noopener" role="menuitem"><b>Main</b><small>@BiteSterxBeast</small></a>
+          <a href="https://www.youtube.com/@BiteSterxBeastExperiments" target="_blank" rel="noopener" role="menuitem"><b>Experiments</b><small>@BiteSterxBeastExperiments</small></a>
+          <a href="https://www.youtube.com/@BiteSterxBeastExtras" target="_blank" rel="noopener" role="menuitem"><b>Extras</b><small>@BiteSterxBeastExtras</small></a>
+          <a href="https://www.youtube.com/@BitePlaysMC" target="_blank" rel="noopener" role="menuitem"><b>Minecraft</b><small>@BitePlaysMC</small></a>
+        </div>
+      </div>
 
+      <a class="social" href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener" aria-label="Discord" title="Discord">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>
+      </a>
+      <a class="social" href="https://www.tiktok.com/@BiteSterxBeastyt" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/tiktok.svg)"></span>
+      </a>
+      <a class="social" href="https://www.instagram.com/bitesterxbeast" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/instagram.svg)"></span>
+      </a>
+      <a class="social" href="https://x.com/BiteSterxBeast_" target="_blank" rel="noopener" aria-label="Twitter" title="Twitter">
+        <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/x.svg)"></span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- INTRO -->
+  <section class="panel intro">
+    <div class="character" aria-hidden="true">
+      <img src="character.png" alt="">
+    </div>
+    <p>Yo, what's up! I'm Josh, also known as Bite! I make YouTube videos, edit, and work on other projects in my free time.</p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="panel">
+    <h2><span class="bolt">⚡</span> Videos!</h2>
+    <div class="video-slot">
+      <!-- When you have the playlist, replace the line below with:
+           <iframe src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID" allowfullscreen></iframe> -->
+      <span>Playlist coming soon</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="panel">
+    <h2><span class="bolt">⚡</span> Cool things I've made!</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="featured" role="tab">Featured</button>
+      <button class="tab" data-tab="websites" role="tab">Websites</button>
+    </div>
+    <div class="grid">
+      <a class="card" data-cats="featured websites" href="https://bitesterxbeast.github.io" target="_blank" rel="noopener">
+        <h3>Creator Tools</h3>
+        <p>Free tools built by a creator, for creators. No sign-up, no paywall, just open it and use it.</p>
+        <span class="go">Open →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="panel">
+    <h2><span class="bolt">⚡</span> Reach me here:</h2>
+    <a class="btn" href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">
+      <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>
+      Join the Discord
+    </a>
+  </section>
+
+  <footer>© 2026 BiteSterxBeast</footer>
+</div>
+
+<script>
+  // YouTube channel dropdown
+  const yt = document.getElementById('yt');
+  const ytBtn = document.getElementById('ytBtn');
+  ytBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = yt.classList.toggle('open');
+    ytBtn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', (e) => {
+    if (!yt.contains(e.target)) {
+      yt.classList.remove('open');
+      ytBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      yt.classList.remove('open');
+      ytBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Project tabs
+  const tabs = document.querySelectorAll('.tab');
+  const cards = document.querySelectorAll('.card');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.dataset.tab;
+      cards.forEach(card => {
+        card.hidden = !card.dataset.cats.split(' ').includes(cat);
+      });
+    });
+  });
+</script>
 </body>
 </html>
