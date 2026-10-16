@@ -9,7 +9,7 @@
 <meta property="og:title" content="BiteSterxBeast">
 <meta property="og:description" content="YouTuber, Editor.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="icon" href="character.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
@@ -22,8 +22,6 @@
     --yellow: #ffe600;
     --red: #ff2a00;
     --char-w: 260px;
-    /* outline lightning bolt tile */
-    --bolts: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cpath transform='rotate(-28 32 32)' d='M26 8 L38 8 L33 22 L42 22 L28 46 L31 30 L22 30 Z' fill='none' stroke='rgba(90,40,0,0.42)' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,17 +35,17 @@
     font-weight: 600;
     line-height: 1.6;
     background-image:
-      var(--bolts),
+      url("bolts.png"),
       linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
-    background-size: 64px 64px, 100% 100%;
+    background-size: 64px 62px, 100% 100%;
     background-position: 0 0, 0 0;
     background-repeat: repeat, no-repeat;
-    animation: drift 12s linear infinite;
+    animation: drift 20s linear infinite;
   }
 
   /* bolts move bottom-left to top-right, gradient stays put */
   @keyframes drift {
-    to { background-position: 64px -64px, 0 0; }
+    to { background-position: 64px -62px, 0 0; }
   }
   @media (prefers-reduced-motion: reduce) {
     body { animation: none; }
@@ -183,7 +181,6 @@
     letter-spacing: 0.5px;
     margin-bottom: 14px;
   }
-  h2 .bolt { color: var(--yellow); }
 
   /* ---------- INTRO + CHARACTER ---------- */
   .intro { margin-top: 28px; z-index: 2; }
@@ -202,7 +199,7 @@
   .character img {
     display: block;
     width: 100%;
-    filter: drop-shadow(0 0 2px #1a0d05) drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
+    filter: drop-shadow(0 0 2px #1a0d05);
   }
 
   /* ---------- VIDEOS ---------- */
@@ -353,7 +350,7 @@
 
   <!-- VIDEOS -->
   <section class="panel">
-    <h2><span class="bolt">⚡</span> Videos!</h2>
+    <h2>Videos!</h2>
     <div class="video-slot">
       <!-- When you have the playlist, replace the line below with:
            <iframe src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID" allowfullscreen></iframe> -->
@@ -363,7 +360,7 @@
 
   <!-- PROJECTS -->
   <section class="panel">
-    <h2><span class="bolt">⚡</span> Cool things I've made!</h2>
+    <h2>Cool things I've made!</h2>
     <div class="tabs" role="tablist">
       <button class="tab active" data-tab="featured" role="tab">Featured</button>
       <button class="tab" data-tab="websites" role="tab">Websites</button>
@@ -372,14 +369,14 @@
       <a class="card" data-cats="featured websites" href="https://bitesterxbeast.github.io" target="_blank" rel="noopener">
         <h3>Creator Tools</h3>
         <p>Free tools built by a creator, for creators. No sign-up, no paywall, just open it and use it.</p>
-        <span class="go">Open →</span>
+        <span class="go">Open</span>
       </a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="panel">
-    <h2><span class="bolt">⚡</span> Reach me here:</h2>
+    <h2>Reach me here:</h2>
     <a class="btn" href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">
       <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>
       Join the Discord
