@@ -1,0 +1,44 @@
+name: Update videos
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+  push:
+    paths:
+      - best-videos.txt
+      - scripts/update_videos.py
+      - .github/workflows/update-videos.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-videos
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch newest videos
+        run: python scripts/update_videos.py
+
+      - name: Save changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add videos.json
+          if git diff --staged --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Update videos"
+            git pull --rebase
+            git push
+          fi
