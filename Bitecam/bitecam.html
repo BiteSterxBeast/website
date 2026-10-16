@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BiteCam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--panel:rgba(18,10,8,.74);--panel-border:rgba(255,255,255,.10);--text:#fff;--muted:#e8d9cf;--yellow:#ffe600;--ink:#1a0d05}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:#ff4a00}
+body{margin:0;height:100vh;overflow:hidden;padding:16px;display:grid;grid-template-columns:330px 1fr;gap:16px;
+  color:var(--text);font:600 14px/1.45 'Nunito',system-ui,sans-serif;
+  background-image:url("data:image/png;base64,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"),linear-gradient(135deg,#ffff00 0%,#ff9a00 45%,#ff1a00 100%);
+  background-size:64px 62px,100% 100%;background-repeat:repeat,no-repeat;animation:drift 20s linear infinite}
+@keyframes drift{to{background-position:64px -62px,0 0}}
+@media (prefers-reduced-motion:reduce){body{animation:none}}
+.panel{background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:2px solid var(--panel-border);border-radius:20px;transition:border-color .2s,box-shadow .2s}
+.panel:hover{border-color:rgba(255,230,0,.55);box-shadow:0 0 24px rgba(255,230,0,.18)}
+aside{overflow-y:auto;padding:18px 20px}
+h1{font-family:'Lilita One',sans-serif;font-weight:400;font-size:2.7rem;line-height:1;letter-spacing:1px;margin:0 0 14px;color:#fff;
+  -webkit-text-stroke:5px var(--ink);paint-order:stroke fill;text-shadow:0 5px 0 rgba(26,13,5,.35)}
+h1 span{color:var(--yellow)}
+section{border-top:2px solid var(--panel-border);padding:14px 0}
+h2{font-family:'Lilita One',sans-serif;font-weight:400;font-size:1.3rem;letter-spacing:.5px;margin:0 0 8px}
+label{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:7px 0;white-space:nowrap}
+input[type=range]{width:120px;accent-color:var(--yellow)}
+input[type=checkbox]{accent-color:var(--yellow);width:17px;height:17px}
+input[type=color]{width:44px;height:30px;border:2px solid var(--panel-border);border-radius:10px;background:none;padding:0;cursor:pointer}
+input[type=file]{display:none}
+select,button,.filebtn{background:rgba(255,255,255,.08);color:var(--text);border:2px solid transparent;border-radius:999px;padding:6px 14px;font:inherit;font-weight:800;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+select{max-width:180px}
+select option{background:var(--ink)}
+button:hover,.filebtn:hover,select:hover{border-color:rgba(255,230,0,.5)}
+button:disabled{opacity:.4;cursor:default;border-color:transparent}
+button.on{background:var(--yellow);color:var(--ink)}
+button.primary{background:var(--yellow);color:var(--ink);border-radius:12px;width:100%;padding:12px;font-size:16px}
+button.primary:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 0 18px rgba(255,230,0,.6);border-color:transparent}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.hint{color:var(--muted);font-size:12.5px;margin:6px 0 0}
+.val{color:var(--muted);font-size:12px;width:38px;text-align:right;font-weight:800}
+main{display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden}
+#stage{flex:1;display:flex;align-items:center;justify-content:center;padding:18px;min-height:0;position:relative}
+#view{max-width:100%;max-height:100%;border-radius:14px;border:2px solid var(--panel-border);touch-action:none;
+  background:repeating-conic-gradient(#2a1a12 0 25%,#1a0f0a 0 50%) 0 0/24px 24px}
+#view.pick{cursor:crosshair}
+#stage.drop #view{border:3px dashed var(--yellow);box-shadow:0 0 24px rgba(255,230,0,.4)}
+#countdown{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;
+  font-family:'Lilita One',sans-serif;font-size:190px;color:#fff;-webkit-text-stroke:10px var(--ink);paint-order:stroke fill;text-shadow:0 10px 0 rgba(26,13,5,.35)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;transition:opacity .45s;border-radius:18px}
+#empty{position:absolute;pointer-events:none;text-align:center;font-weight:800;font-size:1.1rem;padding:6px 16px;background:rgba(18,10,8,.8);border-radius:999px}
+#empty b{color:var(--yellow)}
+#shots{display:flex;gap:10px;padding:12px 18px;overflow-x:auto;border-top:2px solid var(--panel-border);min-height:100px;align-items:center}
+#shots a{border:2px solid transparent;border-radius:12px;transition:transform .15s,border-color .15s}
+#shots a:hover{transform:translateY(-3px);border-color:var(--yellow)}
+#shots img{height:74px;border-radius:10px;display:block;background:repeating-conic-gradient(#2a1a12 0 25%,#1a0f0a 0 50%) 0 0/12px 12px}
+#shots .none{color:var(--muted);font-size:12.5px}
+@media (max-width:820px){body{grid-template-columns:1fr;height:auto;overflow:auto}main{min-height:70vh}}
+</style>
+</head>
+<body>
+<aside class="panel">
+  <h1>Bite<span>Cam</span></h1>
+
+  <section>
+    <h2>Camera</h2>
+    <div class="row"><select id="camSelect"><option value="">Default camera</option></select>
+      <button id="startBtn">Start</button></div>
+    <label>Mirror <input type="checkbox" id="mirror" checked></label>
+  </section>
+
+  <section>
+    <h2>Transparency key</h2>
+    <label>Key color <span class="row" style="margin:0"><input type="color" id="keyColor" value="#00ff00"><button id="pickBtn">Pick from video</button></span></label>
+    <label>Keying on <input type="checkbox" id="keyOn" checked></label>
+    <label>Tolerance <span class="row" style="margin:0"><input type="range" id="tol" min="0" max="120" value="40"><span class="val" id="tolV">40</span></span></label>
+    <label>Edge softness <span class="row" style="margin:0"><input type="range" id="soft" min="1" max="80" value="20"><span class="val" id="softV">20</span></span></label>
+    <label>Spill removal <span class="row" style="margin:0"><input type="range" id="spill" min="0" max="100" value="60"><span class="val" id="spillV">60</span></span></label>
+    <p class="hint">Click "Pick from video", then click your green screen. Raise tolerance until the screen disappears, then soften the edges.</p>
+  </section>
+
+  <section>
+    <h2>Background</h2>
+    <label>Fill <select id="bgMode">
+      <option value="none">Transparent</option>
+      <option value="color">Solid color</option>
+      <option value="image">Image</option>
+    </select></label>
+    <label id="bgColorRow" hidden>Color <input type="color" id="bgColor" value="#1a1a2e"></label>
+    <div class="row" id="bgImgRow" hidden><label class="filebtn" for="bgFile" style="margin:0">Choose background image…</label><input type="file" id="bgFile" accept="image/*"></div>
+  </section>
+
+  <section>
+    <h2>Floating images</h2>
+    <div class="row"><label class="filebtn" for="stickerFile" style="margin:0">+ Add images…</label><input type="file" id="stickerFile" accept="image/*" multiple></div>
+    <p class="hint">Or drag image files onto the preview. Drag to move · scroll to resize · Shift+scroll to rotate · Delete to remove.</p>
+    <div id="selPanel">
+      <label>Size <span class="row" style="margin:0"><input type="range" id="sSize" min="5" max="400" value="100"><span class="val" id="sSizeV">100%</span></span></label>
+      <label>Rotation <span class="row" style="margin:0"><input type="range" id="sRot" min="-180" max="180" value="0"><span class="val" id="sRotV">0°</span></span></label>
+      <label>Behind you <input type="checkbox" id="sBehind"></label>
+      <div class="row"><button id="sUp">Forward</button><button id="sDown">Back</button><button id="sDel">Delete</button></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Capture</h2>
+    <label>Delay <select id="timer">
+      <option value="0">None</option>
+      <option value="3" selected>3 seconds</option>
+      <option value="5">5 seconds</option>
+      <option value="10">10 seconds</option>
+    </select></label>
+    <button class="primary" id="shootBtn">Take photo (PNG)</button>
+    <p class="hint">Space also takes a photo. With a transparent background the PNG keeps real transparency.</p>
+  </section>
+</aside>
+
+<main class="panel">
+  <div id="stage">
+    <canvas id="view" width="1280" height="720"></canvas>
+    <div id="empty">Press <b>Start</b> to connect your camera</div>
+    <div id="countdown"></div>
+    <div id="flash"></div>
+  </div>
+  <div id="shots"><span class="none">Photos you take show up here (click one to download it again).</span></div>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const view = $('view'), ctx = view.getContext('2d');
+const work = document.createElement('canvas');
+const wctx = work.getContext('2d', { willReadFrequently: true });
+work.width = view.width; work.height = view.height;
+const video = document.createElement('video');
+video.playsInline = true; video.muted = true;
+
+let stream = null, picking = false, busy = false, bgImg = null;
+let stickers = [], sel = null, drag = null;
+let keyCb = 0, keyCr = 0, keyDom = 1;
+
+/* ---------- key color ---------- */
+const chroma = (r, g, b) => [-0.168736*r - 0.331264*g + 0.5*b, 0.5*r - 0.418688*g - 0.081312*b];
+const hex = (r, g, b) => '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+function setKey(r, g, b) {
+  [keyCb, keyCr] = chroma(r, g, b);
+  keyDom = [r, g, b].indexOf(Math.max(r, g, b));
+  $('keyColor').value = hex(r, g, b);
+}
+function setKeyHex(h) { setKey(parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)); }
+setKeyHex('#00ff00');
+$('keyColor').oninput = e => setKeyHex(e.target.value);
+$('pickBtn').onclick = () => { picking = !picking; $('pickBtn').classList.toggle('on', picking); view.classList.toggle('pick', picking); };
+for (const id of ['tol', 'soft', 'spill']) $(id).oninput = () => $(id + 'V').textContent = $(id).value;
+
+/* ---------- camera ---------- */
+async function listCameras(activeId) {
+  const devs = (await navigator.mediaDevices.enumerateDevices()).filter(d => d.kind === 'videoinput');
+  $('camSelect').innerHTML = devs.map((d, i) =>
+    `<option value="${d.deviceId}" ${d.deviceId === activeId ? 'selected' : ''}>${d.label || 'Camera ' + (i + 1)}</option>`).join('');
+}
+async function startCamera() {
+  if (stream) stream.getTracks().forEach(t => t.stop());
+  const id = $('camSelect').value;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { deviceId: id ? { exact: id } : undefined, width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false });
+  } catch (e) { alert('Could not open the camera: ' + e.message); return; }
+  video.srcObject = stream;
+  await video.play();
+  view.width = work.width = video.videoWidth;
+  view.height = work.height = video.videoHeight;
+  $('empty').hidden = true;
+  $('startBtn').textContent = 'Restart';
+  listCameras(stream.getVideoTracks()[0].getSettings().deviceId);
+}
+$('startBtn').onclick = startCamera;
+$('camSelect').onchange = () => { if (stream) startCamera(); };
+
+/* ---------- keying ---------- */
+function processPerson() {
+  const w = work.width, h = work.height;
+  wctx.save();
+  if ($('mirror').checked) { wctx.translate(w, 0); wctx.scale(-1, 1); }
+  wctx.drawImage(video, 0, 0, w, h);
+  wctx.restore();
+  if (!$('keyOn').checked) return;
+
+  const img = wctx.getImageData(0, 0, w, h), d = img.data;
+  const tol = +$('tol').value, soft = Math.max(1, +$('soft').value), spill = +$('spill').value / 100;
+  const spillEnd = tol + soft * 3;
+  for (let i = 0; i < d.length; i += 4) {
+    const r = d[i], g = d[i+1], b = d[i+2];
+    const cb = -0.168736*r - 0.331264*g + 0.5*b - keyCb;
+    const cr = 0.5*r - 0.418688*g - 0.081312*b - keyCr;
+    const dist = Math.sqrt(cb*cb + cr*cr);
+    if (dist < tol) { d[i+3] = 0; continue; }
+    if (dist < tol + soft) d[i+3] = 255 * (dist - tol) / soft;
+    if (spill > 0 && dist < spillEnd) {
+      const amt = spill * (1 - (dist - tol) / (spillEnd - tol));
+      if (keyDom === 1) { const m = Math.max(r, b); if (g > m) d[i+1] = g - (g - m) * amt; }
+      else if (keyDom === 0) { const m = Math.max(g, b); if (r > m) d[i] = r - (r - m) * amt; }
+      else { const m = Math.max(r, g); if (b > m) d[i+2] = b - (b - m) * amt; }
+    }
+  }
+  wctx.putImageData(img, 0, 0);
+}
+
+function sampleKey(p) {
+  const t = document.createElement('canvas'); t.width = view.width; t.height = view.height;
+  const tc = t.getContext('2d');
+  if ($('mirror').checked) { tc.translate(t.width, 0); tc.scale(-1, 1); }
+  tc.drawImage(video, 0, 0, t.width, t.height);
+  const x = Math.max(0, Math.min(t.width - 5, (p.x | 0) - 2)), y = Math.max(0, Math.min(t.height - 5, (p.y | 0) - 2));
+  const s = tc.getImageData(x, y, 5, 5).data;
+  let r = 0, g = 0, b = 0;
+  for (let i = 0; i < s.length; i += 4) { r += s[i]; g += s[i+1]; b += s[i+2]; }
+  const n = s.length / 4;
+  setKey(Math.round(r / n), Math.round(g / n), Math.round(b / n));
+}
+
+/* ---------- background ---------- */
+$('bgMode').onchange = () => {
+  $('bgColorRow').hidden = $('bgMode').value !== 'color';
+  $('bgImgRow').hidden = $('bgMode').value !== 'image';
+};
+$('bgFile').onchange = e => { const f = e.target.files[0]; if (f) loadImage(f).then(i => bgImg = i); };
+function drawCover(c, img, w, h) {
+  const s = Math.max(w / img.width, h / img.height);
+  c.drawImage(img, (w - img.width * s) / 2, (h - img.height * s) / 2, img.width * s, img.height * s);
+}
+
+/* ---------- floating images ---------- */
+function loadImage(file) {
+  return new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = URL.createObjectURL(file); });
+}
+async function addStickers(files) {
+  for (const f of files) {
+    if (!f.type.startsWith('image/')) continue;
+    const img = await loadImage(f);
+    const s = { img, x: view.width / 2 + (Math.random() - .5) * 120, y: view.height / 2 + (Math.random() - .5) * 80,
+                scale: (view.width * 0.3) / img.width, rot: 0, behind: false };
+    stickers.push(s); select(s);
+  }
+}
+$('stickerFile').onchange = e => { addStickers([...e.target.files]); e.target.value = ''; };
+
+function drawSticker(c, s, ui) {
+  const w = s.img.width * s.scale, h = s.img.height * s.scale;
+  c.save(); c.translate(s.x, s.y); c.rotate(s.rot);
+  c.drawImage(s.img, -w / 2, -h / 2, w, h);
+  if (ui && s === sel) { c.strokeStyle = '#ffe600'; c.lineWidth = 3; c.setLineDash([10, 6]); c.strokeRect(-w / 2, -h / 2, w, h); }
+  c.restore();
+}
+function hit(p) {
+  const order = stickers.filter(s => !s.behind).reverse().concat(stickers.filter(s => s.behind).reverse());
+  for (const s of order) {
+    const dx = p.x - s.x, dy = p.y - s.y, co = Math.cos(-s.rot), si = Math.sin(-s.rot);
+    const lx = dx * co - dy * si, ly = dx * si + dy * co;
+    if (Math.abs(lx) <= s.img.width * s.scale / 2 && Math.abs(ly) <= s.img.height * s.scale / 2) return s;
+  }
+  return null;
+}
+function select(s) {
+  sel = s;
+  for (const id of ['sSize', 'sRot', 'sBehind', 'sUp', 'sDown', 'sDel']) $(id).disabled = !s;
+  syncPanel();
+}
+function syncPanel() {
+  if (!sel) return;
+  const pct = Math.round(sel.scale * sel.img.width / view.width * 100 / 0.3);
+  $('sSize').value = pct; $('sSizeV').textContent = pct + '%';
+  const deg = Math.round(sel.rot * 180 / Math.PI);
+  $('sRot').value = deg; $('sRotV').textContent = deg + '°';
+  $('sBehind').checked = sel.behind;
+}
+$('sSize').oninput = e => { if (sel) { sel.scale = (+e.target.value / 100) * 0.3 * view.width / sel.img.width; syncPanel(); } };
+$('sRot').oninput = e => { if (sel) { sel.rot = +e.target.value * Math.PI / 180; syncPanel(); } };
+$('sBehind').onchange = e => { if (sel) sel.behind = e.target.checked; };
+$('sUp').onclick = () => { if (!sel) return; const i = stickers.indexOf(sel); if (i < stickers.length - 1) { stickers.splice(i, 1); stickers.splice(i + 1, 0, sel); } };
+$('sDown').onclick = () => { if (!sel) return; const i = stickers.indexOf(sel); if (i > 0) { stickers.splice(i, 1); stickers.splice(i - 1, 0, sel); } };
+$('sDel').onclick = () => { if (sel) { stickers = stickers.filter(s => s !== sel); select(null); } };
+select(null);
+
+/* ---------- pointer / wheel / drop ---------- */
+function toCanvas(e) {
+  const r = view.getBoundingClientRect();
+  return { x: (e.clientX - r.left) * view.width / r.width, y: (e.clientY - r.top) * view.height / r.height };
+}
+view.addEventListener('pointerdown', e => {
+  const p = toCanvas(e);
+  if (picking) { if (stream) sampleKey(p); $('pickBtn').click(); return; }
+  const s = hit(p); select(s);
+  if (s) { drag = { s, ox: p.x - s.x, oy: p.y - s.y }; view.setPointerCapture(e.pointerId); }
+});
+view.addEventListener('pointermove', e => {
+  if (!drag) { view.style.cursor = picking ? '' : (hit(toCanvas(e)) ? 'grab' : ''); return; }
+  const p = toCanvas(e); drag.s.x = p.x - drag.ox; drag.s.y = p.y - drag.oy; view.style.cursor = 'grabbing';
+});
+view.addEventListener('pointerup', () => { drag = null; });
+view.addEventListener('wheel', e => {
+  const s = hit(toCanvas(e)) || sel; if (!s) return;
+  e.preventDefault(); select(s);
+  if (e.shiftKey) s.rot += (e.deltaY || e.deltaX) * 0.003;
+  else s.scale *= Math.exp(-e.deltaY * 0.0015);
+  syncPanel();
+}, { passive: false });
+
+const stage = $('stage');
+stage.addEventListener('dragover', e => { e.preventDefault(); stage.classList.add('drop'); });
+stage.addEventListener('dragleave', () => stage.classList.remove('drop'));
+stage.addEventListener('drop', e => { e.preventDefault(); stage.classList.remove('drop'); addStickers([...e.dataTransfer.files]); });
+
+/* ---------- compose + render loop ---------- */
+function compose(c, ui) {
+  const w = c.canvas.width, h = c.canvas.height, mode = $('bgMode').value;
+  c.clearRect(0, 0, w, h);
+  if (mode === 'color') { c.fillStyle = $('bgColor').value; c.fillRect(0, 0, w, h); }
+  else if (mode === 'image' && bgImg) drawCover(c, bgImg, w, h);
+  stickers.filter(s => s.behind).forEach(s => drawSticker(c, s, ui));
+  if (stream) c.drawImage(work, 0, 0);
+  stickers.filter(s => !s.behind).forEach(s => drawSticker(c, s, ui));
+}
+function frame() {
+  if (stream && video.readyState >= 2) processPerson();
+  compose(ctx, true);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* ---------- capture ---------- */
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+function stamp() { const d = new Date(), p = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`; }
+function capture() {
+  const out = document.createElement('canvas'); out.width = view.width; out.height = view.height;
+  compose(out.getContext('2d'), false);
+  out.toBlob(blob => {
+    const url = URL.createObjectURL(blob), name = `bitecam-${stamp()}.png`;
+    const a = document.createElement('a'); a.href = url; a.download = name; a.title = name;
+    const im = document.createElement('img'); im.src = url; a.appendChild(im);
+    const shots = $('shots'); shots.querySelector('.none')?.remove(); shots.prepend(a);
+    a.click();
+  }, 'image/png');
+}
+async function takePhoto() {
+  if (busy) return;
+  if (!stream) { alert('Start the camera first.'); return; }
+  busy = true; $('shootBtn').disabled = true;
+  for (let n = +$('timer').value; n > 0; n--) { $('countdown').textContent = n; await sleep(1000); }
+  $('countdown').textContent = '';
+  capture();
+  const fl = $('flash'); fl.style.transition = 'none'; fl.style.opacity = .85;
+  requestAnimationFrame(() => { fl.style.transition = ''; fl.style.opacity = 0; });
+  busy = false; $('shootBtn').disabled = false;
+}
+$('shootBtn').onclick = takePhoto;
+
+document.addEventListener('keydown', e => {
+  if (['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement.tagName) && document.activeElement.type !== 'range' && document.activeElement.type !== 'checkbox') return;
+  if (e.code === 'Space') { e.preventDefault(); takePhoto(); }
+  if ((e.key === 'Delete' || e.key === 'Backspace') && sel) { e.preventDefault(); $('sDel').click(); }
+  if (e.key === 'Escape' && picking) $('pickBtn').click();
+});
+</script>
+</body>
+</html>
