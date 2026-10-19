@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T07:30:50+00:00",
+  "updated": "2026-10-19T19:30:54+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "OsuRObFnMJ8",
+      "title": "Gamemodes Vs EXTREME Zigzag Challenge! 😂🤯",
+      "channel": "Main",
+      "published": "2026-10-19T19:02:15Z",
+      "type": "short"
+    },
     {
       "id": "iLjr8dY2XBA",
       "title": "Gamemodes Vs Slope Height Challenge! 🤑🔥",
@@ -152,13 +159,6 @@
       "type": "short"
     },
     {
-      "id": "yyDzXgLSxiw",
-      "title": "Deadlocked: Normal vs Full Version",
-      "channel": "Main",
-      "published": "2026-09-11T14:00:03Z",
-      "type": "long"
-    },
-    {
       "id": "_-8_vYrnS9o",
       "title": "Easiest Plane Build 😱",
       "channel": "Minecraft",
@@ -254,7 +254,6 @@
       "CKrXAw-Haak": "short",
       "XCWpnoPCSYk": "short",
       "zKbmaoX8Dek": "short",
-      "yyDzXgLSxiw": "long",
       "_-8_vYrnS9o": "short",
       "WgK5l6PoYf0": "short",
       "skaRND3HMWM": "short",
@@ -266,7 +265,8 @@
       "G2oEt7KELeo": "long",
       "ayh7d0nGYnw": "long",
       "iRpPA7_ej3U": "short",
-      "iLjr8dY2XBA": "short"
+      "iLjr8dY2XBA": "short",
+      "OsuRObFnMJ8": "short"
     }
   }
 }
