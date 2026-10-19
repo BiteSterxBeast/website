@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T03:48:07+00:00",
+  "updated": "2026-10-19T07:30:50+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "iLjr8dY2XBA",
+      "title": "Gamemodes Vs Slope Height Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2026-10-19T07:00:48Z",
+      "type": "short"
+    },
     {
       "id": "iRpPA7_ej3U",
       "title": "Geometry Dash You're Walking Down the Hallway",
@@ -159,13 +166,6 @@
       "type": "short"
     },
     {
-      "id": "tDCCU0GVp1Q",
-      "title": "Gamemode VS Speed Challenge! 😱🔥",
-      "channel": "Main",
-      "published": "2026-09-09T16:02:20Z",
-      "type": "short"
-    },
-    {
       "id": "WgK5l6PoYf0",
       "title": "I need food but... 😔",
       "channel": "Minecraft",
@@ -256,7 +256,6 @@
       "zKbmaoX8Dek": "short",
       "yyDzXgLSxiw": "long",
       "_-8_vYrnS9o": "short",
-      "tDCCU0GVp1Q": "short",
       "WgK5l6PoYf0": "short",
       "skaRND3HMWM": "short",
       "RBc5JIefR18": "short",
@@ -266,7 +265,8 @@
       "cSy4-n-X4Mo": "short",
       "G2oEt7KELeo": "long",
       "ayh7d0nGYnw": "long",
-      "iRpPA7_ej3U": "short"
+      "iRpPA7_ej3U": "short",
+      "iLjr8dY2XBA": "short"
     }
   }
 }
