@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T11:11:32+00:00",
+  "updated": "2026-10-19T03:48:07+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -19,10 +19,10 @@
   ],
   "recent": [
     {
-      "id": "7d6xjhh_Afk",
-      "title": "Geometry Dash Verity Song",
+      "id": "iRpPA7_ej3U",
+      "title": "Geometry Dash You're Walking Down the Hallway",
       "channel": "Extras",
-      "published": "2026-10-13T19:05:41Z",
+      "published": "2026-10-19T01:47:18Z",
       "type": "short"
     },
     {
@@ -237,7 +237,6 @@
       "BitePlaysMC": "UUHUeagSDY0qgEA_7VjHRjJw"
     },
     "types": {
-      "7d6xjhh_Afk": "short",
       "ViYQZQIloD8": "short",
       "pqrQ9zW7d-k": "short",
       "G-z2zK0OSeU": "long",
@@ -266,7 +265,8 @@
       "SiUmjyTStHU": "long",
       "cSy4-n-X4Mo": "short",
       "G2oEt7KELeo": "long",
-      "ayh7d0nGYnw": "long"
+      "ayh7d0nGYnw": "long",
+      "iRpPA7_ej3U": "short"
     }
   }
 }
