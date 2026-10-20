@@ -105,6 +105,13 @@ h1,h2,h3{margin:0}
 .sk .tooth{stroke:var(--edge);stroke-width:1.2}
 .ptr .pl{stroke:var(--accent2);stroke-width:3.5}
 .ptr .pdot{fill:var(--accent2);stroke:#231700;stroke-width:2}
+.vcap{fill:var(--muted);font:800 21px Outfit,system-ui,sans-serif;letter-spacing:3px}
+.vnote{fill:var(--muted);font:700 17px Outfit,system-ui,sans-serif;letter-spacing:1px}
+.ptr .hlg *{fill:var(--accent2);fill-opacity:.28;stroke:var(--accent2);stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+.ptr.good .hlg *{fill:var(--good);stroke:var(--good)}.ptr.bad .hlg *{fill:var(--bad);stroke:var(--bad)}
+.vtabs{display:flex;flex-wrap:wrap;gap:6px}
+.vtabs button{border:1px solid var(--line);background:transparent;border-radius:99px;padding:6px 12px;font-weight:600;font-size:14px;cursor:pointer}
+.vtabs button.on{background:var(--accent2);border-color:var(--accent2);color:#231700}
 .ptr .pring{fill:none;stroke:var(--accent2);stroke-width:3;transform-box:fill-box;transform-origin:center;animation:pulse 1.3s ease-out infinite}
 .ptr .pbox{fill:var(--accent2)}
 .ptr .ptxt{fill:#231700;font-weight:800;font-family:Outfit,system-ui,sans-serif}
@@ -297,7 +304,7 @@ const TOPICS = {
     name: "Skeleton", icon: "🦴", blurb: "Name the bones of the human body",
     items: BONES, itemWord: "bone", clueWord: "Bone",
     placeholder: "Scientific name…",
-    ask: it => `What's the scientific name for the <em>${esc(it.common.toLowerCase())}</em>?`,
+    ask: it => it.ask || `What's the scientific name for the <em>${esc(it.common.toLowerCase())}</em>?`,
     recall: "What was the scientific name?",
     draw: o => skel(o),
     subject: "Anatomy", avatar: "#7b2ff7",
@@ -395,7 +402,10 @@ function checkAnswer(bi, v, style, forgive) {
   return style === "mc" ? norm(v) === norm(IT[bi].sci) : checkTyped(bi, v, forgive);
 }
 function makeChoices(bi) {
-  const others = shuffle(IT.map((_, i) => i).filter(i => i !== bi && norm(IT[i].sci) !== norm(IT[bi].sci))).slice(0, 3);
+  const ok = i => i !== bi && norm(IT[i].sci) !== norm(IT[bi].sci);
+  const same = shuffle(IT.map((_, i) => i).filter(i => ok(i) && (IT[i].view || "body") === (IT[bi].view || "body")));
+  const rest = shuffle(IT.map((_, i) => i).filter(i => ok(i) && !same.includes(i)));
+  const others = [...same, ...rest].slice(0, 3);
   return shuffle([bi, ...others]).map(i => IT[i].sci);
 }
 
@@ -470,19 +480,208 @@ function pointer(i, text, kind = "") {
   const g = TOPIC.geo || SKEL_GEO, b = IT[i], left = b.side === "left";
   const ly = Math.max(g.ymin, Math.min(g.ymax, b.y)), W = g.W, H = g.H, bx = left ? g.lx : g.rx, ex = left ? bx + W : bx;
   const fs = Math.min(g.fs, Math.floor((W - 22) / (0.56 * Math.max(text.length, 1))));
-  return `<g class="ptr ${kind}"><line class="pl" x1="${ex}" y1="${ly}" x2="${b.x}" y2="${b.y}"/>
+  return `<g class="ptr ${kind}">${b.hl ? `<g class="hlg">${b.hl}</g>` : ""}<line class="pl" x1="${ex}" y1="${ly}" x2="${b.x}" y2="${b.y}"/>
     <circle class="pring" cx="${b.x}" cy="${b.y}" r="${g.ring}"/><circle class="pdot" cx="${b.x}" cy="${b.y}" r="${g.dot}"/>
     <rect class="pbox" x="${bx}" y="${ly-H/2}" width="${W}" height="${H}" rx="12"/>
     <text class="ptxt" x="${bx+W/2}" y="${ly+fs*.36}" font-size="${fs}" text-anchor="middle">${esc(text)}</text></g>`;
 }
-function diagram(o, body, label) {
+function diagram(o, body, label, show = () => true) {
   const g = TOPIC.geo || SKEL_GEO;
   let extra = "";
-  if (o.dots) extra += IT.map((b, i) => `<circle class="sdot${o.sel === i ? " on" : ""}" cx="${b.x}" cy="${b.y}" r="${g.dot + 2}" data-act="studyPick" data-i="${i}"/>`).join("");
+  if (o.dots) extra += IT.map((b, i) => !show(b) ? "" : `<circle class="sdot${o.sel === i ? " on" : ""}" cx="${b.x}" cy="${b.y}" r="${g.dot + 2}" data-act="studyPick" data-i="${i}"/>`).join("");
   if (o.ptr) extra += pointer(o.ptr.i, o.ptr.text, o.ptr.kind);
   return `<div class="skwrap ${o.cls || ""}"><svg viewBox="${g.vb}" role="img" aria-label="${label}">${body}${extra}</svg></div>`;
 }
-function skel(o = {}) { return diagram(o, SKELETON, "Skeleton diagram"); }
+function skel(o = {}) {
+  const v = o.ptr ? (IT[o.ptr.i].view || "body") : (o.view || "body");
+  const cap = VIEW_CAPS[v] ? `<text x="200" y="34" text-anchor="middle" class="vcap">${VIEW_CAPS[v]}</text>` : "";
+  return diagram(o, (v === "body" ? SKELETON : VIEWS[v]) + cap, (VIEW_NAMES[v] || "Skeleton") + " diagram", b => (b.view || "body") === v);
+}
+/* ---------- Close-up views for the Skeleton topic ----------
+   Every view is drawn in the same 400 x 810 frame as the full skeleton,
+   so the arrows and label boxes work the same everywhere. */
+const VIEW_NAMES = {body:"Full body", skullSide:"Skull (side)", skullBase:"Skull (bottom)", spine:"Spine", ribs:"Rib cage", pelvis:"Hips", foot:"Foot"};
+const VIEW_CAPS = {body:"", skullSide:"SKULL · SIDE VIEW", skullBase:"SKULL · FROM BELOW", spine:"SPINE · SIDE VIEW", ribs:"RIB CAGE · FRONT VIEW", pelvis:"HIPS · FRONT VIEW", foot:"FOOT & ANKLE · SIDE VIEW"};
+const tfm = (s, cx, cy, tx, ty) => ({g:`translate(${tx - s*cx} ${ty - s*cy}) scale(${s})`, p:(x, y) => [+(s*(x - cx) + tx).toFixed(1), +(s*(y - cy) + ty).toFixed(1)]});
+const mirrorX = inner => `<g>${inner}</g><g transform="matrix(-1 0 0 1 400 0)">${inner}</g>`;
+const hlWrap = (t, inner) => `<g transform="${t.g}">${inner}</g>`;
+
+/* Skull, side view (face on the left) */
+const T_SKS = tfm(0.8, 215, 369, 196, 405);
+const SK_FRONTAL = "M70 362 C64 300 80 236 130 206 C160 188 180 180 196 176 C192 250 186 330 178 392 L140 400 L120 344 Z";
+const SK_PARIETAL = "M196 176 C240 166 290 176 318 198 C340 280 336 340 322 410 C300 330 200 320 178 392 C186 330 192 250 196 176 Z";
+const SK_TEMPORAL = "M178 392 C200 320 300 330 322 410 L316 448 L292 474 L268 456 L246 446 L180 430 Z";
+const SK_OCCIPITAL = "M318 198 C352 226 380 280 374 340 C368 400 344 432 316 448 L322 410 C336 340 340 280 318 198 Z";
+const SK_NASAL = "M70 362 L46 404 L58 410 L80 372 Z";
+const SKULL_SIDE = (() => {
+  let s = `<g class="sk" transform="${T_SKS.g}">`;
+  s += `<path class="fl" d="M70 362 C64 300 80 236 130 206 C190 170 280 168 336 214 C372 246 384 300 372 350 C362 400 340 430 316 448 L292 474 L268 456 L246 446 L140 446 L128 470 L66 472 L60 440 L68 420 L46 404 Z"/>`;
+  s += `<path class="fl" d="M66 476 L134 476 C170 476 200 470 222 462 L228 444 L240 468 L254 446 C266 470 260 520 246 548 C236 562 200 568 100 570 C82 570 70 558 68 542 C66 520 70 500 66 476 Z"/>`;
+  for (let i = 0; i < 6; i++) s += `<rect class="fl" x="${68 + i*10.5}" y="458" width="9" height="15" rx="2"/><rect class="fl" x="${70 + i*10.5}" y="476" width="9" height="14" rx="2"/>`;
+  s += `<ellipse class="hole" cx="110" cy="372" rx="30" ry="28"/><path class="hole" d="M60 410 L70 420 L86 412 L80 386 Z"/><ellipse class="hole" cx="280" cy="426" rx="10" ry="12"/>`;
+  s += `<path class="fl" d="${SK_NASAL}"/>`;
+  s += `<path class="fl" d="M92 402 L140 394 L162 412 L238 414 L242 430 L152 432 L118 442 L96 430 Z"/>`;
+  s += `<g fill="none" stroke="#7d7462" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 5">
+    <path d="M196 176 C192 250 186 330 178 392"/><path d="M178 392 C200 320 300 330 322 410"/><path d="M318 198 C340 280 336 340 322 410"/></g>`;
+  return s + `</g>`;
+})();
+
+/* Skull, from below (face at the top) */
+const SKULL_BASE = (() => {
+  let s = `<g class="sk"><text x="200" y="128" text-anchor="middle" class="vnote">FACE ↑</text>`;
+  s += `<path class="fl" d="M200 150 C285 150 330 230 336 330 C342 450 320 560 280 620 C255 655 225 668 200 668 C175 668 145 655 120 620 C80 560 58 450 64 330 C70 230 115 150 200 150 Z"/>`;
+  s += mirrorX(`<path class="fl" d="M268 292 C322 300 342 334 334 404 L318 408 C322 344 302 318 262 314 Z"/><ellipse class="hole" cx="300" cy="452" rx="12" ry="9"/><ellipse class="fl" cx="312" cy="488" rx="14" ry="20"/><circle class="hole" cx="262" cy="500" r="7"/><circle class="hole" cx="252" cy="470" r="5"/>`);
+  for (let k = 0; k < 14; k++) { const t = (-82 + k*164/13) * Math.PI/180; s += `<ellipse class="fl" cx="${(200 + 74*Math.sin(t)).toFixed(1)}" cy="${(304 - 84*Math.cos(t)).toFixed(1)}" rx="10" ry="9"/>`; }
+  s += `<path d="M200 238 C248 238 258 282 258 330 L258 350 L142 350 L142 330 C142 282 152 238 200 238 Z" fill="#dcd1b8" stroke="var(--edge)" stroke-width="2"/>`;
+  s += `<path d="M200 240 V350 M144 320 H256" stroke="#9a8f78" stroke-width="2" stroke-dasharray="5 4" fill="none"/>`;
+  s += `<rect class="hole" x="170" y="354" width="26" height="40" rx="10"/><rect class="hole" x="204" y="354" width="26" height="40" rx="10"/>`;
+  s += `<ellipse cx="166" cy="530" rx="10" ry="22" fill="#cfc2a6" transform="rotate(-18 166 530)"/><ellipse cx="234" cy="530" rx="10" ry="22" fill="#cfc2a6" transform="rotate(18 234 530)"/>`;
+  s += `<ellipse class="hole" cx="200" cy="545" rx="30" ry="38"/>`;
+  s += `<path d="M200 584 V660" stroke="#9a8f78" stroke-width="2" stroke-dasharray="5 4"/>`;
+  return s + `</g>`;
+})();
+
+/* Spine, side view (front on the left) */
+const SP = {c:[110, 255], t:[255, 515], l:[515, 665], s:[665, 745]};
+function spineX(y) {
+  if (y <= SP.c[1]) return 210 - 22 * Math.sin(Math.PI * (y - SP.c[0]) / (SP.c[1] - SP.c[0]));
+  if (y <= SP.t[1]) return 210 + 36 * Math.sin(Math.PI * (y - SP.t[0]) / (SP.t[1] - SP.t[0]));
+  if (y <= SP.l[1]) return 210 - 30 * Math.sin(Math.PI * (y - SP.l[0]) / (SP.l[1] - SP.l[0]));
+  return 210 + 55 * Math.pow((y - SP.s[0]) / 80, 1.4);
+}
+function vertebra(y, h, size, kind) {
+  const x = spineX(y), a = Math.atan2(spineX(y + 4) - spineX(y - 4), 8) * -180 / Math.PI;
+  const bw = size, bh = h - 4;
+  let g = `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)})">`;
+  if (kind === "atlas") {
+    g += `<ellipse class="fl" cx="${-bw*0.35}" cy="0" rx="7" ry="${bh*0.42}"/><path class="fl" d="M${-bw*0.3} -4 H${bw*0.9} L${bw*1.15} 2 L${bw*0.9} 6 H${-bw*0.3} Z"/>`;
+  } else {
+    g += `<rect class="fl" x="${-bw}" y="${-bh/2}" width="${bw}" height="${bh}" rx="4"/>`;
+    g += `<path class="fl" d="M0 ${-bh*0.35} L${bw*0.55} ${-bh*0.3} L${bw*1.25} ${bh*0.15} L${bw*1.2} ${bh*0.5} L${bw*0.5} ${bh*0.25} L0 ${bh*0.2} Z"/>`;
+    if (kind === "axis") g += `<rect class="fl" x="${-bw*0.75}" y="${-bh/2 - 12}" width="${bw*0.45}" height="16" rx="5"/>`;
+  }
+  return g + `</g>`;
+}
+const SPINE_PARTS = (() => {
+  const parts = {}, ys = [];
+  const run = (y0, y1, n, size, name) => { const h = (y1 - y0) / n; for (let i = 0; i < n; i++) ys.push({y: y0 + h*(i + .5), h, size, name: name + (i + 1)}); };
+  run(SP.c[0], SP.c[1], 7, 22, "C"); run(SP.t[0], SP.t[1], 12, 28, "T"); run(SP.l[0], SP.l[1], 5, 36, "L");
+  ys.forEach(v => parts[v.name] = vertebra(v.y, v.h, v.size, v.name === "C1" ? "atlas" : v.name === "C2" ? "axis" : ""));
+  parts.ys = ys;
+  return parts;
+})();
+const spineBracket = (y1, y2) => `<path d="M290 ${y1 + 3} H304 V${y2 - 3} H290" fill="none" stroke-width="5" stroke-linecap="round"/>`;
+const SPINE_VIEW = (() => {
+  let s = `<g class="sk"><text x="62" y="790" class="vnote">← FRONT</text>`;
+  s += `<path d="M150 104 C170 60 240 46 300 70 C320 84 318 100 300 106 L250 100 Z" fill="var(--bone)" opacity=".25"/>`;
+  SPINE_PARTS.ys.forEach(v => s += SPINE_PARTS[v.name]);
+  const sx = y => spineX(y).toFixed(1);
+  s += `<path class="fl" d="M${sx(SP.s[0]) - 20} ${SP.s[0] + 2} L${+sx(SP.s[0]) + 26} ${SP.s[0] - 2} C${+sx(705) + 30} 700 ${+sx(740) + 18} 730 ${sx(745)} 748 L${+sx(745) - 16} 744 C${+sx(705) - 10} 720 ${sx(SP.s[0]) - 24} 690 ${sx(SP.s[0]) - 20} ${SP.s[0] + 2} Z"/>`;
+  const cx = +sx(745);
+  for (let i = 0; i < 4; i++) s += `<rect class="fl" x="${cx - 8 - i*5}" y="${750 + i*8}" width="${12 - i*2}" height="7" rx="3"/>`;
+  s += `<g stroke="var(--muted)" opacity=".55">${spineBracket(...SP.c)}${spineBracket(...SP.t)}${spineBracket(...SP.l)}</g>`;
+  return s + `</g>`;
+})();
+
+/* Rib cage, front view */
+const T_RIB = tfm(0.9, 200, 400, 200, 410);
+const RIB_W = [80,100,116,128,136,142,146,148,146,140,128,112];
+const RIB_E = [40,48,55,62,68,74,80,92,104,116];
+const RIB_S = i => 160 + (i - 1) * 30;
+const ribEndY = i => i <= 7 ? RIB_S(i) + 10 + i*4 : 380 + (i - 8) * 30;
+function ribPath(i, sg) {
+  const w = RIB_W[i-1];
+  if (i >= 11) { const y0 = 400 + (i - 11) * 34; return `M${200 + sg*10} ${y0} C${200 + sg*w*0.6} ${y0 - 18} ${200 + sg*w} ${y0} ${200 + sg*w*0.98} ${y0 + 22} C${200 + sg*w*0.95} ${y0 + 36} ${200 + sg*w*0.86} ${y0 + 42} ${200 + sg*w*0.8} ${y0 + 44}`; }
+  const e = RIB_E[i-1], ye = ribEndY(i), y0 = ye - 46;
+  return `M${200 + sg*10} ${y0} C${200 + sg*w*0.7} ${y0 - 22} ${200 + sg*w} ${y0 + 5} ${200 + sg*w*0.97} ${y0 + 30} C${200 + sg*w*0.93} ${ye - 5} ${200 + sg*(e + 25)} ${ye + 5} ${200 + sg*e} ${ye}`;
+}
+function ribCart(i, sg) {
+  if (i >= 11) return "";
+  const e = RIB_E[i-1], ye = ribEndY(i);
+  if (i <= 7) return `M${200 + sg*e} ${ye} L${200 + sg*14} ${RIB_S(i)}`;
+  return `M${200 + sg*e} ${ye} L${200 + sg*(RIB_E[i-2] - 8)} ${ribEndY(i-1) + 4}`;
+}
+const RIB_VIEW = (() => {
+  let s = `<g class="sk" transform="${T_RIB.g}">`;
+  for (let i = 0; i < 17; i++) s += `<rect x="192" y="${120 + i*27}" width="16" height="22" rx="3" fill="var(--bone)" opacity=".28"/>`;
+  s += mirrorX(`<path class="st" stroke-width="9" d="M214 150 Q258 132 306 136"/>`);
+  let ribs = "", carts = "";
+  for (let i = 1; i <= 12; i++) { ribs += `<path class="st" stroke-width="${i >= 11 ? 8 : 9}" d="${ribPath(i, -1)}"/>`; carts += `<path d="${ribCart(i, -1)}" fill="none" stroke="#9cc3d6" stroke-width="7" stroke-linecap="round"/>`; }
+  s += mirrorX(carts + ribs);
+  s += `<path class="fl" d="M186 140 L214 140 L218 196 L182 196 Z"/><rect class="fl" x="186" y="198" width="28" height="156" rx="6"/><path class="fl" d="M192 356 L208 356 L200 386 Z"/>`;
+  return s + `</g>`;
+})();
+const ribPt = i => { const w = RIB_W[i-1]; if (i >= 11) { const y0 = 400 + (i - 11) * 34; return T_RIB.p(200 - w*0.98, y0 + 22); } return T_RIB.p(200 - w*0.97, ribEndY(i) - 16); };
+const ribHL = (...ns) => hlWrap(T_RIB, ns.map(i => `<path d="${ribPath(i, -1)}"/>`).join(""));
+
+/* Hips, front view */
+const T_PEL = tfm(0.85, 200, 400, 200, 400);
+const PEL_ILIUM = "M196 296 C170 250 112 214 62 232 C34 250 42 322 70 362 C88 390 104 414 112 436 L150 438 C166 400 182 352 196 330 Z";
+const PEL_PUBIS = "M150 438 L196 448 L196 500 C190 520 180 536 170 548 L158 540 C166 524 172 506 172 490 C166 476 156 470 140 466 Z";
+const PEL_ISCHIUM = "M112 436 L150 438 L140 466 C128 478 126 500 132 520 C140 534 150 540 158 540 L170 548 C160 572 142 588 120 584 C102 578 98 552 100 520 C102 488 106 460 112 436 Z";
+const PELVIS_VIEW = (() => {
+  let s = `<g class="sk" transform="${T_PEL.g}">`;
+  s += mirrorX(`<path d="M118 452 L82 500 L76 640" fill="none" stroke="var(--bone)" stroke-width="22" stroke-linecap="round" opacity=".25"/>`);
+  s += `<rect class="fl" x="182" y="214" width="36" height="30" rx="5"/><rect class="fl" x="180" y="250" width="40" height="34" rx="5"/>`;
+  s += `<path class="fl" d="M176 290 L224 290 L214 400 L200 420 L186 400 Z"/>`;
+  for (let k = 0; k < 4; k++) s += `<circle class="hole" cx="188" cy="${314 + k*22}" r="4"/><circle class="hole" cx="212" cy="${314 + k*22}" r="4"/>`;
+  s += `<rect class="fl" x="196" y="422" width="8" height="18" rx="3"/>`;
+  s += mirrorX(`<path class="fl" d="${PEL_ILIUM}"/><path class="fl" d="${PEL_ISCHIUM}"/><path class="fl" d="${PEL_PUBIS}"/><ellipse class="hole" cx="150" cy="505" rx="17" ry="26"/><circle cx="124" cy="450" r="21" fill="#d9cdb4" stroke="var(--edge)" stroke-width="2"/>`);
+  s += `<rect x="196" y="448" width="8" height="52" fill="#9cc3d6"/>`;
+  return s + `</g>`;
+})();
+
+/* Foot & ankle, side view (toes on the left) */
+const T_FOOT = tfm(0.8, 190, 355, 196, 430);
+const FT_TALUS = "M168 438 C172 410 196 392 230 390 C262 390 278 404 276 426 L270 452 L236 456 L196 452 C184 450 172 446 168 438 Z";
+const FT_CALC = "M236 456 L300 448 C346 452 362 482 354 520 C348 542 312 550 270 542 L226 522 C214 502 218 472 236 456 Z";
+const FOOT_VIEW = (() => {
+  let s = `<g class="sk" transform="${T_FOOT.g}"><line x1="10" y1="562" x2="370" y2="562" stroke="var(--muted)" stroke-width="3" opacity=".5"/>`;
+  s += `<path class="fl" d="M196 140 L254 140 L250 360 C252 378 262 390 266 396 L198 396 C204 386 206 372 204 356 Z"/>`;
+  s += `<path class="fl" d="M262 150 L278 150 L280 388 C286 404 282 420 272 424 L264 412 L266 390 Z"/>`;
+  s += `<path class="fl" d="${FT_CALC}"/><path class="fl" d="${FT_TALUS}"/>`;
+  s += `<ellipse class="fl" cx="160" cy="456" rx="16" ry="21"/><rect class="fl" x="194" y="486" width="34" height="34" rx="6"/>`;
+  s += `<rect class="fl" x="122" y="446" width="24" height="44" rx="5"/><rect class="fl" x="168" y="478" width="26" height="36" rx="5"/>`;
+  for (let k = 0; k < 3; k++) s += `<line x1="${124 - k*2}" y1="${470 + k*14}" x2="${52 - k*4}" y2="${524 + k*8}" stroke="var(--bone)" stroke-width="${11 - k}" stroke-linecap="round"/><circle cx="${124 - k*2}" cy="${470 + k*14}" r="7" fill="var(--bone)"/>`;
+  for (let k = 0; k < 3; k++) s += `<line x1="${46 - k*4}" y1="${526 + k*8}" x2="${22 - k*3}" y2="${540 + k*6}" stroke="var(--bone)" stroke-width="7" stroke-linecap="round"/>`;
+  return s + `</g>`;
+})();
+
+const VIEWS = {skullSide:SKULL_SIDE, skullBase:SKULL_BASE, spine:SPINE_VIEW, ribs:RIB_VIEW, pelvis:PELVIS_VIEW, foot:FOOT_VIEW};
+
+/* New terms from the Skeletal System Practical list */
+const SKS = (x, y) => T_SKS.p(x, y), PEL = (x, y) => T_PEL.p(x, y), FT = (x, y) => T_FOOT.p(x, y);
+const spMid = r => (r[0] + r[1]) / 2;
+const vY = name => SPINE_PARTS.ys.find(v => v.name === name).y;
+const PRACTICAL_BONES = [
+  {sci:"Frontal bone",   common:"Forehead bone",        alt:["frontal"],                         view:"skullSide", at:SKS(128,270), side:"left",  hl:hlWrap(T_SKS, `<path d="${SK_FRONTAL}"/>`)},
+  {sci:"Parietal bone",  common:"Top & side of skull",  alt:["parietal","parietal bones"],       view:"skullSide", at:SKS(256,246), side:"right", hl:hlWrap(T_SKS, `<path d="${SK_PARIETAL}"/>`)},
+  {sci:"Temporal bone",  common:"Skull bone by the ear",alt:["temporal","temporal bones"],       view:"skullSide", at:SKS(236,392), side:"right", hl:hlWrap(T_SKS, `<path d="${SK_TEMPORAL}"/>`)},
+  {sci:"Occipital bone", common:"Back of the skull",    alt:["occipital"],                       view:"skullSide", at:SKS(352,330), side:"right", hl:hlWrap(T_SKS, `<path d="${SK_OCCIPITAL}"/>`)},
+  {sci:"Nasal bone",     common:"Bridge of the nose",   alt:["nasal","nasal bones"],             view:"skullSide", at:SKS(62,388),  side:"left",  hl:hlWrap(T_SKS, `<path d="${SK_NASAL}"/>`)},
+  {sci:"Foramen magnum", common:"Hole for spinal cord", alt:[],                                  view:"skullBase", at:[200,545],    side:"right", hl:`<ellipse cx="200" cy="545" rx="34" ry="42"/>`},
+  {sci:"Hard palate",    common:"Roof of the mouth",    alt:["palate","bony palate"],            view:"skullBase", at:[200,296],    side:"left",  hl:`<path d="M200 238 C248 238 258 282 258 330 L258 350 L142 350 L142 330 C142 282 152 238 200 238 Z"/>`},
+  {sci:"Atlas",          common:"Top neck vertebra",    alt:[],                                  view:"spine", at:[spineX(vY("C1")) - 8, vY("C1")], side:"left",
+     ask:`What's the name of the <em>very first neck vertebra (C1)</em>, the one that holds up the skull?`},
+  {sci:"Axis",           common:"2nd neck vertebra",    alt:[],                                  view:"spine", at:[spineX(vY("C2")) - 12, vY("C2")], side:"left",
+     ask:`What's the name of the <em>second neck vertebra (C2)</em>, the one with the peg the head turns on?`},
+  {sci:"Cervical curvature",  common:"Neck curve",       alt:["cervical curve"],   view:"spine", at:[304, spMid(SP.c)], side:"right", hl:spineBracket(...SP.c)},
+  {sci:"Thoracic curvature",  common:"Chest curve",      alt:["thoracic curve"],   view:"spine", at:[304, spMid(SP.t)], side:"right", hl:spineBracket(...SP.t)},
+  {sci:"Lumbar curvature",    common:"Lower back curve", alt:["lumbar curve"],     view:"spine", at:[304, spMid(SP.l)], side:"right", hl:spineBracket(...SP.l)},
+  {sci:"True rib",       common:"Ribs 1–7",             alt:["true ribs","vertebrosternal rib","vertebrosternal ribs"], view:"ribs", at:ribPt(4), side:"left", hl:ribHL(4),
+     ask:`What kind of rib is this? <em>Ribs 1–7</em> attach straight to the sternum with their own cartilage.`},
+  {sci:"False rib",      common:"Ribs 8–10",            alt:["false ribs","vertebrochondral rib","vertebrochondral ribs"], view:"ribs", at:ribPt(9), side:"left", hl:ribHL(9),
+     ask:`What kind of rib is this? <em>Ribs 8–10</em> reach the sternum only through the cartilage above them.`},
+  {sci:"Floating ribs",  common:"Ribs 11–12",           alt:["floating rib","vertebral ribs","vertebral rib"], view:"ribs", at:ribPt(11), side:"left", hl:ribHL(11, 12),
+     ask:`What are <em>ribs 11–12</em> called? They don't attach to anything in the front.`},
+  {sci:"Ilium",          common:"Big wing of the hip",  alt:["ilia","iliac bone"],               view:"pelvis", at:PEL(86,300),  side:"left", hl:hlWrap(T_PEL, `<path d="${PEL_ILIUM}"/>`)},
+  {sci:"Ischium",        common:"Sitting bone",         alt:["ischia"],                          view:"pelvis", at:PEL(116,556), side:"left", hl:hlWrap(T_PEL, `<path d="${PEL_ISCHIUM}"/>`)},
+  {sci:"Pubis",          common:"Front of the hip",     alt:["pubic bone","pubes"],              view:"pelvis", at:PEL(176,460), side:"left", hl:hlWrap(T_PEL, `<path d="${PEL_PUBIS}"/>`)},
+  {sci:"Talus",          common:"Ankle bone under tibia", alt:["astragalus"],                    view:"foot", at:FT(226,420), side:"left",  hl:hlWrap(T_FOOT, `<path d="${FT_TALUS}"/>`)},
+  {sci:"Calcaneus",      common:"Heel bone",            alt:["calcaneum"],                       view:"foot", at:FT(306,500), side:"right", hl:hlWrap(T_FOOT, `<path d="${FT_CALC}"/>`)},
+].map(b => ({...b, x:b.at[0], y:b.at[1]}));
+
+BONES.push(...PRACTICAL_BONES);
 
 /* ---------- skin cross-section ---------- */
 const SKIN_SURF = x => 60 + 3 * Math.sin(x / 40);
@@ -597,18 +796,23 @@ ACT.goHost = () => { leaveNet(); topicScreen("host"); };
 ACT.goJoin = () => joinScreen();
 
 /* ===================== STUDY ===================== */
-function study(sel) {
+let STUDY_VIEW = "body";
+function study(sel, vw) {
   const b = sel != null ? IT[sel] : null;
+  const views = [...new Set(IT.map(x => x.view || "body"))];
+  STUDY_VIEW = b ? (b.view || "body") : (vw && views.includes(vw) ? vw : views[0]);
+  const tabs = views.length > 1 ? `<div class="vtabs">${views.map(v => `<button class="${v === STUDY_VIEW ? "on" : ""}" data-act="studyView" data-v="${v}">${esc(VIEW_NAMES[v] || v)}</button>`).join("")}</div>` : "";
   view(`${topbar(`<button class="btn small ghost" data-act="soloSettings">Back</button>`)}
   <div class="gbody${TOPIC.wide ? " wide" : ""}">
-    ${TOPIC.draw({dots:true, sel, ptr: sel != null ? {i:sel, text:b.sci, kind:"good"} : null})}
-    <div class="gside">
+    ${TOPIC.draw({dots:true, sel, view:STUDY_VIEW, ptr: sel != null ? {i:sel, text:b.sci, kind:"good"} : null})}
+    <div class="gside">${tabs}
       <div class="prompt">${b ? `<em>${esc(b.sci)}</em><br><span class="muted" style="font-size:.7em">${esc(b.common)}</span>` : "Tap a dot or a name to see where it is."}</div>
-      <div class="studylist">${IT.map((x, i) => `<button class="${i === sel ? "on" : ""}" data-act="studyPick" data-i="${i}"><b>${esc(x.sci)}</b><span class="muted">${esc(x.common)}</span></button>`).join("")}</div>
+      <div class="studylist">${IT.map((x, i) => views.length > 1 && (x.view || "body") !== STUDY_VIEW ? "" : `<button class="${i === sel ? "on" : ""}" data-act="studyPick" data-i="${i}"><b>${esc(x.sci)}</b><span class="muted">${esc(x.common)}</span></button>`).join("")}</div>
     </div>
   </div>`);
 }
 ACT.studyPick = el => study(+el.dataset.i);
+ACT.studyView = el => study(null, el.dataset.v);
 
 /* ===================== SOLO ===================== */
 const soloCfg = {topic:"skeleton", style:"type", count:"10", timer:"on", memory:"off", forgive:"on"};
