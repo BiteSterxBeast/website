@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Work With Me | BiteSterxBeast</title>
-<meta name="description" content="Join the team: thumbnail artists, script writers, level creators and editors.">
+<meta name="description" content="Paid spots: GD level creators, thumbnail artists, script writers and editors.">
 <meta name="theme-color" content="#ff8000">
 <meta property="og:title" content="Work With BiteSterxBeast">
-<meta property="og:description" content="Join the team: thumbnail artists, script writers, level creators and editors.">
+<meta property="og:description" content="Paid spots: GD level creators, thumbnail artists, script writers and editors.">
 <link rel="icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,6 +72,7 @@
   .panel:hover { border-color: rgba(255, 230, 0, 0.55); box-shadow: 0 0 24px rgba(255, 230, 0, 0.18); }
   h2 { font-family: 'Lilita One', sans-serif; font-weight: 400; font-size: 2rem; letter-spacing: 0.5px; margin-bottom: 6px; }
   .sub { color: var(--muted); margin-bottom: 18px; }
+  .sub a { color: var(--yellow); text-decoration: underline; }
 
   /* roles */
   .roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 16px; }
@@ -81,6 +82,8 @@
     transition: transform 0.15s, border-color 0.15s;
   }
   .role:hover { transform: translateY(-4px); border-color: var(--yellow); }
+  .role.soon { opacity: 0.55; filter: grayscale(0.8); }
+  .role.soon:hover { transform: none; border-color: rgba(255, 255, 255, 0.08); }
   .role-top { display: flex; align-items: center; gap: 12px; }
   .role-icon {
     width: 48px; height: 48px; flex: none; border-radius: 14px;
@@ -88,16 +91,18 @@
   }
   .role h3 { font-family: 'Lilita One', sans-serif; font-weight: 400; font-size: 1.45rem; line-height: 1.1; }
   .status { font-size: 0.75rem; font-weight: 800; padding: 1px 8px; border-radius: 6px; background: #2fd88f; color: #04281a; }
-  .status.closed { background: rgba(255,255,255,0.15); color: var(--muted); }
+  .status.closed { background: rgba(255,255,255,0.18); color: var(--muted); }
   .role p { color: var(--muted); }
   .role ul { list-style: none; display: grid; gap: 4px; font-size: 0.95rem; }
   .role li::before { content: "⚡"; margin-right: 8px; }
-  .role .apply {
+  .apply {
     margin-top: auto; align-self: flex-start;
     font: inherit; font-weight: 800; cursor: pointer;
-    background: none; border: 0; color: var(--yellow); padding: 6px 0;
+    background: var(--yellow); color: var(--ink); border: 0; border-radius: 10px; padding: 8px 16px;
+    transition: transform 0.15s, box-shadow 0.15s;
   }
-  .role .apply:hover { text-decoration: underline; }
+  .apply:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 0 16px rgba(255, 230, 0, 0.6); }
+  .apply:disabled { background: rgba(255,255,255,0.15); color: var(--muted); cursor: not-allowed; }
 
   /* steps */
   .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: s; }
@@ -110,46 +115,26 @@
   .step b { display: block; }
   .step span { color: var(--muted); font-size: 0.95rem; }
 
-  /* form */
-  form { display: grid; gap: 14px; }
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  label { display: grid; gap: 6px; font-weight: 800; }
-  label small { color: var(--muted); font-weight: 600; }
-  input, textarea {
-    font: inherit; color: var(--text);
-    background: rgba(0, 0, 0, 0.35); border: 2px solid rgba(255,255,255,0.12);
-    border-radius: 12px; padding: 10px 14px; outline: none; width: 100%;
+  /* apply tabs + form */
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .tab {
+    font: inherit; font-weight: 800; color: var(--text); cursor: pointer;
+    background: rgba(255, 255, 255, 0.08); border: 2px solid transparent;
+    border-radius: 999px; padding: 6px 16px; transition: background 0.15s, border-color 0.15s;
   }
-  input:focus, textarea:focus { border-color: var(--yellow); }
-  textarea { min-height: 120px; resize: vertical; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip input { position: absolute; opacity: 0; pointer-events: none; }
-  .chip span {
-    display: inline-block; padding: 6px 14px; border-radius: 999px; cursor: pointer;
-    background: rgba(255,255,255,0.08); border: 2px solid transparent; font-weight: 800;
-    transition: background 0.15s, border-color 0.15s;
-  }
-  .chip span:hover { border-color: rgba(255,230,0,0.5); }
-  .chip input:checked + span { background: var(--yellow); color: var(--ink); }
-  .chip input:focus-visible + span { border-color: var(--yellow); }
-  .send {
-    justify-self: start; font: inherit; font-weight: 800; font-size: 1.05rem; cursor: pointer;
-    background: var(--yellow); color: var(--ink); border: 0; border-radius: 12px; padding: 12px 24px;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .send:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
-  .msg { padding: 10px 14px; border-radius: 12px; font-weight: 800; }
-  .msg.bad { background: rgba(255, 84, 104, 0.2); border: 2px solid #ff5468; }
-  .msg.good { background: rgba(47, 216, 143, 0.15); border: 2px solid #2fd88f; }
-  .msg a { color: var(--yellow); text-decoration: underline; }
-  .note { color: var(--muted); font-size: 0.92rem; }
+  .tab:hover:not(:disabled) { border-color: rgba(255, 230, 0, 0.5); }
+  .tab.active { background: var(--yellow); color: var(--ink); }
+  .tab:disabled { opacity: 0.45; cursor: not-allowed; }
+  .formbox iframe { display: block; width: 100%; border: 0; border-radius: 14px; background: #fff; }
+  .pick { color: var(--muted); text-align: center; padding: 40px 10px; border: 2px dashed rgba(255,255,255,0.18); border-radius: 14px; }
+  .note { color: var(--muted); font-size: 0.92rem; margin-top: 14px; }
   .note a { color: var(--yellow); }
 
   footer { text-align: center; margin-top: 32px; font-weight: 800; color: var(--ink); opacity: 0.75; }
 
   @media (max-width: 680px) {
     .panel { padding: 22px; }
-    .steps, .two { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -160,47 +145,30 @@
 
   <header>
     <h1>Wanna work<br><span>with me?</span></h1>
-    <div class="tagline">I'm looking for people to help make the videos even better.</div>
+    <div class="tagline">Paid spots. Help make the videos even better.</div>
   </header>
 
   <section class="panel">
     <h2>Open spots</h2>
-    <p class="sub">Pick what you're good at. You can apply for more than one.</p>
+    <p class="sub">All spots are paid (CashApp, PayPal or gift cards). Pick what you're good at — you can apply for more than one.</p>
     <div class="roles" id="roles"></div>
   </section>
 
   <section class="panel">
     <h2>How it works</h2>
     <div class="steps">
-      <div class="step"><b>Apply below</b><span>Tell me what you do and show me your work.</span></div>
-      <div class="step"><b>I check it out</b><span>I look through your portfolio or examples.</span></div>
-      <div class="step"><b>We talk on Discord</b><span>If it's a fit, I'll reach out to work out the details.</span></div>
+      <div class="step"><b>Apply below</b><span>Fill out the form for your role and answer HONEST.</span></div>
+      <div class="step"><b>I check it out</b><span>I look through your answers and your work.</span></div>
+      <div class="step"><b>We talk on Discord</b><span>If it's a fit, I'll DM you to work out the details.</span></div>
     </div>
   </section>
 
   <section class="panel" id="apply">
     <h2>Apply</h2>
-    <p class="sub">This opens an email to me with everything filled in. Just hit send.</p>
-    <form id="form" novalidate>
-      <div>
-        <div style="font-weight:800;margin-bottom:6px">I want to be a…</div>
-        <div class="chips" id="roleChips"></div>
-      </div>
-      <div class="two">
-        <label>Name or username <input name="name" maxlength="60" autocomplete="nickname"></label>
-        <label>Discord username <input name="discord" maxlength="40" autocomplete="off"></label>
-      </div>
-      <div class="two">
-        <label>Email <small>(optional)</small><input name="email" type="email" maxlength="80" autocomplete="email"></label>
-        <label>Portfolio / examples link <input name="portfolio" maxlength="300" placeholder="YouTube, Drive, GD level ID, etc." autocomplete="off"></label>
-      </div>
-      <label>About you <small>What you've worked on, what programs you use, how much time you have</small>
-        <textarea name="about" maxlength="1500"></textarea>
-      </label>
-      <div id="msg" hidden></div>
-      <button class="send" type="submit">Send application</button>
-      <p class="note">Email app not opening? Send the same info to <a href="mailto:bitesterxbeastbusiness@gmail.com">bitesterxbeastbusiness@gmail.com</a> or DM me in the <a href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">Discord</a>.</p>
-    </form>
+    <p class="sub" id="applySub">Pick a role to open its application.</p>
+    <div class="tabs" id="tabs"></div>
+    <div class="formbox" id="formbox"><div class="pick">👆 Pick a role above</div></div>
+    <p class="note">Form not loading? Use the "open it in a new tab" link, or DM me in the <a href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">Discord</a>.</p>
   </section>
 
   <footer>© 2026 BiteSterxBeast</footer>
@@ -209,100 +177,79 @@
 <script>
 /* ==========================================================
    ROLES — edit this list to change the page.
-   open: false shows the role as "Full" and hides it from the form.
+   form:   the Google Form link (leave "" to show it as "Coming soon")
+   height: how tall the embedded form is, in pixels (raise it if
+           the form gets a scrollbar inside it)
    ========================================================== */
 const ROLES = [
   {
-    id: "thumbnail", name: "Thumbnail Artist", icon: "🎨", open: true,
-    blurb: "Make the thumbnails that get people to click, for long-form videos and Shorts.",
-    wants: ["Big, readable text and bold colors", "Photoshop, Photopea or similar", "Can match the red & yellow style"],
+    id: "level", name: "Level Creator", icon: "🔺",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSez9bcxwgVxZBJqQTLy9dhnVJS3-JWFX5DYTEvAR6iGE4dQ7w/viewform",
+    height: 3100,
+    blurb: "Build Geometry Dash levels for my Shorts. Levels are short and simple, requested in bulk.",
+    wants: ["Comfortable in the GD editor", "Can deliver multiple levels on time", "Open to revisions"],
   },
   {
-    id: "script", name: "Script Writer", icon: "✍️", open: true,
-    blurb: "Write hooks, video ideas and scripts that keep people watching to the end.",
-    wants: ["Strong first-5-second hooks", "Knows Geometry Dash / Minecraft content", "Lots of video ideas"],
+    id: "thumbnail", name: "Thumbnail Artist", icon: "🎨",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLScdlJ5QN6DmftjMhzX94YHk2iflyPlZNwST1c-i91jOLSVYjA/viewform",
+    height: 3100,
+    blurb: "Make bold, eye-catching thumbnails that are readable on a phone screen.",
+    wants: ["Can cut out characters & add outlines", "Can match the red & yellow style", "Open to revisions"],
   },
   {
-    id: "level", name: "Level Creator", icon: "🔺", open: true,
-    blurb: "Build Geometry Dash levels and challenges made for videos, like the Gamemodes vs challenges.",
-    wants: ["Good with the GD editor", "Can build fast to a deadline", "Creative challenge ideas"],
+    id: "script", name: "Script Writer", icon: "✍️",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdaMT119PEl14HpDET5VlMthUk6OcG_bUHoeIlmv3SoPF0UKQ/viewform",
+    height: 2800,
+    blurb: "Write video ideas, hooks and scripts for my Shorts and videos.",
+    wants: ["Strong first-5-second hooks", "Knows Geometry Dash / Minecraft content", "Can write in bulk"],
   },
   {
-    id: "editor", name: "Video Editor", icon: "🎬", open: true,
-    blurb: "Edit Shorts and long-form videos with good pacing, effects and sound.",
+    id: "editor", name: "Video Editor", icon: "🎬",
+    form: "",
+    height: 3100,
+    blurb: "Edit Shorts and videos with fast pacing, sound effects and captions.",
     wants: ["Premiere Pro, CapCut or similar", "Fast pacing and clean cuts", "Good with sound effects and music"],
   },
 ];
-const EMAIL = "bitesterxbeastbusiness@gmail.com";
-
-/* Paste your Google Form's PUBLIC link between the quotes (the one ending in /viewform).
-   Leave it empty ("") to use the email form instead. */
-const FORM_URL = "";
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isOpen = r => !!r.form;
 
 document.getElementById("roles").innerHTML = ROLES.map(r => `
-  <div class="role">
+  <div class="role ${isOpen(r) ? "" : "soon"}">
     <div class="role-top">
       <div class="role-icon">${r.icon}</div>
-      <div><h3>${esc(r.name)}</h3><span class="status ${r.open ? "" : "closed"}">${r.open ? "Open" : "Full"}</span></div>
+      <div><h3>${esc(r.name)}</h3><span class="status ${isOpen(r) ? "" : "closed"}">${isOpen(r) ? "Open" : "Coming soon"}</span></div>
     </div>
     <p>${esc(r.blurb)}</p>
     <ul>${r.wants.map(w => `<li>${esc(w)}</li>`).join("")}</ul>
-    ${r.open ? `<button class="apply" type="button" data-role="${r.id}">Apply for this →</button>` : ""}
+    <button class="apply" type="button" data-role="${r.id}" ${isOpen(r) ? "" : "disabled"}>${isOpen(r) ? "Apply for this →" : "Coming soon"}</button>
   </div>`).join("");
 
-document.getElementById("roleChips").innerHTML = ROLES.filter(r => r.open).map(r => `
-  <label class="chip"><input type="checkbox" name="role" value="${r.id}"><span>${r.icon} ${esc(r.name)}</span></label>`).join("");
+document.getElementById("tabs").innerHTML = ROLES.map(r =>
+  `<button class="tab" type="button" data-role="${r.id}" ${isOpen(r) ? "" : "disabled title=\"Coming soon\""}>${r.icon} ${esc(r.name)}</button>`).join("");
 
-// "Apply for this" ticks that role and scrolls to the form
-document.querySelectorAll(".apply").forEach(b => b.addEventListener("click", () => {
-  const box = document.querySelector(`#roleChips input[value="${b.dataset.role}"]`);
-  if (box) box.checked = true;
-  document.getElementById("apply").scrollIntoView({behavior: "smooth"});
-  const nameBox = document.querySelector('#form [name="name"]');
-  if (nameBox) setTimeout(() => nameBox.focus({preventScroll: true}), 500);
-}));
-
-// Google Form mode: swap the email form for the embedded Google Form
-if (FORM_URL) {
-  const url = FORM_URL.split("?")[0];
-  document.getElementById("apply").innerHTML = `
-    <h2>Apply</h2>
-    <p class="sub">Fill this out right here, or <a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--yellow);text-decoration:underline">open it in a new tab</a>.</p>
-    <iframe src="${esc(url)}?embedded=true" title="Application form" loading="lazy"
-      style="width:100%;height:1700px;border:0;border-radius:14px;background:#fff">Loading…</iframe>`;
+function showForm(id, scroll) {
+  const r = ROLES.find(x => x.id === id && isOpen(x));
+  if (!r) return;
+  const url = r.form.split("?")[0];
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.role === id));
+  document.getElementById("applySub").innerHTML =
+    `${r.icon} <b style="color:var(--text)">${esc(r.name)}</b> application · <a href="${esc(url)}" target="_blank" rel="noopener">open it in a new tab</a>`;
+  document.getElementById("formbox").innerHTML =
+    `<iframe src="${esc(url)}?embedded=true" title="${esc(r.name)} application" style="height:${r.height}px">Loading…</iframe>`;
+  history.replaceState(null, "", "#" + id);
+  if (scroll) document.getElementById("apply").scrollIntoView({behavior: "smooth"});
 }
 
-const form = document.getElementById("form"), msg = document.getElementById("msg");
-if (form) {
-function show(text, kind) { msg.className = "msg " + kind; msg.innerHTML = text; msg.hidden = false; }
-
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  const f = form.elements;
-  const roles = [...form.querySelectorAll('input[name="role"]:checked')].map(i => ROLES.find(r => r.id === i.value).name);
-  const name = f.name.value.trim(), discord = f.discord.value.trim();
-  if (!roles.length) return show("Pick at least one role.", "bad");
-  if (!name) return show("Add your name or username.", "bad");
-  if (!discord && !f.email.value.trim()) return show("Add your Discord or email so I can reach you.", "bad");
-  if (!f.portfolio.value.trim()) return show("Add a link to some of your work.", "bad");
-
-  const body = [
-    `Role(s): ${roles.join(", ")}`,
-    `Name: ${name}`,
-    `Discord: ${discord || "-"}`,
-    `Email: ${f.email.value.trim() || "-"}`,
-    `Portfolio: ${f.portfolio.value.trim()}`,
-    ``,
-    `About me:`,
-    f.about.value.trim() || "-",
-  ].join("\n");
-  const subject = `Application: ${roles.join(" / ")} - ${name}`;
-  location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  show(`Your email app should be open with the application ready. Just hit send! If nothing opened, email <a href="mailto:${EMAIL}">${EMAIL}</a>.`, "good");
+document.addEventListener("click", e => {
+  const b = e.target.closest(".apply, .tab");
+  if (b && !b.disabled) showForm(b.dataset.role, b.classList.contains("apply"));
 });
-}
+
+// bitesterxbeast.com/editor#level (or #thumbnail, #script) opens that form directly
+const start = location.hash.slice(1);
+if (ROLES.some(r => r.id === start && isOpen(r))) showForm(start, true);
 </script>
 </body>
 </html>
