@@ -235,6 +235,10 @@ const ROLES = [
 ];
 const EMAIL = "bitesterxbeastbusiness@gmail.com";
 
+/* Paste your Google Form's PUBLIC link between the quotes (the one ending in /viewform).
+   Leave it empty ("") to use the email form instead. */
+const FORM_URL = "";
+
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 document.getElementById("roles").innerHTML = ROLES.map(r => `
@@ -256,10 +260,22 @@ document.querySelectorAll(".apply").forEach(b => b.addEventListener("click", () 
   const box = document.querySelector(`#roleChips input[value="${b.dataset.role}"]`);
   if (box) box.checked = true;
   document.getElementById("apply").scrollIntoView({behavior: "smooth"});
-  setTimeout(() => document.querySelector('#form [name="name"]').focus({preventScroll: true}), 500);
+  const nameBox = document.querySelector('#form [name="name"]');
+  if (nameBox) setTimeout(() => nameBox.focus({preventScroll: true}), 500);
 }));
 
+// Google Form mode: swap the email form for the embedded Google Form
+if (FORM_URL) {
+  const url = FORM_URL.split("?")[0];
+  document.getElementById("apply").innerHTML = `
+    <h2>Apply</h2>
+    <p class="sub">Fill this out right here, or <a href="${esc(url)}" target="_blank" rel="noopener" style="color:var(--yellow);text-decoration:underline">open it in a new tab</a>.</p>
+    <iframe src="${esc(url)}?embedded=true" title="Application form" loading="lazy"
+      style="width:100%;height:1700px;border:0;border-radius:14px;background:#fff">Loading…</iframe>`;
+}
+
 const form = document.getElementById("form"), msg = document.getElementById("msg");
+if (form) {
 function show(text, kind) { msg.className = "msg " + kind; msg.innerHTML = text; msg.hidden = false; }
 
 form.addEventListener("submit", e => {
@@ -286,6 +302,7 @@ form.addEventListener("submit", e => {
   location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   show(`Your email app should be open with the application ready. Just hit send! If nothing opened, email <a href="mailto:${EMAIL}">${EMAIL}</a>.`, "good");
 });
+}
 </script>
 </body>
 </html>
