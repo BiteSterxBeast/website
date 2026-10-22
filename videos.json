@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T07:00:52+00:00",
+  "updated": "2026-10-22T19:21:12+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "aY4ErP3bORs",
+      "title": "Easy vs IMPOSSIBLE Verity Path! 🤯😂",
+      "channel": "Main",
+      "published": "2026-10-22T19:02:18Z",
+      "type": "short"
+    },
     {
       "id": "P3Yhdg6eGi0",
       "title": "Verity vs $10k Wave Gap! 🤑🔥",
@@ -152,13 +159,6 @@
       "type": "short"
     },
     {
-      "id": "GdNpF6CkmNI",
-      "title": "Geometrical Dominator: Normal vs Full Version",
-      "channel": "Main",
-      "published": "2026-09-30T14:00:23Z",
-      "type": "long"
-    },
-    {
       "id": "_-8_vYrnS9o",
       "title": "Easiest Plane Build 😱",
       "channel": "Minecraft",
@@ -250,7 +250,6 @@
       "baxXT2v8DII": "short",
       "XUEEjGQRA6o": "long",
       "wuqaiKWvUNs": "short",
-      "GdNpF6CkmNI": "long",
       "_-8_vYrnS9o": "short",
       "WgK5l6PoYf0": "short",
       "skaRND3HMWM": "short",
@@ -266,7 +265,8 @@
       "OsuRObFnMJ8": "short",
       "me6ymDwBmU8": "short",
       "kEWqYfO4chk": "short",
-      "P3Yhdg6eGi0": "short"
+      "P3Yhdg6eGi0": "short",
+      "aY4ErP3bORs": "short"
     }
   }
 }
