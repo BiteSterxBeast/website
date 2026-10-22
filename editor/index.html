@@ -21,6 +21,7 @@
     --yellow: #ffe600;
     --red: #ff2a00;
     --ink: #1a0d05;
+    --char-w: 260px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { background: #ff4a00; }
@@ -48,6 +49,25 @@
     border: 2px solid transparent; transition: border-color 0.15s;
   }
   .back:hover { border-color: var(--yellow); }
+
+  .hero { padding-right: calc(var(--char-w) + 24px); }
+
+  /* character leans over the top edge of the first panel (same as the home page) */
+  .intro { margin-top: 28px; z-index: 2; }
+  .character {
+    position: absolute;
+    right: 24px;
+    bottom: 100%;
+    width: var(--char-w);
+    aspect-ratio: 1 / 0.93;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .character img {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(0 0 2px #1a0d05);
+  }
 
   h1 {
     font-family: 'Lilita One', sans-serif; font-weight: 400;
@@ -133,6 +153,10 @@
   footer { text-align: center; margin-top: 32px; font-weight: 800; color: var(--ink); opacity: 0.75; }
 
   @media (max-width: 680px) {
+    :root { --char-w: 140px; }
+    .hero { padding-right: 0; text-align: center; }
+    .intro { margin-top: calc(var(--char-w) * 0.93 + 12px); }
+    .character { right: 16px; }
     .panel { padding: 22px; }
     .steps { grid-template-columns: 1fr; }
   }
@@ -143,12 +167,15 @@
 
   <a class="back" href="/">← Back to main site</a>
 
-  <header>
+  <header class="hero">
     <h1>Wanna work<br><span>with me?</span></h1>
     <div class="tagline">Paid spots. Help make the videos even better.</div>
   </header>
 
-  <section class="panel">
+  <section class="panel intro">
+    <div class="character" aria-hidden="true">
+      <img src="character.png" alt="">
+    </div>
     <h2>Open spots</h2>
     <p class="sub">All spots are paid (CashApp, PayPal or gift cards). Pick what you're good at — you can apply for more than one.</p>
     <div class="roles" id="roles"></div>
