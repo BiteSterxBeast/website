@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work With Me | BiteSterxBeast</title>
+<meta name="description" content="Join the team: thumbnail artists, script writers, level creators and editors.">
+<meta name="theme-color" content="#ff8000">
+<meta property="og:title" content="Work With BiteSterxBeast">
+<meta property="og:description" content="Join the team: thumbnail artists, script writers, level creators and editors.">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --panel: rgba(18, 10, 8, 0.74);
+    --panel-border: rgba(255, 255, 255, 0.10);
+    --text: #ffffff;
+    --muted: #e8d9cf;
+    --yellow: #ffe600;
+    --red: #ff2a00;
+    --ink: #1a0d05;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #ff4a00; }
+  body {
+    min-height: 100vh;
+    color: var(--text);
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    background-image: url("/bolts.png"), linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+    background-size: 64px 62px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    animation: drift 20s linear infinite;
+  }
+  @keyframes drift { to { background-position: 64px -62px, 0 0; } }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 920px; margin: 0 auto; padding: 32px 16px 40px; }
+
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 14px; border-radius: 999px;
+    background: rgba(18, 10, 8, 0.8); font-weight: 800;
+    border: 2px solid transparent; transition: border-color 0.15s;
+  }
+  .back:hover { border-color: var(--yellow); }
+
+  h1 {
+    font-family: 'Lilita One', sans-serif; font-weight: 400;
+    font-size: clamp(2.6rem, 8vw, 4.6rem); line-height: 1; letter-spacing: 1px;
+    margin-top: 22px;
+    -webkit-text-stroke: 6px var(--ink); paint-order: stroke fill;
+    text-shadow: 0 6px 0 rgba(26, 13, 5, 0.35);
+  }
+  h1 span { color: var(--yellow); }
+  .tagline {
+    display: inline-block; margin-top: 14px; padding: 4px 14px;
+    background: rgba(18, 10, 8, 0.8); border-radius: 999px; font-weight: 800;
+  }
+
+  .panel {
+    position: relative; background: var(--panel);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 2px solid var(--panel-border); border-radius: 20px;
+    padding: 28px; margin-top: 24px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .panel:hover { border-color: rgba(255, 230, 0, 0.55); box-shadow: 0 0 24px rgba(255, 230, 0, 0.18); }
+  h2 { font-family: 'Lilita One', sans-serif; font-weight: 400; font-size: 2rem; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 18px; }
+
+  /* roles */
+  .roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 16px; }
+  .role {
+    background: rgba(255, 255, 255, 0.06); border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .role:hover { transform: translateY(-4px); border-color: var(--yellow); }
+  .role-top { display: flex; align-items: center; gap: 12px; }
+  .role-icon {
+    width: 48px; height: 48px; flex: none; border-radius: 14px;
+    display: grid; place-items: center; font-size: 26px; background: var(--yellow);
+  }
+  .role h3 { font-family: 'Lilita One', sans-serif; font-weight: 400; font-size: 1.45rem; line-height: 1.1; }
+  .status { font-size: 0.75rem; font-weight: 800; padding: 1px 8px; border-radius: 6px; background: #2fd88f; color: #04281a; }
+  .status.closed { background: rgba(255,255,255,0.15); color: var(--muted); }
+  .role p { color: var(--muted); }
+  .role ul { list-style: none; display: grid; gap: 4px; font-size: 0.95rem; }
+  .role li::before { content: "⚡"; margin-right: 8px; }
+  .role .apply {
+    margin-top: auto; align-self: flex-start;
+    font: inherit; font-weight: 800; cursor: pointer;
+    background: none; border: 0; color: var(--yellow); padding: 6px 0;
+  }
+  .role .apply:hover { text-decoration: underline; }
+
+  /* steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: s; }
+  .step { background: rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; counter-increment: s; }
+  .step::before {
+    content: counter(s); display: grid; place-items: center;
+    width: 34px; height: 34px; border-radius: 10px; margin-bottom: 8px;
+    background: var(--red); font-family: 'Lilita One', sans-serif; font-size: 1.2rem;
+  }
+  .step b { display: block; }
+  .step span { color: var(--muted); font-size: 0.95rem; }
+
+  /* form */
+  form { display: grid; gap: 14px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  label { display: grid; gap: 6px; font-weight: 800; }
+  label small { color: var(--muted); font-weight: 600; }
+  input, textarea {
+    font: inherit; color: var(--text);
+    background: rgba(0, 0, 0, 0.35); border: 2px solid rgba(255,255,255,0.12);
+    border-radius: 12px; padding: 10px 14px; outline: none; width: 100%;
+  }
+  input:focus, textarea:focus { border-color: var(--yellow); }
+  textarea { min-height: 120px; resize: vertical; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip input { position: absolute; opacity: 0; pointer-events: none; }
+  .chip span {
+    display: inline-block; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+    background: rgba(255,255,255,0.08); border: 2px solid transparent; font-weight: 800;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .chip span:hover { border-color: rgba(255,230,0,0.5); }
+  .chip input:checked + span { background: var(--yellow); color: var(--ink); }
+  .chip input:focus-visible + span { border-color: var(--yellow); }
+  .send {
+    justify-self: start; font: inherit; font-weight: 800; font-size: 1.05rem; cursor: pointer;
+    background: var(--yellow); color: var(--ink); border: 0; border-radius: 12px; padding: 12px 24px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .send:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
+  .msg { padding: 10px 14px; border-radius: 12px; font-weight: 800; }
+  .msg.bad { background: rgba(255, 84, 104, 0.2); border: 2px solid #ff5468; }
+  .msg.good { background: rgba(47, 216, 143, 0.15); border: 2px solid #2fd88f; }
+  .msg a { color: var(--yellow); text-decoration: underline; }
+  .note { color: var(--muted); font-size: 0.92rem; }
+  .note a { color: var(--yellow); }
+
+  footer { text-align: center; margin-top: 32px; font-weight: 800; color: var(--ink); opacity: 0.75; }
+
+  @media (max-width: 680px) {
+    .panel { padding: 22px; }
+    .steps, .two { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="/">← Back to main site</a>
+
+  <header>
+    <h1>Wanna work<br><span>with me?</span></h1>
+    <div class="tagline">I'm looking for people to help make the videos even better.</div>
+  </header>
+
+  <section class="panel">
+    <h2>Open spots</h2>
+    <p class="sub">Pick what you're good at. You can apply for more than one.</p>
+    <div class="roles" id="roles"></div>
+  </section>
+
+  <section class="panel">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>Apply below</b><span>Tell me what you do and show me your work.</span></div>
+      <div class="step"><b>I check it out</b><span>I look through your portfolio or examples.</span></div>
+      <div class="step"><b>We talk on Discord</b><span>If it's a fit, I'll reach out to work out the details.</span></div>
+    </div>
+  </section>
+
+  <section class="panel" id="apply">
+    <h2>Apply</h2>
+    <p class="sub">This opens an email to me with everything filled in. Just hit send.</p>
+    <form id="form" novalidate>
+      <div>
+        <div style="font-weight:800;margin-bottom:6px">I want to be a…</div>
+        <div class="chips" id="roleChips"></div>
+      </div>
+      <div class="two">
+        <label>Name or username <input name="name" maxlength="60" autocomplete="nickname"></label>
+        <label>Discord username <input name="discord" maxlength="40" autocomplete="off"></label>
+      </div>
+      <div class="two">
+        <label>Email <small>(optional)</small><input name="email" type="email" maxlength="80" autocomplete="email"></label>
+        <label>Portfolio / examples link <input name="portfolio" maxlength="300" placeholder="YouTube, Drive, GD level ID, etc." autocomplete="off"></label>
+      </div>
+      <label>About you <small>What you've worked on, what programs you use, how much time you have</small>
+        <textarea name="about" maxlength="1500"></textarea>
+      </label>
+      <div id="msg" hidden></div>
+      <button class="send" type="submit">Send application</button>
+      <p class="note">Email app not opening? Send the same info to <a href="mailto:bitesterxbeastbusiness@gmail.com">bitesterxbeastbusiness@gmail.com</a> or DM me in the <a href="https://discord.gg/2dfN5brP34" target="_blank" rel="noopener">Discord</a>.</p>
+    </form>
+  </section>
+
+  <footer>© 2026 BiteSterxBeast</footer>
+</div>
+
+<script>
+/* ==========================================================
+   ROLES — edit this list to change the page.
+   open: false shows the role as "Full" and hides it from the form.
+   ========================================================== */
+const ROLES = [
+  {
+    id: "thumbnail", name: "Thumbnail Artist", icon: "🎨", open: true,
+    blurb: "Make the thumbnails that get people to click, for long-form videos and Shorts.",
+    wants: ["Big, readable text and bold colors", "Photoshop, Photopea or similar", "Can match the red & yellow style"],
+  },
+  {
+    id: "script", name: "Script Writer", icon: "✍️", open: true,
+    blurb: "Write hooks, video ideas and scripts that keep people watching to the end.",
+    wants: ["Strong first-5-second hooks", "Knows Geometry Dash / Minecraft content", "Lots of video ideas"],
+  },
+  {
+    id: "level", name: "Level Creator", icon: "🔺", open: true,
+    blurb: "Build Geometry Dash levels and challenges made for videos, like the Gamemodes vs challenges.",
+    wants: ["Good with the GD editor", "Can build fast to a deadline", "Creative challenge ideas"],
+  },
+  {
+    id: "editor", name: "Video Editor", icon: "🎬", open: true,
+    blurb: "Edit Shorts and long-form videos with good pacing, effects and sound.",
+    wants: ["Premiere Pro, CapCut or similar", "Fast pacing and clean cuts", "Good with sound effects and music"],
+  },
+];
+const EMAIL = "bitesterxbeastbusiness@gmail.com";
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+document.getElementById("roles").innerHTML = ROLES.map(r => `
+  <div class="role">
+    <div class="role-top">
+      <div class="role-icon">${r.icon}</div>
+      <div><h3>${esc(r.name)}</h3><span class="status ${r.open ? "" : "closed"}">${r.open ? "Open" : "Full"}</span></div>
+    </div>
+    <p>${esc(r.blurb)}</p>
+    <ul>${r.wants.map(w => `<li>${esc(w)}</li>`).join("")}</ul>
+    ${r.open ? `<button class="apply" type="button" data-role="${r.id}">Apply for this →</button>` : ""}
+  </div>`).join("");
+
+document.getElementById("roleChips").innerHTML = ROLES.filter(r => r.open).map(r => `
+  <label class="chip"><input type="checkbox" name="role" value="${r.id}"><span>${r.icon} ${esc(r.name)}</span></label>`).join("");
+
+// "Apply for this" ticks that role and scrolls to the form
+document.querySelectorAll(".apply").forEach(b => b.addEventListener("click", () => {
+  const box = document.querySelector(`#roleChips input[value="${b.dataset.role}"]`);
+  if (box) box.checked = true;
+  document.getElementById("apply").scrollIntoView({behavior: "smooth"});
+  setTimeout(() => document.querySelector('#form [name="name"]').focus({preventScroll: true}), 500);
+}));
+
+const form = document.getElementById("form"), msg = document.getElementById("msg");
+function show(text, kind) { msg.className = "msg " + kind; msg.innerHTML = text; msg.hidden = false; }
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const f = form.elements;
+  const roles = [...form.querySelectorAll('input[name="role"]:checked')].map(i => ROLES.find(r => r.id === i.value).name);
+  const name = f.name.value.trim(), discord = f.discord.value.trim();
+  if (!roles.length) return show("Pick at least one role.", "bad");
+  if (!name) return show("Add your name or username.", "bad");
+  if (!discord && !f.email.value.trim()) return show("Add your Discord or email so I can reach you.", "bad");
+  if (!f.portfolio.value.trim()) return show("Add a link to some of your work.", "bad");
+
+  const body = [
+    `Role(s): ${roles.join(", ")}`,
+    `Name: ${name}`,
+    `Discord: ${discord || "-"}`,
+    `Email: ${f.email.value.trim() || "-"}`,
+    `Portfolio: ${f.portfolio.value.trim()}`,
+    ``,
+    `About me:`,
+    f.about.value.trim() || "-",
+  ].join("\n");
+  const subject = `Application: ${roles.join(" / ")} - ${name}`;
+  location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  show(`Your email app should be open with the application ready. Just hit send! If nothing opened, email <a href="mailto:${EMAIL}">${EMAIL}</a>.`, "good");
+});
+</script>
+</body>
+</html>
