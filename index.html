@@ -420,6 +420,9 @@
   .card p { color: var(--muted); margin-top: 6px; }
   .card .go { display: inline-block; margin-top: 12px; color: var(--yellow); font-weight: 800; }
   .card[hidden] { display: none; }
+  .secret-card { background: rgba(0, 0, 0, 0.55); border-color: rgba(255, 31, 31, 0.25); }
+  .secret-card:hover { border-color: #ff1f1f; box-shadow: 0 0 18px rgba(255, 31, 31, 0.35); }
+  .secret-card .go { color: #ff4d4d; }
 
   /* ---------- CONTACT ---------- */
   .btn {
@@ -622,6 +625,11 @@
         <h3>Pixel Royale 3D Spinner</h3>
         <p>A case-opening style spinner that picks a random Pixel Royale 3D weapon and map for challenges.</p>
         <span class="go">Open</span>
+      </a>
+      <a class="card secret-card" data-cats="featured websites" href="/secret/">
+        <h3>Secret Box</h3>
+        <p>Some things are locked. If you know the code, you know.</p>
+        <span class="go">Open?</span>
       </a>
     </div>
   </section>
