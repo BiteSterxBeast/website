@@ -210,7 +210,7 @@
 const DISCORD = "https://discord.gg/2dfN5brP34";
 const app = document.getElementById("app");
 const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const money = n => n == null || n === "" ? "Price TBA" : "$" + Number(n).toFixed(2);
+const money = n => n == null || n === "" ? "Price TBA" : typeof n === "string" ? n : "$" + Number(n).toFixed(2);
 // an option with its own "images" (like sticker sizes) decides which photos show
 const photoOption = p => (p.options || []).findIndex(o => o.images);
 function photosFor(p, val) {
