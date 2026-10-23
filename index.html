@@ -270,6 +270,41 @@
   .recent-row .vtitle { margin-top: 0; font-size: 0.95rem; }
   .empty { color: var(--muted); padding: 20px 0; text-align: center; }
 
+  /* ---------- MERCH ---------- */
+  .merch-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .merch-head h2 { margin-bottom: 0; }
+  .merch-head a { margin-left: auto; color: var(--yellow); font-weight: 800; }
+  .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+  .mcard { display: block; transition: transform 0.15s; }
+  .mcard:hover { transform: translateY(-4px); }
+  .mimg {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    background: #2a1c14;
+    transition: border-color 0.15s;
+  }
+  .mcard:hover .mimg { border-color: var(--yellow); }
+  .mimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .mimg .ph {
+    width: 100%; height: 100%; display: grid; place-items: center; text-align: center; padding: 12px;
+    background: linear-gradient(135deg, #ffcf00, #ff7a00 50%, #ff2a00); color: #1a0d05;
+    font-family: 'Lilita One', sans-serif; font-size: 1.15rem; line-height: 1.15;
+  }
+  .soon {
+    position: absolute; top: 8px; left: 8px;
+    padding: 1px 8px; border-radius: 6px;
+    font-size: 0.72rem; font-weight: 800;
+    background: var(--yellow); color: #1a0d05;
+  }
+  .mname { font-weight: 800; margin-top: 8px; line-height: 1.3; }
+  .mrow { display: flex; align-items: center; gap: 10px; }
+  .mprice { font-weight: 800; color: var(--yellow); }
+  .dots { display: flex; gap: 5px; }
+  .dot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.6); }
+
   /* ---------- PROJECTS ---------- */
   .tabs {
     display: flex;
@@ -335,10 +370,6 @@
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
   .btn .ico { background: #1a0d05; width: 20px; height: 20px; }
-  .btn.work { background: var(--red); color: #fff; }
-  .btn.work:hover { box-shadow: 0 0 18px rgba(255, 42, 0, 0.7); }
-  .btn.work .arrow { transition: transform 0.15s; }
-  .btn.work:hover .arrow { transform: translateX(4px); }
   .contact { display: flex; flex-wrap: wrap; gap: 12px; }
   .contact .btn { overflow-wrap: anywhere; }
   .note { margin-top: 12px; color: var(--muted); }
@@ -362,6 +393,7 @@
     .intro { margin-top: calc(var(--char-w) * 0.93 + 12px); }
     .character { right: 16px; }
     .panel { padding: 22px; }
+    .mgrid { grid-template-columns: 1fr 1fr; gap: 12px; }
   }
   @media (max-width: 820px) {
     .videos { grid-template-columns: 1fr; }
@@ -430,20 +462,29 @@
     </section>
   </div>
 
-  <!-- PROJECTS (every card here opens in a new tab automatically) -->
+  <!-- MERCH -->
+  <section class="panel" id="merch">
+    <div class="merch-head">
+      <h2>Merch</h2>
+      <a href="/merch/">See all</a>
+    </div>
+    <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
+  </section>
+
+  <!-- PROJECTS -->
   <section class="panel">
     <h2>Cool things I've made!</h2>
     <div class="tabs" role="tablist">
       <button class="tab active" data-tab="featured" role="tab">Featured</button>
       <button class="tab" data-tab="websites" role="tab">Websites</button>
     </div>
-    <div class="grid" id="projects">
+    <div class="grid">
       <a class="card" data-cats="featured websites" href="https://bitesterxbeast.github.io" target="_blank" rel="noopener">
         <h3>Creator Tools</h3>
         <p>Free tools built by a creator, for creators. No sign-up, no paywall, just open it and use it.</p>
         <span class="go">Open</span>
       </a>
-      <a class="card" data-cats="featured websites" href="/pixel-royale-spinner/" target="_blank" rel="noopener">
+      <a class="card" data-cats="featured websites" href="/pixel-royale-spinner/">
         <h3>Pixel Royale 3D Spinner</h3>
         <p>A case-opening style spinner that picks a random Pixel Royale 3D weapon and map for challenges.</p>
         <span class="go">Open</span>
@@ -463,11 +504,8 @@
         <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/gmail.svg)"></span>
         bitesterxbeastbusiness@gmail.com
       </a>
-      <a class="btn work" href="/editor/">
-        Wanna work with me? <span class="arrow">→</span>
-      </a>
     </div>
-    <p class="note">Business inquiries go to the email. Thumbnail artists, script writers, level creators and editors: hit "Wanna work with me?"</p>
+    <p class="note">Business inquiries go to the email.</p>
   </section>
 
   <footer>© 2026 BiteSterxBeast</footer>
@@ -493,12 +531,6 @@
       yt.classList.remove('open');
       ytBtn.setAttribute('aria-expanded', 'false');
     }
-  });
-
-  // Every project card opens in a new tab (so new cards you add do too)
-  document.querySelectorAll('#projects .card').forEach(card => {
-    card.target = '_blank';
-    card.rel = 'noopener';
   });
 
   // Project tabs
@@ -592,6 +624,41 @@
     .catch(() => {
       document.getElementById('best').innerHTML = '<div class="empty">Videos coming soon.</div>';
       document.getElementById('recent').innerHTML = '<div class="empty">Videos coming soon.</div>';
+    });
+
+  // ---------- Merch (filled from merch.json) ----------
+  function merchPh(el) {
+    const d = document.createElement('div');
+    d.className = 'ph'; d.textContent = el.alt;
+    el.replaceWith(d);
+  }
+
+  fetch('merch.json?t=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const el = document.getElementById('merchGrid');
+      const products = data.products || [];
+      if (!products.length) { el.innerHTML = '<div class="empty">Merch coming soon.</div>'; return; }
+      el.innerHTML = products.map(p => {
+        const colors = (p.options || []).find(o => o.type === 'color');
+        const name = p.shortName || p.name;
+        return `
+          <a class="mcard" href="/merch/?item=${encodeURIComponent(p.id)}">
+            <div class="mimg">
+              <img src="${esc((p.images || [])[0])}" alt="${esc(name)}" loading="lazy" onerror="merchPh(this)">
+              ${p.comingSoon ? '<span class="soon">Coming soon</span>' : ''}
+            </div>
+            <div class="mname">${esc(name)}</div>
+            <div class="mrow">
+              <span class="mprice">$${Number(p.price).toFixed(2)}</span>
+              ${colors ? `<span class="dots">${colors.values.map(c =>
+                `<span class="dot" title="${esc(c.name)}" style="background:${esc(c.hex)}"></span>`).join('')}</span>` : ''}
+            </div>
+          </a>`;
+      }).join('');
+    })
+    .catch(() => {
+      document.getElementById('merchGrid').innerHTML = '<div class="empty">Merch coming soon.</div>';
     });
 </script>
 </body>
