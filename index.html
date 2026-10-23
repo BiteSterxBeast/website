@@ -271,6 +271,33 @@
   .empty { color: var(--muted); padding: 20px 0; text-align: center; }
 
   /* ---------- MERCH ---------- */
+  .countdown { position: relative; text-align: center; margin-bottom: 22px; }
+  .countdown[hidden] { display: none; }
+  .cd-title { font-weight: 800; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 8px; }
+  .cd-boxes {
+    display: inline-flex; gap: 10px; padding: 6px; border-radius: 18px; cursor: help; outline: none;
+  }
+  .cd-box {
+    min-width: 84px; padding: 10px 8px 8px;
+    background: rgba(255, 255, 255, 0.07); border: 2px solid rgba(255, 230, 0, 0.35); border-radius: 14px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .cd-boxes:hover .cd-box, .cd-boxes:focus-visible .cd-box { border-color: var(--yellow); }
+  .cd-num {
+    display: block; font-family: 'Lilita One', sans-serif; font-size: 2.6rem; line-height: 1;
+    color: var(--yellow); font-variant-numeric: tabular-nums; text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
+  }
+  .cd-lbl { display: block; margin-top: 4px; font-size: 0.72rem; font-weight: 800; letter-spacing: 1.2px; color: var(--muted); text-transform: uppercase; }
+  .cd-tip {
+    position: absolute; left: 50%; top: calc(100% + 6px); z-index: 15; width: max-content; max-width: min(92vw, 360px);
+    padding: 10px 14px; border-radius: 12px; background: rgba(18, 10, 8, 0.96); border: 2px solid var(--yellow);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); line-height: 1.35;
+    opacity: 0; transform: translate(-50%, -6px); pointer-events: none; transition: opacity 0.15s, transform 0.15s;
+  }
+  .cd-tip b { display: block; color: var(--yellow); font-weight: 800; }
+  .cd-tip small { color: var(--muted); }
+  .cd-boxes:hover + .cd-tip, .cd-boxes:focus + .cd-tip { opacity: 1; transform: translate(-50%, 0); }
+  .cd-open { font-family: 'Lilita One', sans-serif; font-size: 2rem; color: var(--yellow); }
   .merch-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
   .merch-head h2 { margin-bottom: 0; }
   .more-merch {
@@ -428,6 +455,10 @@
     .panel { padding: 22px; }
     .mgrid { grid-template-columns: 1fr 1fr; gap: 12px; }
     .more-merch { font-size: 1.2rem; }
+    .cd-boxes { gap: 6px; }
+    .cd-box { min-width: 0; width: 68px; }
+    .cd-num { font-size: 1.9rem; }
+    .cd-lbl { font-size: 0.62rem; letter-spacing: 0.6px; }
   }
   @media (max-width: 820px) {
     .videos { grid-template-columns: 1fr; }
@@ -502,6 +533,16 @@
       <h2>Merch</h2>
       <span class="more-merch" aria-hidden="true">More merch <span>→</span></span>
       <a class="see-all" href="/merch/">See all</a>
+    </div>
+    <div class="countdown" id="countdown" hidden>
+      <div class="cd-title" id="cdTitle">Shop opens in</div>
+      <div class="cd-boxes" id="cdBoxes" tabindex="0" aria-describedby="cdTip">
+        <div class="cd-box"><span class="cd-num" id="cdD">00</span><span class="cd-lbl">Days</span></div>
+        <div class="cd-box"><span class="cd-num" id="cdH">00</span><span class="cd-lbl">Hours</span></div>
+        <div class="cd-box"><span class="cd-num" id="cdM">00</span><span class="cd-lbl">Minutes</span></div>
+        <div class="cd-box"><span class="cd-num" id="cdS">00</span><span class="cd-lbl">Seconds</span></div>
+      </div>
+      <div class="cd-tip" id="cdTip" role="tooltip"></div>
     </div>
     <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
   </section>
@@ -670,6 +711,39 @@
       document.getElementById('recent').innerHTML = '<div class="empty">Videos coming soon.</div>';
     });
 
+  // ---------- Shop countdown (date comes from "shopOpens" in merch.json) ----------
+  function startCountdown(when) {
+    const box = document.getElementById('countdown');
+    const target = when ? new Date(when) : null;
+    if (!target || isNaN(target)) return;
+    box.hidden = false;
+
+    const fmt = (opts) => target.toLocaleString('en-US', opts);
+    const when12 = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' };
+    const eastern = fmt({ ...when12, timeZone: 'America/New_York' }) + ' ET';
+    const local = fmt({ ...when12, timeZoneName: 'short' });
+    const sameZone = Intl.DateTimeFormat().resolvedOptions().timeZone === 'America/New_York';
+    document.getElementById('cdTip').innerHTML =
+      `<b>${esc(eastern.replace(/, (\d{4}),/, ', $1 at'))}</b>` +
+      (sameZone ? '' : `<small>That's ${esc(local.replace(/, (\d{4}),/, ', $1 at'))} for you</small>`);
+
+    const pad = (n) => String(n).padStart(2, '0');
+    const els = ['cdD', 'cdH', 'cdM', 'cdS'].map(id => document.getElementById(id));
+    const tick = () => {
+      const left = target - Date.now();
+      if (left <= 0) {
+        box.innerHTML = '<div class="cd-open">The shop is open! 🔥</div>';
+        clearInterval(timer);
+        return;
+      }
+      const s = Math.floor(left / 1000);
+      [Math.floor(s / 86400), Math.floor(s / 3600) % 24, Math.floor(s / 60) % 60, s % 60]
+        .forEach((v, i) => { els[i].textContent = pad(v); });
+    };
+    const timer = setInterval(tick, 1000);
+    tick();
+  }
+
   // ---------- Merch (filled from merch.json) ----------
   function merchPh(el) {
     const d = document.createElement('div');
@@ -680,6 +754,7 @@
   fetch('merch.json?t=' + Date.now())
     .then(r => r.json())
     .then(data => {
+      startCountdown(data.shopOpens);
       const el = document.getElementById('merchGrid');
       const products = (data.products || []).slice(0, 4); // homepage shows the first 4 only
       if (!products.length) { el.innerHTML = '<div class="empty">Merch coming soon.</div>'; return; }
