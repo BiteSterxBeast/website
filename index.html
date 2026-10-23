@@ -483,6 +483,32 @@
     .duo .contact { flex-direction: column; align-items: stretch; }
     .duo .contact .btn { justify-content: center; }
   }
+
+  /* ---------- ZOOMED OUT / BIG SCREENS: fill the whole width ----------
+     Header stays centered; videos + merch share one row, projects + contact the next. */
+  @media (min-width: 1700px) {
+    .wrap { max-width: 2400px; padding-left: 5vw; padding-right: 5vw; }
+    .hero, .intro { max-width: 880px; margin-left: auto; margin-right: auto; }
+
+    .row1 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) minmax(0, 2.05fr);
+      gap: 24px;
+      margin-top: 40px;
+      align-items: stretch;
+    }
+    .row1 .videos { display: contents; }
+    .row1 .panel { margin-top: 0; }
+
+    /* merch: countdown across the top, 4 items in a row under it */
+    #merch { display: flex; flex-direction: column; align-items: stretch; }
+    #merch .countdown { margin: auto 0 22px; }
+    .cd-boxes { display: inline-flex; gap: 10px; }
+    .cd-box { min-width: 84px; }
+    #merch .mgrid { margin-bottom: auto; }
+
+    .duo { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); margin-top: 40px; }
+  }
 </style>
 </head>
 <body>
@@ -530,6 +556,7 @@
     <p>Yo, what's up! I'm Josh, also known as Bite! I make YouTube videos, edit, and work on other projects in my free time.</p>
   </section>
 
+  <div class="row1">
   <!-- VIDEOS -->
   <div class="videos">
     <section class="panel">
@@ -566,6 +593,7 @@
     </div>
     <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
   </section>
+  </div>
 
   <div class="duo">
   <!-- PROJECTS (every card here opens in a new tab automatically) -->
