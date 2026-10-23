@@ -1,0 +1,94 @@
+{
+  "_help": "Each product below shows up on the homepage and gets its own page at /merch/?item=ID. Put photos in the merch/images folder and list them under images (first one = main photo). When a product launches, set comingSoon to false and paste its Printify link into link.",
+  "products": [
+    {
+      "id": "hoodie",
+      "name": "Vibrant Graphic Unisex Hoodie - Bold Design for Everyday Comfort",
+      "shortName": "Graphic Hoodie",
+      "price": 35.57,
+      "comingSoon": true,
+      "link": "",
+      "images": [
+        "/merch/images/hoodie-1.jpg",
+        "/merch/images/hoodie-2.jpg",
+        "/merch/images/hoodie-3.jpg",
+        "/merch/images/hoodie-4.jpg"
+      ],
+      "options": [
+        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
+        { "name": "Sizes", "values": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"], "selected": "L" }
+      ],
+      "description": [
+        "Stay cozy and stylish with this Unisex Heavy Blend™ Hooded Sweatshirt. Perfect for chilly days, it envelops you in warmth while adding a sporty touch to any outfit.",
+        "Designed for everyone, it's ideal for casual outings, cozy nights in, or festive gatherings."
+      ]
+    },
+    {
+      "id": "beanie",
+      "name": "Embroidered Classic Beanie - Cozy Winter Hat, Perfect Gift for Him/Her, Cute Statement Beanie for Outdoor, Casual Wear, Stylish Accessory",
+      "shortName": "Embroidered Beanie",
+      "price": 30.57,
+      "comingSoon": true,
+      "link": "",
+      "images": [
+        "/merch/images/beanie-1.jpg",
+        "/merch/images/beanie-2.jpg",
+        "/merch/images/beanie-3.jpg",
+        "/merch/images/beanie-4.jpg"
+      ],
+      "options": [
+        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
+        { "name": "Sizes", "values": ["One size"] }
+      ],
+      "description": [
+        "Embrace warmth and style with this Classic Cuffed Beanie. It adds a touch of flair to any outfit and keeps you snug in chilly weather.",
+        "The bold embroidered design makes it a standout accessory for your winter look."
+      ]
+    },
+    {
+      "id": "sweatpants",
+      "name": "Unisex Fleece Sweatpants (Embroidery)",
+      "shortName": "Fleece Sweatpants",
+      "price": 53.80,
+      "comingSoon": true,
+      "link": "",
+      "images": [
+        "/merch/images/sweatpants-1.jpg",
+        "/merch/images/sweatpants-2.jpg",
+        "/merch/images/sweatpants-3.jpg",
+        "/merch/images/sweatpants-4.jpg"
+      ],
+      "options": [
+        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
+        { "name": "Sizes", "values": ["XS", "S", "M", "L", "XL", "2XL"], "selected": "L" }
+      ],
+      "description": [
+        "Step up your street style with these custom-embroidered Fleece Sweatpants, designed for both comfort and style.",
+        "Crafted with a 100% cotton face and a soft 65% cotton, 35% polyester blend, with a gusset for extra mobility and 3 pockets: 2 cross pockets in front and a top-stitched patch pocket on the back.",
+        "The ribbed waist, cuffs, and flat drawstrings give a secure fit, while the elastic waistband adds flexibility."
+      ]
+    },
+    {
+      "id": "canvas",
+      "name": "Vibrant Wall Art Canvas - BiteSterxBeast Design, Colorful Home Decor, Unique Gift for Art Lovers, Modern Wall Decor, Room Accessories",
+      "shortName": "Wall Art Canvas",
+      "price": 23.88,
+      "comingSoon": true,
+      "link": "",
+      "images": [
+        "/merch/images/canvas-1.jpg",
+        "/merch/images/canvas-2.jpg",
+        "/merch/images/canvas-3.jpg",
+        "/merch/images/canvas-4.jpg"
+      ],
+      "options": [
+        { "name": "Sizes", "values": ["12\" x 9\" (Horizontal)"] },
+        { "name": "Depth", "values": ["0.75\""] }
+      ],
+      "description": [
+        "Brighten up your room with this vibrant canvas print. It has a playful, energetic vibe that brings a splash of color and personality to any space.",
+        "Great for birthdays, housewarmings, or just because."
+      ]
+    }
+  ]
+}
