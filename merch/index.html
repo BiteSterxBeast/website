@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch · BiteSterxBeast</title>
+<meta name="description" content="Official BiteSterxBeast merch.">
+<meta name="theme-color" content="#ff8000">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --panel: rgba(18, 10, 8, 0.78);
+    --panel-border: rgba(255, 255, 255, 0.10);
+    --text: #ffffff;
+    --muted: #e8d9cf;
+    --dim: #a8968a;
+    --yellow: #ffe600;
+    --red: #ff2a00;
+    --ink: #1a0d05;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #ff4a00; }
+  body {
+    min-height: 100vh;
+    color: var(--text);
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    background-image: url("/bolts.png"), linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+    background-size: 64px 62px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    animation: drift 20s linear infinite;
+  }
+  @keyframes drift { to { background-position: 64px -62px, 0 0; } }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 16px 40px; }
+
+  .top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+  .logo {
+    font-family: 'Lilita One', sans-serif; font-size: 2rem; line-height: 1; letter-spacing: 1px;
+    -webkit-text-stroke: 5px var(--ink); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(26,13,5,.35);
+  }
+  .spacer { flex: 1; }
+  .pillbtn {
+    background: rgba(18, 10, 8, 0.8); border: 2px solid transparent; border-radius: 999px;
+    padding: 6px 16px; font-weight: 800; transition: border-color .15s, transform .15s;
+  }
+  .pillbtn:hover { border-color: var(--yellow); transform: translateY(-2px); }
+
+  .panel {
+    background: var(--panel);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 2px solid var(--panel-border); border-radius: 20px; padding: 28px;
+  }
+  h1, h2 { font-family: 'Lilita One', sans-serif; font-weight: 400; letter-spacing: .5px; }
+  h2 { font-size: 2rem; margin-bottom: 14px; }
+
+  /* ---------- shop grid ---------- */
+  .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+  .mcard { display: block; transition: transform .15s; }
+  .mcard:hover { transform: translateY(-4px); }
+  .mimg {
+    position: relative; aspect-ratio: 1; border-radius: 14px; overflow: hidden;
+    border: 2px solid rgba(255,255,255,.08); background: #2a1c14; transition: border-color .15s;
+  }
+  .mcard:hover .mimg { border-color: var(--yellow); }
+  .mimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .soon {
+    position: absolute; top: 10px; left: 10px; background: var(--yellow); color: var(--ink);
+    font-size: .75rem; font-weight: 800; padding: 2px 9px; border-radius: 6px;
+  }
+  .mname { font-weight: 800; margin-top: 10px; line-height: 1.3; }
+  .mrow { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+  .mprice { font-weight: 800; color: var(--yellow); }
+  .dots { display: flex; gap: 5px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,.6); }
+
+  /* image placeholder until photos are uploaded */
+  .ph {
+    width: 100%; height: 100%; display: grid; place-items: center; text-align: center; padding: 12px;
+    background: linear-gradient(135deg, #ffcf00, #ff7a00 50%, #ff2a00); color: var(--ink);
+    font-family: 'Lilita One', sans-serif; font-size: 1.2rem; line-height: 1.15;
+  }
+
+  /* ---------- product page ---------- */
+  .product { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  .gallery { position: relative; }
+  .main {
+    position: relative; aspect-ratio: 1; border-radius: 14px; overflow: hidden;
+    border: 2px solid rgba(255,255,255,.12); background: #2a1c14; cursor: crosshair;
+  }
+  .main img { width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; }
+  .lens {
+    position: absolute; pointer-events: none; display: none;
+    border: 2px solid var(--yellow); background: rgba(255, 230, 0, .15);
+    box-shadow: 0 0 0 9999px rgba(0,0,0,.18);
+  }
+  .zoom {
+    position: absolute; top: 0; left: calc(100% + 24px); width: 100%; aspect-ratio: 1; z-index: 10;
+    display: none; border-radius: 14px; border: 2px solid var(--yellow); background-color: #2a1c14;
+    background-repeat: no-repeat; box-shadow: 0 16px 40px rgba(0,0,0,.5);
+  }
+  .main.zooming .lens, .gallery.zooming .zoom { display: block; }
+  /* touch: zoom inside the photo */
+  .main.tapzoom img { visibility: hidden; }
+  .main.tapzoom { background-repeat: no-repeat; }
+  .hint { color: var(--dim); font-size: .82rem; margin-top: 8px; }
+
+  .thumbs { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+  .thumb {
+    width: 92px; aspect-ratio: 1; padding: 0; border-radius: 10px; overflow: hidden; cursor: pointer;
+    border: 2px solid rgba(255,255,255,.15); background: #2a1c14; transition: border-color .15s, transform .15s;
+  }
+  .thumb:hover { transform: translateY(-2px); }
+  .thumb.on { border-color: var(--yellow); box-shadow: 0 0 12px rgba(255,230,0,.45); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb .ph { font-size: .7rem; }
+
+  .info h1 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.2; }
+  .price { font-family: 'Lilita One', sans-serif; font-size: 2.1rem; color: var(--yellow); margin-top: 10px; }
+  .opt { margin-top: 20px; }
+  .lbl { color: var(--dim); font-weight: 800; font-size: .95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+  .lbl b { color: var(--muted); }
+  .lock { width: 13px; height: 13px; opacity: .8; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    min-width: 56px; padding: 10px 14px; border-radius: 10px; text-align: center;
+    border: 2px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04);
+    color: var(--dim); font-weight: 800; text-decoration: line-through; cursor: not-allowed;
+  }
+  .chip.sel { border-color: rgba(255,255,255,.4); }
+  .swatch {
+    position: relative; width: 42px; height: 42px; border-radius: 50%; padding: 0; cursor: not-allowed;
+    border: 2px solid rgba(255,255,255,.35); opacity: .75;
+  }
+  .swatch.sel { box-shadow: 0 0 0 3px rgba(18,10,8,.9), 0 0 0 5px rgba(255,255,255,.4); }
+  .swatch::after {
+    content: ""; position: absolute; left: 50%; top: 50%; width: 120%; height: 2px;
+    background: rgba(255,255,255,.75); transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .qty { display: inline-flex; border: 2px solid rgba(255,255,255,.14); border-radius: 10px; overflow: hidden; opacity: .55; }
+  .qty button, .qty span { width: 50px; height: 46px; display: grid; place-items: center; background: rgba(255,255,255,.04); border: 0; font-size: 1.2rem; }
+  .qty button { cursor: not-allowed; }
+  .qty span { border-left: 2px solid rgba(255,255,255,.14); border-right: 2px solid rgba(255,255,255,.14); font-weight: 800; }
+
+  /* unlocked (launched) state */
+  .live .chip { text-decoration: none; color: var(--text); cursor: pointer; }
+  .live .chip.sel { border-color: var(--yellow); background: rgba(255,230,0,.12); }
+  .live .swatch { cursor: pointer; opacity: 1; }
+  .live .swatch::after { display: none; }
+  .live .qty { opacity: 1; }
+  .live .qty button { cursor: pointer; }
+
+  .notice {
+    margin-top: 26px; padding: 16px 18px; border-radius: 14px;
+    background: rgba(255, 230, 0, .1); border: 2px solid rgba(255, 230, 0, .45);
+  }
+  .notice h3 { font-family: 'Lilita One', sans-serif; font-weight: 400; font-size: 1.35rem; color: var(--yellow); }
+  .notice p { color: var(--muted); margin-top: 2px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 12px;
+    padding: 12px 22px; background: var(--yellow); color: var(--ink); font-weight: 800; border-radius: 12px;
+    border: 0; cursor: pointer; transition: transform .15s, box-shadow .15s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255,230,0,.6); }
+  .btn .ico { width: 20px; height: 20px; background: var(--ink); -webkit-mask: var(--icon) center/contain no-repeat; mask: var(--icon) center/contain no-repeat; }
+  .btn.wide { width: 100%; font-size: 1.1rem; padding: 14px; }
+
+  .about { margin-top: 30px; border-top: 2px solid var(--panel-border); padding-top: 20px; }
+  .about h2 { font-size: 1.5rem; margin-bottom: 8px; }
+  .about p { color: var(--muted); margin-bottom: 10px; }
+
+  .empty { color: var(--muted); padding: 30px 0; text-align: center; }
+  footer { text-align: center; margin-top: 28px; font-weight: 800; color: var(--ink); opacity: .75; }
+
+  @media (max-width: 860px) {
+    .product { grid-template-columns: 1fr; gap: 24px; }
+    .zoom { display: none !important; }
+    .main { cursor: zoom-in; }
+    .thumb { width: calc(25% - 9px); }
+    .panel { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="logo" href="/">BiteSterxBeast</a>
+    <div class="spacer"></div>
+    <a class="pillbtn" id="backLink" href="/merch/">All merch</a>
+    <a class="pillbtn" href="/">Home</a>
+  </div>
+  <main class="panel" id="app"><div class="empty">Loading…</div></main>
+  <footer>© 2026 BiteSterxBeast</footer>
+</div>
+
+<script>
+const DISCORD = "https://discord.gg/2dfN5brP34";
+const app = document.getElementById("app");
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = n => "$" + Number(n).toFixed(2);
+const LOCK = `<svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`;
+
+// shows the product name on a gradient tile if a photo is missing
+function img(src, label, cls = "") {
+  return `<img src="${esc(src)}" alt="${esc(label)}" class="${cls}" loading="lazy" onerror="phFail(this)">`;
+}
+function phFail(el) {
+  const d = document.createElement("div");
+  d.className = "ph"; d.textContent = el.alt;
+  el.replaceWith(d);
+}
+
+function cardHTML(p) {
+  const colors = (p.options || []).find(o => o.type === "color");
+  return `<a class="mcard" href="/merch/?item=${encodeURIComponent(p.id)}">
+    <div class="mimg">${img(p.images?.[0], p.shortName || p.name)}${p.comingSoon ? `<span class="soon">Coming soon</span>` : ""}</div>
+    <div class="mname">${esc(p.shortName || p.name)}</div>
+    <div class="mrow"><span class="mprice">${money(p.price)}</span>
+      ${colors ? `<span class="dots">${colors.values.map(c => `<span class="dot" title="${esc(c.name)}" style="background:${esc(c.hex)}"></span>`).join("")}</span>` : ""}
+    </div></a>`;
+}
+
+function shopPage(products) {
+  document.getElementById("backLink").hidden = true;
+  app.innerHTML = `<h2>Merch</h2>${products.length
+    ? `<div class="mgrid">${products.map(cardHTML).join("")}</div>`
+    : `<div class="empty">Merch coming soon.</div>`}`;
+}
+
+function productPage(p) {
+  document.title = `${p.shortName || p.name} · BiteSterxBeast`;
+  const live = !p.comingSoon && p.link;
+  const imgs = p.images?.length ? p.images : [""];
+  const sel = {};
+  const opts = (p.options || []).map((o, oi) => {
+    const first = o.type === "color" ? o.values[0].name : o.values[0];
+    sel[oi] = o.selected || first;
+    const items = o.type === "color"
+      ? o.values.map(c => `<button class="swatch" data-o="${oi}" data-v="${esc(c.name)}" title="${esc(c.name)}" style="background:${esc(c.hex)}" ${live ? "" : "disabled"}></button>`).join("")
+      : o.values.map(v => `<button class="chip" data-o="${oi}" data-v="${esc(v)}" ${live ? "" : "disabled"}>${esc(v)}</button>`).join("");
+    return `<div class="opt"><div class="lbl">${esc(o.name)}: <b data-cur="${oi}"></b>${live ? "" : LOCK}</div><div class="chips">${items}</div></div>`;
+  }).join("");
+
+  app.innerHTML = `<div class="product ${live ? "live" : ""}">
+    <div class="gallery" id="gallery">
+      <div class="main" id="main">${img(imgs[0], p.shortName || p.name, "mainimg")}<div class="lens" id="lens"></div></div>
+      <div class="zoom" id="zoom"></div>
+      ${imgs.length > 1 ? `<div class="thumbs">${imgs.map((s, i) => `<button class="thumb ${i ? "" : "on"}" data-i="${i}" aria-label="Photo ${i + 1}">${img(s, String(i + 1))}</button>`).join("")}</div>` : ""}
+      <div class="hint" id="hint">Hover the photo to zoom in.</div>
+    </div>
+    <div class="info">
+      <h1>${esc(p.name)}</h1>
+      <div class="price">${money(p.price)}</div>
+      ${opts}
+      <div class="opt"><div class="lbl">Quantity${live ? "" : LOCK}</div>
+        <div class="qty"><button id="qm" ${live ? "" : "disabled"} aria-label="Less">−</button><span id="qv">1</span><button id="qp" ${live ? "" : "disabled"} aria-label="More">+</button></div></div>
+      ${live
+        ? `<a class="btn wide" href="${esc(p.link)}" target="_blank" rel="noopener">Buy now</a><p class="hint">Checkout happens on Printify.</p>`
+        : `<div class="notice"><h3>This product is coming soon!</h3><p>Nothing is released yet. Join the Discord to hear the second it drops.</p>
+            <a class="btn" href="${DISCORD}" target="_blank" rel="noopener"><span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/discord.svg)"></span>Get notified on Discord</a></div>`}
+      ${p.description?.length ? `<div class="about"><h2>About the product</h2>${p.description.map(t => `<p>${esc(t)}</p>`).join("")}</div>` : ""}
+    </div></div>`;
+
+  // option labels + (when live) selection
+  const paint = () => {
+    app.querySelectorAll("[data-cur]").forEach(b => b.textContent = sel[b.dataset.cur]);
+    app.querySelectorAll("[data-o]").forEach(b => b.classList.toggle("sel", sel[b.dataset.o] === b.dataset.v));
+  };
+  paint();
+  if (live) {
+    app.querySelectorAll("[data-o]").forEach(b => b.onclick = () => { sel[b.dataset.o] = b.dataset.v; paint(); });
+    let q = 1; const qv = document.getElementById("qv");
+    document.getElementById("qm").onclick = () => { q = Math.max(1, q - 1); qv.textContent = q; };
+    document.getElementById("qp").onclick = () => { q = Math.min(20, q + 1); qv.textContent = q; };
+  }
+
+  // thumbnails
+  let cur = imgs[0];
+  const main = document.getElementById("main");
+  app.querySelectorAll(".thumb").forEach(t => t.onclick = () => {
+    app.querySelectorAll(".thumb").forEach(x => x.classList.remove("on"));
+    t.classList.add("on");
+    cur = imgs[+t.dataset.i];
+    main.classList.remove("tapzoom"); main.style.backgroundImage = "";
+    main.querySelector(".mainimg, .ph")?.remove();
+    main.insertAdjacentHTML("afterbegin", img(cur, p.shortName || p.name, "mainimg"));
+  });
+
+  // hover zoom (desktop): square lens + zoomed box beside the photo
+  const gallery = document.getElementById("gallery"), lens = document.getElementById("lens"), zoom = document.getElementById("zoom");
+  const ZOOM = 2.6;
+  const hasPhoto = () => !!main.querySelector("img.mainimg");
+  const touch = matchMedia("(hover: none), (max-width: 860px)");
+  if (touch.matches) document.getElementById("hint").textContent = "Tap the photo to zoom in.";
+
+  main.addEventListener("mousemove", e => {
+    if (touch.matches || !hasPhoto()) return;
+    const r = main.getBoundingClientRect(), size = r.width / ZOOM;
+    const x = Math.max(0, Math.min(r.width - size, e.clientX - r.left - size / 2));
+    const y = Math.max(0, Math.min(r.height - size, e.clientY - r.top - size / 2));
+    Object.assign(lens.style, { width: size + "px", height: size + "px", left: x + "px", top: y + "px" });
+    zoom.style.backgroundImage = `url("${cur}")`;
+    zoom.style.backgroundSize = `${ZOOM * 100}%`;
+    zoom.style.backgroundPosition = `${x / (r.width - size) * 100}% ${y / (r.height - size) * 100}%`;
+    main.classList.add("zooming"); gallery.classList.add("zooming");
+  });
+  main.addEventListener("mouseleave", () => { main.classList.remove("zooming"); gallery.classList.remove("zooming"); });
+
+  // tap zoom (phones): tap to zoom in place, drag to look around, tap again to exit
+  const panTo = (cx, cy) => {
+    const r = main.getBoundingClientRect();
+    const px = Math.max(0, Math.min(100, (cx - r.left) / r.width * 100));
+    const py = Math.max(0, Math.min(100, (cy - r.top) / r.height * 100));
+    main.style.backgroundPosition = `${px}% ${py}%`;
+  };
+  main.addEventListener("click", e => {
+    if (!touch.matches || !hasPhoto()) return;
+    if (main.classList.toggle("tapzoom")) {
+      main.style.backgroundImage = `url("${cur}")`; main.style.backgroundSize = `${ZOOM * 100}%`;
+      panTo(e.clientX, e.clientY);
+    } else main.style.backgroundImage = "";
+  });
+  main.addEventListener("touchmove", e => {
+    if (!main.classList.contains("tapzoom")) return;
+    e.preventDefault(); panTo(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: false });
+}
+
+fetch("/merch.json?t=" + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const products = data.products || [];
+    const id = new URLSearchParams(location.search).get("item");
+    const p = id && products.find(x => x.id === id);
+    if (id && !p) app.innerHTML = `<div class="empty">That item doesn't exist. <a href="/merch/" style="color:var(--yellow)">See all merch</a></div>`;
+    else if (p) productPage(p);
+    else shopPage(products);
+  })
+  .catch(() => app.innerHTML = `<div class="empty">Merch coming soon.</div>`);
+</script>
+</body>
+</html>
