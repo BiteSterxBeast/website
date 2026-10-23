@@ -115,7 +115,7 @@
 
   .thumbs { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
   .thumb {
-    width: 92px; aspect-ratio: 1; padding: 0; border-radius: 10px; overflow: hidden; cursor: pointer;
+    width: calc(20% - 10px); max-width: 92px; aspect-ratio: 1; padding: 0; border-radius: 10px; overflow: hidden; cursor: pointer;
     border: 2px solid rgba(255,255,255,.15); background: #2a1c14; transition: border-color .15s, transform .15s;
   }
   .thumb:hover { transform: translateY(-2px); }
@@ -184,7 +184,7 @@
     .product { grid-template-columns: 1fr; gap: 24px; }
     .zoom { display: none !important; }
     .main { cursor: zoom-in; }
-    .thumb { width: calc(25% - 9px); }
+    .thumb { width: calc(20% - 10px); }
     .panel { padding: 20px; }
   }
 </style>
