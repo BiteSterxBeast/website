@@ -370,6 +370,10 @@
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
   .btn .ico { background: #1a0d05; width: 20px; height: 20px; }
+  .btn.work { background: var(--red); color: #fff; }
+  .btn.work:hover { box-shadow: 0 0 18px rgba(255, 42, 0, 0.7); }
+  .btn.work .arrow { transition: transform 0.15s; }
+  .btn.work:hover .arrow { transform: translateX(4px); }
   .contact { display: flex; flex-wrap: wrap; gap: 12px; }
   .contact .btn { overflow-wrap: anywhere; }
   .note { margin-top: 12px; color: var(--muted); }
@@ -471,20 +475,20 @@
     <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS (every card here opens in a new tab automatically) -->
   <section class="panel">
     <h2>Cool things I've made!</h2>
     <div class="tabs" role="tablist">
       <button class="tab active" data-tab="featured" role="tab">Featured</button>
       <button class="tab" data-tab="websites" role="tab">Websites</button>
     </div>
-    <div class="grid">
+    <div class="grid" id="projects">
       <a class="card" data-cats="featured websites" href="https://bitesterxbeast.github.io" target="_blank" rel="noopener">
         <h3>Creator Tools</h3>
         <p>Free tools built by a creator, for creators. No sign-up, no paywall, just open it and use it.</p>
         <span class="go">Open</span>
       </a>
-      <a class="card" data-cats="featured websites" href="/pixel-royale-spinner/">
+      <a class="card" data-cats="featured websites" href="/pixel-royale-spinner/" target="_blank" rel="noopener">
         <h3>Pixel Royale 3D Spinner</h3>
         <p>A case-opening style spinner that picks a random Pixel Royale 3D weapon and map for challenges.</p>
         <span class="go">Open</span>
@@ -504,8 +508,11 @@
         <span class="ico" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/gmail.svg)"></span>
         bitesterxbeastbusiness@gmail.com
       </a>
+      <a class="btn work" href="/editor/">
+        Wanna work with me? <span class="arrow">→</span>
+      </a>
     </div>
-    <p class="note">Business inquiries go to the email.</p>
+    <p class="note">Business inquiries go to the email. Thumbnail artists, script writers, level creators and editors: hit "Wanna work with me?"</p>
   </section>
 
   <footer>© 2026 BiteSterxBeast</footer>
@@ -531,6 +538,12 @@
       yt.classList.remove('open');
       ytBtn.setAttribute('aria-expanded', 'false');
     }
+  });
+
+  // Every project card opens in a new tab (so new cards you add do too)
+  document.querySelectorAll('#projects .card').forEach(card => {
+    card.target = '_blank';
+    card.rel = 'noopener';
   });
 
   // Project tabs
