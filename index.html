@@ -463,6 +463,26 @@
   @media (max-width: 820px) {
     .videos { grid-template-columns: 1fr; }
   }
+
+  /* ---------- DESKTOP (wide screens): spread things out instead of one tall column ---------- */
+  @media (min-width: 1100px) {
+    .wrap { max-width: 1240px; padding-left: 24px; padding-right: 24px; }
+
+    /* merch: countdown on the left, all 4 items in one row on the right */
+    #merch { display: grid; grid-template-columns: 250px minmax(0, 1fr); column-gap: 28px; align-items: start; }
+    #merch .merch-head { grid-column: 1 / -1; }
+    #merch .countdown { margin: 0; align-self: center; }
+    #merch .countdown[hidden] + .mgrid { grid-column: 1 / -1; }
+    #merch .mgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .cd-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .cd-box { min-width: 0; }
+
+    /* projects and contact side by side */
+    .duo { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 24px; margin-top: 24px; align-items: stretch; }
+    .duo .panel { margin-top: 0; }
+    .duo .contact { flex-direction: column; align-items: stretch; }
+    .duo .contact .btn { justify-content: center; }
+  }
 </style>
 </head>
 <body>
@@ -547,6 +567,7 @@
     <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
   </section>
 
+  <div class="duo">
   <!-- PROJECTS (every card here opens in a new tab automatically) -->
   <section class="panel">
     <h2>Cool things I've made!</h2>
@@ -586,6 +607,7 @@
     </div>
     <p class="note">Business inquiries go to the email. Thumbnail artists, script writers, level creators and editors: hit "Wanna work with me?"</p>
   </section>
+  </div>
 
   <footer>© 2026 BiteSterxBeast</footer>
 </div>
