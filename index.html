@@ -273,7 +273,36 @@
   /* ---------- MERCH ---------- */
   .merch-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
   .merch-head h2 { margin-bottom: 0; }
-  .merch-head a { margin-left: auto; color: var(--yellow); font-weight: 800; }
+  .more-merch {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--yellow);
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
+    animation: nudge 0.9s ease-in-out infinite alternate;
+  }
+  @keyframes nudge {
+    from { transform: translateX(-10px); }
+    to { transform: translateX(6px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .more-merch { animation: none; }
+  }
+  .see-all {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    background: var(--yellow);
+    color: #1a0d05;
+    font-weight: 800;
+    border-radius: 999px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .see-all:hover { transform: translateY(-2px); box-shadow: 0 0 18px rgba(255, 230, 0, 0.6); }
   .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
   .mcard { display: block; transition: transform 0.15s; }
   .mcard:hover { transform: translateY(-4px); }
@@ -398,6 +427,7 @@
     .character { right: 16px; }
     .panel { padding: 22px; }
     .mgrid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .more-merch { font-size: 1.2rem; }
   }
   @media (max-width: 820px) {
     .videos { grid-template-columns: 1fr; }
@@ -470,7 +500,8 @@
   <section class="panel" id="merch">
     <div class="merch-head">
       <h2>Merch</h2>
-      <a href="/merch/">See all</a>
+      <span class="more-merch" aria-hidden="true">More merch <span>→</span></span>
+      <a class="see-all" href="/merch/">See all</a>
     </div>
     <div class="mgrid" id="merchGrid"><div class="empty">Loading merch...</div></div>
   </section>
@@ -650,7 +681,7 @@
     .then(r => r.json())
     .then(data => {
       const el = document.getElementById('merchGrid');
-      const products = data.products || [];
+      const products = (data.products || []).slice(0, 4); // homepage shows the first 4 only
       if (!products.length) { el.innerHTML = '<div class="empty">Merch coming soon.</div>'; return; }
       el.innerHTML = products.map(p => {
         const colors = (p.options || []).find(o => o.type === 'color');
