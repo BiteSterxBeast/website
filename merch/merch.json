@@ -12,11 +12,34 @@
         "/merch/images/hoodie-1.jpg",
         "/merch/images/hoodie-2.jpg",
         "/merch/images/hoodie-3.jpg",
-        "/merch/images/hoodie-4.jpg"
+        "/merch/images/hoodie-4.jpg",
+        "/merch/images/hoodie-5.jpg"
       ],
       "options": [
-        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
-        { "name": "Sizes", "values": ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"], "selected": "L" }
+        {
+          "name": "Colors",
+          "type": "color",
+          "values": [
+            {
+              "name": "Black",
+              "hex": "#111111"
+            }
+          ]
+        },
+        {
+          "name": "Sizes",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL",
+            "4XL",
+            "5XL"
+          ],
+          "selected": "L"
+        }
       ],
       "description": [
         "Stay cozy and stylish with this Unisex Heavy Blend™ Hooded Sweatshirt. Perfect for chilly days, it envelops you in warmth while adding a sporty touch to any outfit.",
@@ -34,11 +57,26 @@
         "/merch/images/beanie-1.jpg",
         "/merch/images/beanie-2.jpg",
         "/merch/images/beanie-3.jpg",
-        "/merch/images/beanie-4.jpg"
+        "/merch/images/beanie-4.jpg",
+        "/merch/images/beanie-5.jpg"
       ],
       "options": [
-        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
-        { "name": "Sizes", "values": ["One size"] }
+        {
+          "name": "Colors",
+          "type": "color",
+          "values": [
+            {
+              "name": "Black",
+              "hex": "#111111"
+            }
+          ]
+        },
+        {
+          "name": "Sizes",
+          "values": [
+            "One size"
+          ]
+        }
       ],
       "description": [
         "Embrace warmth and style with this Classic Cuffed Beanie. It adds a touch of flair to any outfit and keeps you snug in chilly weather.",
@@ -49,18 +87,39 @@
       "id": "sweatpants",
       "name": "Unisex Fleece Sweatpants (Embroidery)",
       "shortName": "Fleece Sweatpants",
-      "price": 53.80,
+      "price": 53.8,
       "comingSoon": true,
       "link": "",
       "images": [
         "/merch/images/sweatpants-1.jpg",
         "/merch/images/sweatpants-2.jpg",
         "/merch/images/sweatpants-3.jpg",
-        "/merch/images/sweatpants-4.jpg"
+        "/merch/images/sweatpants-4.jpg",
+        "/merch/images/sweatpants-5.jpg"
       ],
       "options": [
-        { "name": "Colors", "type": "color", "values": [{ "name": "Black", "hex": "#111111" }] },
-        { "name": "Sizes", "values": ["XS", "S", "M", "L", "XL", "2XL"], "selected": "L" }
+        {
+          "name": "Colors",
+          "type": "color",
+          "values": [
+            {
+              "name": "Black",
+              "hex": "#111111"
+            }
+          ]
+        },
+        {
+          "name": "Sizes",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL"
+          ],
+          "selected": "L"
+        }
       ],
       "description": [
         "Step up your street style with these custom-embroidered Fleece Sweatpants, designed for both comfort and style.",
@@ -79,11 +138,22 @@
         "/merch/images/canvas-1.jpg",
         "/merch/images/canvas-2.jpg",
         "/merch/images/canvas-3.jpg",
-        "/merch/images/canvas-4.jpg"
+        "/merch/images/canvas-4.jpg",
+        "/merch/images/canvas-5.jpg"
       ],
       "options": [
-        { "name": "Sizes", "values": ["12\" x 9\" (Horizontal)"] },
-        { "name": "Depth", "values": ["0.75\""] }
+        {
+          "name": "Sizes",
+          "values": [
+            "12\" x 9\" (Horizontal)"
+          ]
+        },
+        {
+          "name": "Depth",
+          "values": [
+            "0.75\""
+          ]
+        }
       ],
       "description": [
         "Brighten up your room with this vibrant canvas print. It has a playful, energetic vibe that brings a splash of color and personality to any space.",
