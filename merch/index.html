@@ -150,6 +150,11 @@
   .qty button { cursor: not-allowed; }
   .qty span { border-left: 2px solid rgba(255,255,255,.14); border-right: 2px solid rgba(255,255,255,.14); font-weight: 800; }
 
+  /* options that swap the photos (like sticker sizes) stay clickable even while locked */
+  .chip.view { text-decoration: none; color: var(--text); cursor: pointer; }
+  .chip.view:hover { border-color: rgba(255,230,0,.5); }
+  .chip.view.sel { border-color: var(--yellow); background: rgba(255,230,0,.12); }
+
   /* unlocked (launched) state */
   .live .chip { text-decoration: none; color: var(--text); cursor: pointer; }
   .live .chip.sel { border-color: var(--yellow); background: rgba(255,230,0,.12); }
@@ -205,7 +210,16 @@
 const DISCORD = "https://discord.gg/2dfN5brP34";
 const app = document.getElementById("app");
 const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const money = n => "$" + Number(n).toFixed(2);
+const money = n => n == null || n === "" ? "Price TBA" : "$" + Number(n).toFixed(2);
+// an option with its own "images" (like sticker sizes) decides which photos show
+const photoOption = p => (p.options || []).findIndex(o => o.images);
+function photosFor(p, val) {
+  const oi = photoOption(p);
+  if (oi < 0) return p.images?.length ? p.images : [""];
+  const o = p.options[oi];
+  const list = o.images[val ?? (o.selected || o.values[0])];
+  return list?.length ? list : (p.images?.length ? p.images : [""]);
+}
 const LOCK = `<svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`;
 
 // shows the product name on a gradient tile if a photo is missing
@@ -221,7 +235,7 @@ function phFail(el) {
 function cardHTML(p) {
   const colors = (p.options || []).find(o => o.type === "color");
   return `<a class="mcard" href="/merch/?item=${encodeURIComponent(p.id)}">
-    <div class="mimg">${img(p.images?.[0], p.shortName || p.name)}${p.comingSoon ? `<span class="soon">Coming soon</span>` : ""}</div>
+    <div class="mimg">${img(photosFor(p)[0], p.shortName || p.name)}${p.comingSoon ? `<span class="soon">Coming soon</span>` : ""}</div>
     <div class="mname">${esc(p.shortName || p.name)}</div>
     <div class="mrow"><span class="mprice">${money(p.price)}</span>
       ${colors ? `<span class="dots">${colors.values.map(c => `<span class="dot" title="${esc(c.name)}" style="background:${esc(c.hex)}"></span>`).join("")}</span>` : ""}
@@ -238,22 +252,23 @@ function shopPage(products) {
 function productPage(p) {
   document.title = `${p.shortName || p.name} · BiteSterxBeast`;
   const live = !p.comingSoon && p.link;
-  const imgs = p.images?.length ? p.images : [""];
+  const vi = photoOption(p);
   const sel = {};
   const opts = (p.options || []).map((o, oi) => {
     const first = o.type === "color" ? o.values[0].name : o.values[0];
     sel[oi] = o.selected || first;
     const items = o.type === "color"
       ? o.values.map(c => `<button class="swatch" data-o="${oi}" data-v="${esc(c.name)}" title="${esc(c.name)}" style="background:${esc(c.hex)}" ${live ? "" : "disabled"}></button>`).join("")
-      : o.values.map(v => `<button class="chip" data-o="${oi}" data-v="${esc(v)}" ${live ? "" : "disabled"}>${esc(v)}</button>`).join("");
-    return `<div class="opt"><div class="lbl">${esc(o.name)}: <b data-cur="${oi}"></b>${live ? "" : LOCK}</div><div class="chips">${items}</div></div>`;
+      : o.values.map(v => `<button class="chip ${oi === vi ? "view" : ""}" data-o="${oi}" data-v="${esc(v)}" ${live || oi === vi ? "" : "disabled"}>${esc(v)}</button>`).join("");
+    return `<div class="opt"><div class="lbl">${esc(o.name)}: <b data-cur="${oi}"></b>${live || oi === vi ? "" : LOCK}</div><div class="chips">${items}</div></div>`;
   }).join("");
+  let imgs = photosFor(p, vi >= 0 ? sel[vi] : undefined);
 
   app.innerHTML = `<div class="product ${live ? "live" : ""}">
     <div class="gallery" id="gallery">
       <div class="main" id="main">${img(imgs[0], p.shortName || p.name, "mainimg")}<div class="lens" id="lens"></div></div>
       <div class="zoom" id="zoom"></div>
-      ${imgs.length > 1 ? `<div class="thumbs">${imgs.map((s, i) => `<button class="thumb ${i ? "" : "on"}" data-i="${i}" aria-label="Photo ${i + 1}">${img(s, String(i + 1))}</button>`).join("")}</div>` : ""}
+      <div class="thumbs" id="thumbs"></div>
       <div class="hint" id="hint">Hover the photo to zoom in.</div>
     </div>
     <div class="info">
@@ -275,8 +290,12 @@ function productPage(p) {
     app.querySelectorAll("[data-o]").forEach(b => b.classList.toggle("sel", sel[b.dataset.o] === b.dataset.v));
   };
   paint();
+  app.querySelectorAll("[data-o]").forEach(b => b.onclick = () => {
+    if (!live && +b.dataset.o !== vi) return;
+    sel[b.dataset.o] = b.dataset.v; paint();
+    if (+b.dataset.o === vi) { imgs = photosFor(p, sel[vi]); showPhoto(0); drawThumbs(); }
+  });
   if (live) {
-    app.querySelectorAll("[data-o]").forEach(b => b.onclick = () => { sel[b.dataset.o] = b.dataset.v; paint(); });
     let q = 1; const qv = document.getElementById("qv");
     document.getElementById("qm").onclick = () => { q = Math.max(1, q - 1); qv.textContent = q; };
     document.getElementById("qp").onclick = () => { q = Math.min(20, q + 1); qv.textContent = q; };
@@ -284,15 +303,23 @@ function productPage(p) {
 
   // thumbnails
   let cur = imgs[0];
-  const main = document.getElementById("main");
-  app.querySelectorAll(".thumb").forEach(t => t.onclick = () => {
-    app.querySelectorAll(".thumb").forEach(x => x.classList.remove("on"));
-    t.classList.add("on");
-    cur = imgs[+t.dataset.i];
+  const main = document.getElementById("main"), thumbs = document.getElementById("thumbs");
+  function showPhoto(i) {
+    cur = imgs[i];
     main.classList.remove("tapzoom"); main.style.backgroundImage = "";
     main.querySelector(".mainimg, .ph")?.remove();
     main.insertAdjacentHTML("afterbegin", img(cur, p.shortName || p.name, "mainimg"));
-  });
+  }
+  function drawThumbs() {
+    thumbs.hidden = imgs.length < 2;
+    thumbs.innerHTML = imgs.map((s, i) => `<button class="thumb ${i ? "" : "on"}" data-i="${i}" aria-label="Photo ${i + 1}">${img(s, String(i + 1))}</button>`).join("");
+    thumbs.querySelectorAll(".thumb").forEach(t => t.onclick = () => {
+      thumbs.querySelectorAll(".thumb").forEach(x => x.classList.remove("on"));
+      t.classList.add("on");
+      showPhoto(+t.dataset.i);
+    });
+  }
+  drawThumbs();
 
   // hover zoom (desktop): square lens + zoomed box beside the photo
   const gallery = document.getElementById("gallery"), lens = document.getElementById("lens"), zoom = document.getElementById("zoom");
