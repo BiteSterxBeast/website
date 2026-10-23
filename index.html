@@ -655,15 +655,18 @@
       el.innerHTML = products.map(p => {
         const colors = (p.options || []).find(o => o.type === 'color');
         const name = p.shortName || p.name;
+        const po = (p.options || []).find(o => o.images);
+        const first = (po && (po.images[po.selected || po.values[0]] || [])[0]) || (p.images || [])[0];
+        const price = p.price == null || p.price === '' ? 'Price TBA' : '$' + Number(p.price).toFixed(2);
         return `
           <a class="mcard" href="/merch/?item=${encodeURIComponent(p.id)}">
             <div class="mimg">
-              <img src="${esc((p.images || [])[0])}" alt="${esc(name)}" loading="lazy" onerror="merchPh(this)">
+              <img src="${esc(first)}" alt="${esc(name)}" loading="lazy" onerror="merchPh(this)">
               ${p.comingSoon ? '<span class="soon">Coming soon</span>' : ''}
             </div>
             <div class="mname">${esc(name)}</div>
             <div class="mrow">
-              <span class="mprice">$${Number(p.price).toFixed(2)}</span>
+              <span class="mprice">${price}</span>
               ${colors ? `<span class="dots">${colors.values.map(c =>
                 `<span class="dot" title="${esc(c.name)}" style="background:${esc(c.hex)}"></span>`).join('')}</span>` : ''}
             </div>
