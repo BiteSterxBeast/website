@@ -162,9 +162,9 @@
     },
     {
       "id": "stickers",
-      "name": "Stickers",
+      "name": "Kiss-Cut Stickers",
       "shortName": "Stickers",
-      "price": null,
+      "price": $3.99-7.99,
       "comingSoon": true,
       "link": "",
       "images": [],
