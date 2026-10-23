@@ -1,5 +1,6 @@
 {
-  "_help": "Each product below shows up on the homepage and gets its own page at /merch/?item=ID. Put photos in the merch/images folder and list them under images (first one = main photo). When a product launches, set comingSoon to false and paste its Printify link into link.",
+  "_help": "Each product below shows up on the homepage and gets its own page at /merch/?item=ID. Put photos in the merch/images folder and list them under images (first one = main photo). When a product launches, set comingSoon to false and paste its Printify link into link. shopOpens is when the homepage countdown ends (10:00 AM Eastern = -05:00 in winter).",
+  "shopOpens": "2027-01-01T10:00:00-05:00",
   "products": [
     {
       "id": "hoodie",
