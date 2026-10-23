@@ -57,7 +57,8 @@
         "/merch/images/beanie-1.jpg",
         "/merch/images/beanie-2.jpg",
         "/merch/images/beanie-3.jpg",
-        "/merch/images/beanie-4.jpg"
+        "/merch/images/beanie-4.jpg",
+        "/merch/images/beanie-5.jpg"
       ],
       "options": [
         {
@@ -137,7 +138,8 @@
         "/merch/images/canvas-1.jpg",
         "/merch/images/canvas-2.jpg",
         "/merch/images/canvas-3.jpg",
-        "/merch/images/canvas-4.jpg"
+        "/merch/images/canvas-4.jpg",
+        "/merch/images/canvas-5.jpg"
       ],
       "options": [
         {
@@ -156,6 +158,52 @@
       "description": [
         "Brighten up your room with this vibrant canvas print. It has a playful, energetic vibe that brings a splash of color and personality to any space.",
         "Great for birthdays, housewarmings, or just because."
+      ]
+    },
+    {
+      "id": "stickers",
+      "name": "Stickers",
+      "shortName": "Stickers",
+      "price": null,
+      "comingSoon": true,
+      "link": "",
+      "images": [],
+      "options": [
+        {
+          "name": "Sizes",
+          "values": [
+            "2\" x 2\"",
+            "3\" x 3\"",
+            "4\" x 4\"",
+            "6\" x 6\""
+          ],
+          "selected": "2\" x 2\"",
+          "images": {
+            "2\" x 2\"": [
+              "/merch/images/stickers-2x2-1.jpg",
+              "/merch/images/stickers-2x2-2.jpg",
+              "/merch/images/stickers-2x2-3.jpg"
+            ],
+            "3\" x 3\"": [
+              "/merch/images/stickers-3x3-1.jpg",
+              "/merch/images/stickers-3x3-2.jpg",
+              "/merch/images/stickers-3x3-3.jpg"
+            ],
+            "4\" x 4\"": [
+              "/merch/images/stickers-4x4-1.jpg",
+              "/merch/images/stickers-4x4-2.jpg",
+              "/merch/images/stickers-4x4-3.jpg"
+            ],
+            "6\" x 6\"": [
+              "/merch/images/stickers-6x6-1.jpg",
+              "/merch/images/stickers-6x6-2.jpg",
+              "/merch/images/stickers-6x6-3.jpg"
+            ]
+          }
+        }
+      ],
+      "description": [
+        "Stickers in four sizes: 2\", 3\", 4\" and 6\"."
       ]
     }
   ]
