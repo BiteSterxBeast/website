@@ -312,12 +312,21 @@
     text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
     animation: nudge 0.9s ease-in-out infinite alternate;
   }
+  .more-merch[hidden] { display: none; }
+  /* when it hides, "See all" keeps its spot on the right */
+  .more-merch[hidden] + .see-all { margin-left: auto; }
+  /* pops in, then bounces */
+  .more-merch.pop { animation: popin 0.45s cubic-bezier(.3, 1.6, .5, 1) both, nudge 0.9s ease-in-out 0.45s infinite alternate; }
+  @keyframes popin {
+    from { opacity: 0; transform: scale(0.4) translateX(-10px); }
+    to { opacity: 1; transform: scale(1) translateX(-10px); }
+  }
   @keyframes nudge {
     from { transform: translateX(-10px); }
     to { transform: translateX(6px); }
   }
   @media (prefers-reduced-motion: reduce) {
-    .more-merch { animation: none; }
+    .more-merch, .more-merch.pop { animation: none; }
   }
   .see-all {
     display: inline-flex;
@@ -578,8 +587,8 @@
   <section class="panel" id="merch">
     <div class="merch-head">
       <h2>Merch</h2>
-      <span class="more-merch" aria-hidden="true">More merch <span>→</span></span>
-      <a class="see-all" href="/merch/">See all</a>
+      <span class="more-merch" id="moreMerch" aria-hidden="true" hidden>More merch <span>→</span></span>
+      <a class="see-all" id="seeAll" href="/merch/">See all</a>
     </div>
     <div class="countdown" id="countdown" hidden>
       <div class="cd-title" id="cdTitle">Shop opens in</div>
@@ -760,6 +769,23 @@
       document.getElementById('best').innerHTML = '<div class="empty">Videos coming soon.</div>';
       document.getElementById('recent').innerHTML = '<div class="empty">Videos coming soon.</div>';
     });
+
+  // ---------- "More merch" hint: hides after "See all" is clicked, comes back 12 hours later ----------
+  (function () {
+    const KEY = 'moreMerchSeenAt';
+    const WAIT = 12 * 60 * 60 * 1000; // 12 hours
+    const hint = document.getElementById('moreMerch');
+    let seenAt = 0;
+    try { seenAt = Number(localStorage.getItem(KEY)) || 0; } catch (e) {}
+    if (Date.now() - seenAt >= WAIT) {
+      hint.hidden = false;
+      hint.classList.add('pop');
+    }
+    document.getElementById('seeAll').addEventListener('click', () => {
+      hint.hidden = true;
+      try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+    });
+  })();
 
   // ---------- Shop countdown (date comes from "shopOpens" in merch.json) ----------
   function startCountdown(when) {
