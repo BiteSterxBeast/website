@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T00:30:52+00:00",
+  "updated": "2026-10-26T19:30:58+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "M_O--kjBRIA",
+      "title": "Verity Vs IMPOSSIBLE Ball Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-10-26T19:08:46Z",
+      "type": "short"
+    },
     {
       "id": "H6HT6ccoxkQ",
       "title": "Geometry Dash Orb Puzzle",
@@ -166,13 +173,6 @@
       "type": "short"
     },
     {
-      "id": "baxXT2v8DII",
-      "title": "EXTREME Verity Cube Challenge! 🤣🔥",
-      "channel": "Main",
-      "published": "2026-10-02T18:01:55Z",
-      "type": "short"
-    },
-    {
       "id": "_-8_vYrnS9o",
       "title": "Easiest Plane Build 😱",
       "channel": "Minecraft",
@@ -247,7 +247,6 @@
       "SrlmiVwJfNQ": "short",
       "_GyCYzgh5GA": "short",
       "lGLCRDmmEgk": "short",
-      "baxXT2v8DII": "short",
       "_-8_vYrnS9o": "short",
       "WgK5l6PoYf0": "short",
       "skaRND3HMWM": "short",
@@ -266,7 +265,8 @@
       "nW3GjkPoRfA": "long",
       "n1aZK5RpG-4": "long",
       "7Xj_paPphl0": "short",
-      "H6HT6ccoxkQ": "short"
+      "H6HT6ccoxkQ": "short",
+      "M_O--kjBRIA": "short"
     }
   }
 }
