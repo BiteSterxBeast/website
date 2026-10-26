@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T21:30:51+00:00",
+  "updated": "2026-10-26T00:30:52+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "H6HT6ccoxkQ",
+      "title": "Geometry Dash Orb Puzzle",
+      "channel": "Experiments",
+      "published": "2026-10-26T00:04:13Z",
+      "type": "short"
+    },
     {
       "id": "7Xj_paPphl0",
       "title": "Geometry Dash Falling In Love",
@@ -220,13 +227,6 @@
       "channel": "Minecraft",
       "published": "2026-07-19T13:04:09Z",
       "type": "short"
-    },
-    {
-      "id": "G2oEt7KELeo",
-      "title": "🔴 BiteMC Lifesteal SMP Live | Hanging with the Server",
-      "channel": "Minecraft",
-      "published": "2026-07-17T17:23:30Z",
-      "type": "long"
     }
   ],
   "_cache": {
@@ -256,7 +256,6 @@
       "qyLGaxZILG4": "short",
       "SiUmjyTStHU": "long",
       "cSy4-n-X4Mo": "short",
-      "G2oEt7KELeo": "long",
       "iRpPA7_ej3U": "short",
       "iLjr8dY2XBA": "short",
       "OsuRObFnMJ8": "short",
@@ -266,7 +265,8 @@
       "aY4ErP3bORs": "short",
       "nW3GjkPoRfA": "long",
       "n1aZK5RpG-4": "long",
-      "7Xj_paPphl0": "short"
+      "7Xj_paPphl0": "short",
+      "H6HT6ccoxkQ": "short"
     }
   }
 }
