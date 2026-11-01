@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:00:54+00:00",
+  "updated": "2026-11-01T20:30:52+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "jbclSjEUPQM",
+      "title": "Scatman Monster Vs EXTREME Wave Challenge! 😎💪",
+      "channel": "Main",
+      "published": "2026-11-01T20:00:58Z",
+      "type": "short"
+    },
     {
       "id": "CE621MQjNhk",
       "title": "Gamemodes vs EXTREME Slope Challenge! 😱🔥",
@@ -145,13 +152,6 @@
       "type": "short"
     },
     {
-      "id": "G-z2zK0OSeU",
-      "title": "Theory Of Everything 2: Normal vs Full Version",
-      "channel": "Main",
-      "published": "2026-10-12T14:00:23Z",
-      "type": "long"
-    },
-    {
       "id": "aUZg6-X1eJ8",
       "title": "Geometry Dash Kit Kit Kit",
       "channel": "Extras",
@@ -239,7 +239,6 @@
     "types": {
       "ViYQZQIloD8": "short",
       "pqrQ9zW7d-k": "short",
-      "G-z2zK0OSeU": "long",
       "aUZg6-X1eJ8": "short",
       "xwyClhg4D4A": "short",
       "ztGM414eNXA": "long",
@@ -266,7 +265,8 @@
       "3KmB5wcLvVw": "short",
       "H0Pyq48iZYg": "short",
       "ICSBk-jqyEg": "short",
-      "CE621MQjNhk": "short"
+      "CE621MQjNhk": "short",
+      "jbclSjEUPQM": "short"
     }
   }
 }
