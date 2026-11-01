@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T20:30:52+00:00",
+  "updated": "2026-11-01T21:00:51+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "tk5Trvuyz-I",
+      "title": "GD Subzero: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-11-01T21:00:06Z",
+      "type": "long"
+    },
     {
       "id": "jbclSjEUPQM",
       "title": "Scatman Monster Vs EXTREME Wave Challenge! 😎💪",
@@ -145,13 +152,6 @@
       "type": "short"
     },
     {
-      "id": "pqrQ9zW7d-k",
-      "title": "Gamemodes Vs Platform Jump Challenge! 🔥🤯",
-      "channel": "Main",
-      "published": "2026-10-12T19:01:39Z",
-      "type": "short"
-    },
-    {
       "id": "aUZg6-X1eJ8",
       "title": "Geometry Dash Kit Kit Kit",
       "channel": "Extras",
@@ -238,7 +238,6 @@
     },
     "types": {
       "ViYQZQIloD8": "short",
-      "pqrQ9zW7d-k": "short",
       "aUZg6-X1eJ8": "short",
       "xwyClhg4D4A": "short",
       "ztGM414eNXA": "long",
@@ -266,7 +265,8 @@
       "H0Pyq48iZYg": "short",
       "ICSBk-jqyEg": "short",
       "CE621MQjNhk": "short",
-      "jbclSjEUPQM": "short"
+      "jbclSjEUPQM": "short",
+      "tk5Trvuyz-I": "long"
     }
   }
 }
