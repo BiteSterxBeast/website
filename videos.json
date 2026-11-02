@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T08:30:56+00:00",
+  "updated": "2026-11-02T20:30:55+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "B0Zny-EI8zE",
+      "title": "Gamemodes vs EXTREME Platformer Challenge! 🤯💪",
+      "channel": "Main",
+      "published": "2026-11-02T20:02:49Z",
+      "type": "short"
+    },
     {
       "id": "uMPlu78ImJ0",
       "title": "Scatman vs EXTREME Wave Challenge! 😰🔥",
@@ -128,13 +135,6 @@
       "title": "Which Gamemode Will Pass This Platformer Challenge? 😱🔥",
       "channel": "Main",
       "published": "2026-10-21T07:00:59Z",
-      "type": "short"
-    },
-    {
-      "id": "OsuRObFnMJ8",
-      "title": "Gamemodes Vs EXTREME Zigzag Challenge! 😂🤯",
-      "channel": "Main",
-      "published": "2026-10-19T19:02:15Z",
       "type": "short"
     },
     {
@@ -250,7 +250,6 @@
       "SiUmjyTStHU": "long",
       "cSy4-n-X4Mo": "short",
       "iRpPA7_ej3U": "short",
-      "OsuRObFnMJ8": "short",
       "me6ymDwBmU8": "short",
       "kEWqYfO4chk": "short",
       "P3Yhdg6eGi0": "short",
@@ -266,7 +265,8 @@
       "CE621MQjNhk": "short",
       "jbclSjEUPQM": "short",
       "tk5Trvuyz-I": "long",
-      "uMPlu78ImJ0": "long"
+      "uMPlu78ImJ0": "long",
+      "B0Zny-EI8zE": "short"
     }
   }
 }
