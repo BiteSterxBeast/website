@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T21:00:51+00:00",
+  "updated": "2026-11-02T08:30:56+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "uMPlu78ImJ0",
+      "title": "Scatman vs EXTREME Wave Challenge! 😰🔥",
+      "channel": "Main",
+      "published": "2026-11-02T08:01:02Z",
+      "type": "long"
+    },
     {
       "id": "tk5Trvuyz-I",
       "title": "GD Subzero: Normal vs Full Version",
@@ -128,13 +135,6 @@
       "title": "Gamemodes Vs EXTREME Zigzag Challenge! 😂🤯",
       "channel": "Main",
       "published": "2026-10-19T19:02:15Z",
-      "type": "short"
-    },
-    {
-      "id": "iLjr8dY2XBA",
-      "title": "Gamemodes Vs Slope Height Challenge! 🤑🔥",
-      "channel": "Main",
-      "published": "2026-10-19T07:00:48Z",
       "type": "short"
     },
     {
@@ -250,7 +250,6 @@
       "SiUmjyTStHU": "long",
       "cSy4-n-X4Mo": "short",
       "iRpPA7_ej3U": "short",
-      "iLjr8dY2XBA": "short",
       "OsuRObFnMJ8": "short",
       "me6ymDwBmU8": "short",
       "kEWqYfO4chk": "short",
@@ -266,7 +265,8 @@
       "ICSBk-jqyEg": "short",
       "CE621MQjNhk": "short",
       "jbclSjEUPQM": "short",
-      "tk5Trvuyz-I": "long"
+      "tk5Trvuyz-I": "long",
+      "uMPlu78ImJ0": "long"
     }
   }
 }
