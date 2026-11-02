@@ -109,6 +109,10 @@ h1,h2,h3{margin:0}
 .vnote{fill:var(--muted);font:700 17px Outfit,system-ui,sans-serif;letter-spacing:1px}
 .ptr .hlg *{fill:var(--accent2);fill-opacity:.28;stroke:var(--accent2);stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
 .ptr.good .hlg *{fill:var(--good);stroke:var(--good)}.ptr.bad .hlg *{fill:var(--bad);stroke:var(--bad)}
+.mus .mubase{fill:#8a342d;stroke:#4a1612;stroke-width:2;stroke-linejoin:round}
+.mus .mu,.mus .mu2,.mus .mu3,.mus .mu4{stroke:#4a1612;stroke-width:1.6;stroke-linejoin:round}
+.mus .mu{fill:#d4675a}.mus .mu2{fill:#c0544a}.mus .mu3{fill:#e07a63}.mus .mu4{fill:#b8606b}
+.mus .mutend{fill:#efe5cf;opacity:.85}
 .vtabs{display:flex;flex-wrap:wrap;gap:6px}
 .vtabs button{border:1px solid var(--line);background:transparent;border-radius:99px;padding:6px 12px;font-weight:600;font-size:14px;cursor:pointer}
 .vtabs button.on{background:var(--accent2);border-color:var(--accent2);color:#231700}
@@ -734,6 +738,163 @@ const SKIN = (() => {
 })();
 function skinDraw(o = {}) { return diagram(o, SKIN, "Skin cross-section diagram"); }
 TOPICS.skin.items = SKIN_ITEMS();
+/* =====================================================================
+   MUSCLES — Chapter 6 (Figures 6-11 front and 6-12 back).
+   Three views in the same 400 x 810 frame: body front, body back, face.
+   ===================================================================== */
+const MU_VIEW_NAMES = {front:"Body (front)", back:"Body (back)", face:"Face & neck"};
+const MU_VIEW_CAPS = {front:"MUSCLES · FRONT VIEW", back:"MUSCLES · BACK VIEW", face:"FACE & NECK · FRONT VIEW"};
+const muP = (d, c = "mu") => `<path class="${c}" d="${d}"/>`;
+const muFlip = inner => `<g transform="matrix(-1 0 0 1 400 0)">${inner}</g>`;
+
+/* body outline, left half (mirrored for the right) */
+const MU_BODY = "M200 100 L182 104 L182 150 C160 156 132 160 118 166 C100 172 90 184 88 200 C82 230 80 260 78 290 L72 330 C66 360 62 400 64 430 L66 462 C60 480 56 506 62 522 C70 530 80 524 82 512 L88 464 C92 440 98 410 102 380 L106 336 C108 300 112 270 116 238 C122 290 130 330 136 360 C134 380 128 400 124 420 C118 460 120 500 128 540 C134 570 140 590 140 610 C136 650 140 690 152 740 L152 770 C146 784 148 796 166 798 L190 796 C188 780 186 762 186 742 C186 700 188 660 190 620 C192 590 194 560 196 520 L200 480 Z";
+const MU_HEAD = `<ellipse class="mubase" cx="200" cy="58" rx="38" ry="48"/>`;
+
+/* ---- front ---- */
+const MF = {
+  deltoid:   "M118 166 C98 170 86 186 84 214 C82 238 86 256 92 268 C100 250 108 228 120 206 C124 190 124 176 118 166 Z",
+  pec:       "M184 174 L197 176 L197 252 C176 262 150 262 130 250 C122 240 118 222 120 206 C130 190 150 180 184 174 Z",
+  biceps:    "M106 252 C96 264 90 288 90 308 C90 324 96 332 101 330 C107 318 111 292 111 264 Z",
+  forearm:   "M90 336 C80 360 72 400 70 440 L84 446 C90 410 98 370 104 338 Z",
+  rectusAb:  "M174 262 L197 262 L197 412 L182 412 C178 380 174 320 174 262 Z",
+  sideAb:    "M171 262 C150 263 132 258 120 248 C126 290 132 330 137 360 C141 382 152 402 172 412 L179 412 C175 362 171 300 171 262 Z",
+  scm:       "M184 112 L190 112 C192 130 194 150 196 168 L188 170 C186 150 184 130 184 112 Z",
+  adductor:  "M176 438 L197 450 L197 520 C188 506 180 486 176 466 Z",
+  gracilis:  "M197 452 L199 452 L199 520 C197 556 194 582 190 602 L185 600 C189 570 192 540 194 515 Z",
+  vastLat:   "M126 440 C120 480 122 530 136 582 L148 586 C144 540 142 490 138 448 Z",
+  rectFem:   "M150 430 C142 470 144 530 156 578 L168 578 C172 530 172 470 162 432 Z",
+  vastMed:   "M172 516 C186 528 190 560 184 588 L168 588 C164 560 166 534 172 516 Z",
+  sartorius: "M127 416 L139 412 C160 470 178 530 193 596 L184 600 C168 540 150 478 127 416 Z",
+  tibAnt:    "M151 612 C147 650 151 700 160 740 L168 740 C166 700 164 650 162 612 Z",
+  fibLong:   "M142 614 C137 650 140 690 151 730 L157 728 C151 690 148 650 150 614 Z",
+  gastroc:   "M174 610 C186 630 190 662 186 692 L177 692 C173 662 171 632 174 610 Z",
+};
+const MU_FRONT = (() => {
+  const half = muP(MU_BODY, "mubase") + muP(MF.scm) + muP(MF.deltoid) + muP(MF.pec) + muP(MF.biceps) + muP(MF.forearm, "mu2") +
+    muP(MF.rectusAb) + muP(MF.adductor, "mu2") + muP(MF.gracilis) + muP(MF.vastLat) + muP(MF.rectFem, "mu2") + muP(MF.vastMed) + muP(MF.sartorius, "mu3") +
+    `<rect class="mutend" x="163" y="612" width="9" height="128" rx="4"/><ellipse class="mutend" cx="168" cy="596" rx="12" ry="10"/>` +
+    muP(MF.tibAnt) + muP(MF.fibLong, "mu2") + muP(MF.gastroc, "mu2");
+  let s = `<g class="mus">${half}${muFlip(half)}${MU_HEAD}`;
+  s += muP(MF.sideAb, "mu4");                       // deep layer (transversus) on the left of the picture
+  s += muFlip(muP(MF.sideAb, "mu3"));               // external oblique on the right of the picture
+  s += `<g stroke="#5c1d18" stroke-width="1.6" opacity=".55">`;
+  for (let y = 276; y < 404; y += 14) s += `<line x1="128" y1="${y}" x2="170" y2="${y + 2}"/>`;                // transversus: sideways fibers
+  for (let k = 0; k < 8; k++) s += `<line x1="${236 + k*6}" y1="${268 + k*16}" x2="${272 - k*2}" y2="${288 + k*16}"/>`; // oblique: slanted fibers
+  s += `</g><g stroke="#5c1d18" stroke-width="2.5">`;
+  for (const y of [300, 338, 374]) s += `<line x1="175" y1="${y}" x2="225" y2="${y}"/>`;
+  s += `<line x1="200" y1="262" x2="200" y2="412"/></g>`;
+  s += `<text x="16" y="790" class="vnote">deep layer ← → surface layer</text>`;
+  return s + `</g>`;
+})();
+
+/* ---- back ---- */
+const MB = {
+  trap:      "M200 98 L184 106 L182 150 C156 158 132 162 114 172 L140 196 C160 230 180 272 200 326 C220 272 240 230 260 196 L286 172 C268 162 244 158 218 150 L216 106 Z",
+  deltoid:   MF.deltoid,
+  lat:       "M200 330 C180 304 150 274 122 246 C124 292 128 332 136 362 C160 386 184 400 200 406 Z",
+  triceps:   "M110 248 C96 262 88 290 89 318 C91 332 104 334 108 324 C113 302 114 276 110 248 Z",
+  forearm:   MF.forearm,
+  extObl:    "M130 362 C126 382 125 402 127 420 L148 410 C142 396 137 380 130 362 Z",
+  glutMed:   "M127 412 C140 398 170 398 197 406 L197 424 C176 422 150 428 130 444 Z",
+  glutMax:   "M131 442 C150 428 178 424 197 428 L197 502 C176 512 150 508 133 492 C127 476 127 458 131 442 Z",
+  adductor:  "M186 502 L197 508 L197 566 C191 546 187 524 186 502 Z",
+  bicFem:    "M135 498 C131 530 135 562 148 594 L160 594 C156 562 154 530 151 504 Z",
+  semiTen:   "M156 508 C160 542 168 572 180 598 L190 596 C185 562 179 532 173 510 Z",
+  gastroc:   "M142 606 C134 642 138 682 158 702 L165 702 C161 672 161 638 163 608 Z M168 608 C170 640 172 672 168 702 L176 702 C192 682 194 642 186 606 Z",
+  soleus:    "M143 676 C145 700 151 722 159 742 L173 742 C177 722 185 700 187 676 C179 700 170 710 166 710 L160 710 C152 704 146 692 143 676 Z",
+};
+const MU_BACK = (() => {
+  const half = muP(MU_BODY, "mubase") + muP(MB.deltoid) + muP(MB.lat) + muP(MB.triceps) + muP(MB.forearm, "mu2") + muP(MB.extObl, "mu3") +
+    muP(MB.glutMed, "mu3") + muP(MB.glutMax) + muP(MB.adductor, "mu2") + muP(MB.bicFem) + muP(MB.semiTen, "mu2") +
+    `<rect class="mutend" x="160" y="738" width="12" height="40" rx="5"/>` + muP(MB.soleus, "mu3") + muP(MB.gastroc);
+  return `<g class="mus">${half}${muFlip(half)}${MU_HEAD}${muP(MB.trap, "mu2")}<line x1="200" y1="330" x2="200" y2="404" stroke="#5c1d18" stroke-width="2"/></g>`;
+})();
+
+/* ---- face & neck ---- */
+const MFACE = {
+  frontalis: "M88 262 C98 176 302 176 312 262 L308 292 C262 276 138 276 92 292 Z",
+  temporalis:"M74 296 C66 256 76 226 94 216 L108 296 L100 362 C84 352 76 330 74 296 Z",
+  oculi:     "M110 330 A42 32 0 1 0 194 330 A42 32 0 1 0 110 330 Z M134 330 A18 11 0 1 1 170 330 A18 11 0 1 1 134 330 Z",
+  zygo:      "M104 362 L118 352 L172 432 L162 440 Z",
+  masseter:  "M80 392 L118 382 L130 470 L98 484 C86 452 80 422 80 392 Z",
+  oris:      "M154 452 A46 24 0 1 0 246 452 A46 24 0 1 0 154 452 Z M176 452 A24 7 0 1 1 224 452 A24 7 0 1 1 176 452 Z",
+  scm:       "M98 470 L114 462 C138 530 162 590 186 640 L170 646 C146 596 120 532 98 470 Z",
+};
+const MU_FACE = (() => {
+  let s = `<g class="mus">`;
+  s += `<path class="mubase" d="M200 160 C300 160 336 250 334 340 C332 420 300 500 240 520 L248 600 C300 616 356 630 380 660 L380 740 L20 740 L20 660 C44 630 100 616 152 600 L160 520 C100 500 68 420 66 340 C64 250 100 160 200 160 Z"/>`;
+  s += `<ellipse class="mubase" cx="62" cy="360" rx="14" ry="30"/><ellipse class="mubase" cx="338" cy="360" rx="14" ry="30"/>`;
+  s += muP(MFACE.frontalis);
+  const half = muP(MFACE.temporalis, "mu2") + muP(MFACE.masseter, "mu2") + muP(MFACE.scm) + `<path class="mu" fill-rule="evenodd" d="${MFACE.oculi}"/>` + muP(MFACE.zygo, "mu3") +
+    `<ellipse cx="152" cy="330" rx="18" ry="11" fill="#f4efe6"/><circle cx="152" cy="330" r="6" fill="#3a2a22"/>`;
+  s += half + muFlip(half);
+  s += `<path d="M200 318 L184 410 C190 420 210 420 216 410 Z" fill="#e3a58a" stroke="#5c1d18" stroke-width="1.5"/>`;
+  s += `<path class="mu" fill-rule="evenodd" d="${MFACE.oris}"/><path d="M178 452 Q200 444 222 452 Q200 462 178 452 Z" fill="#a83c3a"/>`;
+  s += `<path class="mutend" d="M150 660 L250 660 L244 700 L156 700 Z" opacity=".5"/>`;
+  return s + `</g>`;
+})();
+const MU_VIEWS = {front:MU_FRONT, back:MU_BACK, face:MU_FACE};
+function musDraw(o = {}) {
+  const v = o.ptr ? (IT[o.ptr.i].view || "front") : (o.view || "front");
+  const cap = `<text x="200" y="34" text-anchor="middle" class="vcap">${MU_VIEW_CAPS[v]}</text>`;
+  return diagram(o, `<g transform="translate(0 ${v === "face" ? 20 : 14})">${MU_VIEWS[v]}</g>` + cap, MU_VIEW_NAMES[v] + " diagram", b => (b.view || "front") === v, v === "face" ? 20 : 14);
+}
+
+const muFlipPt = ([x, y]) => [400 - x, y];
+const MUSCLE_ITEMS = [
+  // front
+  {sci:"Pectoralis major",      common:"Chest muscle",            alt:["pectoralis","pectoralis majors"],                 view:"front", at:[160,220], side:"left",  hl:MF.pec},
+  {sci:"Deltoid",               common:"Shoulder muscle",         alt:["deltoids","deltoideus"],                          view:"front", at:[98,216],  side:"left",  hl:MF.deltoid},
+  {sci:"Biceps brachii",        common:"Front upper-arm muscle",  alt:["biceps"],                                         view:"front", at:[100,292], side:"left",  hl:MF.biceps},
+  {sci:"Rectus abdominis",      common:"Six-pack muscle",         alt:["rectus abdominus","rectus abdominal"],            view:"front", at:[186,320], side:"left",  hl:MF.rectusAb},
+  {sci:"External oblique",      common:"Side abs (surface)",      alt:["external obliques","obliques","external abdominal oblique"], view:"front", at:muFlipPt([150,330]), side:"right", hl:`<g transform="matrix(-1 0 0 1 400 0)"><path d="${MF.sideAb}"/></g>`},
+  {sci:"Transversus abdominis", common:"Deep belt-like abs",      alt:["transversus abdominus","transverse abdominis","transverse abdominus"], view:"front", at:[148,340], side:"left", hl:MF.sideAb},
+  {sci:"Vastus lateralis",      common:"Outer quad",              alt:[],                                                 view:"front", at:[131,520], side:"left",  hl:MF.vastLat},
+  {sci:"Rectus femoris",        common:"Middle quad",             alt:[],                                                 view:"front", at:[155,548], side:"left",  hl:MF.rectFem},
+  {sci:"Vastus medialis",       common:"Inner quad (teardrop)",   alt:[],                                                 view:"front", at:[178,560], side:"right", hl:MF.vastMed},
+  {sci:"Sartorius",             common:"Long diagonal thigh strap", alt:[],                                               view:"front", at:[150,474], side:"left",  hl:MF.sartorius},
+  {sci:"Adductor group",        common:"Inner thigh group",       alt:["adductors","adductor muscles","adductor muscle","adductor"], view:"front", at:[184,470], side:"right", hl:MF.adductor},
+  {sci:"Gracilis",              common:"Thin inner-thigh strap",  alt:[],                                                 view:"front", at:[195,530], side:"right", hl:MF.gracilis},
+  {sci:"Tibialis anterior",     common:"Front shin muscle",       alt:["tibialis"],                                       view:"front", at:[157,668], side:"right", hl:MF.tibAnt},
+  {sci:"Fibularis longus",      common:"Outer lower-leg muscle",  alt:["peroneus longus","fibularis"],                    view:"front", at:[144,660], side:"left",  hl:MF.fibLong},
+  // back
+  {sci:"Trapezius",             common:"Upper back & neck (traps)", alt:["traps"],                                        view:"back",  at:[176,196], side:"left",  hl:MB.trap},
+  {sci:"Latissimus dorsi",      common:"Wide back muscle (lats)", alt:["latissimus","lats"],                              view:"back",  at:[148,318], side:"left",  hl:MB.lat},
+  {sci:"Triceps brachii",       common:"Back upper-arm muscle",   alt:["triceps"],                                        view:"back",  at:[99,294],  side:"left",  hl:MB.triceps},
+  {sci:"Gluteus medius",        common:"Upper side hip muscle",   alt:["glute medius"],                                   view:"back",  at:[150,416], side:"left",  hl:MB.glutMed},
+  {sci:"Gluteus maximus",       common:"Big butt muscle",         alt:["glute max","gluteus maximum"],                    view:"back",  at:[162,468], side:"right", hl:MB.glutMax},
+  {sci:"Biceps femoris",        common:"Outer hamstring",         alt:[],                                                 view:"back",  at:[144,548], side:"left",  hl:MB.bicFem},
+  {sci:"Semitendinosus",        common:"Inner hamstring",         alt:["semitendinosis"],                                 view:"back",  at:[172,556], side:"right", hl:MB.semiTen},
+  {sci:"Gastrocnemius",         common:"Calf muscle",             alt:["gastrocnemeus","gastroc"],                        view:"back",  at:[151,650], side:"left",  hl:MB.gastroc},
+  {sci:"Soleus",                common:"Flat muscle under the calf", alt:[],                                              view:"back",  at:[166,724], side:"right", hl:MB.soleus},
+  // face & neck
+  {sci:"Frontalis",             common:"Forehead muscle",         alt:["frontal belly","occipitofrontalis"],              view:"face",  at:[200,232], side:"right", hl:MFACE.frontalis},
+  {sci:"Temporalis",            common:"Temple chewing muscle",   alt:["temporal muscle"],                                view:"face",  at:[88,280],  side:"left",  hl:MFACE.temporalis},
+  {sci:"Orbicularis oculi",     common:"Muscle around the eye",   alt:[],                                                 view:"face",  at:[124,312], side:"left",  hl:`<path fill-rule="evenodd" d="${MFACE.oculi}"/>`},
+  {sci:"Zygomaticus",           common:"Smiling muscle",          alt:["zygomaticus major","zygomatic"],                  view:"face",  at:[140,394], side:"left",  hl:MFACE.zygo},
+  {sci:"Masseter",              common:"Jaw-clenching muscle",    alt:[],                                                 view:"face",  at:[100,436], side:"left",  hl:MFACE.masseter},
+  {sci:"Orbicularis oris",      common:"Muscle around the lips",  alt:[],                                                 view:"face",  at:[236,440], side:"right", hl:`<path fill-rule="evenodd" d="${MFACE.oris}"/>`},
+  {sci:"Sternocleidomastoid",   common:"Neck-turning muscle",     alt:["sternocleidomastoid muscle","sternomastoid"],     view:"face",  at:[150,562], side:"left",  hl:MFACE.scm},
+].map(b => {
+  const dy = b.view === "face" ? 20 : 14;
+  const hl = b.hl.startsWith("<") ? b.hl : `<path d="${b.hl}"/>`;
+  return {...b, x:b.at[0], y:b.at[1] + dy, hl:`<g transform="translate(0 ${dy})">${hl}</g>`};
+});
+
+TOPICS.muscles = {
+  name: "Muscles", icon: "💪", blurb: "Major muscles, front and back (Ch. 6)",
+  items: MUSCLE_ITEMS, itemWord: "muscle", clueWord: "Muscle",
+  placeholder: "Scientific name…",
+  ask: it => it.ask || `What's the scientific name for the <em>${esc(it.common.toLowerCase())}</em>?`,
+  recall: "What was the scientific name?",
+  draw: o => musDraw(o),
+  viewNames: MU_VIEW_NAMES,
+  geo: {vb:"-200 0 800 810", lx:-194, rx:344, W:250, H:48, fs:22, ymin:28, ymax:785, ring:15, dot:7},
+  subject: "Anatomy · Ch. 6", avatar: "#c62828",
+  art: () => thumbArt({bg1:"#8e1b1b", bg2:"#f0532d", title:"MUSCLES", tag:"FRONT & BACK", count:`${MUSCLE_ITEMS.length} Qs`,
+    pic:`<svg x="196" y="6" width="130" height="174" viewBox="40 0 320 640" preserveAspectRatio="xMidYMin meet">${MU_FRONT}</svg>`}),
+};
 
 const LOGO_BOLT = `<svg viewBox="0 0 40 60" aria-hidden="true"><path d="M24 0 L4 34 H18 L12 60 L36 22 H22 Z" fill="#ff5a4e"/></svg>`;
 const topbar = (right = "") => `<div class="topbar"><div class="mini">BLITZ <span>PLAY</span></div><div class="spacer"></div>${right}</div>`;
@@ -801,7 +962,7 @@ function study(sel, vw) {
   const b = sel != null ? IT[sel] : null;
   const views = [...new Set(IT.map(x => x.view || "body"))];
   STUDY_VIEW = b ? (b.view || "body") : (vw && views.includes(vw) ? vw : views[0]);
-  const tabs = views.length > 1 ? `<div class="vtabs">${views.map(v => `<button class="${v === STUDY_VIEW ? "on" : ""}" data-act="studyView" data-v="${v}">${esc(VIEW_NAMES[v] || v)}</button>`).join("")}</div>` : "";
+  const tabs = views.length > 1 ? `<div class="vtabs">${views.map(v => `<button class="${v === STUDY_VIEW ? "on" : ""}" data-act="studyView" data-v="${v}">${esc((TOPIC.viewNames || VIEW_NAMES)[v] || v)}</button>`).join("")}</div>` : "";
   view(`${topbar(`<button class="btn small ghost" data-act="soloSettings">Back</button>`)}
   <div class="gbody${TOPIC.wide ? " wide" : ""}">
     ${TOPIC.draw({dots:true, sel, view:STUDY_VIEW, ptr: sel != null ? {i:sel, text:b.sci, kind:"good"} : null})}
