@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="disabled-adaptations" content="watch">
 <title>Merch · BiteSterxBeast</title>
 <meta name="description" content="Official BiteSterxBeast merch.">
 <meta name="theme-color" content="#ff8000">
@@ -22,6 +23,7 @@
     --ink: #1a0d05;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { -webkit-hyphens: manual; hyphens: manual; }
   html { background: #ff4a00; }
   body {
     min-height: 100vh;
@@ -63,7 +65,7 @@
   h2 { font-size: 2rem; margin-bottom: 14px; }
 
   /* ---------- shop grid ---------- */
-  .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+  .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 18px; }
   .mcard { display: block; transition: transform .15s; }
   .mcard:hover { transform: translateY(-4px); }
   .mimg {
@@ -191,6 +193,31 @@
     .main { cursor: zoom-in; }
     .thumb { width: calc(20% - 10px); }
     .panel { padding: 20px; }
+  }
+
+  /* ---------- APPLE WATCH (and other tiny screens) ---------- */
+  @media (max-width: 260px) {
+    html, body { overflow-x: hidden; }
+    /* still bolts, no drift; gradient pinned to the screen so every part of the page looks the same */
+    body { animation: none; background: none; }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background-image: url("/bolts.png"), linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+      background-size: 48px 46px, 100% 100%;
+      background-repeat: repeat, no-repeat;
+    }
+    .panel { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(18, 10, 8, 0.86); }
+
+    .wrap { padding: 16px 8px 24px; }
+    .logo { font-size: 1.3rem; -webkit-text-stroke: 3px var(--ink); width: 100%; text-align: center; }
+    .top { justify-content: center; gap: 6px; }
+    .spacer { display: none; }
+    .pillbtn { padding: 3px 10px; font-size: 0.8rem; }
+    .panel { padding: 12px; border-radius: 14px; }
+    h2 { font-size: 1.35rem; }
+    .mgrid { grid-template-columns: 1fr; gap: 12px; }
+    .thumbs { gap: 6px; }
+    .thumb { width: calc(25% - 5px); }
   }
 </style>
 </head>
