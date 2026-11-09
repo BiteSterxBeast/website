@@ -1,0 +1,640 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Remembering Abby</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Gloock&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+/* Layout: arched portrait beside the name on wide screens, stacked on phones; then the photo wall, a candle band, and a shared memory wall with its form. */
+:root {
+  --bg: #eceff5;
+  --surface: #f8f9fc;
+  --surface-2: #dfe4ee;
+  --fg: #1b2136;
+  --muted: #546079;
+  --line: #c6cddd;
+  --accent: #9a3350;
+  --accent-fg: #ffffff;
+  --glow: rgba(224, 150, 60, 0.28);
+  --band-bg: #1a2040;
+  --band-fg: #ece9f5;
+  --band-muted: #aeb3cf;
+  --scrim: rgba(6, 8, 18, 0.93);
+  --scrim-fg: #f2f0f8;
+  --display: "Gloock", "Georgia", serif;
+  --text: "Literata", "Georgia", serif;
+  --ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10142a;
+    --surface: #181d38;
+    --surface-2: #232a4d;
+    --fg: #ebe8f3;
+    --muted: #a3a9c5;
+    --line: #313864;
+    --accent: #f08fa3;
+    --accent-fg: #2a0f18;
+    --glow: rgba(246, 185, 85, 0.22);
+    --band-bg: #0a0d1e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10142a;
+  --surface: #181d38;
+  --surface-2: #232a4d;
+  --fg: #ebe8f3;
+  --muted: #a3a9c5;
+  --line: #313864;
+  --accent: #f08fa3;
+  --accent-fg: #2a0f18;
+  --glow: rgba(246, 185, 85, 0.22);
+  --band-bg: #0a0d1e;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg) radial-gradient(60rem 28rem at 15% -6%, var(--glow), transparent 70%) no-repeat;
+  color: var(--fg);
+  font-family: var(--ui);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 3rem;
+}
+.wrap { max-width: 68rem; margin-inline: auto; }
+h1, h2, h3, p { margin: 0; }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Hero */
+.hero { display: grid; gap: 2.25rem; align-items: center; padding-block: 2.5rem 3rem; }
+.arch { position: relative; width: 100%; max-width: 26rem; margin-inline: auto; aspect-ratio: 4 / 5; }
+.arch img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 14%;
+  border-radius: 999px 999px 14px 14px;
+  box-shadow: 0 30px 80px -30px var(--glow);
+  background: var(--surface-2);
+}
+.arch::after {
+  content: ""; position: absolute; inset: -10px; pointer-events: none;
+  border: 1.5px solid var(--accent); opacity: 0.55;
+  border-radius: 999px 999px 22px 22px;
+}
+.eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(4.5rem, 19vw, 8.5rem); line-height: 0.95; letter-spacing: -0.01em; margin-block: 0.15em 0.2em; }
+.date { display: flex; align-items: center; gap: 0.9rem; font-family: var(--text); font-style: italic; font-size: 1.3rem; color: var(--muted); }
+.date::before { content: ""; width: 2.5rem; height: 1.5px; background: var(--accent); }
+.lede { font-family: var(--text); font-size: 1.1rem; max-width: 34rem; margin-top: 1.5rem; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0.6rem 1.3rem;
+  border-radius: 8px; border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-fg);
+  font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* Sections */
+.section { padding-block: 3rem 1rem; }
+.section-head { display: grid; gap: 0.4rem; margin-bottom: 1.5rem; }
+h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.1; text-wrap: balance; }
+.section-head p { color: var(--muted); max-width: 36rem; }
+
+/* Photo wall */
+.gallery { column-count: 2; column-gap: 10px; }
+.tile {
+  display: block; width: 100%; padding: 0; margin: 0 0 10px; border: 0; border-radius: 6px; overflow: hidden;
+  background: var(--surface-2); cursor: zoom-in; break-inside: avoid;
+}
+.tile img { display: block; width: 100%; height: auto; transition: transform 0.35s ease; }
+.tile:hover img { transform: scale(1.03); }
+
+/* Candles */
+.band { background: var(--band-bg); color: var(--band-fg); border-radius: 20px; padding: 2.5rem clamp(1.25rem, 5vw, 3rem); margin-top: 3rem; }
+.band h2 { color: var(--band-fg); }
+.band .section-head p { color: var(--band-muted); }
+.flames { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1rem 1.1rem; min-height: 6rem; padding-block: 0.5rem 1.25rem; }
+.candle { display: flex; flex-direction: column; align-items: center; width: 24px; }
+.candle svg { width: 14px; height: 24px; fill: url(#flameGrad); filter: drop-shadow(0 0 8px rgba(246, 185, 85, 0.75)); transform-origin: 50% 100%; animation: flick 2.6s ease-in-out infinite; animation-delay: var(--d, 0s); }
+.candle.unlit svg { fill: none; filter: none; animation: none; opacity: 0; }
+.candle .wick { width: 2px; height: 6px; background: #4a4a58; }
+.candle .wax { width: 18px; height: 30px; border-radius: 3px 3px 4px 4px; background: linear-gradient(90deg, #d4cdbd, #f2ede1 45%, #c9c1af); }
+.candle.unlit .wax { opacity: 0.45; }
+.candle.fresh svg { animation: flick 2.6s ease-in-out infinite, kindle 0.9s ease-out; }
+@keyframes flick {
+  0%, 100% { transform: scale(1, 1) rotate(-1deg); }
+  25% { transform: scale(0.96, 1.06) rotate(1.5deg); }
+  50% { transform: scale(1.04, 0.97) rotate(-1deg); }
+  75% { transform: scale(0.98, 1.03) rotate(1deg); }
+}
+@keyframes kindle { from { opacity: 0; transform: scale(0.2); } to { opacity: 1; } }
+.candle-count { font-weight: 600; }
+.candle-names { color: var(--band-muted); font-size: 0.95rem; margin-top: 0.15rem; overflow-wrap: anywhere; }
+.candle-form { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end; margin-top: 1.5rem; }
+.candle-form .field { flex: 1 1 14rem; min-width: 0; }
+.band label { color: var(--band-muted); }
+.band input { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); color: var(--band-fg); }
+.band .btn { background: var(--band-fg); border-color: var(--band-fg); color: #1a2040; }
+.band .status { color: var(--band-muted); }
+
+/* Form + wall */
+.share { display: grid; gap: 2rem; }
+.form { display: grid; gap: 0.9rem; align-content: start; min-width: 0; }
+.field { display: grid; gap: 0.35rem; min-width: 0; }
+label { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; color: var(--muted); }
+input[type="text"], textarea {
+  width: 100%; padding: 0.7rem 0.8rem; border-radius: 8px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--fg); font-family: var(--text); font-size: 16px;
+}
+textarea { resize: vertical; min-height: 8rem; line-height: 1.55; }
+.photo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.thumb { display: none; align-items: center; gap: 0.6rem; min-width: 0; }
+.thumb.on { display: flex; }
+.thumb img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; }
+.linkish { background: none; border: 0; padding: 0.25rem; color: var(--accent); text-decoration: underline; cursor: pointer; font-size: 0.9rem; }
+.status { min-height: 1.4em; font-size: 0.92rem; color: var(--muted); overflow-wrap: anywhere; }
+.notice { padding: 0.9rem 1rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--muted); font-size: 0.95rem; }
+
+.wall { display: grid; gap: 1rem; align-content: start; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem 1.2rem; display: grid; gap: 0.8rem; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem; }
+.card-head strong { font-weight: 600; overflow-wrap: anywhere; }
+.card-head time { font-size: 0.85rem; color: var(--muted); }
+.card .photo { display: block; width: 100%; padding: 0; border: 0; border-radius: 8px; overflow: hidden; background: var(--surface-2); cursor: zoom-in; }
+.card .photo img { display: block; width: 100%; max-height: 28rem; object-fit: cover; }
+.card .title { font-family: var(--text); font-weight: 500; font-size: 1.2rem; line-height: 1.35; margin-bottom: -0.35rem; overflow-wrap: anywhere; }
+.card .msg { font-family: var(--text); font-size: 1.05rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.card .tools { display: flex; justify-content: flex-end; }
+.more { justify-self: start; }
+.hint { font-size: 0.85rem; color: var(--muted); flex: 1 1 12rem; }
+.preview-bar { margin: 1rem 0 0; padding: 0.6rem 0.9rem; border-radius: 8px; background: #fff4d6; color: #5a4300; font-size: 0.9rem; border: 1px solid #e8cf86; }
+
+footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+
+/* Lightbox */
+.lb {
+  position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: var(--scrim); color: var(--scrim-fg);
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+}
+.lb figure { margin: 0; display: grid; gap: 0.75rem; justify-items: center; max-width: 100%; }
+.lb img { max-width: 100%; max-height: calc(100dvh - 9rem); object-fit: contain; border-radius: 6px; }
+.lb figcaption { font-size: 0.95rem; min-height: 1.4em; text-align: center; }
+.lb button {
+  position: absolute; width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1); color: var(--scrim-fg); font-size: 1.4rem; line-height: 1; cursor: pointer;
+}
+.lb button:hover { background: rgba(255, 255, 255, 0.22); }
+.lb .close { top: max(12px, env(safe-area-inset-top, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); }
+.lb .prev { left: max(8px, env(safe-area-inset-left, 0px)); top: 50%; transform: translateY(-50%); }
+.lb .next { right: max(8px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
+
+@media (min-width: 780px) {
+  .hero { grid-template-columns: minmax(0, 26rem) minmax(0, 1fr); gap: 4.5rem; padding-block: 4rem 4rem; }
+  .gallery { column-count: 3; column-gap: 14px; }
+  .tile { margin-bottom: 14px; }
+}
+@media (min-width: 900px) {
+  .share { grid-template-columns: minmax(0, 24rem) minmax(0, 1fr); gap: 3rem; }
+  .form { position: sticky; top: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .candle svg, .candle.fresh svg { animation: none; }
+  .tile img { transition: none; }
+}
+</style>
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="0.6" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#fff5d1"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <p class="preview-bar" id="preview-bar" hidden>Preview mode: the Google Forms aren't connected yet, so the memories and candles below are samples.</p>
+  <header class="hero">
+    <div class="arch">
+      <img src="img/hero.jpg" alt="Abby smiling in her kitchen with a hand on her hip" width="1000" height="1710">
+    </div>
+    <div>
+      <p class="eyebrow">In loving memory</p>
+      <h1>Abby</h1>
+      <p class="date"><time datetime="2026-11-09">November 9, 2026</time></p>
+      <p class="lede">This page holds the photos and stories of the people who loved her. Add a picture, write a memory, or light a candle.</p>
+      <div class="cta">
+        <a class="btn" href="#share">Share a memory</a>
+        <a class="btn ghost" href="#candle">Light a candle</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="moments" aria-labelledby="moments-h">
+      <div class="section-head">
+        <h2 id="moments-h">Moments</h2>
+        <p id="gallery-count">Tap a photo to see it larger.</p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="band" id="candle" aria-labelledby="candle-h">
+      <div class="section-head">
+        <h2 id="candle-h">Light a candle</h2>
+        <p>Each flame is someone thinking of Abby today.</p>
+      </div>
+      <div class="flames" id="flames" role="list" aria-label="Candles lit for Abby"></div>
+      <p class="candle-count" id="candle-count" role="status">Loading candles…</p>
+      <p class="candle-names" id="candle-names"></p>
+      <form class="candle-form" id="candle-form">
+        <div class="field">
+          <label for="candle-name">Your name (optional)</label>
+          <input type="text" id="candle-name" maxlength="60" autocomplete="name">
+        </div>
+        <button class="btn" type="submit" id="candle-btn" disabled>Light a candle</button>
+      </form>
+      <p class="status" id="candle-status" role="status"></p>
+    </section>
+
+    <section class="section" id="share" aria-labelledby="share-h">
+      <div class="section-head">
+        <h2 id="share-h">Memories</h2>
+        <p>Write what you remember, and add a photo if you have one. The family reads each memory before it appears here.</p>
+      </div>
+      <div class="share">
+        <form class="form" id="memory-form" novalidate>
+          <div class="field">
+            <label for="m-name">Your name</label>
+            <input type="text" id="m-name" maxlength="60" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="m-text">Your memory</label>
+            <textarea id="m-text" maxlength="1500" placeholder="A story, something she always said, what she meant to you"></textarea>
+          </div>
+          <div class="photo-row">
+            <a class="btn ghost" id="m-photo-btn" href="#" target="_blank" rel="noopener">Add a photo with this memory</a>
+            <p class="hint">Photos go through Google Forms, which asks you to sign in to Google. Your name and memory come with you, so they're posted together.</p>
+          </div>
+          <button class="btn" type="submit" id="m-submit" disabled>Share this memory</button>
+          <p class="status" id="m-status" role="status"></p>
+        </form>
+        <div class="wall" id="wall" aria-live="polite">
+          <p class="notice" id="wall-note">Loading memories…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Remembering Abby · 11/9/2026</footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="close" id="lb-close" type="button" aria-label="Close photo">&times;</button>
+  <button class="prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button class="next" id="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =====================================================================
+     GOOGLE FORMS SETUP: fill these in once the forms exist.
+     - action:  the form's link with "viewform" changed to "formResponse"
+     - entry.*: field IDs from the form's "Get pre-filled link"
+     - csv:     the response sheet, File > Share > Publish to web > CSV
+     Anything still saying PASTE keeps the page in preview mode.
+     ===================================================================== */
+  var CONFIG = {
+    memory: {
+      action:  "https://docs.google.com/forms/d/e/1FAIpQLSdDPqfYQd69Q_Dnz3l2tv9YeFBlRicogiM8KtrCW0ITz5KDoQ/formResponse",
+      viewUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdDPqfYQd69Q_Dnz3l2tv9YeFBlRicogiM8KtrCW0ITz5KDoQ/viewform",
+      nameField: "entry.21028733",
+      textField: "entry.1093168780",
+      csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGcqTcfjVIwiO_v-KPiQbvA0LLLXZblczMjMGXKoSOkxswEpS4YhUX8hgvxDOJX9lTBpZwm-gCsdaD/pub?gid=615825495&single=true&output=csv"
+    },
+    photo: {   // Form 3: name + photo upload + optional memory (needs Google sign-in)
+      viewUrl: "https://docs.google.com/forms/d/e/1FAIpQLScji-bZYxpqD9mlubOj-3CBNRKDo7IFK6G1kAQ6GJN7nrgdfQ/viewform",
+      nameField: "entry.1441576275",
+      titleField: "entry.563567713",
+      textField: "entry.481140223",
+      csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRhi_HnD9PDhYlUTpYmUnFVQetG2IpYB7aWtWR7qo4spMPxc_ucTqq2AANmQDnhCUdV3_8yseDlxKlJ/pub?gid=1080675191&single=true&output=csv"
+    },
+    candle: {
+      action:  "https://docs.google.com/forms/d/e/1FAIpQLSdXDJqT0vHPb66TXbF1hiiLwu73EiNtqHE0Arfr8khKtmQ5Iw/formResponse",
+      nameField: "entry.1441576275",
+      csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSfJNISyMt6jq0S8rJkQxQJCti8zIp_D3LTbKAzOM-jwy3Oi90uQKAJzUbNRSppQmL9a0AvaQppu4iG/pub?gid=2088502476&single=true&output=csv"
+    },
+    requireApproval: true,   // only show memories marked "yes" in the Approved column
+    refreshSeconds: 60
+  };
+  var PREVIEW = /PASTE/.test([CONFIG.memory.csv, CONFIG.memory.nameField, CONFIG.photo.csv, CONFIG.photo.viewUrl, CONFIG.candle.csv, CONFIG.candle.nameField].join(" "));
+
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, props) {
+    var n = document.createElement(tag);
+    if (props) Object.keys(props).forEach(function (k) {
+      var v = props[k];
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.slice(0, 2) === "on") n.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) n.setAttribute(k, v === true ? "" : v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i]; if (c == null) continue;
+      n.append(c.nodeType ? c : document.createTextNode(c));
+    }
+    return n;
+  }
+  function store(key, val) {
+    try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) {}
+    return null;
+  }
+  function clean(s, max) { return String(s == null ? "" : s).trim().slice(0, max); }
+
+  /* ---------- Photos that ship with the page ---------- */
+  var seeded = [
+    { key: "s0", src: "img/p7.jpg", alt: "Abby smiling beside a man with glasses in a yellow room", by: "" },
+    { key: "s1", src: "img/p6.jpg", alt: "Abby smiling by a sunny window in a floral top", by: "" },
+    { key: "s2", src: "img/p4.jpg", alt: "Abby leaning in for a selfie with a woman in a patterned blouse", by: "" },
+    { key: "s3", src: "img/p3.jpg", alt: "Abby and another woman in black tops smiling together", by: "" },
+    { key: "s4", src: "img/p5.jpg", alt: "Abby smiling and cuddling with a young boy", by: "" },
+    { key: "s5", src: "img/p2.jpg", alt: "Abby with three family members in a group selfie", by: "" },
+    { key: "s6", src: "img/p1.jpg", alt: "Abby with two small children at a party", by: "" }
+  ];
+  var visitor = [], items = seeded.slice(), gallerySig = "";
+  function renderGallery() {
+    items = seeded.concat(visitor);
+    var sig = items.map(function (i) { return i.key; }).join("|");
+    if (sig === gallerySig) return;
+    gallerySig = sig;
+    var g = $("gallery");
+    g.replaceChildren.apply(g, items.map(function (it, i) {
+      return el("button", { class: "tile", type: "button", "aria-label": "Open photo " + (i + 1) + " of " + items.length, onclick: function () { openLb(i); } },
+        driveFallback(el("img", { src: it.src, alt: it.alt, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
+    }));
+    $("gallery-count").textContent = items.length + " photos. Tap one to see it larger.";
+  }
+
+  /* ---------- Lightbox ---------- */
+  var lbIndex = 0, lbOpener = null, touchX = null;
+  function showLb() {
+    var it = items[lbIndex]; if (!it) return;
+    $("lb-img").dataset.try = 0; $("lb-img").src = it.src; $("lb-img").alt = it.alt;
+    $("lb-cap").textContent = it.by ? "Shared by " + it.by : "";
+    $("lb-prev").hidden = $("lb-next").hidden = items.length < 2;
+  }
+  function openLb(i) { lbOpener = document.activeElement; lbIndex = i; showLb(); $("lb").hidden = false; document.documentElement.style.overflow = "hidden"; $("lb-close").focus(); }
+  function closeLb() { $("lb").hidden = true; document.documentElement.style.overflow = ""; if (lbOpener && lbOpener.focus) lbOpener.focus(); }
+  function stepLb(d) { lbIndex = (lbIndex + d + items.length) % items.length; showLb(); }
+  $("lb-close").addEventListener("click", closeLb);
+  $("lb-prev").addEventListener("click", function () { stepLb(-1); });
+  $("lb-next").addEventListener("click", function () { stepLb(1); });
+  $("lb").addEventListener("click", function (e) { if (e.target === $("lb")) closeLb(); });
+  $("lb").addEventListener("touchstart", function (e) { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  $("lb").addEventListener("touchend", function (e) {
+    if (touchX == null) return;
+    var dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 50) stepLb(dx < 0 ? 1 : -1);
+  }, { passive: true });
+  document.addEventListener("keydown", function (e) {
+    if ($("lb").hidden) return;
+    if (e.key === "Escape") closeLb(); else if (e.key === "ArrowLeft") stepLb(-1); else if (e.key === "ArrowRight") stepLb(1);
+  });
+
+  /* ---------- Google Sheets (CSV) reading ---------- */
+  function parseCsv(text) {
+    var rows = [], row = [], f = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") { if (c === "\r" && text[i + 1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows.filter(function (r) { return r.some(function (x) { return x.trim(); }); });
+  }
+  function toObjects(rows, prefix) {
+    prefix = prefix || "r";
+    if (!rows.length) return [];
+    var head = rows[0].map(function (h) { return h.toLowerCase(); });
+    function col(word) { return head.findIndex(function (h) { return h.indexOf(word) >= 0; }); }
+    var c = { title: col("title"), time: col("timestamp"), name: col("name"), text: (col("memory") >= 0 ? col("memory") : col("message")), photo: col("photo"), ok: col("approved") };
+    return rows.slice(1).map(function (r, i) {
+      function g(k) { return c[k] >= 0 ? (r[c[k]] || "") : ""; }
+      return { id: prefix + i, title: clean(g("title"), 100), time: g("time"), name: clean(g("name"), 60), text: clean(g("text"), 1500), photo: drivePhoto(g("photo")), approved: /^\s*(yes|y|true|x)\s*$/i.test(g("ok")) };
+    });
+  }
+  function drivePhoto(link) {
+    var m = String(link || "").match(/[?&]id=([\w-]+)|\/d\/([\w-]+)/);
+    var id = m && (m[1] || m[2]);
+    return id ? "https://drive.google.com/thumbnail?id=" + id + "&sz=w1200" : (/^img\//.test(link) ? link : null);
+  }
+  function driveFallback(img) {
+    var m = img.src.match(/[?&]id=([\w-]+)|\/d\/([\w-]+)/), id = m && (m[1] || m[2]);
+    var tries = id ? ["https://drive.google.com/thumbnail?id=" + id + "&sz=w1200", "https://lh3.googleusercontent.com/d/" + id + "=w1200", "https://drive.google.com/uc?export=view&id=" + id] : [];
+    img.addEventListener("error", function () {
+      var n = Number(img.dataset.try || 0) + 1;
+      img.dataset.try = n;
+      if (n < tries.length) img.src = tries[n];
+      else { var box = img.closest(".photo, .tile"); if (box) box.hidden = true; }
+    });
+    return img;
+  }
+  function fetchCsv(url, prefix) {
+    return fetch(url + (url.indexOf("?") < 0 ? "?" : "&") + "t=" + Date.now()).then(function (r) {
+      if (!r.ok) throw new Error("http " + r.status);
+      return r.text();
+    }).then(function (t) { return toObjects(parseCsv(t), prefix); });
+  }
+
+  /* ---------- Sending to Google Forms ---------- */
+  function sendForm(action, fields) {
+    var body = new URLSearchParams();
+    Object.keys(fields).forEach(function (k) { body.append(k, fields[k]); });
+    if (PREVIEW) return new Promise(function (r) { setTimeout(r, 600); });
+    // Google doesn't let pages read the reply, so a sent request counts as done.
+    return fetch(action, { method: "POST", mode: "no-cors", body: body });
+  }
+
+  /* ---------- Sample data for preview mode ---------- */
+  var SAMPLE = {
+    memories: [
+      { id: "d1", time: "11/9/2026 9:12:00", name: "Sample: a cousin", text: "This is where a memory will show up once someone sends one through the form. A story, something she always said, what she meant to them.", photo: null, approved: true },
+      { id: "d2", time: "11/9/2026 8:40:00", name: "Sample: a friend", text: "A Title On The First Line\nIf the first line of a memory is short, it shows as a heading like the one above. Photo posts come from the photo form, and the memory written with it shows on the same card, under the picture.", photo: "img/p3.jpg", approved: true },
+      { id: "d3", time: "11/9/2026 8:05:00", name: "Not approved yet", text: "You won't see this one, because it hasn't been approved in the sheet.", photo: null, approved: false }
+    ],
+    candles: [{ name: "Sample name" }, { name: "" }, { name: "Another name" }, { name: "" }, { name: "" }]
+  };
+
+  /* ---------- Candles ---------- */
+  var candles = [], localCandle = store("abby-candle") === "1";
+  function flameSvg() {
+    var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 14 24"); s.setAttribute("aria-hidden", "true");
+    var p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", "M7 0C7 7 1 10 1 17a6 6 0 0 0 12 0C13 12 9.500 9.500 7 0Z");
+    s.appendChild(p); return s;
+  }
+  function renderCandles(freshLast) {
+    var box = $("flames"), shown = candles.slice(0, 36), n = candles.length;
+    if (!n) {
+      box.replaceChildren(el("div", { class: "candle unlit", role: "listitem", "aria-label": "No candle lit yet" }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" })));
+    } else {
+      box.replaceChildren.apply(box, shown.map(function (c, i) {
+        var node = el("div", { class: "candle" + (freshLast && i === 0 ? " fresh" : ""), role: "listitem", title: c.name || "",
+          "aria-label": c.name ? "Candle lit by " + c.name : "A candle lit by someone who loved her" }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" }));
+        node.style.setProperty("--d", (-((i * 0.37) % 2.6)).toFixed(2) + "s");
+        return node;
+      }));
+    }
+    $("candle-count").textContent = n === 0 ? "No candles lit yet. Light the first one." : n + (n === 1 ? " candle lit" : " candles lit");
+    var named = candles.filter(function (c) { return c.name; }).slice(0, 3).map(function (c) { return c.name; });
+    var rest = n - named.length, line = "";
+    if (named.length) {
+      line = "Lit by " + (named.length === 1 ? named[0] : named.slice(0, -1).join(", ") + " and " + named[named.length - 1]);
+      if (rest > 0) line += (named.length === 1 ? " and " : ", plus ") + rest + " more";
+      line += ".";
+    }
+    $("candle-names").textContent = line;
+    $("candle-btn").disabled = localCandle;
+    $("candle-btn").textContent = localCandle ? "Your candle is lit" : "Light a candle";
+  }
+  function loadCandles() {
+    if (PREVIEW) { if (!candles.length) candles = SAMPLE.candles.slice(); renderCandles(); return Promise.resolve(); }
+    return fetchCsv(CONFIG.candle.csv).then(function (rows) {
+      candles = rows.reverse().map(function (r) { return { name: r.name }; });
+      renderCandles();
+    }).catch(function () { $("candle-count").textContent = "Can't show the candles right now."; });
+  }
+  $("candle-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (localCandle) return;
+    var name = clean($("candle-name").value, 60);
+    if (name) store("abby-name", name);
+    $("candle-btn").disabled = true; $("candle-status").textContent = "Lighting…";
+    var f = {}; f[CONFIG.candle.nameField] = name;
+    sendForm(CONFIG.candle.action, f).then(function () {
+      localCandle = true; store("abby-candle", "1");
+      candles.unshift({ name: name });
+      renderCandles(true);
+      $("candle-status").textContent = "Your candle is lit. Thank you.";
+    }).catch(function () {
+      $("candle-btn").disabled = false;
+      $("candle-status").textContent = "That didn't go through. Check your connection and try again.";
+    });
+  });
+
+  /* ---------- Memories ---------- */
+  var memories = [], memLimit = 12;
+  function whenText(t) {
+    var d = new Date(t);
+    return isNaN(d) ? "" : d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  }
+  /* A short first line with more text under it (no ending period) is shown as the memory's title. */
+  function splitTitle(m) {
+    if (m.title) return { title: m.title, body: m.text };
+    var t = m.text || "", nl = t.indexOf("\n");
+    if (nl > 0) {
+      var first = t.slice(0, nl).trim(), rest = t.slice(nl + 1).trim();
+      if (rest && first.length <= 70 && !/[.,;]$/.test(first)) return { title: first, body: rest };
+    }
+    return { title: "", body: t };
+  }
+  function renderWall() {
+    var list = memories.filter(function (m) { return !CONFIG.requireApproval || m.approved; })
+                       .filter(function (m) { return m.text || m.photo; });
+    visitor = list.filter(function (m) { return m.photo; }).map(function (m) {
+      return { key: m.id, src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), by: m.name || "" };
+    });
+    renderGallery();
+    var wall = $("wall");
+    if (!list.length) { wall.replaceChildren(el("p", { class: "notice", text: "No memories here yet. The first one shared will appear for everyone who visits." })); return; }
+    var cards = list.slice(0, memLimit).map(function (m) {
+      var kids = [el("div", { class: "card-head" }, el("strong", { text: m.name || "A friend" }), el("time", { text: whenText(m.time) }))];
+      if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": "Open photo shared by " + (m.name || "a visitor"),
+        onclick: function () { var ix = items.findIndex(function (i) { return i.key === m.id; }); if (ix >= 0) openLb(ix); } },
+        driveFallback(el("img", { src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" }))));
+      var tb = splitTitle(m);
+      if (tb.title) kids.push(el("h3", { class: "title", text: tb.title }));
+      if (tb.body) kids.push(el("p", { class: "msg", text: tb.body }));
+      return el.apply(null, ["article", { class: "card" }].concat(kids));
+    });
+    if (list.length > memLimit) cards.push(el("button", { class: "btn ghost more", type: "button", onclick: function () { memLimit += 12; renderWall(); } }, "Show more memories"));
+    wall.replaceChildren.apply(wall, cards);
+  }
+  function loadMemories() {
+    if (PREVIEW) { memories = SAMPLE.memories; renderWall(); return Promise.resolve(); }
+    // Text-only memories (Form 1) and photo posts (Form 3) are merged and shown newest first.
+    return Promise.all([
+      fetchCsv(CONFIG.memory.csv, "m").catch(function () { return null; }),
+      fetchCsv(CONFIG.photo.csv, "p").catch(function () { return null; })
+    ]).then(function (res) {
+      if (!res[0] && !res[1]) throw new Error("both failed");
+      memories = (res[0] || []).concat(res[1] || []).sort(function (a, b) { return (Date.parse(b.time) || 0) - (Date.parse(a.time) || 0); });
+      renderWall();
+    }).catch(function () { $("wall").replaceChildren(el("p", { class: "notice", text: "Can't show the memories right now." })); });
+  }
+
+  /* "Add a photo" opens the Google Form with name and memory already filled in */
+  function photoLink() {
+    var u = CONFIG.photo.viewUrl + "?usp=pp_url";
+    var n = clean($("m-name").value, 60), t = clean($("m-text").value, 1500);
+    if (n) u += "&" + CONFIG.photo.nameField + "=" + encodeURIComponent(n);
+    var tb = splitTitle({ text: t });
+    if (tb.title) u += "&" + CONFIG.photo.titleField + "=" + encodeURIComponent(tb.title);
+    if (tb.body) u += "&" + CONFIG.photo.textField + "=" + encodeURIComponent(tb.body);
+    return u;
+  }
+  $("m-photo-btn").addEventListener("click", function (e) {
+    if (PREVIEW) { e.preventDefault(); $("m-status").textContent = "Preview: this opens the photo form with your name and memory already filled in, so the photo and memory post together."; return; }
+    this.href = photoLink();
+    if (clean($("m-name").value, 60)) store("abby-name", clean($("m-name").value, 60));
+  });
+
+  $("memory-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = clean($("m-name").value, 60), text = clean($("m-text").value, 1500);
+    if (!name) { $("m-status").textContent = "Please add your name so people know who this is from."; $("m-name").focus(); return; }
+    if (!text) { $("m-status").textContent = "Write a few words first, or use Add a photo to send a picture."; $("m-text").focus(); return; }
+    store("abby-name", name);
+    $("m-submit").disabled = true; $("m-status").textContent = "Sharing…";
+    var f = {}; f[CONFIG.memory.nameField] = name; f[CONFIG.memory.textField] = text;
+    sendForm(CONFIG.memory.action, f).then(function () {
+      $("m-text").value = "";
+      $("m-status").textContent = CONFIG.requireApproval
+        ? "Thank you. Your memory will appear here once the family has read it."
+        : "Thank you. Your memory will appear here in a minute or two.";
+    }).catch(function () {
+      $("m-status").textContent = "That didn't go through. Check your connection and try again.";
+    }).then(function () { $("m-submit").disabled = false; });
+  });
+
+  /* ---------- Start ---------- */
+  $("preview-bar").hidden = !PREVIEW;
+  $("m-submit").disabled = false;
+  var saved = store("abby-name");
+  if (saved) { $("m-name").value = saved; $("candle-name").value = saved; }
+  renderGallery();
+  loadCandles(); loadMemories();
+  if (!PREVIEW) setInterval(function () { loadCandles(); loadMemories(); }, CONFIG.refreshSeconds * 1000);
+})();
+</script>
+
+</body></html>
