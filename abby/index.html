@@ -269,7 +269,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     <section class="section" id="share" aria-labelledby="share-h">
       <div class="section-head">
         <h2 id="share-h">Memories</h2>
-        <p>Write what you remember, and add a photo if you have one. The family reads each memory before it appears here.</p>
+        <p>Write what you remember, and add a photo if you have one. Everyone who visits can read what you share.</p>
       </div>
       <div class="share">
         <form class="form" id="memory-form" novalidate>
@@ -339,7 +339,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       nameField: "entry.1441576275",
       csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSfJNISyMt6jq0S8rJkQxQJCti8zIp_D3LTbKAzOM-jwy3Oi90uQKAJzUbNRSppQmL9a0AvaQppu4iG/pub?gid=2088502476&single=true&output=csv"
     },
-    requireApproval: true,   // only show memories marked "yes" in the Approved column
+    requireApproval: false,  // false = show everything except rows ticked in the Hide column
     refreshSeconds: 60
   };
   var PREVIEW = /PASTE/.test([CONFIG.memory.csv, CONFIG.memory.nameField, CONFIG.photo.csv, CONFIG.photo.viewUrl, CONFIG.candle.csv, CONFIG.candle.nameField].join(" "));
@@ -385,7 +385,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     var g = $("gallery");
     g.replaceChildren.apply(g, items.map(function (it, i) {
       return el("button", { class: "tile", type: "button", "aria-label": "Open photo " + (i + 1) + " of " + items.length, onclick: function () { openLb(i); } },
-        el("img", { src: it.src, alt: it.alt, loading: "lazy", decoding: "async" }));
+        driveFallback(el("img", { src: it.src, alt: it.alt, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
     }));
     $("gallery-count").textContent = items.length + " photos. Tap one to see it larger.";
   }
@@ -394,7 +394,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
   var lbIndex = 0, lbOpener = null, touchX = null;
   function showLb() {
     var it = items[lbIndex]; if (!it) return;
-    $("lb-img").src = it.src; $("lb-img").alt = it.alt;
+    $("lb-img").dataset.try = 0; $("lb-img").src = it.src; $("lb-img").alt = it.alt;
     $("lb-cap").textContent = it.by ? "Shared by " + it.by : "";
     $("lb-prev").hidden = $("lb-next").hidden = items.length < 2;
   }
@@ -435,16 +435,27 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     if (!rows.length) return [];
     var head = rows[0].map(function (h) { return h.toLowerCase(); });
     function col(word) { return head.findIndex(function (h) { return h.indexOf(word) >= 0; }); }
-    var c = { title: col("title"), time: col("timestamp"), name: col("name"), text: (col("memory") >= 0 ? col("memory") : col("message")), photo: col("photo"), ok: col("approved") };
+    var c = { title: col("title"), time: col("timestamp"), name: col("name"), text: (col("memory") >= 0 ? col("memory") : col("message")), photo: col("photo"), ok: col("approved"), hide: col("hide") };
     return rows.slice(1).map(function (r, i) {
       function g(k) { return c[k] >= 0 ? (r[c[k]] || "") : ""; }
-      return { id: prefix + i, title: clean(g("title"), 100), time: g("time"), name: clean(g("name"), 60), text: clean(g("text"), 1500), photo: drivePhoto(g("photo")), approved: /^\s*(yes|y|true|x)\s*$/i.test(g("ok")) };
+      return { id: prefix + i, title: clean(g("title"), 100), time: g("time"), name: clean(g("name"), 60), text: clean(g("text"), 1500), photo: drivePhoto(g("photo")), approved: /^\s*(yes|y|true|x)\s*$/i.test(g("ok")), hidden: /^\s*(yes|y|true|x)\s*$/i.test(g("hide")) };
     });
   }
   function drivePhoto(link) {
     var m = String(link || "").match(/[?&]id=([\w-]+)|\/d\/([\w-]+)/);
     var id = m && (m[1] || m[2]);
     return id ? "https://drive.google.com/thumbnail?id=" + id + "&sz=w1200" : (/^img\//.test(link) ? link : null);
+  }
+  function driveFallback(img) {
+    var m = img.src.match(/[?&]id=([\w-]+)|\/d\/([\w-]+)/), id = m && (m[1] || m[2]);
+    var tries = id ? ["https://drive.google.com/thumbnail?id=" + id + "&sz=w1200", "https://lh3.googleusercontent.com/d/" + id + "=w1200", "https://drive.google.com/uc?export=view&id=" + id] : [];
+    img.addEventListener("error", function () {
+      var n = Number(img.dataset.try || 0) + 1;
+      img.dataset.try = n;
+      if (n < tries.length) img.src = tries[n];
+      else { var box = img.closest(".photo, .tile"); if (box) box.hidden = true; }
+    });
+    return img;
   }
   function fetchCsv(url, prefix) {
     return fetch(url + (url.indexOf("?") < 0 ? "?" : "&") + "t=" + Date.now()).then(function (r) {
@@ -547,7 +558,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     return { title: "", body: t };
   }
   function renderWall() {
-    var list = memories.filter(function (m) { return !CONFIG.requireApproval || m.approved; })
+    var list = memories.filter(function (m) { return !m.hidden && (!CONFIG.requireApproval || m.approved); })
                        .filter(function (m) { return m.text || m.photo; });
     visitor = list.filter(function (m) { return m.photo; }).map(function (m) {
       return { key: m.id, src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), by: m.name || "" };
@@ -559,7 +570,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       var kids = [el("div", { class: "card-head" }, el("strong", { text: m.name || "A friend" }), el("time", { text: whenText(m.time) }))];
       if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": "Open photo shared by " + (m.name || "a visitor"),
         onclick: function () { var ix = items.findIndex(function (i) { return i.key === m.id; }); if (ix >= 0) openLb(ix); } },
-        el("img", { src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
+        driveFallback(el("img", { src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" }))));
       var tb = splitTitle(m);
       if (tb.title) kids.push(el("h3", { class: "title", text: tb.title }));
       if (tb.body) kids.push(el("p", { class: "msg", text: tb.body }));
@@ -609,7 +620,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       $("m-text").value = "";
       $("m-status").textContent = CONFIG.requireApproval
         ? "Thank you. Your memory will appear here once the family has read it."
-        : "Thank you. Your memory will appear here in a minute or two.";
+        : "Thank you. Your memory will appear here in a few minutes.";
     }).catch(function () {
       $("m-status").textContent = "That didn't go through. Check your connection and try again.";
     }).then(function () { $("m-submit").disabled = false; });
