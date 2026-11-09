@@ -71,7 +71,7 @@
     en: {
       title: "Remembering Abby", titlePhotos: "Moments · Remembering Abby",
       heroAlt: "Abby smiling in her kitchen with a hand on her hip",
-      heroDate: "November 9, 2026",
+      heroDate: "November 8, 2026",
       footer: "Remembering Abby · 11/8/2026",
       switchTo: "Español",
       galleryShowing: "Showing {0} of {1} photos. Tap one to see it larger.",
@@ -103,7 +103,7 @@
     es: {
       title: "Recordando a Abby", titlePhotos: "Momentos · Recordando a Abby",
       heroAlt: "Abby sonriendo en su cocina con una mano en la cadera",
-      heroEyebrow: "Con amor, en memoria de", heroDate: "9 de noviembre de 2026",
+      heroEyebrow: "Con amor, en memoria de", heroDate: "8 de noviembre de 2026",
       lede: "Esta página guarda las fotos y las historias de quienes la amaron. Agrega una foto, escribe un recuerdo o enciende una vela.",
       ctaShare: "Compartir un recuerdo", ctaCandle: "Encender una vela", ctaContrib: "Ver contribuciones",
       momentsH: "Momentos", galleryHint: "Toca una foto para verla más grande.", seeMore: "Ver más fotos →",
