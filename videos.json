@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T20:30:51+00:00",
+  "updated": "2026-11-09T15:00:54+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "FBqkqVGbjwo",
+      "title": "Electrodynamix: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-11-09T15:00:32Z",
+      "type": "long"
+    },
     {
       "id": "IkvNwFgsLgk",
       "title": "Scatman Vs IMPOSSIBLE Wave Challenge! 🤯💪",
@@ -122,13 +129,6 @@
       "channel": "Main",
       "published": "2026-11-01T21:00:06Z",
       "type": "long"
-    },
-    {
-      "id": "jbclSjEUPQM",
-      "title": "Scatman Monster Vs EXTREME Wave Challenge! 😎💪",
-      "channel": "Main",
-      "published": "2026-11-01T20:00:58Z",
-      "type": "short"
     },
     {
       "id": "H6HT6ccoxkQ",
@@ -251,7 +251,6 @@
       "iRpPA7_ej3U": "short",
       "7Xj_paPphl0": "short",
       "H6HT6ccoxkQ": "short",
-      "jbclSjEUPQM": "short",
       "tk5Trvuyz-I": "long",
       "uMPlu78ImJ0": "long",
       "B0Zny-EI8zE": "short",
@@ -266,7 +265,8 @@
       "Xsx7yVNxOnU": "long",
       "Ui3CGCpSHwE": "short",
       "ihWC-tzdlSE": "short",
-      "IkvNwFgsLgk": "short"
+      "IkvNwFgsLgk": "short",
+      "FBqkqVGbjwo": "long"
     }
   }
 }
