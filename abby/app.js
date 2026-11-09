@@ -65,15 +65,150 @@
   }
   function clean(s, max) { return String(s == null ? "" : s).trim().slice(0, max); }
 
+
+  /* ---------- Language (English / Spanish) ---------- */
+  var T = {
+    en: {
+      title: "Remembering Abby", titlePhotos: "Moments · Remembering Abby",
+      heroAlt: "Abby smiling in her kitchen with a hand on her hip",
+      heroDate: "November 9, 2026",
+      footer: "Remembering Abby · 11/8/2026",
+      switchTo: "Español",
+      galleryShowing: "Showing {0} of {1} photos. Tap one to see it larger.",
+      galleryAll: "{0} photos. Tap one to see it larger.", galleryOne: "1 photo. Tap it to see it larger.",
+      seeAll: "See all {0} pictures →", seeSome: "See the pictures →",
+      openPhotoOf: "Open photo {0} of {1}", sharedBy: "Shared by {0}",
+      candlesAria: "Candles lit for Abby", noCandleAria: "No candle lit yet",
+      candleBy: "Candle lit by {0}", candleAnon: "A candle lit by someone who loved her",
+      noCandles: "No candles lit yet. Light the first one.", candle1: "1 candle lit", candleN: "{0} candles lit",
+      seeNames: "See all {0} names", candleLit: "Your candle is lit", lightCandle: "Light a candle",
+      candlesErr: "Can't show the candles right now.", lighting: "Lighting…", candleThanks: "Your candle is lit. Thank you.",
+      sendErr: "That didn't go through. Check your connection and try again.",
+      quiet1: "Plus 1 candle lit without a name.", quietN: "Plus {0} candles lit without a name.",
+      closeList: "Close list", viewer: "Photo viewer", closePhoto: "Close photo", prevPhoto: "Previous photo", nextPhoto: "Next photo",
+      likeMemory: "Like this memory", likePhoto: "Like this photo",
+      like0: "Be the first to like this", like1: "1 like", likeN: "{0} likes",
+      photoBy: "Photo shared by {0}", visitor: "a visitor", friend: "A friend",
+      openPhotoBy: "Open photo shared by {0}. Double-tap to like.",
+      openPhotoN: "Open photo {0}. Double-tap to like.", openPhotoNBy: "Open photo {0}, shared by {1}. Double-tap to like.",
+      noMemories: "No memories here yet. The first one shared will appear for everyone who visits.",
+      moreMemories: "Show more memories", memErr: "Can't show the memories right now.",
+      photoCount1: "1 photo. Tap it to see it larger and how many likes it has.",
+      photoCountN: "{0} photos. Tap one to see it larger and how many likes it has.",
+      needName: "Please add your name so people know who this is from.",
+      needText: "Write a few words first, or use Add a photo to send a picture.",
+      sharing: "Sharing…", thanksSoon: "Thank you. Your memory will appear here in a few minutes.",
+      thanksReview: "Thank you. Your memory will appear here once the family has read it."
+    },
+    es: {
+      title: "Recordando a Abby", titlePhotos: "Momentos · Recordando a Abby",
+      heroAlt: "Abby sonriendo en su cocina con una mano en la cadera",
+      heroEyebrow: "Con amor, en memoria de", heroDate: "9 de noviembre de 2026",
+      lede: "Esta página guarda las fotos y las historias de quienes la amaron. Agrega una foto, escribe un recuerdo o enciende una vela.",
+      ctaShare: "Compartir un recuerdo", ctaCandle: "Encender una vela", ctaContrib: "Ver contribuciones",
+      momentsH: "Momentos", galleryHint: "Toca una foto para verla más grande.", seeMore: "Ver más fotos →",
+      candleH: "Enciende una vela", candleSub: "Cada llama es alguien que hoy piensa en Abby.",
+      candleLoading: "Cargando velas…", candleNameLabel: "Tu nombre (opcional)",
+      memoriesH: "Recuerdos", memoriesSub: "Escribe lo que recuerdas y agrega una foto si tienes una. Todos los que visiten podrán leer lo que compartas.",
+      nameLabel: "Tu nombre", memoryLabel: "Tu recuerdo",
+      memoryPh: "Una historia, algo que ella siempre decía, lo que significó para ti",
+      addPhoto: "Agregar una foto a este recuerdo",
+      photoHint: "Las fotos se envían por Google Forms, que te pide iniciar sesión en Google. Tu nombre y tu recuerdo se copian allí, para que se publiquen juntos.",
+      shareBtn: "Compartir este recuerdo", memLoading: "Cargando recuerdos…",
+      contribEyebrow: "Hecho con amor", contribH: "Contribuciones",
+      roleAlyah: "Aportó las fotos, las ideas y el concepto",
+      quoteAlyah: "Este sitio web es un lugar especial en memoria de mi abuela. Se me ocurrió la idea del sitio y creé el concepto, y con la ayuda de mi primo hicimos realidad la visión. Aquí podemos compartir todo lo que amamos y atesoramos de nuestra dulce Abby. Gracias por visitar este lugar especial para un alma especial. 🌻",
+      roleJJ: "Programó el sitio web y sus interacciones, y aportó el dominio",
+      quoteJJ: "Amo muchísimo a Abby. Cuando me contaron la idea de hacer un sitio web para ella y su memoria, dije que sí al instante y aporté mis ideas. Me alegra que me hayan invitado a trabajar en este proyecto. Que descanse con Dios. ❤️🕊️",
+      footer: "Recordando a Abby · 8 de noviembre de 2026",
+      namesTitle: "Velas encendidas por Abby",
+      back: "← Volver a la página de Abby", photosEyebrow: "Recordando a Abby", photosLoading: "Cargando fotos…", morePhotos: "Ver más fotos",
+      switchTo: "English",
+      galleryShowing: "Mostrando {0} de {1} fotos. Toca una para verla más grande.",
+      galleryAll: "{0} fotos. Toca una para verla más grande.", galleryOne: "1 foto. Tócala para verla más grande.",
+      seeAll: "Ver las {0} fotos →", seeSome: "Ver las fotos →",
+      openPhotoOf: "Abrir foto {0} de {1}", sharedBy: "Compartida por {0}",
+      candlesAria: "Velas encendidas por Abby", noCandleAria: "Aún no hay velas encendidas",
+      candleBy: "Vela encendida por {0}", candleAnon: "Una vela encendida por alguien que la amó",
+      noCandles: "Aún no hay velas encendidas. Enciende la primera.", candle1: "1 vela encendida", candleN: "{0} velas encendidas",
+      seeNames: "Ver los {0} nombres", candleLit: "Tu vela está encendida", lightCandle: "Encender una vela",
+      candlesErr: "No se pueden mostrar las velas en este momento.", lighting: "Encendiendo…", candleThanks: "Tu vela está encendida. Gracias.",
+      sendErr: "No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.",
+      quiet1: "Más 1 vela encendida sin nombre.", quietN: "Más {0} velas encendidas sin nombre.",
+      closeList: "Cerrar lista", viewer: "Visor de fotos", closePhoto: "Cerrar foto", prevPhoto: "Foto anterior", nextPhoto: "Foto siguiente",
+      likeMemory: "Me gusta este recuerdo", likePhoto: "Me gusta esta foto",
+      like0: "Sé el primero en dar me gusta", like1: "1 me gusta", likeN: "{0} me gusta",
+      photoBy: "Foto compartida por {0}", visitor: "un visitante", friend: "Un ser querido",
+      openPhotoBy: "Abrir foto compartida por {0}. Toca dos veces para dar me gusta.",
+      openPhotoN: "Abrir foto {0}. Toca dos veces para dar me gusta.", openPhotoNBy: "Abrir foto {0}, compartida por {1}. Toca dos veces para dar me gusta.",
+      noMemories: "Aún no hay recuerdos. El primero que se comparta aparecerá para todos los que visiten.",
+      moreMemories: "Ver más recuerdos", memErr: "No se pueden mostrar los recuerdos en este momento.",
+      photoCount1: "1 foto. Tócala para verla más grande y ver cuántos me gusta tiene.",
+      photoCountN: "{0} fotos. Toca una para verla más grande y ver cuántos me gusta tiene.",
+      needName: "Agrega tu nombre para que sepan de quién es.",
+      needText: "Escribe unas palabras primero, o usa «Agregar una foto» para enviar una imagen.",
+      sharing: "Compartiendo…", thanksSoon: "Gracias. Tu recuerdo aparecerá aquí en unos minutos.",
+      thanksReview: "Gracias. Tu recuerdo aparecerá aquí cuando la familia lo haya leído."
+    }
+  };
+  var LANG = "en";
+  function t(k, a, b) {
+    var s = T[LANG][k]; if (s == null) s = T.en[k]; if (s == null) return k;
+    return s.replace("{0}", a).replace("{1}", b);
+  }
+  function altOf(it) { return LANG === "es" && it.altEs ? it.altEs : it.alt; }
+  /* "Lit by A, B and C, plus 2 more." in the chosen language */
+  function litByLine(named, rest) {
+    if (!named.length) return "";
+    if (LANG === "es") {
+      var parts = named.concat(rest > 0 ? [rest + " más"] : []), last = parts[parts.length - 1];
+      var and = /^h?i(?!e)/i.test(last) ? " e " : " y ";
+      return (parts.length > 1 ? "Encendidas por " + parts.slice(0, -1).join(", ") + and + last : "Encendida por " + last) + ".";
+    }
+    var line = "Lit by " + (named.length === 1 ? named[0] : named.slice(0, -1).join(", ") + " and " + named[named.length - 1]);
+    if (rest > 0) line += (named.length === 1 ? " and " : ", plus ") + rest + " more";
+    return line + ".";
+  }
+  /* Text that sits in the page itself: English is read from the HTML, Spanish from T.es */
+  function applyStatic() {
+    document.documentElement.lang = LANG;
+    document.title = t(PHOTOS_PAGE ? "titlePhotos" : "title");
+    [["data-i18n", "textContent"], ["data-i18n-ph", "placeholder"], ["data-i18n-aria", "aria-label"], ["data-i18n-alt", "alt"]].forEach(function (pair) {
+      document.querySelectorAll("[" + pair[0] + "]").forEach(function (n) {
+        var k = n.getAttribute(pair[0]), isProp = pair[1] === "textContent";
+        if (!(k in T.en)) T.en[k] = isProp ? n.textContent : n.getAttribute(pair[1]);
+        if (isProp) n.textContent = t(k); else n.setAttribute(pair[1], t(k));
+      });
+    });
+    var sw = $("lang-switch"); if (sw) { sw.textContent = t("switchTo"); sw.setAttribute("lang", LANG === "es" ? "en" : "es"); }
+  }
+  var candleState = "", memState = "";
+  function setLang(l, quiet) {
+    LANG = l === "es" ? "es" : "en";
+    store("abby-lang", LANG);
+    applyStatic();
+    if (quiet) return;
+    ["m-status", "candle-status"].forEach(function (id) { if ($(id)) $(id).textContent = ""; });
+    gallerySig = "";
+    if (!PHOTOS_PAGE) {
+      if (candleState === "ok") renderCandles(); else if (candleState === "err") $("candle-count").textContent = t("candlesErr");
+    }
+    if (memState === "ok") renderWall();
+    else { renderGallery(); if (PHOTOS_PAGE) renderPhotoWall(); if (memState === "err") showMemErr(); }
+    if (!$("lb").hidden) showLb();
+    var nd = $("names-dlg"); if (nd && nd.open) openNames();
+  }
+  function showMemErr() { var w = $("wall"); if (w) w.replaceChildren(el("p", { class: "notice", text: t("memErr") })); }
+
   /* ---------- Photos that ship with the page ---------- */
   var seeded = [
-    { key: "s0", src: "img/p7.jpg", alt: "Abby smiling beside a man with glasses in a yellow room", by: "" },
-    { key: "s1", src: "img/p6.jpg", alt: "Abby smiling by a sunny window in a floral top", by: "" },
-    { key: "s2", src: "img/p4.jpg", alt: "Abby leaning in for a selfie with a woman in a patterned blouse", by: "" },
-    { key: "s3", src: "img/p3.jpg", alt: "Abby and another woman in black tops smiling together", by: "" },
-    { key: "s4", src: "img/p5.jpg", alt: "Abby smiling and cuddling with a young boy", by: "" },
-    { key: "s5", src: "img/p2.jpg", alt: "Abby with three family members in a group selfie", by: "" },
-    { key: "s6", src: "img/p1.jpg", alt: "Abby with two small children at a party", by: "" }
+    { key: "s0", src: "img/p7.jpg", alt: "Abby smiling beside a man with glasses in a yellow room", altEs: "Abby sonriendo junto a un hombre con lentes en una habitación amarilla", by: "" },
+    { key: "s1", src: "img/p6.jpg", alt: "Abby smiling by a sunny window in a floral top", altEs: "Abby sonriendo junto a una ventana soleada con una blusa de flores", by: "" },
+    { key: "s2", src: "img/p4.jpg", alt: "Abby leaning in for a selfie with a woman in a patterned blouse", altEs: "Abby acercándose para una selfie con una mujer de blusa estampada", by: "" },
+    { key: "s3", src: "img/p3.jpg", alt: "Abby and another woman in black tops smiling together", altEs: "Abby y otra mujer con blusas negras sonriendo juntas", by: "" },
+    { key: "s4", src: "img/p5.jpg", alt: "Abby smiling and cuddling with a young boy", altEs: "Abby sonriendo y abrazando a un niño pequeño", by: "" },
+    { key: "s5", src: "img/p2.jpg", alt: "Abby with three family members in a group selfie", altEs: "Abby con tres familiares en una selfie de grupo", by: "" },
+    { key: "s6", src: "img/p1.jpg", alt: "Abby with two small children at a party", altEs: "Abby con dos niños pequeños en una fiesta", by: "" }
   ];
   seeded.forEach(function (s) { s.likeKey = "s" + s.key; });
   var visitor = [], items = seeded.slice(), gallerySig = "";
@@ -86,22 +221,21 @@
     if (!g) return;
     var shown = items.slice(0, HOME_LIMIT);
     g.replaceChildren.apply(g, shown.map(function (it, i) {
-      return el("button", { class: "tile", type: "button", "aria-label": "Open photo " + (i + 1) + " of " + items.length, onclick: function () { openLb(i); } },
-        driveFallback(el("img", { src: it.src, alt: it.alt, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
+      return el("button", { class: "tile", type: "button", "aria-label": t("openPhotoOf", i + 1, items.length), onclick: function () { openLb(i); } },
+        driveFallback(el("img", { src: it.src, alt: altOf(it), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
     }));
-    $("gallery-count").textContent = items.length > HOME_LIMIT
-      ? "Showing " + HOME_LIMIT + " of " + items.length + " photos. Tap one to see it larger."
-      : items.length + " photos. Tap one to see it larger.";
+    $("gallery-count").textContent = items.length > HOME_LIMIT ? t("galleryShowing", HOME_LIMIT, items.length)
+      : items.length === 1 ? t("galleryOne") : t("galleryAll", items.length);
     var more = $("see-more");
-    if (more) more.textContent = items.length > HOME_LIMIT ? "See all " + items.length + " pictures →" : "See the pictures →";
+    if (more) more.textContent = items.length > HOME_LIMIT ? t("seeAll", items.length) : t("seeSome");
   }
 
   /* ---------- Lightbox ---------- */
   var lbIndex = 0, lbOpener = null, touchX = null;
   function showLb() {
     var it = items[lbIndex]; if (!it) return;
-    $("lb-img").dataset.try = 0; $("lb-img").src = it.src; $("lb-img").alt = it.alt;
-    $("lb-cap").textContent = it.by ? "Shared by " + it.by : "";
+    $("lb-img").dataset.try = 0; $("lb-img").src = it.src; $("lb-img").alt = altOf(it);
+    $("lb-cap").textContent = it.by ? t("sharedBy", it.by) : "";
     var lr = $("lb-react");
     if (lr) { var r = reactRow({ id: it.key, time: "", name: it.by, photo: it.src, text: "" }, it.likeKey); lr.replaceChildren(r.row); }
     $("lb-prev").hidden = $("lb-next").hidden = items.length < 2;
@@ -203,52 +337,48 @@
   function renderCandles(freshLast) {
     var box = $("flames"), shown = candles.slice(0, 36), n = candles.length;
     if (!n) {
-      box.replaceChildren(el("div", { class: "candle unlit", role: "listitem", "aria-label": "No candle lit yet" }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" })));
+      box.replaceChildren(el("div", { class: "candle unlit", role: "listitem", "aria-label": t("noCandleAria") }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" })));
     } else {
       box.replaceChildren.apply(box, shown.map(function (c, i) {
         var node = el("div", { class: "candle" + (freshLast && i === 0 ? " fresh" : ""), role: "listitem", title: c.name || "",
-          "aria-label": c.name ? "Candle lit by " + c.name : "A candle lit by someone who loved her" }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" }));
+          "aria-label": c.name ? t("candleBy", c.name) : t("candleAnon") }, flameSvg(), el("div", { class: "wick" }), el("div", { class: "wax" }));
         node.style.setProperty("--d", (-((i * 0.37) % 2.6)).toFixed(2) + "s");
         return node;
       }));
     }
-    $("candle-count").textContent = n === 0 ? "No candles lit yet. Light the first one." : n + (n === 1 ? " candle lit" : " candles lit");
+    $("flames").setAttribute("aria-label", t("candlesAria"));
+    $("candle-count").textContent = n === 0 ? t("noCandles") : n === 1 ? t("candle1") : t("candleN", n);
     var named = candles.filter(function (c) { return c.name; }).slice(0, 3).map(function (c) { return c.name; });
-    var rest = n - named.length, line = "";
-    if (named.length) {
-      line = "Lit by " + (named.length === 1 ? named[0] : named.slice(0, -1).join(", ") + " and " + named[named.length - 1]);
-      if (rest > 0) line += (named.length === 1 ? " and " : ", plus ") + rest + " more";
-      line += ".";
-    }
-    $("candle-names").textContent = line;
+    $("candle-names").textContent = litByLine(named, n - named.length);
     var allNamed = candles.filter(function (c) { return c.name; });
     $("names-btn").hidden = allNamed.length <= 3;
-    $("names-btn").textContent = "See all " + allNamed.length + " names";
+    $("names-btn").textContent = t("seeNames", allNamed.length);
     $("candle-btn").disabled = localCandle;
-    $("candle-btn").textContent = localCandle ? "Your candle is lit" : "Light a candle";
+    $("candle-btn").textContent = localCandle ? t("candleLit") : t("lightCandle");
   }
   function loadCandles() {
     if (PREVIEW) { if (!candles.length) candles = SAMPLE.candles.slice(); renderCandles(); return Promise.resolve(); }
     return fetchCsv(CONFIG.candle.csv).then(function (rows) {
       candles = rows.reverse().map(function (r) { return { name: r.name }; });
+      candleState = "ok";
       renderCandles();
-    }).catch(function () { $("candle-count").textContent = "Can't show the candles right now."; });
+    }).catch(function () { if (candleState !== "ok") { candleState = "err"; $("candle-count").textContent = t("candlesErr"); } });
   }
   on("candle-form", "submit", function (e) {
     e.preventDefault();
     if (localCandle) return;
     var name = clean($("candle-name").value, 60);
     if (name) store("abby-name", name);
-    $("candle-btn").disabled = true; $("candle-status").textContent = "Lighting…";
+    $("candle-btn").disabled = true; $("candle-status").textContent = t("lighting");
     var f = {}; f[CONFIG.candle.nameField] = name;
     sendForm(CONFIG.candle.action, f).then(function () {
       localCandle = true; store("abby-candle", "1");
       candles.unshift({ name: name });
       renderCandles(true);
-      $("candle-status").textContent = "Your candle is lit. Thank you.";
+      $("candle-status").textContent = t("candleThanks");
     }).catch(function () {
       $("candle-btn").disabled = false;
-      $("candle-status").textContent = "That didn't go through. Check your connection and try again.";
+      $("candle-status").textContent = t("sendErr");
     });
   });
 
@@ -258,8 +388,9 @@
     var list = $("nd-list");
     list.replaceChildren.apply(list, named.map(function (c) { return el("li", { text: c.name }); }));
     var quiet = candles.length - named.length;
-    $("nd-foot").textContent = quiet > 0 ? "Plus " + quiet + (quiet === 1 ? " candle" : " candles") + " lit without a name." : "";
+    $("nd-foot").textContent = quiet > 1 ? t("quietN", quiet) : quiet === 1 ? t("quiet1") : "";
     var d = $("names-dlg");
+    if (d.open) return;
     if (d.showModal) d.showModal(); else d.setAttribute("open", "");
   }
   function closeNames() { var d = $("names-dlg"); if (d.close) d.close(); else d.removeAttribute("open"); }
@@ -301,19 +432,19 @@
   }
   function reactRow(m, key) {
     var k = key || memKey(m);
-    var btn = el("button", { class: "heart", type: "button", "aria-label": "Like this memory" }, heartSvg());
+    var btn = el("button", { class: "heart", type: "button", "aria-label": t("likeMemory") }, heartSvg());
     var cnt = el("span", { class: "likes" });
     function paint(pop) {
       var st = likeState(k);
       btn.classList.toggle("on", st.mine); btn.setAttribute("aria-pressed", String(st.mine));
       cnt.classList.toggle("zero", st.n === 0);
-      cnt.textContent = st.n === 0 ? "Be the first to like this" : st.n === 1 ? "1 like" : st.n + " likes";
+      cnt.textContent = st.n === 0 ? t("like0") : st.n === 1 ? t("like1") : t("likeN", st.n);
       if (pop) { btn.classList.remove("pop"); void btn.offsetWidth; btn.classList.add("pop"); }
     }
     paint(false);
     onLikeChange(k, function () { paint(false); });
     btn.addEventListener("click", function () { setLike(k, !likeState(k).mine); paint(true); });
-    btn.setAttribute("aria-label", m.photo && !m.text ? "Like this photo" : "Like this memory");
+    btn.setAttribute("aria-label", m.photo && !m.text ? t("likePhoto") : t("likeMemory"));
     return { row: el("div", { class: "react" }, btn, cnt), like: function () { if (!likeState(k).mine) setLike(k, true); paint(true); } };
   }
   function burst(box) {
@@ -343,7 +474,11 @@
   var memories = [], memLimit = 12;
   function whenText(t) {
     var d = new Date(t);
-    return isNaN(d) ? "" : d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+    if (isNaN(d)) return "";
+    var loc = LANG === "es" ? "es-US" : "en-US";
+    var day = d.toLocaleDateString(loc, { month: "short", day: "numeric", year: "numeric" });
+    var hasTime = /\d:\d\d/.test(String(t));
+    return hasTime ? day + " · " + d.toLocaleTimeString(loc, { hour: "numeric", minute: "2-digit" }) : day;
   }
   /* A short first line with more text under it (no ending period) is shown as the memory's title. */
   function splitTitle(m) {
@@ -361,23 +496,23 @@
     var list = memories.filter(function (m) { return !m.hidden && (!CONFIG.requireApproval || m.approved); })
                        .filter(function (m) { return m.text || m.photo; });
     visitor = list.filter(function (m) { return m.photo; }).map(function (m) {
-      return { key: m.id, likeKey: memKey(m), src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), by: m.name || "" };
+      return { key: m.id, likeKey: memKey(m), src: m.photo, alt: t("photoBy", m.name || t("visitor")), altEs: "", by: m.name || "" };
     });
     renderGallery();
     if (PHOTOS_PAGE) { renderPhotoWall(); return; }
     var wall = $("wall");
     if (!wall) return;
-    if (!list.length) { wall.replaceChildren(el("p", { class: "notice", text: "No memories here yet. The first one shared will appear for everyone who visits." })); return; }
+    if (!list.length) { wall.replaceChildren(el("p", { class: "notice", text: t("noMemories") })); return; }
     var cards = list.slice(0, memLimit).map(function (m) {
-      var kids = [el("div", { class: "card-head" }, el("strong", { text: m.name || "A friend" }), el("time", { text: whenText(m.time) }))];
+      var kids = [el("div", { class: "card-head" }, el("strong", { text: m.name || t("friend") }), el("time", { text: whenText(m.time) }))];
       var react = reactRow(m), tapTimer = null;
-      if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": "Open photo shared by " + (m.name || "a visitor") + ". Double-tap to like.",
+      if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": t("openPhotoBy", m.name || t("visitor")),
         onclick: function () {
           var box = this;
           if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; react.like(); burst(box); return; }
           tapTimer = setTimeout(function () { tapTimer = null; var ix = items.findIndex(function (i) { return i.key === m.id; }); if (ix >= 0) openLb(ix); }, 260);
         } },
-        driveFallback(el("img", { src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" }))));
+        driveFallback(el("img", { src: m.photo, alt: t("photoBy", m.name || t("visitor")), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" }))));
       if (m.photo) kids.push(react.row);
       var tb = splitTitle(m);
       if (tb.title) kids.push(el("h3", { class: "title", text: tb.title }));
@@ -385,13 +520,13 @@
       if (!m.photo) kids.push(react.row);
       return el.apply(null, ["article", { class: "card" }].concat(kids));
     });
-    if (list.length > memLimit) cards.push(el("button", { class: "btn ghost more", type: "button", onclick: function () { memLimit += 12; renderWall(); } }, "Show more memories"));
+    if (list.length > memLimit) cards.push(el("button", { class: "btn ghost more", type: "button", onclick: function () { memLimit += 12; renderWall(); } }, t("moreMemories")));
     wall.replaceChildren.apply(wall, cards);
   }
   /* The "Moments" page: just the pictures, with a small heart in the corner */
   var photoLimit = 30;
   function miniHeart(k) {
-    var b = el("button", { class: "mini-heart", type: "button", "aria-label": "Like this photo" }, heartSvg());
+    var b = el("button", { class: "mini-heart", type: "button", "aria-label": t("likePhoto") }, heartSvg());
     function paint(pop) {
       var on = likeState(k).mine;
       b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on));
@@ -404,12 +539,12 @@
   }
   function photoTile(it, ix) {
     var tapTimer = null;
-    var photo = el("button", { class: "photo", type: "button", "aria-label": "Open photo " + (ix + 1) + (it.by ? ", shared by " + it.by : "") + ". Double-tap to like.",
+    var photo = el("button", { class: "photo", type: "button", "aria-label": it.by ? t("openPhotoNBy", ix + 1, it.by) : t("openPhotoN", ix + 1),
       onclick: function () {
         var box = this.parentNode;
         if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; if (!likeState(it.likeKey).mine) setLike(it.likeKey, true); burst(box); return; }
         tapTimer = setTimeout(function () { tapTimer = null; openLb(ix); }, 260);
-      } }, driveFallback(el("img", { src: it.src, alt: it.alt, loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
+      } }, driveFallback(el("img", { src: it.src, alt: altOf(it), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" })));
     return el("div", { class: "ptile" }, photo, miniHeart(it.likeKey));
   }
   function renderPhotoWall() {
@@ -418,7 +553,7 @@
     wall.replaceChildren.apply(wall, tiles);
     var more = $("photo-more");
     more.hidden = items.length <= photoLimit;
-    $("photo-count").textContent = items.length + (items.length === 1 ? " photo" : " photos") + ". Tap one to see it larger and how many likes it has.";
+    $("photo-count").textContent = items.length === 1 ? t("photoCount1") : t("photoCountN", items.length);
   }
   function loadMemories() {
     if (PREVIEW) { memories = SAMPLE.memories; renderWall(); return Promise.resolve(); }
@@ -429,8 +564,9 @@
     ]).then(function (res) {
       if (!res[0] && !res[1]) throw new Error("both failed");
       memories = (res[0] || []).concat(res[1] || []).sort(function (a, b) { return (Date.parse(b.time) || 0) - (Date.parse(a.time) || 0); });
+      memState = "ok";
       renderWall();
-    }).catch(function () { var w = $("wall") || $("photo-wall"); if (w) w.replaceChildren(el("p", { class: "notice", text: "Can't show the memories right now." })); if (PHOTOS_PAGE) renderPhotoWall(); });
+    }).catch(function () { if (memState === "ok") return; memState = "err"; showMemErr(); if (PHOTOS_PAGE) renderPhotoWall(); });
   }
 
   /* "Add a photo" opens the Google Form with name and memory already filled in */
@@ -452,22 +588,35 @@
   on("memory-form", "submit", function (e) {
     e.preventDefault();
     var name = clean($("m-name").value, 60), text = clean($("m-text").value, 1500);
-    if (!name) { $("m-status").textContent = "Please add your name so people know who this is from."; $("m-name").focus(); return; }
-    if (!text) { $("m-status").textContent = "Write a few words first, or use Add a photo to send a picture."; $("m-text").focus(); return; }
+    if (!name) { $("m-status").textContent = t("needName"); $("m-name").focus(); return; }
+    if (!text) { $("m-status").textContent = t("needText"); $("m-text").focus(); return; }
     store("abby-name", name);
-    $("m-submit").disabled = true; $("m-status").textContent = "Sharing…";
+    $("m-submit").disabled = true; $("m-status").textContent = t("sharing");
     var f = {}; f[CONFIG.memory.nameField] = name; f[CONFIG.memory.textField] = text;
     sendForm(CONFIG.memory.action, f).then(function () {
       $("m-text").value = "";
       $("m-status").textContent = CONFIG.requireApproval
-        ? "Thank you. Your memory will appear here once the family has read it."
-        : "Thank you. Your memory will appear here in a few minutes.";
+        ? t("thanksReview")
+        : t("thanksSoon");
     }).catch(function () {
-      $("m-status").textContent = "That didn't go through. Check your connection and try again.";
+      $("m-status").textContent = t("sendErr");
     }).then(function () { $("m-submit").disabled = false; });
   });
 
   /* ---------- Start ---------- */
+  var savedLang = store("abby-lang");
+  var guess = /^es/i.test(navigator.language || "") ? "es" : "en";
+  if (savedLang) setLang(savedLang, true); else { LANG = guess; applyStatic(); }
+  on("lang-switch", "click", function () { setLang(LANG === "es" ? "en" : "es"); });
+  var langDlg = $("lang-dlg");
+  if (langDlg) {
+    var closeLang = function () { if (langDlg.close) langDlg.close(); else langDlg.removeAttribute("open"); };
+    langDlg.querySelectorAll("[data-lang]").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); closeLang(); });
+    });
+    langDlg.addEventListener("cancel", function () { setLang(LANG, true); });   // Esc keeps the current language
+    if (!savedLang) { if (langDlg.showModal) langDlg.showModal(); else langDlg.setAttribute("open", ""); }
+  }
   if ($("preview-bar")) $("preview-bar").hidden = !PREVIEW;
   if (PHOTOS_PAGE) {
     renderPhotoWall();
