@@ -136,11 +136,22 @@ h2 { font-family: var(--display); font-weight: 400; font-size: clamp(1.9rem, 6vw
 }
 @keyframes kindle { from { opacity: 0; transform: scale(0.2); } to { opacity: 1; } }
 .candle-count { font-weight: 600; }
+.names-btn { background: none; border: 0; padding: 0.3rem 0; margin-top: 0.2rem; color: var(--band-fg); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 0.95rem; }
+.names-dlg { width: min(30rem, calc(100vw - 32px)); max-height: min(80dvh, 40rem); padding: 0; border: 0; border-radius: 16px; background: var(--band-bg); color: var(--band-fg); box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+.names-dlg::backdrop { background: var(--scrim); }
+.names-dlg .nd-head { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.25rem 0.9rem; background: var(--band-bg); border-bottom: 1px solid rgba(255,255,255,0.12); }
+.names-dlg h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin: 0; }
+.names-dlg .nd-close { width: 40px; height: 40px; flex: none; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); background: transparent; color: inherit; font-size: 1.3rem; cursor: pointer; }
+.names-dlg ul { list-style: none; margin: 0; padding: 0.25rem 1.25rem 0.5rem; }
+.names-dlg li { display: flex; align-items: center; gap: 0.7rem; padding: 0.7rem 0; border-bottom: 1.5px dotted rgba(255,255,255,0.28); font-family: var(--text); font-size: 1.05rem; overflow-wrap: anywhere; }
+.names-dlg li::before { content: ""; width: 7px; height: 7px; flex: none; border-radius: 50%; background: #ffc56b; box-shadow: 0 0 8px rgba(255, 197, 107, 0.8); }
+.names-dlg li:last-child { border-bottom: 0; }
+.names-dlg .nd-foot { padding: 0.25rem 1.25rem 1.25rem; color: var(--band-muted); font-size: 0.92rem; }
 .candle-names { color: var(--band-muted); font-size: 0.95rem; margin-top: 0.15rem; overflow-wrap: anywhere; }
 .candle-form { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end; margin-top: 1.5rem; }
 .candle-form .field { flex: 1 1 14rem; min-width: 0; }
 .band label { color: var(--band-muted); }
-.band input { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); color: var(--band-fg); }
+.band input, .band input[type="text"] { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); color: var(--band-fg); }
 .band .btn { background: var(--band-fg); border-color: var(--band-fg); color: #1a2040; }
 .band .status { color: var(--band-muted); }
 
@@ -175,6 +186,24 @@ textarea { resize: vertical; min-height: 8rem; line-height: 1.55; }
 .more { justify-self: start; }
 .hint { font-size: 0.85rem; color: var(--muted); flex: 1 1 12rem; }
 .preview-bar { margin: 1rem 0 0; padding: 0.6rem 0.9rem; border-radius: 8px; background: #fff4d6; color: #5a4300; font-size: 0.9rem; border: 1px solid #e8cf86; }
+
+/* Likes (heart) */
+.react { display: flex; align-items: center; gap: 0.35rem; margin: -0.35rem 0 -0.25rem; }
+.heart { width: 42px; height: 42px; margin-left: -9px; display: grid; place-items: center; border: 0; padding: 0; background: none; color: var(--fg); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.heart svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linejoin: round; transition: transform 0.12s ease; }
+.heart:hover svg { transform: scale(1.06); }
+.heart:active svg { transform: scale(0.88); }
+.heart.on { color: var(--heart, var(--accent)); }
+.heart.on svg { fill: currentColor; }
+.heart.pop svg { animation: heartpop 0.45s cubic-bezier(0.17, 0.89, 0.32, 1.49); }
+@keyframes heartpop { 0% { transform: scale(1); } 25% { transform: scale(0.78); } 60% { transform: scale(1.25); } 100% { transform: scale(1); } }
+.likes { font-size: 0.92rem; font-weight: 600; color: var(--fg); }
+.likes.zero { font-weight: 400; color: var(--muted); }
+.card .photo { position: relative; }
+.burst { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+.burst svg { width: 96px; height: 96px; fill: #fff; filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35)); animation: burst 0.9s ease forwards; }
+@keyframes burst { 0% { transform: scale(0); opacity: 0; } 15% { transform: scale(1.15); opacity: 0.95; } 30% { transform: scale(0.95); } 45%, 80% { transform: scale(1); opacity: 0.95; } 100% { transform: scale(0.9) translateY(-10px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .heart.pop svg, .burst svg { animation: none; } .burst { display: none; } }
 
 footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
 
@@ -256,6 +285,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       <div class="flames" id="flames" role="list" aria-label="Candles lit for Abby"></div>
       <p class="candle-count" id="candle-count" role="status">Loading candles…</p>
       <p class="candle-names" id="candle-names"></p>
+      <button class="names-btn" type="button" id="names-btn" hidden>See all names</button>
       <form class="candle-form" id="candle-form">
         <div class="field">
           <label for="candle-name">Your name (optional)</label>
@@ -298,6 +328,15 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
   <footer>Remembering Abby · 11/9/2026</footer>
 </div>
 
+<dialog class="names-dlg" id="names-dlg" aria-labelledby="nd-title">
+  <div class="nd-head">
+    <h3 id="nd-title">Candles lit for Abby</h3>
+    <button class="nd-close" id="nd-close" type="button" aria-label="Close list">&times;</button>
+  </div>
+  <ul id="nd-list"></ul>
+  <p class="nd-foot" id="nd-foot"></p>
+</dialog>
+
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
   <button class="close" id="lb-close" type="button" aria-label="Close photo">&times;</button>
   <button class="prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
@@ -338,6 +377,13 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       action:  "https://docs.google.com/forms/d/e/1FAIpQLSdXDJqT0vHPb66TXbF1hiiLwu73EiNtqHE0Arfr8khKtmQ5Iw/formResponse",
       nameField: "entry.1441576275",
       csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSfJNISyMt6jq0S8rJkQxQJCti8zIp_D3LTbKAzOM-jwy3Oi90uQKAJzUbNRSppQmL9a0AvaQppu4iG/pub?gid=2088502476&single=true&output=csv"
+    },
+    reactions: {   // Form 4: Memory + Action (Like/Unlike) + Visitor
+      action: "https://docs.google.com/forms/d/e/1FAIpQLSc_7oLmffYkn9qz5t9RXBWTX9eHY40Wje1BkAx_b9aln24hhw/formResponse",
+      memoryField: "entry.1098573537",
+      actionField: "entry.2119044638",
+      visitorField: "entry.1415699998",
+      csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHsRoCdHxu8a53FF86Fn8IBp-cL1lLoiXBk24RWOoSh1F_fYH4D6Dsml3Vqe3VnXIM-KwO1WviWSc/pub?gid=1845567372&single=true&output=csv"
     },
     requireApproval: false,  // false = show everything except rows ticked in the Hide column
     refreshSeconds: 60
@@ -513,6 +559,9 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       line += ".";
     }
     $("candle-names").textContent = line;
+    var allNamed = candles.filter(function (c) { return c.name; });
+    $("names-btn").hidden = allNamed.length <= 3;
+    $("names-btn").textContent = "See all " + allNamed.length + " names";
     $("candle-btn").disabled = localCandle;
     $("candle-btn").textContent = localCandle ? "Your candle is lit" : "Light a candle";
   }
@@ -541,6 +590,88 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     });
   });
 
+  /* Full list of candle names */
+  function openNames() {
+    var named = candles.filter(function (c) { return c.name; });
+    var list = $("nd-list");
+    list.replaceChildren.apply(list, named.map(function (c) { return el("li", { text: c.name }); }));
+    var quiet = candles.length - named.length;
+    $("nd-foot").textContent = quiet > 0 ? "Plus " + quiet + (quiet === 1 ? " candle" : " candles") + " lit without a name." : "";
+    var d = $("names-dlg");
+    if (d.showModal) d.showModal(); else d.setAttribute("open", "");
+  }
+  function closeNames() { var d = $("names-dlg"); if (d.close) d.close(); else d.removeAttribute("open"); }
+  $("names-btn").addEventListener("click", openNames);
+  $("nd-close").addEventListener("click", closeNames);
+  $("names-dlg").addEventListener("click", function (e) { if (e.target === this) closeNames(); });
+
+  /* ---------- Likes ---------- */
+  var visitorId = store("abby-visitor");
+  if (!visitorId) { visitorId = "v" + Math.random().toString(36).slice(2, 10) + Date.now().toString(36); store("abby-visitor", visitorId); }
+  var serverLikes = {}, myLikes = {};
+  try { myLikes = JSON.parse(store("abby-likes") || "{}") || {}; } catch (e) { myLikes = {}; }
+  function memKey(m) {
+    var s = m.id.charAt(0) + "|" + m.time + "|" + m.name, h = 5381;
+    for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+    return m.id.charAt(0) + (h >>> 0).toString(36);
+  }
+  function likeState(k) {
+    var v = serverLikes[k] || {}, n = 0;
+    Object.keys(v).forEach(function (id) { if (id !== visitorId && v[id]) n++; });
+    var mine = Object.prototype.hasOwnProperty.call(myLikes, k) ? !!myLikes[k] : !!v[visitorId];
+    return { n: n + (mine ? 1 : 0), mine: mine };
+  }
+  function setLike(k, on) {
+    myLikes[k] = on; store("abby-likes", JSON.stringify(myLikes));
+    var R = CONFIG.reactions, f = {};
+    f[R.memoryField] = k; f[R.actionField] = on ? "Like" : "Unlike"; f[R.visitorField] = visitorId;
+    sendForm(R.action, f).catch(function () {});
+  }
+  function heartSvg() {
+    var s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("aria-hidden", "true");
+    var p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", "M12 20.6s-7.2-4.4-9.4-8.9C1 8.4 2.9 4.6 6.5 4.6c2.2 0 3.7 1.3 4.5 2.7L12 8.8l1-1.5c.8-1.4 2.3-2.7 4.5-2.7 3.6 0 5.5 3.8 3.9 7.1-2.2 4.5-9.4 8.9-9.4 8.9z");
+    s.appendChild(p); return s;
+  }
+  function reactRow(m) {
+    var k = memKey(m);
+    var btn = el("button", { class: "heart", type: "button", "aria-label": "Like this memory" }, heartSvg());
+    var cnt = el("span", { class: "likes" });
+    function paint(pop) {
+      var st = likeState(k);
+      btn.classList.toggle("on", st.mine); btn.setAttribute("aria-pressed", String(st.mine));
+      cnt.classList.toggle("zero", st.n === 0);
+      cnt.textContent = st.n === 0 ? "Be the first to like this" : st.n === 1 ? "1 like" : st.n + " likes";
+      if (pop) { btn.classList.remove("pop"); void btn.offsetWidth; btn.classList.add("pop"); }
+    }
+    paint(false);
+    btn.addEventListener("click", function () { setLike(k, !likeState(k).mine); paint(true); });
+    return { row: el("div", { class: "react" }, btn, cnt), like: function () { if (!likeState(k).mine) setLike(k, true); paint(true); } };
+  }
+  function burst(box) {
+    var b = el("span", { class: "burst" }); b.appendChild(heartSvg()); box.appendChild(b);
+    setTimeout(function () { b.remove(); }, 950);
+  }
+  function loadReactions() {
+    var url = CONFIG.reactions.csv;
+    return fetch(url + (url.indexOf("?") < 0 ? "?" : "&") + "t=" + Date.now()).then(function (r) { if (!r.ok) throw new Error(); return r.text(); }).then(function (t) {
+      var rows = parseCsv(t); if (!rows.length) return;
+      var head = rows[0].map(function (h) { return h.toLowerCase(); });
+      var cm = head.findIndex(function (h) { return h.indexOf("memory") >= 0; }),
+          ca = head.findIndex(function (h) { return h.indexOf("action") >= 0; }),
+          cv = head.findIndex(function (h) { return h.indexOf("visitor") >= 0; });
+      if (cm < 0 || ca < 0 || cv < 0) return;
+      var next = {};
+      rows.slice(1).forEach(function (r) {   // rows are oldest first, so the last one per visitor wins
+        var k = (r[cm] || "").trim(), v = (r[cv] || "").trim(); if (!k || !v) return;
+        (next[k] = next[k] || {})[v] = /^\s*like\s*$/i.test(r[ca] || "");
+      });
+      serverLikes = next;
+      renderWall();
+    }).catch(function () {});
+  }
+
   /* ---------- Memories ---------- */
   var memories = [], memLimit = 12;
   function whenText(t) {
@@ -568,12 +699,19 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
     if (!list.length) { wall.replaceChildren(el("p", { class: "notice", text: "No memories here yet. The first one shared will appear for everyone who visits." })); return; }
     var cards = list.slice(0, memLimit).map(function (m) {
       var kids = [el("div", { class: "card-head" }, el("strong", { text: m.name || "A friend" }), el("time", { text: whenText(m.time) }))];
-      if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": "Open photo shared by " + (m.name || "a visitor"),
-        onclick: function () { var ix = items.findIndex(function (i) { return i.key === m.id; }); if (ix >= 0) openLb(ix); } },
+      var react = reactRow(m), tapTimer = null;
+      if (m.photo) kids.push(el("button", { class: "photo", type: "button", "aria-label": "Open photo shared by " + (m.name || "a visitor") + ". Double-tap to like.",
+        onclick: function () {
+          var box = this;
+          if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; react.like(); burst(box); return; }
+          tapTimer = setTimeout(function () { tapTimer = null; var ix = items.findIndex(function (i) { return i.key === m.id; }); if (ix >= 0) openLb(ix); }, 260);
+        } },
         driveFallback(el("img", { src: m.photo, alt: "Photo shared by " + (m.name || "a visitor"), loading: "lazy", decoding: "async", referrerpolicy: "no-referrer" }))));
+      if (m.photo) kids.push(react.row);
       var tb = splitTitle(m);
       if (tb.title) kids.push(el("h3", { class: "title", text: tb.title }));
       if (tb.body) kids.push(el("p", { class: "msg", text: tb.body }));
+      if (!m.photo) kids.push(react.row);
       return el.apply(null, ["article", { class: "card" }].concat(kids));
     });
     if (list.length > memLimit) cards.push(el("button", { class: "btn ghost more", type: "button", onclick: function () { memLimit += 12; renderWall(); } }, "Show more memories"));
@@ -632,8 +770,8 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
   var saved = store("abby-name");
   if (saved) { $("m-name").value = saved; $("candle-name").value = saved; }
   renderGallery();
-  loadCandles(); loadMemories();
-  if (!PREVIEW) setInterval(function () { loadCandles(); loadMemories(); }, CONFIG.refreshSeconds * 1000);
+  loadCandles(); loadMemories().then(loadReactions);
+  if (!PREVIEW) setInterval(function () { loadCandles(); loadMemories().then(loadReactions); }, CONFIG.refreshSeconds * 1000);
 })();
 </script>
 
