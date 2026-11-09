@@ -16,21 +16,32 @@
   </defs>
 </svg>
 
+<button class="lang-switch" id="lang-switch" type="button">Español</button>
+
+<dialog class="lang-dlg" id="lang-dlg" aria-labelledby="lang-title">
+  <p class="eyebrow">Remembering Abby · Recordando a Abby</p>
+  <h2 id="lang-title"><span lang="en">Choose your language</span><span lang="es">Elige tu idioma</span></h2>
+  <div class="lang-choices">
+    <button class="btn" type="button" data-lang="en" lang="en">English</button>
+    <button class="btn" type="button" data-lang="es" lang="es">Español</button>
+  </div>
+</dialog>
+
 <div class="wrap">
   <p class="preview-bar" id="preview-bar" hidden>Preview mode: the Google Forms aren't connected yet, so the memories and candles below are samples.</p>
   <header class="hero">
     <div class="arch">
-      <img src="img/hero.jpg" alt="Abby smiling in her kitchen with a hand on her hip" width="1000" height="1710">
+      <img src="img/hero.jpg" data-i18n-alt="heroAlt" alt="Abby smiling in her kitchen with a hand on her hip" width="1000" height="1710">
     </div>
     <div>
-      <p class="eyebrow">In loving memory</p>
+      <p class="eyebrow" data-i18n="heroEyebrow">In loving memory</p>
       <h1>Abby</h1>
-      <p class="date"><time datetime="2026-11-09">November 8, 2026</time></p>
-      <p class="lede">This page holds the photos and stories of the people who loved her. Add a picture, write a memory, or light a candle.</p>
+      <p class="date"><time datetime="2026-11-09" data-i18n="heroDate">November 9, 2026</time></p>
+      <p class="lede" data-i18n="lede">This page holds the photos and stories of the people who loved her. Add a picture, write a memory, or light a candle.</p>
       <div class="cta">
-        <a class="btn" href="#share">Share a memory</a>
-        <a class="btn ghost" href="#candle">Light a candle</a>
-        <a class="btn ghost" href="#contributions">View Contributions</a>
+        <a class="btn" href="#share" data-i18n="ctaShare">Share a memory</a>
+        <a class="btn ghost" href="#candle" data-i18n="ctaCandle">Light a candle</a>
+        <a class="btn ghost" href="#contributions" data-i18n="ctaContrib">View Contributions</a>
       </div>
     </div>
   </header>
@@ -38,56 +49,56 @@
   <main>
     <section class="section" id="moments" aria-labelledby="moments-h">
       <div class="section-head">
-        <h2 id="moments-h">Moments</h2>
-        <p id="gallery-count">Tap a photo to see it larger.</p>
+        <h2 id="moments-h" data-i18n="momentsH">Moments</h2>
+        <p id="gallery-count" data-i18n="galleryHint">Tap a photo to see it larger.</p>
       </div>
       <div class="gallery" id="gallery"></div>
-      <div class="see-more-row"><a class="btn ghost" id="see-more" href="photos.html">See more pictures →</a></div>
+      <div class="see-more-row"><a class="btn ghost" id="see-more" href="photos.html" data-i18n="seeMore">See more pictures →</a></div>
     </section>
 
     <section class="band" id="candle" aria-labelledby="candle-h">
       <div class="section-head">
-        <h2 id="candle-h">Light a candle</h2>
-        <p>Each flame is someone thinking of Abby today.</p>
+        <h2 id="candle-h" data-i18n="candleH">Light a candle</h2>
+        <p data-i18n="candleSub">Each flame is someone thinking of Abby today.</p>
       </div>
       <div class="flames" id="flames" role="list" aria-label="Candles lit for Abby"></div>
-      <p class="candle-count" id="candle-count" role="status">Loading candles…</p>
+      <p class="candle-count" id="candle-count" role="status" data-i18n="candleLoading">Loading candles…</p>
       <p class="candle-names" id="candle-names"></p>
       <button class="names-btn" type="button" id="names-btn" hidden>See all names</button>
       <form class="candle-form" id="candle-form">
         <div class="field">
-          <label for="candle-name">Your name (optional)</label>
+          <label for="candle-name" data-i18n="candleNameLabel">Your name (optional)</label>
           <input type="text" id="candle-name" maxlength="60" autocomplete="name">
         </div>
-        <button class="btn" type="submit" id="candle-btn" disabled>Light a candle</button>
+        <button class="btn" type="submit" id="candle-btn" disabled data-i18n="lightCandle">Light a candle</button>
       </form>
       <p class="status" id="candle-status" role="status"></p>
     </section>
 
     <section class="section" id="share" aria-labelledby="share-h">
       <div class="section-head">
-        <h2 id="share-h">Memories</h2>
-        <p>Write what you remember, and add a photo if you have one. Everyone who visits can read what you share.</p>
+        <h2 id="share-h" data-i18n="memoriesH">Memories</h2>
+        <p data-i18n="memoriesSub">Write what you remember, and add a photo if you have one. Everyone who visits can read what you share.</p>
       </div>
       <div class="share">
         <form class="form" id="memory-form" novalidate>
           <div class="field">
-            <label for="m-name">Your name</label>
+            <label for="m-name" data-i18n="nameLabel">Your name</label>
             <input type="text" id="m-name" maxlength="60" autocomplete="name">
           </div>
           <div class="field">
-            <label for="m-text">Your memory</label>
-            <textarea id="m-text" maxlength="1500" placeholder="A story, something she always said, what she meant to you"></textarea>
+            <label for="m-text" data-i18n="memoryLabel">Your memory</label>
+            <textarea id="m-text" maxlength="1500" data-i18n-ph="memoryPh" placeholder="A story, something she always said, what she meant to you"></textarea>
           </div>
           <div class="photo-row">
-            <a class="btn ghost" id="m-photo-btn" href="#" target="_blank" rel="noopener">Add a photo with this memory</a>
-            <p class="hint">Photos go through Google Forms, which asks you to sign in to Google. Your name and memory come with you, so they're posted together.</p>
+            <a class="btn ghost" id="m-photo-btn" href="#" target="_blank" rel="noopener" data-i18n="addPhoto">Add a photo with this memory</a>
+            <p class="hint" data-i18n="photoHint">Photos go through Google Forms, which asks you to sign in to Google. Your name and memory come with you, so they're posted together.</p>
           </div>
-          <button class="btn" type="submit" id="m-submit" disabled>Share this memory</button>
+          <button class="btn" type="submit" id="m-submit" disabled data-i18n="shareBtn">Share this memory</button>
           <p class="status" id="m-status" role="status"></p>
         </form>
         <div class="wall" id="wall" aria-live="polite">
-          <p class="notice" id="wall-note">Loading memories…</p>
+          <p class="notice" id="wall-note" data-i18n="memLoading">Loading memories…</p>
         </div>
       </div>
     </section>
@@ -95,44 +106,44 @@
 
   <section class="contrib" id="contributions" aria-labelledby="contrib-h">
     <div class="section-head">
-      <p class="eyebrow">Made with love</p>
-      <h2 id="contrib-h">Contributions</h2>
+      <p class="eyebrow" data-i18n="contribEyebrow">Made with love</p>
+      <h2 id="contrib-h" data-i18n="contribH">Contributions</h2>
     </div>
     <div class="people">
       <article class="person">
         <h3>Alyah</h3>
-        <p class="role">Provided pictures, ideas and the concept</p>
-        <blockquote>This website is a special place in memory of my grandma. I came up with the idea for the website and created the concept, and with the help of my cousin, we brought the vision to life. Here, we can share everything we loved and cherished about our sweet Abby. Thank you for visiting this special place for a special soul. 🌻</blockquote>
+        <p class="role" data-i18n="roleAlyah">Provided pictures, ideas and the concept</p>
+        <blockquote data-i18n="quoteAlyah">This website is a special place in memory of my grandma. I came up with the idea for the website and created the concept, and with the help of my cousin, we brought the vision to life. Here, we can share everything we loved and cherished about our sweet Abby. Thank you for visiting this special place for a special soul. 🌻</blockquote>
       </article>
       <article class="person">
         <h3>JJ</h3>
-        <p class="role">Coded the website and its interactions, and provided the domain</p>
-        <blockquote>I love Abby so much. When I was told about the idea of making a website for her and her memory, I instantly said yes and gave my input. I'm glad I was invited to work on this project. May she rest with God. ❤️🕊️</blockquote>
+        <p class="role" data-i18n="roleJJ">Coded the website and its interactions, and provided the domain</p>
+        <blockquote data-i18n="quoteJJ">I love Abby so much. When I was told about the idea of making a website for her and her memory, I instantly said yes and gave my input. I'm glad I was invited to work on this project. May she rest with God. ❤️🕊️</blockquote>
       </article>
     </div>
   </section>
 
-  <footer>Remembering Abby · 11/8/2026</footer>
+  <footer data-i18n="footer">Remembering Abby · 11/8/2026</footer>
 </div>
 
 <dialog class="names-dlg" id="names-dlg" aria-labelledby="nd-title">
   <div class="nd-head">
-    <h3 id="nd-title">Candles lit for Abby</h3>
-    <button class="nd-close" id="nd-close" type="button" aria-label="Close list">&times;</button>
+    <h3 id="nd-title" data-i18n="namesTitle">Candles lit for Abby</h3>
+    <button class="nd-close" id="nd-close" type="button" data-i18n-aria="closeList" aria-label="Close list">&times;</button>
   </div>
   <ul id="nd-list"></ul>
   <p class="nd-foot" id="nd-foot"></p>
 </dialog>
 
-<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="close" id="lb-close" type="button" aria-label="Close photo">&times;</button>
-  <button class="prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" data-i18n-aria="viewer" aria-label="Photo viewer">
+  <button class="close" id="lb-close" type="button" data-i18n-aria="closePhoto" aria-label="Close photo">&times;</button>
+  <button class="prev" id="lb-prev" type="button" data-i18n-aria="prevPhoto" aria-label="Previous photo">&#8249;</button>
   <figure>
     <img id="lb-img" alt="">
     <figcaption id="lb-cap"></figcaption>
     <div class="lb-react" id="lb-react"></div>
   </figure>
-  <button class="next" id="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+  <button class="next" id="lb-next" type="button" data-i18n-aria="nextPhoto" aria-label="Next photo">&#8250;</button>
 </div>
 
 <script src="app.js"></script>
