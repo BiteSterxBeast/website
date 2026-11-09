@@ -1,0 +1,47 @@
+<!doctype html><html data-page="photos"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Moments · Remembering Abby</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Gloock&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="0.6" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#fff5d1"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <p class="preview-bar" id="preview-bar" hidden>Preview mode: the Google Forms aren't connected yet, so the photos below are samples.</p>
+  <nav class="top-bar"><a class="back" href="index.html">← Back to Abby's page</a></nav>
+  <header class="page-head">
+    <p class="eyebrow">Remembering Abby</p>
+    <h1>Moments</h1>
+    <p id="photo-count">Loading photos…</p>
+  </header>
+  <main>
+    <div class="photo-wall" id="photo-wall" aria-live="polite"></div>
+    <button class="btn ghost photo-more" type="button" id="photo-more" hidden>Show more pictures</button>
+  </main>
+  <footer>Remembering Abby · 11/9/2026</footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="close" id="lb-close" type="button" aria-label="Close photo">&times;</button>
+  <button class="prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption id="lb-cap"></figcaption>
+    <div class="lb-react" id="lb-react"></div>
+  </figure>
+  <button class="next" id="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script src="app.js"></script>
+
+</body></html>
