@@ -18,28 +18,28 @@
 
 <div class="wrap">
   <p class="preview-bar" id="preview-bar" hidden>Preview mode: the Google Forms aren't connected yet, so the photos below are samples.</p>
-  <nav class="top-bar"><a class="back" href="index.html">← Back to Abby's page</a></nav>
+  <nav class="top-bar"><a class="back" href="index.html" data-i18n="back">← Back to Abby's page</a><button class="lang-switch in-bar" id="lang-switch" type="button">Español</button></nav>
   <header class="page-head">
-    <p class="eyebrow">Remembering Abby</p>
-    <h1>Moments</h1>
-    <p id="photo-count">Loading photos…</p>
+    <p class="eyebrow" data-i18n="photosEyebrow">Remembering Abby</p>
+    <h1 data-i18n="momentsH">Moments</h1>
+    <p id="photo-count" data-i18n="photosLoading">Loading photos…</p>
   </header>
   <main>
     <div class="photo-wall" id="photo-wall" aria-live="polite"></div>
-    <button class="btn ghost photo-more" type="button" id="photo-more" hidden>Show more pictures</button>
+    <button class="btn ghost photo-more" type="button" id="photo-more" hidden data-i18n="morePhotos">Show more pictures</button>
   </main>
-  <footer>Remembering Abby · 11/9/2026</footer>
+  <footer data-i18n="footer">Remembering Abby · 11/8/2026</footer>
 </div>
 
-<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="close" id="lb-close" type="button" aria-label="Close photo">&times;</button>
-  <button class="prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" data-i18n-aria="viewer" aria-label="Photo viewer">
+  <button class="close" id="lb-close" type="button" data-i18n-aria="closePhoto" aria-label="Close photo">&times;</button>
+  <button class="prev" id="lb-prev" type="button" data-i18n-aria="prevPhoto" aria-label="Previous photo">&#8249;</button>
   <figure>
     <img id="lb-img" alt="">
     <figcaption id="lb-cap"></figcaption>
     <div class="lb-react" id="lb-react"></div>
   </figure>
-  <button class="next" id="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+  <button class="next" id="lb-next" type="button" data-i18n-aria="nextPhoto" aria-label="Next photo">&#8250;</button>
 </div>
 
 <script src="app.js"></script>
