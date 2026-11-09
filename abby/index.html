@@ -205,6 +205,16 @@ textarea { resize: vertical; min-height: 8rem; line-height: 1.55; }
 @keyframes burst { 0% { transform: scale(0); opacity: 0; } 15% { transform: scale(1.15); opacity: 0.95; } 30% { transform: scale(0.95); } 45%, 80% { transform: scale(1); opacity: 0.95; } 100% { transform: scale(0.9) translateY(-10px); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .heart.pop svg, .burst svg { animation: none; } .burst { display: none; } }
 
+/* Contributions */
+.contrib { margin-top: 4.5rem; padding: 2.5rem clamp(1.25rem, 5vw, 3rem); border-radius: 20px; background: var(--surface); border: 1px solid var(--line); scroll-margin-top: 1.5rem; }
+.contrib .section-head { margin-bottom: 1.75rem; }
+.people { display: grid; gap: 1.25rem; }
+.person { display: grid; gap: 0.6rem; align-content: start; padding: 1.4rem 1.4rem 1.5rem; border-radius: 14px; background: color-mix(in srgb, var(--bg) 55%, var(--surface)); border: 1px solid var(--line); min-width: 0; }
+.person h3 { font-family: var(--display); font-weight: 400; font-size: 1.9rem; line-height: 1.1; margin: 0; }
+.person .role { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent); }
+.person blockquote { margin: 0.35rem 0 0; padding-left: 1rem; border-left: 2px solid var(--accent); font-family: var(--text); font-size: 1.05rem; line-height: 1.65; overflow-wrap: anywhere; }
+@media (min-width: 780px) { .people { grid-template-columns: 1fr 1fr; } }
+
 footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
 
 /* Lightbox */
@@ -264,6 +274,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       <div class="cta">
         <a class="btn" href="#share">Share a memory</a>
         <a class="btn ghost" href="#candle">Light a candle</a>
+        <a class="btn ghost" href="#contributions">View Contributions</a>
       </div>
     </div>
   </header>
@@ -324,6 +335,25 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line
       </div>
     </section>
   </main>
+
+  <section class="contrib" id="contributions" aria-labelledby="contrib-h">
+    <div class="section-head">
+      <p class="eyebrow">Made with love</p>
+      <h2 id="contrib-h">Contributions</h2>
+    </div>
+    <div class="people">
+      <article class="person">
+        <h3>Alyah</h3>
+        <p class="role">Provided pictures, ideas and the concept</p>
+        <blockquote>This website is a special place in memory of my grandma. I came up with the idea for the website and created the concept, and with the help of my cousin, we brought the vision to life. Here, we can share everything we loved and cherished about our sweet Abby. Thank you for visiting this special place for a special soul. 🌻</blockquote>
+      </article>
+      <article class="person">
+        <h3>JJ</h3>
+        <p class="role">Coded the website and its interactions, and provided the domain</p>
+        <blockquote>I love Abby so much. When I was told about the idea of making a website for her and her memory, I instantly said yes and gave my input. I'm glad I was invited to work on this project. May she rest with God. ❤️🕊️</blockquote>
+      </article>
+    </div>
+  </section>
 
   <footer>Remembering Abby · 11/9/2026</footer>
 </div>
