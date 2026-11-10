@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T15:00:54+00:00",
+  "updated": "2026-11-10T20:00:50+00:00",
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -18,6 +18,13 @@
     }
   ],
   "recent": [
+    {
+      "id": "Mj3w--uwKNs",
+      "title": "Scatman Vs 100 Wave Spam! 🤑🔥",
+      "channel": "Main",
+      "published": "2026-11-10T20:00:40Z",
+      "type": "short"
+    },
     {
       "id": "FBqkqVGbjwo",
       "title": "Electrodynamix: Normal vs Full Version",
@@ -121,13 +128,6 @@
       "title": "Scatman vs EXTREME Wave Challenge! 😰🔥",
       "channel": "Main",
       "published": "2026-11-02T08:01:02Z",
-      "type": "long"
-    },
-    {
-      "id": "tk5Trvuyz-I",
-      "title": "GD Subzero: Normal vs Full Version",
-      "channel": "Main",
-      "published": "2026-11-01T21:00:06Z",
       "type": "long"
     },
     {
@@ -251,7 +251,6 @@
       "iRpPA7_ej3U": "short",
       "7Xj_paPphl0": "short",
       "H6HT6ccoxkQ": "short",
-      "tk5Trvuyz-I": "long",
       "uMPlu78ImJ0": "long",
       "B0Zny-EI8zE": "short",
       "AVXlK9Siq_c": "short",
@@ -266,7 +265,8 @@
       "Ui3CGCpSHwE": "short",
       "ihWC-tzdlSE": "short",
       "IkvNwFgsLgk": "short",
-      "FBqkqVGbjwo": "long"
+      "FBqkqVGbjwo": "long",
+      "Mj3w--uwKNs": "short"
     }
   }
 }
