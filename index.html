@@ -208,6 +208,8 @@
   /* ---------- VIDEOS ---------- */
   .videos { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; margin-top: 24px; }
   .videos .panel { margin-top: 0; }
+  /* keeps the panels from growing wider than the screen (the channel row scrolls inside instead) */
+  .videos > * { min-width: 0; }
 
   .thumb {
     position: relative;
@@ -249,7 +251,27 @@
   .best-main .vtitle { font-size: 1.15rem; }
 
   /* channel chips + type dropdown */
-  .chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 8px; scrollbar-width: none; }
+  .chips-wrap { display: flex; align-items: center; gap: 6px; }
+  .chips { flex: 1; min-width: 0; display: flex; gap: 6px; overflow-x: auto; padding: 2px 0; scrollbar-width: none; scroll-behavior: smooth; }
+  .chip-arrow {
+    flex-shrink: 0; width: 28px; height: 28px; border-radius: 8px; border: 0; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; padding-bottom: 2px;
+    font: inherit; font-size: 1.1rem; font-weight: 800; line-height: 1;
+    background: var(--red); color: #fff; box-shadow: 0 3px 0 #8a1600;
+    transition: background 0.15s, box-shadow 0.1s, transform 0.1s;
+  }
+  .chip-arrow:hover:not(:disabled) { background: #ff4a1f; }
+  /* pressed down while the slide plays (cooldown), so it can't be spammed */
+  .chip-arrow:active:not(:disabled), .chip-arrow.cooling { transform: translateY(2px); box-shadow: 0 1px 0 #8a1600; }
+  .chip-arrow.cooling { cursor: default; }
+  .chip-arrow:disabled:not(.cooling) {
+    background: rgba(255, 255, 255, 0.1); box-shadow: none; color: rgba(255, 255, 255, 0.35); cursor: default;
+  }
+  .chip-arrow.gone { display: none; }
+  .chip-dots { display: flex; justify-content: center; gap: 5px; margin: 8px 0 10px; }
+  .chip-dots:empty { display: none; }
+  .chip-dots span { width: 6px; height: 6px; border-radius: 99px; background: rgba(255, 255, 255, 0.25); transition: width 0.2s, background 0.2s; }
+  .chip-dots span.on { width: 18px; background: var(--yellow); }
   .chips::-webkit-scrollbar { display: none; }
   .chip {
     font: inherit; font-weight: 800; font-size: 0.88rem; color: var(--text);
@@ -287,12 +309,13 @@
   .dd-menu button.active { background: var(--yellow); color: #1a0d05; }
 
   .see-more {
-    display: block; width: 100%; margin-top: 16px; font: inherit; font-weight: 800; cursor: pointer;
+    display: block; text-align: center; width: 100%; margin-top: 16px; font: inherit; font-weight: 800; cursor: pointer;
     background: rgba(255, 255, 255, 0.08); color: var(--text);
     border: 2px solid rgba(255, 230, 0, 0.4); border-radius: 12px; padding: 9px; transition: 0.15s;
   }
   .see-more:hover { border-color: var(--yellow); background: rgba(255, 230, 0, 0.12); }
   .see-more[hidden] { display: none; }
+  .see-more span { color: var(--yellow); }
 
   .recent-list { display: flex; flex-direction: column; gap: 12px; }
   .recent-row { display: grid; grid-template-columns: 130px 1fr; gap: 12px; align-items: center; }
@@ -666,10 +689,15 @@
     </section>
     <section class="panel">
       <h2>Recent Videos</h2>
-      <div class="chips" id="chips"></div>
+      <div class="chips-wrap" id="chipsWrap">
+        <button class="chip-arrow" id="chipLeft" aria-label="Previous channels">‹</button>
+        <div class="chips" id="chips"></div>
+        <button class="chip-arrow" id="chipRight" aria-label="More channels">›</button>
+      </div>
+      <div class="chip-dots" id="chipDots"></div>
       <div class="recent-bar"><span class="vmeta" id="recentCount"></span><span id="typeSlot"></span></div>
       <div class="recent-list" id="recent"><div class="empty">Loading videos...</div></div>
-      <button class="see-more" id="seeMore" hidden></button>
+      <a class="see-more" id="seeMore" href="/videos/" hidden>See all videos <span>→</span></a>
     </section>
   </div>
 
@@ -793,7 +821,6 @@
   let allRecent = [];
   let channel = 'all';
   let videoType = 'all';
-  let expanded = false;
 
   const esc = (t) => String(t || '').replace(/[&<>"']/g, c =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -843,10 +870,71 @@
     document.getElementById('chips').innerHTML = ['all', ...CHANNELS].map(c =>
       `<button class="chip${c === channel ? ' active' : ''}" data-ch="${c}">${c === 'all' ? 'All' : esc(c)}</button>`).join('');
     document.querySelectorAll('#chips .chip').forEach(btn => btn.addEventListener('click', () => {
-      channel = btn.dataset.ch; videoType = 'all'; expanded = false;
+      channel = btn.dataset.ch; videoType = 'all';
       renderChips(); renderRecent();
     }));
+    updateChipArrows();
   }
+
+  // Arrows on the channel row. Each click slides to the next (or previous) channel that's
+  // cut off. While the slide plays the button stays pressed down and can't be clicked again,
+  // so spamming it can't leave the row stuck halfway. Dots show how far along you are.
+  const chipsEl = document.getElementById('chips');
+  const chipLeft = document.getElementById('chipLeft');
+  const chipRight = document.getElementById('chipRight');
+  const chipDots = document.getElementById('chipDots');
+  let chipsSliding = false;
+
+  function updateChipArrows() {
+    const max = chipsEl.scrollWidth - chipsEl.clientWidth;
+    const fits = max <= 2;
+    chipLeft.classList.toggle('gone', fits);
+    chipRight.classList.toggle('gone', fits);
+    if (!chipsSliding) {
+      chipLeft.disabled = chipsEl.scrollLeft <= 2;
+      chipRight.disabled = chipsEl.scrollLeft >= max - 2;
+    }
+    if (fits) { chipDots.innerHTML = ''; return; }
+    const pages = Math.max(2, Math.ceil(chipsEl.scrollWidth / chipsEl.clientWidth));
+    const cur = Math.round(chipsEl.scrollLeft / max * (pages - 1));
+    chipDots.innerHTML = Array.from({ length: pages }, (_, i) => `<span class="${i === cur ? 'on' : ''}"></span>`).join('');
+  }
+
+  function slideChips(dir, btn) {
+    if (chipsSliding) return;
+    const box = chipsEl.getBoundingClientRect();
+    const chips = [...chipsEl.children];
+    let target;
+    if (dir > 0) {
+      const next = chips.find(c => c.getBoundingClientRect().right > box.right + 1);
+      if (next) target = chipsEl.scrollLeft + next.getBoundingClientRect().right - box.right;
+    } else {
+      const prev = chips.slice().reverse().find(c => c.getBoundingClientRect().left < box.left - 1);
+      if (prev) target = chipsEl.scrollLeft + prev.getBoundingClientRect().left - box.left;
+    }
+    if (target == null) return;
+
+    chipsSliding = true;
+    chipLeft.disabled = chipRight.disabled = true;
+    btn.classList.add('cooling');
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      chipsEl.removeEventListener('scrollend', finish);
+      chipsSliding = false;
+      btn.classList.remove('cooling');
+      updateChipArrows();
+    };
+    chipsEl.addEventListener('scrollend', finish);
+    setTimeout(finish, 600); // backup for browsers without the scrollend event
+    chipsEl.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+  }
+  chipLeft.addEventListener('click', () => slideChips(-1, chipLeft));
+  chipRight.addEventListener('click', () => slideChips(1, chipRight));
+  chipsEl.addEventListener('scroll', updateChipArrows, { passive: true });
+  window.addEventListener('resize', updateChipArrows);
+  if (document.fonts) document.fonts.ready.then(updateChipArrows);
 
   // Long-forms / Shorts dropdown: only offers the types this channel actually posts
   function renderTypeDropdown() {
@@ -867,7 +955,7 @@
     dd.querySelector('.dd-btn').addEventListener('click', (e) => { e.stopPropagation(); dd.classList.toggle('open'); });
     dd.querySelectorAll('.dd-menu button').forEach(b => b.addEventListener('click', (e) => {
       e.stopPropagation();
-      videoType = b.dataset.type; expanded = false;
+      videoType = b.dataset.type;
       renderRecent();
     }));
   }
@@ -881,12 +969,13 @@
     renderTypeDropdown();
     const el = document.getElementById('recent');
     const all = recentOf(channel, videoType);
-    const list = expanded ? all : all.slice(0, RECENT_SHOWN);
+    const list = all.slice(0, RECENT_SHOWN);
     document.getElementById('recentCount').innerHTML = all.length ? `<b>${all.length}</b> video${all.length === 1 ? '' : 's'}` : '';
 
+    // "See all videos" opens the /videos/ page, jumping to the channel you're on
     const more = document.getElementById('seeMore');
-    more.hidden = all.length <= RECENT_SHOWN;
-    more.textContent = expanded ? 'Show less ▲' : `See more (${all.length - RECENT_SHOWN}) ▼`;
+    more.hidden = !allRecent.length;
+    more.href = channel === 'all' ? '/videos/' : `/videos/#${channel.toLowerCase()}`;
 
     if (!list.length) { el.innerHTML = '<div class="empty">No uploads yet.</div>'; return; }
     el.innerHTML = list.map(v => `
@@ -900,14 +989,6 @@
         </div>
       </a>`).join('');
   }
-
-  document.getElementById('seeMore').addEventListener('click', () => {
-    const wasExpanded = expanded;
-    expanded = !expanded;
-    renderRecent();
-    // when collapsing, jump back to the top of the panel so you're not left at the bottom of the page
-    if (wasExpanded) document.getElementById('chips').closest('.panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
 
   renderChips();
 
