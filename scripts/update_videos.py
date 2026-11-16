@@ -30,10 +30,11 @@ CHANNELS = [
     ("Experiments", "BiteSterxBeastExperiments"),
     ("Extras", "BiteSterxBeastExtras"),
     ("Minecraft", "BitePlaysMC"),
+    ("JoshSham", "JoshSham"),
 ]
 
-PER_CHANNEL = 15
-MAX_RECENT = 30
+PER_CHANNEL = 50   # newest uploads kept per channel (50 is the most one API call returns)
+MAX_RECENT = None  # no overall cap, so every channel keeps all of its videos for "See more"
 SHORT_MAX_SECONDS = 180  # fallback rule if the Shorts check can't tell
 
 API = "https://www.googleapis.com/youtube/v3/"
@@ -229,7 +230,8 @@ def build(existing):
 
     # drop upcoming premieres / live streams that haven't happened yet
     recent = [v for v in recent if details.get(v["id"], {}).get("live") != "upcoming"]
-    recent = recent[:MAX_RECENT]
+    if MAX_RECENT:
+        recent = recent[:MAX_RECENT]
 
     for v in recent:
         if v["id"] not in types:
