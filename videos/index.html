@@ -76,7 +76,7 @@
 
   .chead { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
   .av {
-    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; border: 3px solid var(--yellow);
+    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
     font-family: 'Lilita One', sans-serif; font-size: 1.4rem; color: var(--ink);
   }
@@ -135,6 +135,34 @@
   }
   .vmeta { color: var(--muted); font-size: .8rem; }
 
+  /* sort tabs (like YouTube) */
+  .sorts { display: flex; gap: 6px; margin: 12px 0 2px; flex-wrap: wrap; }
+  .sorts button { font-weight: 800; font-size: .82rem; border: 0; border-radius: 8px; padding: 4px 12px; cursor: pointer;
+    background: rgba(255,255,255,.1); color: #fff; transition: background .15s; }
+  .sorts button:hover { background: rgba(255,255,255,.18); }
+  .sorts button.on { background: #fff; color: var(--ink); }
+
+  /* black fade + Show more at the end of a row (after 5 arrow presses' worth of videos) */
+  .strip { position: relative; }
+  .more-tile { flex: 0 0 150px; scroll-snap-align: end; position: relative; margin-left: -70px; z-index: 1;
+    display: flex; align-items: center; justify-content: flex-end; padding-right: 6px;
+    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,.92) 55%); border-radius: 0 12px 12px 0; }
+  .strip.tall .more-tile { flex-basis: 120px; margin-left: -50px; }
+  .more-tile a { display: flex; flex-direction: column; align-items: center; gap: 4px; font-weight: 800; font-size: .9rem; color: #fff; text-align: center; }
+  .more-tile a b { width: 40px; height: 40px; border-radius: 50%; background: var(--yellow); color: var(--ink);
+    display: flex; align-items: center; justify-content: center; font-size: 1.3rem; transition: transform .15s; }
+  .more-tile a:hover b { transform: scale(1.1); }
+
+  /* full list page */
+  .lhead { display: flex; align-items: center; gap: 12px; }
+  .lhead .back { font-weight: 800; font-size: .85rem; background: rgba(255,255,255,.1); border-radius: 999px; padding: 5px 13px; cursor: pointer; }
+  .lhead .back:hover { background: var(--yellow); color: var(--ink); }
+  .lgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(210px, 100%), 1fr)); gap: 16px; margin-top: 14px; }
+  .lgrid.tall { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .lgrid.tall .thumb { aspect-ratio: 9 / 16; }
+  .lcount { color: var(--muted); font-size: .9rem; font-weight: 800; }
+
+
   footer { text-align: center; margin-top: 28px; font-weight: 800; color: var(--ink); opacity: .75; }
 
   @media (max-width: 600px) {
@@ -177,13 +205,12 @@
     <div class="spacer"></div>
     <a class="pillbtn" href="/">Home</a>
   </div>
-  <h1 class="title">All Videos</h1>
+  <h1 class="title" id="pageTitle">All Videos</h1>
   <div id="app"><section class="panel"><div class="empty">Loading videos...</div></section></div>
   <footer>© 2026 BiteSterxBeast</footer>
 </div>
 
 <script>
-// Same channel list as the home page (label must match the "channel" in videos.json)
 const CHANNELS = [
   { name: 'Main',        handle: 'BiteSterxBeast',            color: '#ffe600' },
   { name: 'Experiments', handle: 'BiteSterxBeastExperiments', color: '#00e1ff' },
@@ -191,19 +218,31 @@ const CHANNELS = [
   { name: 'Minecraft',   handle: 'BitePlaysMC',               color: '#7cff4f' },
   { name: 'JoshSham',    handle: 'JoshSham',                  color: '#ff7a3a' },
 ];
+let VIDEOS = [], AVATARS = {};
 const TYPE_NAME = { long: 'Long-forms', short: 'Shorts' };
+const SORTS = { newest: 'Newest', oldest: 'Oldest', views: 'Most viewed' };
+const ROW_LIMIT = 10; // videos shown in a row before the black fade + "Show more"
 
-const esc = (t) => String(t || '').replace(/[&<>"']/g, c =>
-  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = (t) => String(t || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const timeAgo = (iso) => {
   const s = Math.max(0, (Date.now() - new Date(iso)) / 1000);
-  for (const [name, secs] of [['year', 31536000], ['month', 2592000], ['week', 604800],
-                              ['day', 86400], ['hour', 3600], ['minute', 60]]) {
-    const n = Math.floor(s / secs);
-    if (n >= 1) return `${n} ${name}${n > 1 ? 's' : ''} ago`;
+  for (const [name, secs] of [['year', 31536000], ['month', 2592000], ['week', 604800], ['day', 86400], ['hour', 3600], ['minute', 60]]) {
+    const n = Math.floor(s / secs); if (n >= 1) return `${n} ${name}${n > 1 ? 's' : ''} ago`;
   }
   return 'just now';
 };
+// 1234 -> 1.2K, 3400000 -> 3.4M (like YouTube)
+const fmtViews = (n) => {
+  if (n == null) return '';  // old saved videos get views on the next full sync
+  const f = (x, u) => (x >= 100 ? Math.floor(x) : Math.floor(x * 10) / 10) + u;
+  const t = n >= 1e9 ? f(n / 1e9, 'B') : n >= 1e6 ? f(n / 1e6, 'M') : n >= 1e3 ? f(n / 1e3, 'K') : String(n);
+  return `${t} view${n === 1 ? '' : 's'}`;
+};
+const sortBy = (vs, how) => vs.slice().sort(
+  how === 'oldest' ? (a, b) => a.published.localeCompare(b.published)
+: how === 'views'  ? (a, b) => (b.views || 0) - (a.views || 0)
+:                    (a, b) => b.published.localeCompare(a.published));
+
 const link = (v) => v.type === 'short'
   ? `https://www.youtube.com/shorts/${v.id}` : `https://www.youtube.com/watch?v=${v.id}`;
 const card = (v) => `
@@ -211,49 +250,71 @@ const card = (v) => `
     <div class="thumb"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy">
       <span class="badge${v.type === 'short' ? ' short' : ''}">${v.type === 'short' ? 'Short' : 'Video'}</span></div>
     <div class="vtitle">${esc(v.title)}</div>
-    <div class="vmeta">${timeAgo(v.published)}</div>
+    <div class="vmeta">${[fmtViews(v.views), timeAgo(v.published)].filter(Boolean).join(' · ')}</div>
   </a>`;
 
-// avatars = { Main: { avatar: url }, ... } from videos.json (the updater grabs them from YouTube)
-function render(videos, avatars) {
-  const app = document.getElementById('app');
+// Profile picture, or the channel's letter if there isn't one (or it fails to load)
+function avatarImg(c) {
+  const url = AVATARS[c.name] && AVATARS[c.name].avatar;
+  if (!url) return c.name[0];
+  return `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer"
+    onerror="this.parentElement.textContent='${c.name[0]}'">`;
+}
+
+const app = document.getElementById('app');
+const sortState = {}; // per channel
+
+// ---------- main page: channel panels with rows ----------
+function renderHome() {
+  document.getElementById('pageTitle').textContent = 'All Videos';
   app.innerHTML = CHANNELS.map(c => {
-    const mine = videos.filter(v => v.channel === c.name);
+    const mine = VIDEOS.filter(v => v.channel === c.name);
+    const how = sortState[c.name] || 'newest';
     const rows = ['long', 'short'].map(t => {
-      const vs = mine.filter(v => v.type === t);
+      const vs = sortBy(mine.filter(v => v.type === t), how);
       if (!vs.length) return '';
       return `
         <div class="rowh">
           <h3>${TYPE_NAME[t]} <small>· ${vs.length}</small></h3>
           <div class="arrs"><button class="arr" data-d="-1" aria-label="Back">‹</button><button class="arr" data-d="1" aria-label="Next">›</button></div>
         </div>
-        <div class="strip${t === 'short' ? ' tall' : ''}">${vs.map(card).join('')}</div>`;
+        <div class="strip${t === 'short' ? ' tall' : ''}" data-ch="${c.name}" data-type="${t}" data-total="${vs.length}">${vs.map(card).join('')}</div>`;
     }).join('');
     return `
       <section class="panel" id="${c.name.toLowerCase()}">
         <div class="chead">
-          <div class="av" style="background:${c.color}">${avatarImg(c, avatars)}</div>
+          <div class="av" style="background:${c.color}">${avatarImg(c)}</div>
           <div class="grow"><h2>${esc(c.name)}</h2><div class="sub">@${c.handle} · ${mine.length} video${mine.length === 1 ? '' : 's'}</div></div>
           <a class="yt" href="https://www.youtube.com/@${c.handle}" target="_blank" rel="noopener">YouTube ↗</a>
         </div>
+        ${mine.length ? `<div class="sorts" data-ch="${c.name}">${Object.entries(SORTS).map(([k, n]) =>
+            `<button data-s="${k}" class="${k === how ? 'on' : ''}">${n}</button>`).join('')}</div>` : ''}
         ${rows || '<div class="empty">No uploads yet.</div>'}
       </section>`;
   }).join('');
+  app.querySelectorAll('.sorts button').forEach(b => b.onclick = () => {
+    const ch = b.parentElement.dataset.ch; sortState[ch] = b.dataset.s;
+    const y = scrollY; renderHome(); scrollTo(0, y);
+  });
   setupRows();
-  jumpToHash();
 }
 
-// Arrows: slide about one screen of videos. While the slide plays, both arrows lock
-// (the pressed one stays lit) so spamming can't leave the row stuck halfway.
-// Profile picture, or the channel's letter if there isn't one (or it fails to load)
-function avatarImg(c, avatars) {
-  const url = avatars && avatars[c.name] && avatars[c.name].avatar;
-  if (!url) return c.name[0];
-  return `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer"
-    onerror="this.parentElement.textContent='${c.name[0]}'">`;
-}
-
+// Each row shows the first 10 videos, then a black fade + "Show more" that opens the full list
 function setupRows() {
+  document.querySelectorAll('.strip').forEach(strip => {
+    const cards = [...strip.children];
+    const first = cards[0]; if (!first) return;
+    const gap = 14, step = first.offsetWidth + gap;
+    const perScreen = Math.max(1, Math.floor((strip.clientWidth + gap) / step));
+    strip.dataset.slide = Math.max(1, Math.floor(perScreen * 0.85)) * step;   // one press = whole cards
+    if (cards.length > ROW_LIMIT) {
+      cards.slice(ROW_LIMIT).forEach(c => c.remove());
+      const { ch, type, total } = strip.dataset;
+      strip.insertAdjacentHTML('beforeend', `<div class="more-tile"><a href="#list-${ch.toLowerCase()}-${type}">
+        <b>→</b>Show more<small style="color:var(--muted)">all ${total}</small></a></div>`);
+    }
+  });
+
   document.querySelectorAll('.rowh').forEach(head => {
     const strip = head.nextElementSibling;
     const arrs = head.querySelector('.arrs');
@@ -266,45 +327,54 @@ function setupRows() {
       back.disabled = strip.scrollLeft <= 2;
       next.disabled = strip.scrollLeft >= max - 2;
     };
-    const slide = (btn) => {
+    const go = (btn) => {
       if (sliding) return;
-      sliding = true;
-      back.disabled = next.disabled = true;
-      btn.classList.add('cooling');
+      sliding = true; back.disabled = next.disabled = true; btn.classList.add('cooling');
       let done = false;
-      const finish = () => {
-        if (done) return;
-        done = true;
-        strip.removeEventListener('scrollend', finish);
-        sliding = false;
-        btn.classList.remove('cooling');
-        update();
-      };
-      strip.addEventListener('scrollend', finish);
-      setTimeout(finish, 700); // backup for browsers without the scrollend event
-      strip.scrollBy({ left: Number(btn.dataset.d) * strip.clientWidth * 0.85, behavior: 'smooth' });
+      const finish = () => { if (done) return; done = true; strip.removeEventListener('scrollend', finish);
+        sliding = false; btn.classList.remove('cooling'); update(); };
+      strip.addEventListener('scrollend', finish); setTimeout(finish, 700);
+      strip.scrollBy({ left: Number(btn.dataset.d) * Number(strip.dataset.slide), behavior: 'smooth' });
     };
-    back.addEventListener('click', () => slide(back));
-    next.addEventListener('click', () => slide(next));
+    back.onclick = () => go(back); next.onclick = () => go(next);
     strip.addEventListener('scroll', update, { passive: true });
-    window.addEventListener('resize', update);
     update();
   });
 }
 
-// /videos/#main, /videos/#minecraft etc. jump straight to that channel
-function jumpToHash() {
+// ---------- full list: one channel, one type, every video ----------
+let listSort = 'newest';
+function renderList(chKey, type) {
+  const c = CHANNELS.find(x => x.name.toLowerCase() === chKey);
+  if (!c || !TYPE_NAME[type]) return renderHome();
+  const vs = sortBy(VIDEOS.filter(v => v.channel === c.name && v.type === type), listSort);
+  document.getElementById('pageTitle').textContent = `${c.name} · ${TYPE_NAME[type]}`;
+  app.innerHTML = `
+    <section class="panel">
+      <div class="lhead">
+        <a class="back" href="#${chKey}">← Back</a>
+        <div class="grow"><span class="lcount">${vs.length} ${TYPE_NAME[type].toLowerCase()}</span></div>
+      </div>
+      <div class="sorts">${Object.entries(SORTS).map(([k, n]) => `<button data-s="${k}" class="${k === listSort ? 'on' : ''}">${n}</button>`).join('')}</div>
+      <div class="lgrid${type === 'short' ? ' tall' : ''}">${vs.map(card).join('')}</div>
+    </section>`;
+  app.querySelectorAll('.sorts button').forEach(b => b.onclick = () => { listSort = b.dataset.s; renderList(chKey, type); });
+  scrollTo(0, 0);
+}
+
+function route() {
+  const m = location.hash.match(/^#list-([a-z]+)-(long|short)$/);
+  if (m) return renderList(m[1], m[2]);
+  renderHome();
   const el = location.hash && document.getElementById(location.hash.slice(1));
   if (el) el.scrollIntoView({ block: 'start' });
 }
-window.addEventListener('hashchange', jumpToHash);
+window.addEventListener('hashchange', route);
 
 fetch('/videos.json?t=' + Date.now())
   .then(r => r.json())
-  .then(data => render(data.recent || [], data.channels || {}))
-  .catch(() => {
-    document.getElementById('app').innerHTML = '<section class="panel"><div class="empty">Videos coming soon.</div></section>';
-  });
+  .then(data => { VIDEOS = data.recent || []; AVATARS = data.channels || {}; route(); })
+  .catch(() => { app.innerHTML = '<section class="panel"><div class="empty">Videos coming soon.</div></section>'; });
 </script>
 </body>
 </html>
