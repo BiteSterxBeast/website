@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="disabled-adaptations" content="watch">
+<title>All Videos · BiteSterxBeast</title>
+<meta name="description" content="Every BiteSterxBeast video, channel by channel.">
+<meta name="theme-color" content="#ff8000">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --panel: rgba(18, 10, 8, 0.78);
+    --panel-border: rgba(255, 255, 255, 0.10);
+    --text: #ffffff;
+    --muted: #e8d9cf;
+    --dim: #a8968a;
+    --yellow: #ffe600;
+    --red: #ff2a00;
+    --ink: #1a0d05;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { -webkit-hyphens: manual; hyphens: manual; }
+  html { background: #ff4a00; }
+  body {
+    min-height: 100vh;
+    color: var(--text);
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    background-image: url("/bolts.png"), linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+    background-size: 64px 62px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    animation: drift 20s linear infinite;
+  }
+  @keyframes drift { to { background-position: 64px -62px, 0 0; } }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 16px 40px; }
+
+  .top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+  .logo {
+    font-family: 'Lilita One', sans-serif; font-size: 2rem; line-height: 1; letter-spacing: 1px;
+    -webkit-text-stroke: 5px var(--ink); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(26,13,5,.35);
+  }
+  .spacer { flex: 1; }
+  .pillbtn {
+    background: rgba(18, 10, 8, 0.8); border: 2px solid transparent; border-radius: 999px;
+    padding: 6px 16px; font-weight: 800; transition: border-color .15s, transform .15s;
+  }
+  .pillbtn:hover { border-color: var(--yellow); transform: translateY(-2px); }
+
+  .panel {
+    background: var(--panel);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 2px solid var(--panel-border); border-radius: 20px; padding: 28px;
+  }
+  h1, h2 { font-family: 'Lilita One', sans-serif; font-weight: 400; letter-spacing: .5px; }
+  h2 { font-size: 2rem; margin-bottom: 14px; }
+
+  /* ---------- page ---------- */
+  .wrap { max-width: 1000px; }
+  h1.title {
+    font-size: clamp(2.4rem, 8vw, 4rem); line-height: 1; margin-bottom: 18px; color: #fff;
+    -webkit-text-stroke: 6px var(--ink); paint-order: stroke fill; text-shadow: 0 5px 0 rgba(26,13,5,.35);
+  }
+  .panel + .panel { margin-top: 20px; }
+  section[id] { scroll-margin-top: 16px; }
+  .empty { color: var(--muted); padding: 12px 0; }
+
+  .chead { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+  .av {
+    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; border: 3px solid var(--yellow);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lilita One', sans-serif; font-size: 1.4rem; color: var(--ink);
+  }
+  .chead .grow { flex: 1; min-width: 0; }
+  .chead h2 { margin: 0; line-height: 1.1; }
+  .chead .sub { color: var(--muted); font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chead .yt {
+    flex-shrink: 0; font-weight: 800; font-size: .82rem; background: var(--red); color: #fff;
+    border-radius: 999px; padding: 5px 13px; transition: transform .15s;
+  }
+  .chead .yt:hover { transform: translateY(-2px); }
+
+  /* one swipeable row per type */
+  .rowh { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 16px 0 8px; }
+  .rowh h3 { font-weight: 800; font-size: 1.05rem; color: var(--yellow); }
+  .rowh h3 small { color: var(--muted); font-size: .85rem; }
+  .arrs { display: flex; gap: 6px; }
+  .arr {
+    width: 32px; height: 32px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(255,255,255,.1); color: #fff; font-weight: 800; font-size: 1.15rem; line-height: 1;
+    display: flex; align-items: center; justify-content: center; padding-bottom: 2px;
+    transition: background .15s, color .15s, transform .1s;
+  }
+  .arr:hover:not(:disabled) { background: var(--yellow); color: var(--ink); }
+  /* stays lit and pressed while the slide plays, so it can't be spammed */
+  .arr.cooling { background: var(--yellow); color: var(--ink); transform: scale(.9); cursor: default; }
+  .arr:disabled:not(.cooling) { opacity: .3; cursor: default; }
+  .arrs.gone { visibility: hidden; }
+
+  .strip {
+    display: flex; gap: 14px; overflow-x: auto; scrollbar-width: none;
+    scroll-behavior: smooth; scroll-snap-type: x mandatory; padding: 4px 2px 6px;
+  }
+  .strip::-webkit-scrollbar { display: none; }
+  .strip .vcard { flex: 0 0 220px; scroll-snap-align: start; }
+  .strip.tall .vcard { flex: 0 0 130px; }
+
+  .vcard { display: block; transition: transform .15s; }
+  .vcard:hover { transform: translateY(-3px); }
+  .vcard:hover .thumb { border-color: var(--yellow); }
+  .thumb {
+    position: relative; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden;
+    background: #2a1c14; border: 2px solid rgba(255,255,255,.06); transition: border-color .15s;
+  }
+  .strip.tall .thumb { aspect-ratio: 9 / 16; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .badge {
+    position: absolute; top: 7px; left: 7px; padding: 1px 8px; border-radius: 6px;
+    font-size: .7rem; font-weight: 800; background: var(--yellow); color: var(--ink);
+  }
+  .badge.short { background: var(--red); color: #fff; }
+  .vtitle {
+    font-weight: 800; font-size: .9rem; line-height: 1.3; margin-top: 7px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .vmeta { color: var(--muted); font-size: .8rem; }
+
+  footer { text-align: center; margin-top: 28px; font-weight: 800; color: var(--ink); opacity: .75; }
+
+  @media (max-width: 600px) {
+    .panel { padding: 18px; }
+    .strip .vcard { flex-basis: 180px; }
+    .strip.tall .vcard { flex-basis: 115px; }
+    .chead .yt { padding: 4px 10px; font-size: .75rem; }
+  }
+
+  /* ---------- APPLE WATCH (and other tiny screens) ---------- */
+  @media (max-width: 260px) {
+    html, body { overflow-x: hidden; }
+    /* still bolts, no drift; gradient pinned to the screen so every part of the page looks the same */
+    body { animation: none; background: none; }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background-image: url("/bolts.png"), linear-gradient(135deg, #ffff00 0%, #ff9a00 45%, #ff1a00 100%);
+      background-size: 48px 46px, 100% 100%;
+      background-repeat: repeat, no-repeat;
+    }
+    .panel { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(18, 10, 8, 0.86); }
+
+    .wrap { padding: 16px 8px 24px; }
+    .logo { font-size: 1.3rem; -webkit-text-stroke: 3px var(--ink); width: 100%; text-align: center; }
+    .top { justify-content: center; gap: 6px; }
+    .spacer { display: none; }
+    .pillbtn { padding: 3px 10px; font-size: 0.8rem; }
+    .panel { padding: 12px; border-radius: 14px; }
+    h2 { font-size: 1.35rem; }
+    .strip .vcard { flex-basis: 150px; }
+    .strip.tall .vcard { flex-basis: 100px; }
+    .chead .yt { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="logo" href="/">BiteSterxBeast</a>
+    <div class="spacer"></div>
+    <a class="pillbtn" href="/">Home</a>
+  </div>
+  <h1 class="title">All Videos</h1>
+  <div id="app"><section class="panel"><div class="empty">Loading videos...</div></section></div>
+  <footer>© 2026 BiteSterxBeast</footer>
+</div>
+
+<script>
+// Same channel list as the home page (label must match the "channel" in videos.json)
+const CHANNELS = [
+  { name: 'Main',        handle: 'BiteSterxBeast',            color: '#ffe600' },
+  { name: 'Experiments', handle: 'BiteSterxBeastExperiments', color: '#00e1ff' },
+  { name: 'Extras',      handle: 'BiteSterxBeastExtras',      color: '#ff4fd8' },
+  { name: 'Minecraft',   handle: 'BitePlaysMC',               color: '#7cff4f' },
+  { name: 'JoshSham',    handle: 'JoshSham',                  color: '#ff7a3a' },
+];
+const TYPE_NAME = { long: 'Long-forms', short: 'Shorts' };
+
+const esc = (t) => String(t || '').replace(/[&<>"']/g, c =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const timeAgo = (iso) => {
+  const s = Math.max(0, (Date.now() - new Date(iso)) / 1000);
+  for (const [name, secs] of [['year', 31536000], ['month', 2592000], ['week', 604800],
+                              ['day', 86400], ['hour', 3600], ['minute', 60]]) {
+    const n = Math.floor(s / secs);
+    if (n >= 1) return `${n} ${name}${n > 1 ? 's' : ''} ago`;
+  }
+  return 'just now';
+};
+const link = (v) => v.type === 'short'
+  ? `https://www.youtube.com/shorts/${v.id}` : `https://www.youtube.com/watch?v=${v.id}`;
+const card = (v) => `
+  <a class="vcard" href="${link(v)}" target="_blank" rel="noopener">
+    <div class="thumb"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy">
+      <span class="badge${v.type === 'short' ? ' short' : ''}">${v.type === 'short' ? 'Short' : 'Video'}</span></div>
+    <div class="vtitle">${esc(v.title)}</div>
+    <div class="vmeta">${timeAgo(v.published)}</div>
+  </a>`;
+
+function render(videos) {
+  const app = document.getElementById('app');
+  app.innerHTML = CHANNELS.map(c => {
+    const mine = videos.filter(v => v.channel === c.name);
+    const rows = ['long', 'short'].map(t => {
+      const vs = mine.filter(v => v.type === t);
+      if (!vs.length) return '';
+      return `
+        <div class="rowh">
+          <h3>${TYPE_NAME[t]} <small>· ${vs.length}</small></h3>
+          <div class="arrs"><button class="arr" data-d="-1" aria-label="Back">‹</button><button class="arr" data-d="1" aria-label="Next">›</button></div>
+        </div>
+        <div class="strip${t === 'short' ? ' tall' : ''}">${vs.map(card).join('')}</div>`;
+    }).join('');
+    return `
+      <section class="panel" id="${c.name.toLowerCase()}">
+        <div class="chead">
+          <div class="av" style="background:${c.color}">${c.name[0]}</div>
+          <div class="grow"><h2>${esc(c.name)}</h2><div class="sub">@${c.handle} · ${mine.length} video${mine.length === 1 ? '' : 's'}</div></div>
+          <a class="yt" href="https://www.youtube.com/@${c.handle}" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
+        ${rows || '<div class="empty">No uploads yet.</div>'}
+      </section>`;
+  }).join('');
+  setupRows();
+  jumpToHash();
+}
+
+// Arrows: slide about one screen of videos. While the slide plays, both arrows lock
+// (the pressed one stays lit) so spamming can't leave the row stuck halfway.
+function setupRows() {
+  document.querySelectorAll('.rowh').forEach(head => {
+    const strip = head.nextElementSibling;
+    const arrs = head.querySelector('.arrs');
+    const [back, next] = arrs.querySelectorAll('.arr');
+    let sliding = false;
+    const update = () => {
+      const max = strip.scrollWidth - strip.clientWidth;
+      arrs.classList.toggle('gone', max <= 2);
+      if (sliding) return;
+      back.disabled = strip.scrollLeft <= 2;
+      next.disabled = strip.scrollLeft >= max - 2;
+    };
+    const slide = (btn) => {
+      if (sliding) return;
+      sliding = true;
+      back.disabled = next.disabled = true;
+      btn.classList.add('cooling');
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        strip.removeEventListener('scrollend', finish);
+        sliding = false;
+        btn.classList.remove('cooling');
+        update();
+      };
+      strip.addEventListener('scrollend', finish);
+      setTimeout(finish, 700); // backup for browsers without the scrollend event
+      strip.scrollBy({ left: Number(btn.dataset.d) * strip.clientWidth * 0.85, behavior: 'smooth' });
+    };
+    back.addEventListener('click', () => slide(back));
+    next.addEventListener('click', () => slide(next));
+    strip.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+}
+
+// /videos/#main, /videos/#minecraft etc. jump straight to that channel
+function jumpToHash() {
+  const el = location.hash && document.getElementById(location.hash.slice(1));
+  if (el) el.scrollIntoView({ block: 'start' });
+}
+window.addEventListener('hashchange', jumpToHash);
+
+fetch('/videos.json?t=' + Date.now())
+  .then(r => r.json())
+  .then(data => render(data.recent || []))
+  .catch(() => {
+    document.getElementById('app').innerHTML = '<section class="panel"><div class="empty">Videos coming soon.</div></section>';
+  });
+</script>
+</body>
+</html>
