@@ -248,25 +248,51 @@
   .best-small { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
   .best-main .vtitle { font-size: 1.15rem; }
 
-  .type-toggle {
-    display: inline-flex;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 999px;
-    padding: 4px;
-    margin-bottom: 16px;
+  /* channel chips + type dropdown */
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 8px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    font: inherit; font-weight: 800; font-size: 0.88rem; color: var(--text);
+    background: rgba(255, 255, 255, 0.08); border: 0; border-radius: 999px;
+    padding: 4px 13px; cursor: pointer; white-space: nowrap; flex-shrink: 0;
   }
-  .type-toggle button {
-    font: inherit;
-    font-weight: 800;
-    font-size: 0.9rem;
-    color: var(--text);
-    background: none;
-    border: 0;
-    border-radius: 999px;
-    padding: 4px 14px;
-    cursor: pointer;
+  .chip:hover { background: rgba(255, 255, 255, 0.15); }
+  .chip.active { background: var(--yellow); color: #1a0d05; }
+  .recent-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; min-height: 32px; }
+  .recent-bar .vmeta b { color: var(--text); }
+
+  .dd { position: relative; }
+  .dd-btn {
+    font: inherit; font-weight: 800; font-size: 0.88rem; color: var(--text);
+    background: rgba(255, 255, 255, 0.08); border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px; padding: 3px 12px; cursor: pointer;
+    display: inline-flex; gap: 8px; align-items: center; white-space: nowrap;
   }
-  .type-toggle button.active { background: var(--yellow); color: #1a0d05; }
+  .dd-btn:hover, .dd.open .dd-btn { border-color: var(--yellow); }
+  .dd-btn .car { color: var(--yellow); font-size: 0.7rem; transition: transform 0.15s; }
+  .dd.open .car { transform: rotate(180deg); }
+  .dd-btn.static { cursor: default; color: var(--muted); }
+  .dd-btn.static:hover { border-color: rgba(255, 255, 255, 0.12); }
+  .dd-menu {
+    position: absolute; z-index: 20; top: calc(100% + 6px); right: 0; min-width: 100%;
+    background: rgba(18, 10, 8, 0.97); border: 2px solid var(--yellow); border-radius: 12px;
+    padding: 5px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); display: none;
+  }
+  .dd.open .dd-menu { display: block; }
+  .dd-menu button {
+    display: block; width: 100%; font: inherit; font-weight: 800; font-size: 0.88rem; text-align: left;
+    color: var(--text); background: none; border: 0; border-radius: 8px; padding: 6px 10px; cursor: pointer; white-space: nowrap;
+  }
+  .dd-menu button:hover { background: rgba(255, 230, 0, 0.15); }
+  .dd-menu button.active { background: var(--yellow); color: #1a0d05; }
+
+  .see-more {
+    display: block; width: 100%; margin-top: 16px; font: inherit; font-weight: 800; cursor: pointer;
+    background: rgba(255, 255, 255, 0.08); color: var(--text);
+    border: 2px solid rgba(255, 230, 0, 0.4); border-radius: 12px; padding: 9px; transition: 0.15s;
+  }
+  .see-more:hover { border-color: var(--yellow); background: rgba(255, 230, 0, 0.12); }
+  .see-more[hidden] { display: none; }
 
   .recent-list { display: flex; flex-direction: column; gap: 12px; }
   .recent-row { display: grid; grid-template-columns: 130px 1fr; gap: 12px; align-items: center; }
@@ -554,8 +580,6 @@
     /* videos: thumbnail on top, title under it */
     .best-small { grid-template-columns: 1fr; gap: 10px; }
     .best-main .vtitle { font-size: 1rem; }
-    .type-toggle { display: flex; margin-bottom: 10px; }
-    .type-toggle button { flex: 1; padding: 3px 2px; font-size: 0.68rem; white-space: nowrap; }
     .recent-row { grid-template-columns: 1fr; gap: 4px; }
     .recent-row .vtitle { font-size: 0.85rem; }
     .vmeta { font-size: 0.72rem; }
@@ -642,12 +666,10 @@
     </section>
     <section class="panel">
       <h2>Recent Videos</h2>
-      <div class="type-toggle" id="typeToggle">
-        <button class="active" data-type="all">All</button>
-        <button data-type="long">Long-form</button>
-        <button data-type="short">Shorts</button>
-      </div>
+      <div class="chips" id="chips"></div>
+      <div class="recent-bar"><span class="vmeta" id="recentCount"></span><span id="typeSlot"></span></div>
       <div class="recent-list" id="recent"><div class="empty">Loading videos...</div></div>
+      <button class="see-more" id="seeMore" hidden></button>
     </section>
   </div>
 
@@ -766,8 +788,12 @@
 
   // ---------- Videos (filled from videos.json, updated by GitHub every 30 min) ----------
   const RECENT_SHOWN = 5;
+  const CHANNELS = ['Main', 'Experiments', 'Extras', 'Minecraft', 'JoshSham'];
+  const TYPE_NAME = { all: 'Everything', long: 'Long-forms', short: 'Shorts' };
   let allRecent = [];
+  let channel = 'all';
   let videoType = 'all';
+  let expanded = false;
 
   const esc = (t) => String(t || '').replace(/[&<>"']/g, c =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -806,12 +832,63 @@
       (best.length > 1 ? `<div class="best-small">${best.slice(1, 3).map(v => card(v, false)).join('')}</div>` : '');
   }
 
+  const recentOf = (ch, type) => allRecent.filter(v =>
+    (ch === 'all' || v.channel === ch) && (type === 'all' || v.type === type));
+  const typesOf = (ch) => {
+    const t = new Set(recentOf(ch, 'all').map(v => v.type));
+    return ['long', 'short'].filter(x => t.has(x));
+  };
+
+  function renderChips() {
+    document.getElementById('chips').innerHTML = ['all', ...CHANNELS].map(c =>
+      `<button class="chip${c === channel ? ' active' : ''}" data-ch="${c}">${c === 'all' ? 'All' : esc(c)}</button>`).join('');
+    document.querySelectorAll('#chips .chip').forEach(btn => btn.addEventListener('click', () => {
+      channel = btn.dataset.ch; videoType = 'all'; expanded = false;
+      renderChips(); renderRecent();
+    }));
+  }
+
+  // Long-forms / Shorts dropdown: only offers the types this channel actually posts
+  function renderTypeDropdown() {
+    const slot = document.getElementById('typeSlot');
+    const types = typesOf(channel);
+    if (!types.length) { slot.innerHTML = ''; return; }
+    if (types.length === 1) {
+      slot.innerHTML = `<span class="dd-btn static">${TYPE_NAME[types[0]]} only</span>`;
+      return;
+    }
+    const opts = ['all', ...types];
+    slot.innerHTML = `<div class="dd" id="typeDD">
+      <button class="dd-btn" aria-haspopup="true">${TYPE_NAME[videoType]}<span class="car">▼</span></button>
+      <div class="dd-menu">${opts.map(o =>
+        `<button data-type="${o}" class="${o === videoType ? 'active' : ''}">${TYPE_NAME[o]}</button>`).join('')}</div>
+    </div>`;
+    const dd = document.getElementById('typeDD');
+    dd.querySelector('.dd-btn').addEventListener('click', (e) => { e.stopPropagation(); dd.classList.toggle('open'); });
+    dd.querySelectorAll('.dd-menu button').forEach(b => b.addEventListener('click', (e) => {
+      e.stopPropagation();
+      videoType = b.dataset.type; expanded = false;
+      renderRecent();
+    }));
+  }
+  document.addEventListener('click', () => {
+    const dd = document.getElementById('typeDD');
+    if (dd) dd.classList.remove('open');
+  });
+
   function renderRecent() {
+    if (typesOf(channel).length < 2) videoType = 'all';
+    renderTypeDropdown();
     const el = document.getElementById('recent');
-    const list = allRecent
-      .filter(v => videoType === 'all' || v.type === videoType)
-      .slice(0, RECENT_SHOWN);
-    if (!list.length) { el.innerHTML = '<div class="empty">Nothing here yet.</div>'; return; }
+    const all = recentOf(channel, videoType);
+    const list = expanded ? all : all.slice(0, RECENT_SHOWN);
+    document.getElementById('recentCount').innerHTML = all.length ? `<b>${all.length}</b> video${all.length === 1 ? '' : 's'}` : '';
+
+    const more = document.getElementById('seeMore');
+    more.hidden = all.length <= RECENT_SHOWN;
+    more.textContent = expanded ? 'Show less ▲' : `See more (${all.length - RECENT_SHOWN}) ▼`;
+
+    if (!list.length) { el.innerHTML = '<div class="empty">No uploads yet.</div>'; return; }
     el.innerHTML = list.map(v => `
       <a class="vcard recent-row" href="${link(v)}" target="_blank" rel="noopener">
         <div class="thumb">${thumbImg(v.id, false)}
@@ -824,18 +901,22 @@
       </a>`).join('');
   }
 
-  document.querySelectorAll('#typeToggle button').forEach(btn => btn.addEventListener('click', () => {
-    document.querySelectorAll('#typeToggle button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    videoType = btn.dataset.type;
+  document.getElementById('seeMore').addEventListener('click', () => {
+    const wasExpanded = expanded;
+    expanded = !expanded;
     renderRecent();
-  }));
+    // when collapsing, jump back to the top of the panel so you're not left at the bottom of the page
+    if (wasExpanded) document.getElementById('chips').closest('.panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  renderChips();
 
   fetch('videos.json?t=' + Date.now())
     .then(r => r.json())
     .then(data => {
       renderBest(data.best || []);
       allRecent = data.recent || [];
+      renderChips();
       renderRecent();
     })
     .catch(() => {
