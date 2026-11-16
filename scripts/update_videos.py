@@ -42,7 +42,7 @@ CHANNELS = [
 ]
 
 PER_PAGE = 50          # most videos one API call returns
-FULL_SYNC_HOURS = 24   # how often to re-read every channel's whole upload list
+FULL_SYNC_HOURS = 0   # how often to re-read every channel's whole upload list
 SHORT_MAX_SECONDS = 180  # fallback rule if the Shorts check can't tell
 
 API = "https://www.googleapis.com/youtube/v3/"
