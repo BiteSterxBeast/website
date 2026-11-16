@@ -7,6 +7,7 @@ Updates videos.json for bitesterxbeast.com.
   * Quick sync (every other run): only grabs each channel's newest 50 uploads and adds
     them to what's already saved.
 - Figures out which uploads are Shorts and which are long-form.
+- Saves each video's view count (newest videos every run, all videos on the daily full sync).
 - Grabs each channel's profile picture.
 - Reads best-videos.txt and looks up each video's title.
 
@@ -127,7 +128,7 @@ def video_details(ids):
     out = {}
     ids = list(ids)
     for i in range(0, len(ids), 50):
-        data = api("videos", part="snippet,contentDetails",
+        data = api("videos", part="snippet,contentDetails,statistics",
                    id=",".join(ids[i:i + 50]), maxResults=50)
         for item in data.get("items", []):
             out[item["id"]] = {
@@ -135,6 +136,7 @@ def video_details(ids):
                 "channel": item["snippet"].get("channelTitle", ""),
                 "seconds": parse_duration(item["contentDetails"].get("duration", "")),
                 "live": item["snippet"].get("liveBroadcastContent", "none"),
+                "views": int(item.get("statistics", {}).get("viewCount", 0) or 0),
             }
     return out
 
@@ -298,6 +300,9 @@ def build(existing):
                 types[v["id"]] = t
                 new_types += 1
         v["type"] = types.get(v["id"], "unknown")
+        # fresh views for what we just looked up; older saved videos keep theirs until the daily full sync
+        if v["id"] in details:
+            v["views"] = details[v["id"]]["views"]
     if new_types:
         print(f"Sorted {new_types} new videos into Shorts / long-form")
 
