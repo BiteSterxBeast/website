@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T19:00:51+00:00",
+  "updated": "2026-11-16T19:02:01+00:00",
   "channels": {
     "Main": {
       "handle": "BiteSterxBeast",
@@ -54,7 +54,7 @@
       "channel": "Main",
       "published": "2026-11-16T05:00:25Z",
       "type": "long",
-      "views": 3036
+      "views": 3052
     },
     {
       "id": "y0-Y6ae7JlY",
@@ -70,7 +70,7 @@
       "channel": "Main",
       "published": "2026-11-15T20:07:13Z",
       "type": "short",
-      "views": 35923
+      "views": 35961
     },
     {
       "id": "QMrG884lBTs",
@@ -86,7 +86,7 @@
       "channel": "Main",
       "published": "2026-11-13T12:08:46Z",
       "type": "short",
-      "views": 28701
+      "views": 28713
     },
     {
       "id": "GTyzi-fJYUc",
@@ -134,7 +134,7 @@
       "channel": "Main",
       "published": "2026-11-06T20:02:14Z",
       "type": "short",
-      "views": 148788
+      "views": 148710
     },
     {
       "id": "Xsx7yVNxOnU",
@@ -150,7 +150,7 @@
       "channel": "Main",
       "published": "2026-11-06T12:25:27Z",
       "type": "short",
-      "views": 29257
+      "views": 29256
     },
     {
       "id": "BPrIj5Gp6n8",
@@ -182,7 +182,7 @@
       "channel": "Minecraft",
       "published": "2026-11-04T19:01:12Z",
       "type": "long",
-      "views": 2592
+      "views": 2593
     },
     {
       "id": "fq7hBScBCV8",
@@ -198,7 +198,7 @@
       "channel": "Main",
       "published": "2026-11-03T20:02:07Z",
       "type": "short",
-      "views": 915060
+      "views": 915121
     },
     {
       "id": "AVXlK9Siq_c",
@@ -390,7 +390,7 @@
       "channel": "Main",
       "published": "2026-10-12T14:00:23Z",
       "type": "long",
-      "views": 15573
+      "views": 15572
     },
     {
       "id": "aUZg6-X1eJ8",
@@ -398,7 +398,7 @@
       "channel": "Extras",
       "published": "2026-10-12T09:00:12Z",
       "type": "short",
-      "views": 42793
+      "views": 42803
     },
     {
       "id": "UWk0WQAchYk",
@@ -422,7 +422,7 @@
       "channel": "Minecraft",
       "published": "2026-10-11T17:28:49Z",
       "type": "long",
-      "views": 214
+      "views": 215
     },
     {
       "id": "SrlmiVwJfNQ",
@@ -462,7 +462,7 @@
       "channel": "Main",
       "published": "2026-10-02T14:00:38Z",
       "type": "long",
-      "views": 134601
+      "views": 134608
     },
     {
       "id": "wuqaiKWvUNs",
@@ -525,7 +525,8 @@
       "title": "Gamemode VS Speed Challenge! 😱🔥",
       "channel": "Main",
       "published": "2026-09-09T16:02:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 29901
     },
     {
       "id": "WgK5l6PoYf0",
@@ -540,7 +541,8 @@
       "title": "Gamemode Vs IMPOSSIBLE Falling Spikes! 🤯💪",
       "channel": "Main",
       "published": "2026-09-09T06:21:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 24007
     },
     {
       "id": "skaRND3HMWM",
@@ -555,42 +557,48 @@
       "title": "🔴 (LIVE) Playing 100 Levels Of Difficulty!",
       "channel": "Main",
       "published": "2026-09-08T01:08:02Z",
-      "type": "long"
+      "type": "long",
+      "views": 113940
     },
     {
       "id": "6kOmdixVnHM",
       "title": "Gamemodes Vs Platform Stairs! 🤯🔥",
       "channel": "Main",
       "published": "2026-09-07T21:35:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 25343
     },
     {
       "id": "u9pfR9cyFX0",
       "title": "Easy vs Impossible Wave Challenge! 🤯😱",
       "channel": "Main",
       "published": "2026-09-06T04:00:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 23053
     },
     {
       "id": "mzco5kH41KQ",
       "title": "Fingerdash: Normal vs Full Version",
       "channel": "Main",
       "published": "2026-09-04T14:00:27Z",
-      "type": "long"
+      "type": "long",
+      "views": 242161
     },
     {
       "id": "gWTe8L0Hlpk",
       "title": "Homer Simpson Vs EXTREME Wave! 🔥🤯",
       "channel": "Main",
       "published": "2026-09-01T04:28:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 29945
     },
     {
       "id": "qC08CLmADCU",
       "title": "Homer Simpson Vs IMPOSSIBLE Mini Spider! 💪🤯",
       "channel": "Main",
       "published": "2026-08-25T22:23:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 18932
     },
     {
       "id": "RBc5JIefR18",
@@ -605,14 +613,16 @@
       "title": "Scatman Vs EXTREME Dash Orb Challenge! 🤯💪",
       "channel": "Main",
       "published": "2026-08-24T17:01:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 15712
     },
     {
       "id": "Zkx83Yd_osw",
       "title": "Verity Vs IMPOSSIBLE Mini Ball Challenge! 💪🔥",
       "channel": "Main",
       "published": "2026-08-20T22:32:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 23652
     },
     {
       "id": "sjrNQRTbeHk",
@@ -627,14 +637,16 @@
       "title": "Homer Challenge Vs EXTREME UFO! 🤯🔥",
       "channel": "Main",
       "published": "2026-08-17T20:59:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 72621
     },
     {
       "id": "q4VpgVB0k_Y",
       "title": "INSANE Homer Challenge VS 30 Spikes! 🤯💪",
       "channel": "Main",
       "published": "2026-08-16T18:21:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 39489
     },
     {
       "id": "qyLGaxZILG4",
@@ -649,7 +661,8 @@
       "title": "EXTREME Homer Cube Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-08-11T21:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 73360
     },
     {
       "id": "SiUmjyTStHU",
@@ -672,7 +685,8 @@
       "title": "Du Bist Gut Genug vs EXTREME Spider Challenge! 😎💪",
       "channel": "Main",
       "published": "2026-07-18T22:38:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 78544
     },
     {
       "id": "G2oEt7KELeo",
@@ -695,7 +709,8 @@
       "title": "Du Bist Gut Genug vs EXTREME Wave Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-07-13T22:37:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 8386342
     },
     {
       "id": "JE0rJGh3FcE",
@@ -710,14 +725,16 @@
       "title": "Du Bist Gut Genug Vs IMPOSSIBLE Mini Ball Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-07-04T20:15:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 843450
     },
     {
       "id": "7ZFMddzA1bc",
       "title": "Du Bist Gut Genug Vs IMPOSSIBLE Mini Spider Challenge! 🤯🔥",
       "channel": "Main",
       "published": "2026-07-02T20:51:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 2296290
     },
     {
       "id": "1o9b3CS-Cpg",
@@ -732,7 +749,8 @@
       "title": "Du Bist Gut Genug UFO vs EXTREME Cube Challenge! 😎🔥",
       "channel": "Main",
       "published": "2026-06-28T03:35:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 46024
     },
     {
       "id": "ave_aAKTEGQ",
@@ -755,42 +773,48 @@
       "title": "Scatman Vs EXTREME Cube Challenge! 🤯💪",
       "channel": "Main",
       "published": "2026-06-13T19:22:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 51348
     },
     {
       "id": "SsfN79rPWOw",
       "title": "Tiki Tiki VS IMPOSSIBLE 100 Spider Click Challenge! 🤯🔥",
       "channel": "Main",
       "published": "2026-06-12T21:05:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 58046
     },
     {
       "id": "b7itT-1Vu4w",
       "title": "Scatman Cube Vs IMPOSSIBLE Cube Jumps! 💪😎",
       "channel": "Main",
       "published": "2026-06-08T23:54:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 55879
     },
     {
       "id": "8lMKYfIMFZA",
       "title": "Scatman Vs IMPOSSIBLE Mini Spider Challenge! 💪🔥",
       "channel": "Main",
       "published": "2026-06-07T00:43:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 259979
     },
     {
       "id": "FJXksISjYvY",
       "title": "EXTREME Scatman Cube Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-06-04T18:49:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 637781
     },
     {
       "id": "6gD0mU6JiN0",
       "title": "Scatman vs EXTREME Robot Challenge! 😎🔥",
       "channel": "Main",
       "published": "2026-06-01T17:32:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 114128
     },
     {
       "id": "-vd0K3jWpx4",
@@ -805,14 +829,16 @@
       "title": "Scatman Vs IMPOSSIBLE Wave Challenge! 🔥😎",
       "channel": "Main",
       "published": "2026-06-01T04:13:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 60948
     },
     {
       "id": "rd1R1AJnnuA",
       "title": "Scatman vs EXTREME Wave Challenge! 🤯🔥",
       "channel": "Main",
       "published": "2026-05-31T19:52:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 661839
     },
     {
       "id": "O3lgN3tSsow",
@@ -835,7 +861,8 @@
       "title": "Scatman Vs IMPOSSIBLE Cube Challenge! 💪😎",
       "channel": "Main",
       "published": "2026-05-28T03:12:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 9271522
     },
     {
       "id": "kWI2uW-XNVc",
@@ -850,7 +877,8 @@
       "title": "Scatman Jump vs EXTREME Cube Spikes! 😎🔥",
       "channel": "Main",
       "published": "2026-05-27T00:38:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 94948
     },
     {
       "id": "8F7dE3y5Tfc",
@@ -897,7 +925,8 @@
       "title": "Scatman Vs IMPOSSIBLE Ball Challenge! 💪🔥",
       "channel": "Main",
       "published": "2026-05-04T01:04:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 4225150
     },
     {
       "id": "5HPlpYoxu80",
@@ -952,21 +981,24 @@
       "title": "The Seven Seas: Normal vs Full Version",
       "channel": "Main",
       "published": "2026-03-16T14:00:04Z",
-      "type": "long"
+      "type": "long",
+      "views": 55784
     },
     {
       "id": "D8DCzv98A_Y",
       "title": "Cube Vs IMPOSSIBLE Scatman Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-03-09T02:21:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 484046
     },
     {
       "id": "tHsO3dgXeIs",
       "title": "Scatman Vs IMPOSSIBLE UFO Challenge! 🔥😎",
       "channel": "Main",
       "published": "2026-03-02T04:45:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 3967588
     },
     {
       "id": "GxuqrGba1FY",
@@ -981,14 +1013,16 @@
       "title": "🔴 (LIVE) PLAYING MINIGAMES! 🔥",
       "channel": "Main",
       "published": "2026-02-15T08:37:26Z",
-      "type": "long"
+      "type": "long",
+      "views": 847
     },
     {
       "id": "4IIW__HbhOM",
       "title": "Spider Vs IMPOSSIBLE Scatman Challenge! 😂🔥",
       "channel": "Main",
       "published": "2026-02-13T03:10:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 1135356
     },
     {
       "id": "mVYZlxm6l4s",
@@ -1003,21 +1037,24 @@
       "title": "Dash: Normal vs Full Version",
       "channel": "Main",
       "published": "2026-01-30T15:01:06Z",
-      "type": "long"
+      "type": "long",
+      "views": 1230570
     },
     {
       "id": "-lp_hzaQxJY",
       "title": "🔴 (LIVE) PLAYING MINIGAMES! 🔥",
       "channel": "Main",
       "published": "2026-01-26T09:15:09Z",
-      "type": "long"
+      "type": "long",
+      "views": 196432
     },
     {
       "id": "SdW3xVnGlc0",
       "title": "🔴 (LIVE) GEOMETRY DASH LIVE 🔥",
       "channel": "Main",
       "published": "2026-01-25T03:22:55Z",
-      "type": "long"
+      "type": "long",
+      "views": 566
     },
     {
       "id": "6_Mqa6JHPkM",
@@ -1032,28 +1069,32 @@
       "title": "🔴 (LIVE) DEMON GRINDING 🔥",
       "channel": "Main",
       "published": "2026-01-20T05:09:50Z",
-      "type": "long"
+      "type": "long",
+      "views": 66848
     },
     {
       "id": "RTaLyjc_YjE",
       "title": "🔴 (LIVE) DEMON GRINDING 🔥",
       "channel": "Main",
       "published": "2026-01-19T05:32:03Z",
-      "type": "long"
+      "type": "long",
+      "views": 121747
     },
     {
       "id": "OmNRV6aU8cU",
       "title": "Scatman Spider Vs UFO Spam! 🔥😂",
       "channel": "Main",
       "published": "2026-01-17T06:39:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 34455
     },
     {
       "id": "C8f5dstdFbo",
       "title": "EXTREME Miau Miau Spider Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-01-14T17:01:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 36009
     },
     {
       "id": "rA8MQRZOkc4",
@@ -1068,14 +1109,16 @@
       "title": "Gamemodes Vs EXTREME Jump Challenge! 🤣",
       "channel": "Main",
       "published": "2026-01-12T17:01:34Z",
-      "type": "short"
+      "type": "short",
+      "views": 29111
     },
     {
       "id": "y9NdgZzxTto",
       "title": "Gamemodes Vs IMPOSSIBLE Gap Challenge! 🤣",
       "channel": "Main",
       "published": "2026-01-12T06:20:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 23123
     },
     {
       "id": "XEBjxZmAo1E",
@@ -1090,21 +1133,24 @@
       "title": "Miau Miau Wave Vs IMPOSSIBLE Wall Challenge! 😂🔥",
       "channel": "Main",
       "published": "2026-01-05T17:05:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 43305
     },
     {
       "id": "KD82YKnvkwg",
       "title": "Golden Kpop vs UFO Crusher! 😂🔥",
       "channel": "Main",
       "published": "2026-01-04T23:56:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 86170
     },
     {
       "id": "SnlyLRdL-gI",
       "title": "EXTREME Miau Miau Cube Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2026-01-01T22:27:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 185154
     },
     {
       "id": "q1wFkBNe8Ec",
@@ -1128,7 +1174,7 @@
       "channel": "Experiments",
       "published": "2025-12-27T10:16:28Z",
       "type": "short",
-      "views": 1469712
+      "views": 1469711
     },
     {
       "id": "ly0cWoRIGBE",
@@ -1151,14 +1197,16 @@
       "title": "🔴 (LIVE) PLAYING Sh*tty GRIEF | 59% 🔥",
       "channel": "Main",
       "published": "2025-12-24T04:25:15Z",
-      "type": "long"
+      "type": "long",
+      "views": 8276
     },
     {
       "id": "CG73j_VcoTE",
       "title": "$1 vs $1,000 Wave Spam Challenge! 😎🔥",
       "channel": "Main",
       "published": "2025-12-22T23:16:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 44632
     },
     {
       "id": "8T2XKDz92KQ",
@@ -1173,7 +1221,8 @@
       "title": "Golden Kpop Jump vs EXTREME Cube Spikes! 😎🔥",
       "channel": "Main",
       "published": "2025-12-11T17:00:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 2692285
     },
     {
       "id": "LwhZHzgDBck",
@@ -1181,14 +1230,15 @@
       "channel": "Experiments",
       "published": "2025-12-11T12:34:07Z",
       "type": "short",
-      "views": 10853631
+      "views": 10853632
     },
     {
       "id": "ugaKFX_ILzM",
       "title": "67 Math Vs UFO Click Spam! 🤣🔥",
       "channel": "Main",
       "published": "2025-12-08T05:01:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 64541
     },
     {
       "id": "0oHAPy779ms",
@@ -1196,119 +1246,135 @@
       "channel": "Experiments",
       "published": "2025-12-07T21:30:36Z",
       "type": "short",
-      "views": 19526827
+      "views": 19526830
     },
     {
       "id": "gLT_VQnsRxU",
       "title": "Kpop Soda Pop Saved! 😎",
       "channel": "Main",
       "published": "2025-12-03T17:02:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 82248
     },
     {
       "id": "FY-i5bgFCT4",
       "title": "Kpop Golden Vs 67 Wave Spam! 🤑🔥",
       "channel": "Main",
       "published": "2025-12-01T17:01:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 14764383
     },
     {
       "id": "de94AmOVS8A",
       "title": "Golden Kpop Vs $1,000 Wave Challenge! 😎🔥",
       "channel": "Main",
       "published": "2025-11-27T19:06:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 1071604
     },
     {
       "id": "pa01aAVm8U8",
       "title": "Kpop Golden Wave Vs UFO Challenge! 🔥🤣",
       "channel": "Main",
       "published": "2025-11-23T17:11:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 298255
     },
     {
       "id": "S-HqF24UGQ8",
       "title": "Golden Kpop Vs EXTREME Wave Challenge 🔥😎",
       "channel": "Main",
       "published": "2025-11-23T05:14:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 1981276
     },
     {
       "id": "4A2ET0OjqVg",
       "title": "Golden Kpop vs. 67 Click Spider Spam Crusher! 😱",
       "channel": "Main",
       "published": "2025-11-17T17:02:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 858495
     },
     {
       "id": "L_EzN3uJ8is",
       "title": "EXTREME Golden Kpop Robot Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-11-17T05:01:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 288544
     },
     {
       "id": "2O-3GrMhdaI",
       "title": "Golden Kpop vs 7 Level Jumps! 😎🔥",
       "channel": "Main",
       "published": "2025-11-16T17:02:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 741497
     },
     {
       "id": "YpJ10BK9k0c",
       "title": "Payload: Normal vs Full Version",
       "channel": "Main",
       "published": "2025-11-16T15:15:42Z",
-      "type": "long"
+      "type": "long",
+      "views": 20304
     },
     {
       "id": "swB8s2uQWC0",
       "title": "Easy vs Impossible Kpop Golden Wave Challenge! 😭😎",
       "channel": "Main",
       "published": "2025-11-13T17:02:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 93565
     },
     {
       "id": "43-YU-m2uXQ",
       "title": "EXTREME Kpop Golden Wave Gap! 😎🔥",
       "channel": "Main",
       "published": "2025-11-13T05:01:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 67525
     },
     {
       "id": "2GJsakCFgVg",
       "title": "EXTREME Golden Kpop Mini Ball Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-11-12T17:03:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 120300
     },
     {
       "id": "dMzBtG-bLMA",
       "title": "Kpop Golden Vs Impossible 67 Click Trap! 😎",
       "channel": "Main",
       "published": "2025-11-12T05:00:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 106706
     },
     {
       "id": "kfV93IKHn2k",
       "title": "EXTREME Golden Kpop Cube Challenge! 🤣",
       "channel": "Main",
       "published": "2025-11-07T06:02:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 8216265
     },
     {
       "id": "cTDZ6JW0UBA",
       "title": "Scatman Mini Spider Challenge! 🤣",
       "channel": "Main",
       "published": "2025-11-03T17:01:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 35301
     },
     {
       "id": "gSW_84jjpas",
       "title": "Kpop Golden Saved!? 😱",
       "channel": "Main",
       "published": "2025-11-03T05:01:23Z",
-      "type": "short"
+      "type": "short",
+      "views": 50745
     },
     {
       "id": "vo59HFv0KmQ",
@@ -1323,35 +1389,40 @@
       "title": "Which Gamemodes Can Pass This Slope Challenge? 😂",
       "channel": "Main",
       "published": "2025-10-30T05:38:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 43454
     },
     {
       "id": "usoy74IJLHI",
       "title": "Gamemodes Vs Impossible Spike Platform Challenge! 😭",
       "channel": "Main",
       "published": "2025-10-29T04:21:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 33564
     },
     {
       "id": "1xMT1YvOhuE",
       "title": "Gamemodes Vs IMPOSSIBLE Dash Challenge! 🤣",
       "channel": "Main",
       "published": "2025-10-28T16:02:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 37266
     },
     {
       "id": "xZrLt9SyR7g",
       "title": "Gamemodes Vs Extreme Platformer Challenge! 😱",
       "channel": "Main",
       "published": "2025-10-28T06:16:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 40212
     },
     {
       "id": "LmZSKFcVWnc",
       "title": "EXTREME Golden Kpop Spider Challenge! 🤑",
       "channel": "Main",
       "published": "2025-10-27T17:13:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 14919139
     },
     {
       "id": "saRwyyv1unE",
@@ -1366,7 +1437,8 @@
       "title": "Brainrot Soda Pop vs Among Us Platform Challenge! 🤑😎",
       "channel": "Main",
       "published": "2025-10-21T16:05:33Z",
-      "type": "short"
+      "type": "short",
+      "views": 27608
     },
     {
       "id": "EV46XaxAoqY",
@@ -1381,189 +1453,216 @@
       "title": "Which Gamemode Will Pass This Platformer Challenge? 😱🔥",
       "channel": "Main",
       "published": "2025-10-21T04:01:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 86170
     },
     {
       "id": "jbAVHJvB8Wo",
       "title": "Brainrot Soda Pop Vs Platform Parkour Challenge! 😂😱",
       "channel": "Main",
       "published": "2025-10-20T16:14:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 23402
     },
     {
       "id": "Kw27g0TZYbs",
       "title": "Italian Soda Pop Vs Speed Challenge! 😂🤑",
       "channel": "Main",
       "published": "2025-10-20T04:01:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 90220
     },
     {
       "id": "SKaYCsEDlIw",
       "title": "Halloween Soda Pop vs Gamemode Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-10-19T16:01:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 152393
     },
     {
       "id": "KaLuNVzeNa0",
       "title": "Halloween Soda Pop vs Speed Platform Challenge! 😱🔥",
       "channel": "Main",
       "published": "2025-10-19T07:10:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 21760
     },
     {
       "id": "mM3cVZz3Lnc",
       "title": "Extreme Orb Challenge: $10,000 Spike Gap! 😱🔥",
       "channel": "Main",
       "published": "2025-10-16T16:04:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 27642
     },
     {
       "id": "OiEH6VyFBIM",
       "title": "Gamemodes Vs EXTREME Zigzag Challenge! 😱🔥",
       "channel": "Main",
       "published": "2025-10-16T04:00:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 40946
     },
     {
       "id": "8vrcz_0wy1k",
       "title": "Speed Ball Challenge: Which Speed Will Win? 😱🔥",
       "channel": "Main",
       "published": "2025-10-13T16:38:23Z",
-      "type": "short"
+      "type": "short",
+      "views": 74006
     },
     {
       "id": "BO8qEa0dLyM",
       "title": "Which Gamemode Can Survive The Fall? 😱🔥",
       "channel": "Main",
       "published": "2025-10-13T04:00:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 75772
     },
     {
       "id": "cTakTW86Y-k",
       "title": "Extreme Checkmark Challenge: What Gamemode Will Escape? 🤣",
       "channel": "Main",
       "published": "2025-10-12T20:09:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 147911
     },
     {
       "id": "uZCtfMYA0qY",
       "title": "Gamemodes Vs Spike Stairs! 😱🔥",
       "channel": "Main",
       "published": "2025-10-12T04:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 65658
     },
     {
       "id": "pNSO7EN-c7E",
       "title": "Gamemodes Vs Slope Height Challenge! 😎🔥",
       "channel": "Main",
       "published": "2025-10-09T16:03:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 145895
     },
     {
       "id": "oU_3Xb5YSxw",
       "title": "Gamemodes Vs Parkour Challenge! 😭🔥",
       "channel": "Main",
       "published": "2025-10-09T04:04:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 50096
     },
     {
       "id": "IOraVV0aqSw",
       "title": "Gamemodes Vs Platformer Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-10-06T16:02:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 453935
     },
     {
       "id": "olA8CsTki_Y",
       "title": "Gamemodes Vs Platform Stairs! 😱🔥",
       "channel": "Main",
       "published": "2025-10-06T07:07:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 456997
     },
     {
       "id": "YmfU9V-x8JM",
       "title": "Gamemodes Vs Platform Jump Challenge! 😱🤣",
       "channel": "Main",
       "published": "2025-10-05T08:23:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 206146
     },
     {
       "id": "or_Q9kOYGX8",
       "title": "Gamemodes Vs Spike Crusher! 😱🔥",
       "channel": "Main",
       "published": "2025-10-04T04:00:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 20159881
     },
     {
       "id": "rkNMdwHiexs",
       "title": "Gamemodes Vs IMPOSSIBLE Spiral Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-10-03T07:23:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 216999
     },
     {
       "id": "PZ5Tw3z8TBs",
       "title": "Gamemodes Vs IMPOSSIBLE Spike Stairs! 😎🔥",
       "channel": "Main",
       "published": "2025-10-02T16:01:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 115481
     },
     {
       "id": "FB2b8n9iOM4",
       "title": "Gamemodes Vs Impossible Parkour Challenge! 😭🤣",
       "channel": "Main",
       "published": "2025-10-02T04:56:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 2831980
     },
     {
       "id": "CVJuqFtfXpE",
       "title": "Orb Spam Vs Spike Wall Challenge! 🤣🔥",
       "channel": "Main",
       "published": "2025-10-01T16:03:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 110639
     },
     {
       "id": "IUKWU6XG94c",
       "title": "Gamemode VS IMPOSSIBLE Stairs! 😎🔥",
       "channel": "Main",
       "published": "2025-10-01T04:17:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 101723
     },
     {
       "id": "bRJ1n0FnOF4",
       "title": "$10,000 Orb Climbing Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-09-30T16:03:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 92511
     },
     {
       "id": "0Z690ehY2OU",
       "title": "Gamemodes Vs Climbing Challenge! 😎🔥",
       "channel": "Main",
       "published": "2025-09-30T04:30:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 46104
     },
     {
       "id": "SA0D8ERDJog",
       "title": "Gamemode VS Speed Challenge! 😎",
       "channel": "Main",
       "published": "2025-09-29T16:01:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 110257
     },
     {
       "id": "HozaUM0Uebo",
       "title": "Gamemodes VS EXTREME Slope Challenge! 😭🔥",
       "channel": "Main",
       "published": "2025-09-29T04:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 38891
     },
     {
       "id": "_zwzLphwyKA",
       "title": "Gamemode Vs IMPOSSIBLE Falling Spikes! 🤣🔥",
       "channel": "Main",
       "published": "2025-09-28T16:01:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 109883
     },
     {
       "id": "4mJHpd26Uyk",
@@ -1578,112 +1677,128 @@
       "title": "Gamemodes VS Impossible Stairs Challenge! 🤑",
       "channel": "Main",
       "published": "2025-09-28T04:00:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 61889
     },
     {
       "id": "TpQfmgAbR84",
       "title": "Spider Vs IMPOSSIBLE Scatman Challenge! 😺🔥",
       "channel": "Main",
       "published": "2025-09-26T11:33:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 1058060
     },
     {
       "id": "MOzXf26DTVc",
       "title": "Which Orbs Can Pass This Challenge? 🤑",
       "channel": "Main",
       "published": "2025-09-25T04:56:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 64574
     },
     {
       "id": "YnafwKcZ9Yg",
       "title": "Brainrot Soda Pop VS 100 Click Spider Spam! 😱🔥",
       "channel": "Main",
       "published": "2025-09-24T16:05:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 112937
     },
     {
       "id": "74EhysS2EN0",
       "title": "Brainrot Funk vs $10k Wave Gap! 🦈🐊",
       "channel": "Main",
       "published": "2025-09-24T04:09:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 45212
     },
     {
       "id": "g9h5h24Jix0",
       "title": "Italian Soda Pop VS Robot Challenge! 😎🔥",
       "channel": "Main",
       "published": "2025-09-22T16:03:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 15647
     },
     {
       "id": "P1RlHxW80eI",
       "title": "Wave Spam Vs Italian Soda Pop! 😭🌊",
       "channel": "Main",
       "published": "2025-09-22T04:00:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 14502
     },
     {
       "id": "kOrugle4Bgc",
       "title": "Italian Brainrot Restoration Saved?! 😎🔥",
       "channel": "Main",
       "published": "2025-09-20T16:01:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 21474
     },
     {
       "id": "37YxysQFzi8",
       "title": "Italian Brainrot Restoration vs 6 Level UFO Spam! 😎",
       "channel": "Main",
       "published": "2025-09-20T06:04:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 25954
     },
     {
       "id": "uuiUzhPKcUI",
       "title": "Extreme Cube Trap Challenge! 🔥",
       "channel": "Main",
       "published": "2025-09-15T16:01:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 21199
     },
     {
       "id": "wM4KZ5-R2BM",
       "title": "Impossible 100 Click Trap! 🤑🤣",
       "channel": "Main",
       "published": "2025-09-15T04:00:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 23729
     },
     {
       "id": "eUWFJvNPRW8",
       "title": "Impossible UFO Challenge vs Cube Jump! 🤑🔥",
       "channel": "Main",
       "published": "2025-09-14T04:00:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 70393
     },
     {
       "id": "stjvbnx-LOQ",
       "title": "Sigma Funk Block Saved!? 😎🔥",
       "channel": "Main",
       "published": "2025-09-13T04:55:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 177918
     },
     {
       "id": "9t4-LKrGZWU",
       "title": "Easy vs Hard vs Impossible Dropper! 🤑🔥",
       "channel": "Main",
       "published": "2025-09-09T04:00:35Z",
-      "type": "short"
+      "type": "short",
+      "views": 40141
     },
     {
       "id": "v7lHk-Y62sQ",
       "title": "Easy vs Impossible Wave Challenge! 😭😎",
       "channel": "Main",
       "published": "2025-09-07T16:00:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 1715483
     },
     {
       "id": "31c0q5gaeQc",
       "title": "7 Levels of UFO Jumps! 🤑🔥",
       "channel": "Main",
       "published": "2025-09-07T04:48:33Z",
-      "type": "short"
+      "type": "short",
+      "views": 46892
     },
     {
       "id": "lK-3l0Q9lsE",
@@ -1698,7 +1813,8 @@
       "title": "EXTREME 10K Wave Gap! 😎🔥",
       "channel": "Main",
       "published": "2025-09-01T20:24:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 36658
     },
     {
       "id": "qAdxg0I1sSY",
@@ -1713,35 +1829,40 @@
       "title": "Sigma Block Saved?! 😎",
       "channel": "Main",
       "published": "2025-08-31T17:29:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 30336
     },
     {
       "id": "vTfxr9AE__Q",
       "title": "Brainrot Funk Ball Challenge Vs Wave Spam! 😂🔥",
       "channel": "Main",
       "published": "2025-08-28T16:01:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 54823
     },
     {
       "id": "GDMSCpGfSuI",
       "title": "Brainrot Police Vs EXTREME Wave Gap! 🤯",
       "channel": "Main",
       "published": "2025-08-28T04:24:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 54199
     },
     {
       "id": "DAOBSR4Fa6Y",
       "title": "🔴 (LIVE) Rating Your GD Icons! 🔥",
       "channel": "Main",
       "published": "2025-08-28T00:55:59Z",
-      "type": "long"
+      "type": "long",
+      "views": 3327
     },
     {
       "id": "QeulazOhVTo",
       "title": "Brainrot Funk VS EXTREME Ball Challenge! 🤣🤑",
       "channel": "Main",
       "published": "2025-08-26T04:17:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 44047
     },
     {
       "id": "rH_LHXJm1Aw",
@@ -1756,21 +1877,24 @@
       "title": "Brainrot Funk $10,000 Challenge! 😎",
       "channel": "Main",
       "published": "2025-08-25T04:20:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 51569
     },
     {
       "id": "6qDW3K-_8O0",
       "title": "Brainrot Funk Spider Challenge! 🤑",
       "channel": "Main",
       "published": "2025-08-24T16:01:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 14013
     },
     {
       "id": "33zkCx8_vak",
       "title": "Italian Brainrot Funk Vs UFO Spam Challenge! 😎",
       "channel": "Main",
       "published": "2025-08-24T04:00:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 17661
     },
     {
       "id": "heNTDh4XOag",
@@ -1785,7 +1909,8 @@
       "title": "Brainrot Funk Saved!? 😱",
       "channel": "Main",
       "published": "2025-08-19T16:00:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 379391
     },
     {
       "id": "8rtyqFft1Pk",
@@ -1800,784 +1925,896 @@
       "title": "Lububu vs 100 Click Spam Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-08-12T16:02:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 725953
     },
     {
       "id": "Iw1WU_P2010",
       "title": "Labubu vs 6 Level Cube Spam 🤣",
       "channel": "Main",
       "published": "2025-08-12T04:11:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 168531
     },
     {
       "id": "nbZWC9KjRR4",
       "title": "Labubu vs EXTREME Wave Challenge! 😂🔥",
       "channel": "Main",
       "published": "2025-08-11T04:03:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 36496
     },
     {
       "id": "kgDwkP7wYaw",
       "title": "🔴 (LIVE) Geometry Dash W/ @djlefave",
       "channel": "Main",
       "published": "2025-08-09T16:08:43Z",
-      "type": "long"
+      "type": "long",
+      "views": 4312
     },
     {
       "id": "iql9bhlg0Hk",
       "title": "🔴 (LIVE) Geometry Dash W/ @DJLeFave",
       "channel": "Main",
       "published": "2025-08-09T02:50:23Z",
-      "type": "long"
+      "type": "long",
+      "views": 607
     },
     {
       "id": "rr87_J9if9M",
       "title": "Labubu $10,000 Wave Challenge! 😱🔥",
       "channel": "Main",
       "published": "2025-08-08T04:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 88394
     },
     {
       "id": "YAzHTku2WDQ",
       "title": "🔴 (LIVE) Beating \"Crazy III\" - 56% (Go = 38%) Day 2",
       "channel": "Main",
       "published": "2025-08-07T14:29:52Z",
-      "type": "long"
+      "type": "long",
+      "views": 3571
     },
     {
       "id": "mkpOjN8kwLg",
       "title": "Labubu VS 100 Click Spam Trap! 🔥😱",
       "channel": "Main",
       "published": "2025-08-06T16:09:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 83376
     },
     {
       "id": "SooBoY8VlgA",
       "title": "UNBOXING GOLD PLAYBUTTON! 🎉",
       "channel": "Main",
       "published": "2025-08-06T14:13:51Z",
-      "type": "long"
+      "type": "long",
+      "views": 812
     },
     {
       "id": "0znBEme6uck",
       "title": "🔴 (LIVE) Beating \"Crazy III\" - 49% (Go = 38%) Day 1",
       "channel": "Main",
       "published": "2025-08-06T04:41:07Z",
-      "type": "long"
+      "type": "long",
+      "views": 31163
     },
     {
       "id": "4-uiI2ePATE",
       "title": "Labubu Vs Spider Challenge! 🤑🔥",
       "channel": "Main",
       "published": "2025-08-05T04:07:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 61644
     },
     {
       "id": "AFtCJuVQH3o",
       "title": "Labubu VS 100 Click Spider Spam! 😱🔥",
       "channel": "Main",
       "published": "2025-08-04T16:00:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 1036352
     },
     {
       "id": "vmkHiDs5N8s",
       "title": "Labubu Spikes Get Harder! 🔥😱",
       "channel": "Main",
       "published": "2025-08-04T07:00:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 214527
     },
     {
       "id": "0O10Vltaue0",
       "title": "Swingcopter Challenge Vs Robot Brainrot! 🤣",
       "channel": "Main",
       "published": "2025-08-02T04:07:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 56791
     },
     {
       "id": "MDi1xPKii54",
       "title": "Spider Challenge Vs UFO Brainrot! 😂",
       "channel": "Main",
       "published": "2025-07-28T05:23:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 320421
     },
     {
       "id": "4imTtdXOvsE",
       "title": "Wave Spam Vs Italian Extinction! 😭🌊",
       "channel": "Main",
       "published": "2025-07-26T04:17:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 175872
     },
     {
       "id": "YJ6v2TqaeRI",
       "title": "Italian Rappers Saved!? 😱",
       "channel": "Main",
       "published": "2025-07-24T16:17:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 79455
     },
     {
       "id": "O0BFz_5zQMQ",
       "title": "Labubu Brainrot vs 6 Level Spider Spam! 🤣",
       "channel": "Main",
       "published": "2025-07-22T04:18:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 240055
     },
     {
       "id": "1Dz2zBLiu0Q",
       "title": "1M SUBSCRIBERS CELEBRATION!!! 🎉",
       "channel": "Main",
       "published": "2025-07-21T05:52:22Z",
-      "type": "long"
+      "type": "long",
+      "views": 1618
     },
     {
       "id": "pgvAtPngQXY",
       "title": "Italian Brainrot Ball Challenge VS Wave Spam! 😂",
       "channel": "Main",
       "published": "2025-07-21T04:35:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 123409
     },
     {
       "id": "CbVpG-g2LXs",
       "title": "🔴 (LIVE) Beating \"Interstellar Infant\" - 87% (Go = 60%) Day 1",
       "channel": "Main",
       "published": "2025-07-19T18:34:05Z",
-      "type": "long"
+      "type": "long",
+      "views": 17740
     },
     {
       "id": "FsehkY5-K44",
       "title": "Italian Brainrot vs 100 Click Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-19T16:07:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 1044848
     },
     {
       "id": "FYZYNCqJZjg",
       "title": "Labubu Brainrot Saved!? 😱",
       "channel": "Main",
       "published": "2025-07-19T04:04:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 62920
     },
     {
       "id": "smoKYBEBTpo",
       "title": "Zombie Brainrot VS Insane Wave Challenge! 🦈🧟",
       "channel": "Main",
       "published": "2025-07-18T16:04:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 52353
     },
     {
       "id": "WrFm4Rz-vhA",
       "title": "Italian Coffin Dance VS Robot Challenge! 🦈⚰️",
       "channel": "Main",
       "published": "2025-07-18T04:00:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 121711
     },
     {
       "id": "xDkuPw5m8-c",
       "title": "Italian Pirate Brainrot vs Ball Challenge!🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-07-17T04:08:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 80865
     },
     {
       "id": "Ap5lS_4HvU8",
       "title": "Anime UFO Crusher Vs Insane Cube! 😂",
       "channel": "Main",
       "published": "2025-07-16T04:12:34Z",
-      "type": "short"
+      "type": "short",
+      "views": 46677
     },
     {
       "id": "4UaBGqKrpuc",
       "title": "Italian Anime Brainrot vs 6 Level Spider Spam! 🦈🕷️",
       "channel": "Main",
       "published": "2025-07-15T04:04:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 33250
     },
     {
       "id": "w3FCsb3WKZc",
       "title": "Anime Brainrot Vs Wave Challenge! 🌊",
       "channel": "Main",
       "published": "2025-07-14T16:08:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 67377
     },
     {
       "id": "f_Jof8pnhBI",
       "title": "Italian Anime Crusher Vs Extreme UFO! 😂",
       "channel": "Main",
       "published": "2025-07-14T04:01:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 77244
     },
     {
       "id": "2wOgdb7oLGM",
       "title": "Italian Extinction vs Zombie Brainrot 100 Click Spam! 🦈🧟",
       "channel": "Main",
       "published": "2025-07-13T14:01:23Z",
-      "type": "short"
+      "type": "short",
+      "views": 23740
     },
     {
       "id": "rhHVjbpeFeM",
       "title": "Italian Anime Vs Extreme Wave! 🌊",
       "channel": "Main",
       "published": "2025-07-13T04:06:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 232072
     },
     {
       "id": "Cs_c8OywaV0",
       "title": "Italian Anime vs 100 Click Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-12T16:01:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 62638
     },
     {
       "id": "kdVqXGuGmsg",
       "title": "Italian Anime vs 100 Click Trap!",
       "channel": "Main",
       "published": "2025-07-12T04:06:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 135738
     },
     {
       "id": "UpGcrEpsgBo",
       "title": "Italian Anime Brainrot vs $100K Tight Ball! 😂🦈",
       "channel": "Main",
       "published": "2025-07-11T16:03:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 114461
     },
     {
       "id": "c8RtFg8U1Go",
       "title": "Italian Brainrot Squid Game Vs UFO Spam Challenge! 🦈",
       "channel": "Main",
       "published": "2025-07-11T04:09:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 117355
     },
     {
       "id": "M0_2FdYGk7M",
       "title": "Italian Brainrot vs Spider Spam Challenge! 🕷️",
       "channel": "Main",
       "published": "2025-07-10T16:04:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 82052
     },
     {
       "id": "DKgHPtCuuJY",
       "title": "Italian Extinction Coffin Dance Spider Challenge! 🦈⚰️",
       "channel": "Main",
       "published": "2025-07-10T05:09:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 2201367
     },
     {
       "id": "EtaNSVUEou8",
       "title": "Italian Brainrot Squid Game Saved!? 🦈😭",
       "channel": "Main",
       "published": "2025-07-09T16:04:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 136990
     },
     {
       "id": "iGqbfQObTQA",
       "title": "Power Trip: Normal vs Full Version",
       "channel": "Main",
       "published": "2025-07-09T14:01:14Z",
-      "type": "long"
+      "type": "long",
+      "views": 743781
     },
     {
       "id": "YW29jFCFrWc",
       "title": "Italian Brainrot Squid Game vs EXTREME Wave Challenge! 🦈😂",
       "channel": "Main",
       "published": "2025-07-09T04:10:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 10449002
     },
     {
       "id": "K01P4fGDmEE",
       "title": "Italian Extinction vs EXTREME Wave Gap! 🐊🦈",
       "channel": "Main",
       "published": "2025-07-08T17:17:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 128408
     },
     {
       "id": "tOBQSJ8OgTw",
       "title": "HITTING 900K SUBSCRIBERS!!",
       "channel": "Main",
       "published": "2025-07-08T04:49:08Z",
-      "type": "long"
+      "type": "long",
+      "views": 1330
     },
     {
       "id": "p_sAWLrHCmM",
       "title": "Italian Tralaleritos Brainrot vs $10,000 Wave Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-08T04:00:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 98790
     },
     {
       "id": "QWNlI7wQzaY",
       "title": "Italian Tralaleritos Brainrot vs UFO Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-07T16:03:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 1814828
     },
     {
       "id": "-rts8Ig-ArY",
       "title": "Italian Brainrot vs Squid Game Cube Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-07T04:02:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 25506
     },
     {
       "id": "3pzFQe-tFpQ",
       "title": "Italian Tralaleritos Brainrot vs 7 Level Cube Jumps 🦈🐊",
       "channel": "Main",
       "published": "2025-07-06T16:01:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 222928
     },
     {
       "id": "X0IdKBXM7i8",
       "title": "Italian Tralaleritos Brainrot vs 100 Click Trap! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-06T04:00:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 336915
     },
     {
       "id": "1LObHPocmH8",
       "title": "Italian Tralaleritos Brainrot vs Cube Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-05T16:01:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 112569
     },
     {
       "id": "3GoOEoDCo68",
       "title": "Italian Tralaleritos Brainrot vs 69 Click Spider Spam! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-05T04:01:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 47749
     },
     {
       "id": "hud7k8s3F1E",
       "title": "Italian Tralaleritos Brainrot vs 6 Level Cube Spam 🦈🐊",
       "channel": "Main",
       "published": "2025-07-04T16:02:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 104094
     },
     {
       "id": "XOKOooRf7cU",
       "title": "Italian Tralaleritos Brainrot vs Robot Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-04T06:10:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 248115
     },
     {
       "id": "6EWshNAtvZc",
       "title": "Italian Tralaleritos Brainrot Saved!? 🦈🐊",
       "channel": "Main",
       "published": "2025-07-03T16:03:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 814420
     },
     {
       "id": "6eF4hty7wZQ",
       "title": "Italian Tralaleritos Brainrot vs Cube Trap Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-03T04:17:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 226811
     },
     {
       "id": "q7ejs2XKhVY",
       "title": "Italian Extinction vs 7 Level Cube Jumps 🦈☠️",
       "channel": "Main",
       "published": "2025-07-02T16:06:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 93884
     },
     {
       "id": "nToe8eJh7kU",
       "title": "Italian Brainrot vs 500 Click $100k Trap! 🦈💰",
       "channel": "Main",
       "published": "2025-07-02T04:00:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 40940
     },
     {
       "id": "VnghR5tgFYs",
       "title": "Italian Extinction Coffin Dance vs Spider Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-07-01T16:03:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 109373
     },
     {
       "id": "5h9VNHPRWfY",
       "title": "Italian Tralaleritos Coffin Dance⚰️🦈",
       "channel": "Main",
       "published": "2025-07-01T04:06:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 40941
     },
     {
       "id": "oVHtDhkkW0I",
       "title": "EXTREME Italian Extinction Spider Challenge! 🦈☠️",
       "channel": "Main",
       "published": "2025-06-30T16:03:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 1462936
     },
     {
       "id": "DrsccEXF_C0",
       "title": "HITTING 800K SUBSCRIBERS!!",
       "channel": "Main",
       "published": "2025-06-30T12:46:51Z",
-      "type": "long"
+      "type": "long",
+      "views": 738
     },
     {
       "id": "hYMTwADGaAQ",
       "title": "Italian Pirate Brainrot vs 6 Level Cube Spam 🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-30T04:00:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 200725
     },
     {
       "id": "4gDBl9kOFHQ",
       "title": "Italian Pirate Brainrot vs $90k Jump Challenge!🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-29T16:01:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 40295
     },
     {
       "id": "sVyAzdCJHLM",
       "title": "Italian Pirate Brainrot vs UFO Challenge! 🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-29T04:01:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 198435
     },
     {
       "id": "y5I5C3yOnRQ",
       "title": "EXTREME Italian Pirate Brainrot Cube Challenge! 🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-28T16:01:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 778217
     },
     {
       "id": "Wkpn2Z2nQdM",
       "title": "Italian Pirate Brainrot vs 100 Click Spam Challenge!🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-28T04:00:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 5086825
     },
     {
       "id": "JSX_vNBaRRg",
       "title": "EXTREME Zombie Extinction Spider Challenge! 🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-27T16:01:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 1553437
     },
     {
       "id": "-8EyUOeHRtA",
       "title": "Italian Pirate Brainrot Saved!? 🦈🏴‍☠️",
       "channel": "Main",
       "published": "2025-06-27T04:01:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 1415768
     },
     {
       "id": "_Ltmub77AqY",
       "title": "Zombie Extinction vs $70k Jump Challenge! 🦈🧟",
       "channel": "Main",
       "published": "2025-06-26T16:06:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 355469
     },
     {
       "id": "GSQmbBjVCTs",
       "title": "Nock Em: Normal vs Full Version",
       "channel": "Main",
       "published": "2025-06-26T14:00:26Z",
-      "type": "long"
+      "type": "long",
+      "views": 944114
     },
     {
       "id": "_cgmnz6Kwzo",
       "title": "Zombie Extinction vs 6 Level Cube Spam 🦈🧟",
       "channel": "Main",
       "published": "2025-06-26T04:01:23Z",
-      "type": "short"
+      "type": "short",
+      "views": 521881
     },
     {
       "id": "IWvtSF2-ZPQ",
       "title": "Zombie Extinction vs 500 Click Spider Trap! 🦈🧟",
       "channel": "Main",
       "published": "2025-06-25T16:05:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 261391
     },
     {
       "id": "043ZbFaPyc4",
       "title": "Italian Extinction vs 100 Click Trap! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-25T04:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 277414
     },
     {
       "id": "ktuhwCvxHo0",
       "title": "Zombie Extinction Saved?! 🦈🧟",
       "channel": "Main",
       "published": "2025-06-24T16:03:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 646269
     },
     {
       "id": "hEAQwD4inaw",
       "title": "Zombie Extinction vs 7 Level Jumps! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-24T04:00:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 510344
     },
     {
       "id": "gOOduoOlSFA",
       "title": "Italian Extinction Coffin Dance Saved?! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-23T16:03:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 4936885
     },
     {
       "id": "KmJDK8H0KMo",
       "title": "Italian Extinction vs 6 Level Cube Spam 🦈🐊",
       "channel": "Main",
       "published": "2025-06-23T04:01:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 227201
     },
     {
       "id": "5S3pCWYIPSw",
       "title": "Italian Extinction vs UFO Spam Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-22T16:02:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 5774868
     },
     {
       "id": "3OPmghfxmeQ",
       "title": "Italian Extinction Coffin Dance vs 100 Click Trap! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-22T04:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 6886512
     },
     {
       "id": "iyip0pEKoyI",
       "title": "EXTREME Italian Extinction Spider Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-21T16:01:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 609553
     },
     {
       "id": "eoMTWCooAaY",
       "title": "Italian Extinction Saved!? 🦈🐊",
       "channel": "Main",
       "published": "2025-06-21T04:00:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 361300
     },
     {
       "id": "uTPNOqzyBhE",
       "title": "Italian Extinction vs $60k Jump Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-20T16:03:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 257992
     },
     {
       "id": "0GDevPyl59Y",
       "title": "Italian Extinction vs $10k Wave Gap! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-20T04:01:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 11498241
     },
     {
       "id": "mkJ1pq__11E",
       "title": "Italian Brainrot Extinction Saved 🦈🫡",
       "channel": "Main",
       "published": "2025-06-19T16:02:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 1835540
     },
     {
       "id": "Aab1ckKSneg",
       "title": "EXTREME Italian Extinction Robot Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-19T04:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 742122
     },
     {
       "id": "NkG4xNOqYyw",
       "title": "Italian Extinction vs $50k Jump Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-18T16:04:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 211174
     },
     {
       "id": "0jitSI5xphM",
       "title": "Italian Extinction vs $10K Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-18T04:00:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 74031
     },
     {
       "id": "dlh6v6QptNs",
       "title": "Italian Extinction vs 6 Level Ball Spam 🦈",
       "channel": "Main",
       "published": "2025-06-17T16:03:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 260864
     },
     {
       "id": "_zC9k6vqnR8",
       "title": "🔴 (LIVE) If I Speak, The Stream Ends...",
       "channel": "Main",
       "published": "2025-06-17T13:32:55Z",
-      "type": "long"
+      "type": "long",
+      "views": 508
     },
     {
       "id": "fuOJbPrkJKM",
       "title": "Press Start: Normal vs Full Version",
       "channel": "Main",
       "published": "2025-06-17T13:01:14Z",
-      "type": "long"
+      "type": "long",
+      "views": 1478844
     },
     {
       "id": "xQf2oE6DH8I",
       "title": "Hardcore Scatman Mini Spider Challenge!",
       "channel": "Main",
       "published": "2025-06-17T04:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 49865
     },
     {
       "id": "WjF2gG7EbhA",
       "title": "🔴 (LIVE) If I Speak, The Stream Ends...",
       "channel": "Main",
       "published": "2025-06-17T02:11:23Z",
-      "type": "long"
+      "type": "long",
+      "views": 7843
     },
     {
       "id": "IMbH46Hy9hM",
       "title": "Italian Extinction vs 7 Level Jumps 🦈",
       "channel": "Main",
       "published": "2025-06-16T16:04:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 105448
     },
     {
       "id": "FJO2rJkhXDg",
       "title": "Italian Extinction Sigma Block 🗿",
       "channel": "Main",
       "published": "2025-06-16T04:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 210834
     },
     {
       "id": "6xq8HghCJ5o",
       "title": "Italian Extinction UFO vs Massive Spikes! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-15T16:03:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 198672
     },
     {
       "id": "SRzcQ9rASZQ",
       "title": "Italian Extinction vs $40k Jump Challenge! 🦈🐊",
       "channel": "Main",
       "published": "2025-06-15T04:00:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 663097
     },
     {
       "id": "B2tiiPnQxkI",
       "title": "EXTREME Italian Brainrot Cube Challenge!",
       "channel": "Main",
       "published": "2025-06-14T16:01:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 29329
     },
     {
       "id": "J7wkIaMjM7Q",
       "title": "Italian Brainrot $30k Challenge!",
       "channel": "Main",
       "published": "2025-06-14T04:01:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 43619
     },
     {
       "id": "k7zbmfqK8js",
       "title": "Italian Brainrot vs 6 Level Ball Spam 🦈",
       "channel": "Main",
       "published": "2025-06-13T16:06:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 147611
     },
     {
       "id": "YY-yuQlAZ58",
       "title": "EXTREME Scatman Mini Cube Challenge!",
       "channel": "Main",
       "published": "2025-06-13T04:01:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 121831
     },
     {
       "id": "Ut1UwIAwWKc",
       "title": "Italian Brainrot vs Spider Spam Challenge!",
       "channel": "Main",
       "published": "2025-06-12T16:05:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 40550
     },
     {
       "id": "7L7zD4nmwK0",
       "title": "Job Application vs 5 Levels Of Wave 📃",
       "channel": "Main",
       "published": "2025-06-12T04:01:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 45863
     },
     {
       "id": "rFdc8H8--uo",
       "title": "Italian Brainrot vs 6 Level UFO Spam!",
       "channel": "Main",
       "published": "2025-06-11T16:05:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 12337664
     },
     {
       "id": "fq66xAIVKTw",
       "title": "Italian Brainrot vs 100 Click Spam Challenge!",
       "channel": "Main",
       "published": "2025-06-11T04:01:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 2930906
     },
     {
       "id": "TRBO8xqWvSg",
       "title": "Italian Brainrot $20k Challenge!",
       "channel": "Main",
       "published": "2025-06-10T16:04:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 21089
     },
     {
       "id": "lEaiXTVBFUM",
       "title": "EXTREME Italian Brainrot Spider Challenge!",
       "channel": "Main",
       "published": "2025-06-10T04:01:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 528416
     },
     {
       "id": "Uy8DSCEAbpI",
       "title": "EXTREME Scatman UFO Challenge!",
       "channel": "Main",
       "published": "2025-06-09T16:03:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 13940
     },
     {
       "id": "qq9ms4u3uqs",
       "title": "EXTREME Scatman Robot Challenge!",
       "channel": "Main",
       "published": "2025-06-09T04:01:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 28724
     },
     {
       "id": "KPtGF9NYazY",
       "title": "Italian Brainrot vs 6 Level Cube Spam 🦈",
       "channel": "Main",
       "published": "2025-06-08T16:01:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 12721850
     },
     {
       "id": "D4sJRbrHRxc",
       "title": "EXTREME Scatman Spider Challenge!",
       "channel": "Main",
       "published": "2025-06-08T04:00:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 150087
     },
     {
       "id": "tlPtrLhNO-8",
       "title": "Italian Brainrot vs 6 Level Spam 🦈",
       "channel": "Main",
       "published": "2025-06-07T16:01:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 110192
     },
     {
       "id": "IV6MY3JR1kk",
       "title": "Italian Brainrot Challenge $10,000",
       "channel": "Main",
       "published": "2025-06-07T04:01:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 34105
     },
     {
       "id": "06FQMgyl9_M",
       "title": "EXTREME Scatman Wave Challenge!",
       "channel": "Main",
       "published": "2025-06-06T16:03:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 47570
     },
     {
       "id": "xK42U1gldZI",
@@ -2592,63 +2829,72 @@
       "title": "EXTREME Scatman Ball Challenge!",
       "channel": "Main",
       "published": "2025-06-06T04:00:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 59708
     },
     {
       "id": "o06uES7cNik",
       "title": "Italian Brainrot Sigma Block 🗿",
       "channel": "Main",
       "published": "2025-06-05T16:04:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 35132
     },
     {
       "id": "6tsgnKRKcAA",
       "title": "Hardest Cube Jump Ever",
       "channel": "Main",
       "published": "2025-06-05T04:01:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 24959
     },
     {
       "id": "0iu6ksYGXtE",
       "title": "EXTREME Scatman Spider Challenge!",
       "channel": "Main",
       "published": "2025-06-04T16:04:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 399108
     },
     {
       "id": "jH15OGg7VU4",
       "title": "EXTREME Scatman Mini Cube Challenge!",
       "channel": "Main",
       "published": "2025-06-04T04:00:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 34732
     },
     {
       "id": "m6CGsmPHA54",
       "title": "The Hardest $10,000 Challenge In Geometry Dash!",
       "channel": "Main",
       "published": "2025-06-03T16:03:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 22248
     },
     {
       "id": "g6IJQTQA88k",
       "title": "Insane Scatman Mini Spider Challenge!",
       "channel": "Main",
       "published": "2025-06-03T04:00:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 96724
     },
     {
       "id": "Ru3GF9OO2fE",
       "title": "Easy vs Demon Cube Jump!",
       "channel": "Main",
       "published": "2025-06-02T04:00:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 16643
     },
     {
       "id": "2vHAJCizAiA",
       "title": "$1 vs $100M Scatman UFO!",
       "channel": "Main",
       "published": "2025-06-01T19:01:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 35824
     },
     {
       "id": "j7GpOsCL4Ik",
@@ -2663,14 +2909,16 @@
       "title": "Montagem Tomada Sigma Block 🗿",
       "channel": "Main",
       "published": "2025-06-01T07:00:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 16458
     },
     {
       "id": "XyZrRLZ6jZM",
       "title": "Insane Scatman Wave Challenge!",
       "channel": "Main",
       "published": "2025-05-31T16:01:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 22976
     },
     {
       "id": "8Uqoe5EHmVs",
@@ -2685,14 +2933,16 @@
       "title": "Insane Scatman Wave Challenge!",
       "channel": "Main",
       "published": "2025-05-31T04:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 42526
     },
     {
       "id": "NyYXoqnU3AU",
       "title": "Insane UFO Challenge!",
       "channel": "Main",
       "published": "2025-05-30T16:03:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 10480
     },
     {
       "id": "0YFZTCi0jVY",
@@ -2707,14 +2957,16 @@
       "title": "Italian Brainrot Wave Challenge! 🦈",
       "channel": "Main",
       "published": "2025-05-30T04:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 28795
     },
     {
       "id": "NFCrpjmHpXE",
       "title": "Los Voltaje Sigma Block 🗿",
       "channel": "Main",
       "published": "2025-05-29T16:02:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 24170
     },
     {
       "id": "T7qmn4pJhsE",
@@ -2729,7 +2981,8 @@
       "title": "Insane Scatman Ball Challenge!",
       "channel": "Main",
       "published": "2025-05-29T04:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 2170619
     },
     {
       "id": "cAAuckBlxGA",
@@ -2744,7 +2997,8 @@
       "title": "Impossible Cube Trap Challenge!",
       "channel": "Main",
       "published": "2025-05-27T17:01:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 91521
     },
     {
       "id": "KpcxI6lCNEg",
@@ -2759,7 +3013,8 @@
       "title": "Can You Survive Growing Spikes?!",
       "channel": "Main",
       "published": "2025-05-27T05:00:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 16107
     },
     {
       "id": "KEHBroVeFCk",
@@ -2774,77 +3029,88 @@
       "title": "Insane Scatman Spider Challenge!",
       "channel": "Main",
       "published": "2025-05-24T16:00:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 1787757
     },
     {
       "id": "k6lYRK_ZisY",
       "title": "Insane Scatman Cube Challenge!",
       "channel": "Main",
       "published": "2025-05-24T04:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 14841076
     },
     {
       "id": "t_H2hgxdvSY",
       "title": "$10,000 Italian Brainrot Challenge!",
       "channel": "Main",
       "published": "2025-05-23T04:05:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 10585
     },
     {
       "id": "YBR7jYrll3A",
       "title": "Can You Survive Growing Blocks?!",
       "channel": "Main",
       "published": "2025-05-22T11:46:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 51060
     },
     {
       "id": "B_9Yv5Lq6d0",
       "title": "Impossible Italian Brainrot Robot Challenge!",
       "channel": "Main",
       "published": "2025-05-19T04:23:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 30787
     },
     {
       "id": "VOYWIDaMo3w",
       "title": "Geometry Dash MrBeast Challenge For $1,000",
       "channel": "Main",
       "published": "2025-05-18T04:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 19762
     },
     {
       "id": "DTKSI9ymFTw",
       "title": "Impossible Scatman Cube Challenge!",
       "channel": "Main",
       "published": "2025-05-15T04:00:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 28971
     },
     {
       "id": "6eY5gG3Jl08",
       "title": "Impossible Scatman Wave Challenge!",
       "channel": "Main",
       "published": "2025-05-14T04:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 20324
     },
     {
       "id": "0SeO_LwmHvo",
       "title": "Impossible Scatman Mini UFO Challenge!",
       "channel": "Main",
       "published": "2025-05-13T04:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 56596
     },
     {
       "id": "bPOD08ELOEc",
       "title": "Impossible Scatman Mini Cube Challenge!",
       "channel": "Main",
       "published": "2025-05-12T04:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 106077
     },
     {
       "id": "lQ_YlMdGvt8",
       "title": "Impossible Scatman Spider Challenge!",
       "channel": "Main",
       "published": "2025-05-08T04:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 156109
     },
     {
       "id": "b_wMxZUBQVc",
@@ -2859,7 +3125,8 @@
       "title": "Impossible Scatman Mini Robot Challenge!",
       "channel": "Main",
       "published": "2025-05-06T16:00:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 27120
     },
     {
       "id": "V0e-oio2d0A",
@@ -2882,7 +3149,8 @@
       "title": "Impossible Scatman Mini Ball Challenge!",
       "channel": "Main",
       "published": "2025-05-05T04:00:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 96849
     },
     {
       "id": "rDlFSUxmvdU",
@@ -2897,525 +3165,600 @@
       "title": "Cheater vs Ball Spam!",
       "channel": "Main",
       "published": "2025-05-03T04:01:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 31800
     },
     {
       "id": "3ThOYqiKzRw",
       "title": "Cheater vs Mini UFO Spam!",
       "channel": "Main",
       "published": "2025-05-02T16:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 25426
     },
     {
       "id": "hoTYu8nCCGI",
       "title": "Spider vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-05-02T04:00:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 115103
     },
     {
       "id": "T5EJdzHdR1Y",
       "title": "Hacker vs Mini UFO Spam!",
       "channel": "Main",
       "published": "2025-05-01T16:00:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 14736
     },
     {
       "id": "tfo-_0pvnV0",
       "title": "Cheater vs Wave Spam!",
       "channel": "Main",
       "published": "2025-05-01T04:01:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 54867
     },
     {
       "id": "PKdZSzHUcbE",
       "title": "Mini Wave vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-30T16:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 16223
     },
     {
       "id": "coIM0sxjeMw",
       "title": "Wave vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-30T04:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 33583
     },
     {
       "id": "P2okpdRqkfQ",
       "title": "Cheater vs Cube Spam!",
       "channel": "Main",
       "published": "2025-04-29T16:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 13979
     },
     {
       "id": "2kZ4eTyUGYo",
       "title": "Robot vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-29T04:00:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 24518
     },
     {
       "id": "DqGkfZwUHAY",
       "title": "Mini Cube vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-28T16:00:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 12612
     },
     {
       "id": "qGw4GBuNWBY",
       "title": "Mini Spider vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-27T16:01:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 62269
     },
     {
       "id": "UaGpZDJ9NjE",
       "title": "Mini Robot vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-27T16:00:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 28489
     },
     {
       "id": "7t6mtnQsEy8",
       "title": "Ball vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-27T04:00:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 16905
     },
     {
       "id": "TS9v0Jyc6_s",
       "title": "Cheater vs UFO Spam!",
       "channel": "Main",
       "published": "2025-04-26T16:00:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 13722
     },
     {
       "id": "DidYhEJ1uHo",
       "title": "Cube vs Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-26T04:00:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 70184
     },
     {
       "id": "Iq5rtVu3k0M",
       "title": "Cheater vs Robot Spam!",
       "channel": "Main",
       "published": "2025-04-25T16:00:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 23781
     },
     {
       "id": "fL2pGOZIcGg",
       "title": "$10,000 IMPOSSIBLE Spider Challenge!",
       "channel": "Main",
       "published": "2025-04-25T04:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 18124
     },
     {
       "id": "cKzpf83iDSY",
       "title": "MONTAGEM TOMADA $30,000 Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-24T16:01:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 34897
     },
     {
       "id": "VpZ47jmEpCA",
       "title": "MONTAGEM TOMADA $20,000 Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-24T04:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 29139
     },
     {
       "id": "kGXMOVNVqUE",
       "title": "MONTAGEM TOMADA $10,000 Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-23T16:07:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 33690
     },
     {
       "id": "hClNnAH1L8Q",
       "title": "scatman cat challenge $30k",
       "channel": "Main",
       "published": "2025-04-23T04:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 14435
     },
     {
       "id": "7Cehtk6UGrM",
       "title": "Sigma Block 🗿",
       "channel": "Main",
       "published": "2025-04-22T16:00:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 30066
     },
     {
       "id": "RIxX7WI4Xkw",
       "title": "$10,000 IMPOSSIBLE Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-21T04:00:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 26253
     },
     {
       "id": "HqlnKgbpy8A",
       "title": "HARDEST Wave Spam in Geometry Dash",
       "channel": "Main",
       "published": "2025-04-20T17:30:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 17172
     },
     {
       "id": "LMYuplTlEhM",
       "title": "Insane Spider Spam vs Impossible Trap!",
       "channel": "Main",
       "published": "2025-04-19T16:00:35Z",
-      "type": "short"
+      "type": "short",
+      "views": 14837
     },
     {
       "id": "CkIvLC1077I",
       "title": "Only 1% Of Players Can Beat This Spam!",
       "channel": "Main",
       "published": "2025-04-19T04:00:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 25224
     },
     {
       "id": "6iWECanmYFs",
       "title": "Mini Rat Dance Wave Challenge!",
       "channel": "Main",
       "published": "2025-04-16T04:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 21280
     },
     {
       "id": "qg-kex_CLPM",
       "title": "Extreme $100M Ball Challenge!",
       "channel": "Main",
       "published": "2025-04-10T04:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 21228
     },
     {
       "id": "LlJZwiUq1-k",
       "title": "$20k Scatman Cat Challenge!",
       "channel": "Main",
       "published": "2025-04-09T04:02:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 57955
     },
     {
       "id": "UCcqZOWEKQA",
       "title": "IMPOSSIBLE Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-03T16:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 14487
     },
     {
       "id": "DUs_WU9djCM",
       "title": "$10 vs $100,000 Robot Click Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-03T04:00:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 32378
     },
     {
       "id": "c5joZPsyCN4",
       "title": "5 Orb Clicks vs. 1,000 Orb Clicks in Geometry Dash",
       "channel": "Main",
       "published": "2025-04-02T16:01:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 24197
     },
     {
       "id": "Ci1esDiRUbo",
       "title": "$5,000 IMPOSSIBLE Scatman Challenge!",
       "channel": "Main",
       "published": "2025-04-02T04:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 29618
     },
     {
       "id": "e0Ns1VYn6mc",
       "title": "$0 vs $100M Scatman Swingcopter Challenge!",
       "channel": "Main",
       "published": "2025-04-01T16:00:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 22022
     },
     {
       "id": "gF4Pv9SUH3M",
       "title": "WORLD’S HARDEST BALL Spam Challenge!",
       "channel": "Main",
       "published": "2025-04-01T04:30:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 32033
     },
     {
       "id": "ssR8jHvnW6c",
       "title": "Touch The $1,000,000 To Keep It!",
       "channel": "Main",
       "published": "2025-03-31T16:01:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 28524
     },
     {
       "id": "1FbAO80I8u0",
       "title": "Pro vs Noob Click Spam Challenge!",
       "channel": "Main",
       "published": "2025-03-31T04:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 24550
     },
     {
       "id": "L_483DaUd0U",
       "title": "Insane UFO Spam vs Impossible Trap!",
       "channel": "Main",
       "published": "2025-03-30T16:00:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 18088
     },
     {
       "id": "8HACwC1WVB4",
       "title": "🔴 Geometry Dash - Verifying A Level...",
       "channel": "Main",
       "published": "2025-03-29T21:36:17Z",
-      "type": "long"
+      "type": "long",
+      "views": 7041
     },
     {
       "id": "2pKV0M1wh-o",
       "title": "$5,000 Scatman Challenge!",
       "channel": "Main",
       "published": "2025-03-29T04:00:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 15802
     },
     {
       "id": "Tzk9SgmhGCE",
       "title": "sCATman $10K Wave Challenge!",
       "channel": "Main",
       "published": "2025-03-28T16:00:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 7931
     },
     {
       "id": "QSFqCjik88k",
       "title": "$5,000 Rat Dance Challenge In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-27T16:00:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 7489
     },
     {
       "id": "wH_DphBEKbM",
       "title": "Scatman Cat Wave Challenge In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-27T04:00:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 35595
     },
     {
       "id": "alihpGIAixU",
       "title": "Cheater vs 100 Click Spam Challenge In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-26T16:00:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 53006
     },
     {
       "id": "CDVyUIorb-8",
       "title": "$0 vs $100M Scatman UFO Challenge!",
       "channel": "Main",
       "published": "2025-03-26T04:00:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 13111
     },
     {
       "id": "jIMdTygI2nw",
       "title": "rat dance",
       "channel": "Main",
       "published": "2025-03-26T00:27:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 2809
     },
     {
       "id": "ANFuIAYr2mc",
       "title": "Scatman Cat Challenge $100k In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-25T16:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 15218
     },
     {
       "id": "xLH5EQglrY4",
       "title": "WORLD'S HARDEST SPAM In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-25T04:00:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 28719
     },
     {
       "id": "OQd8BvZBbTs",
       "title": "Scatman Jumpscare 0.1x Speed Challenge!",
       "channel": "Main",
       "published": "2025-03-24T16:00:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 44718
     },
     {
       "id": "sDQhKEbQHMs",
       "title": "$10K Rat Dance Challenge!",
       "channel": "Main",
       "published": "2025-03-24T04:00:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 4748
     },
     {
       "id": "VlfxZWA3aYA",
       "title": "$0 vs $100M Scatman Wave Challenge!",
       "channel": "Main",
       "published": "2025-03-23T16:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 18320
     },
     {
       "id": "N2BwORTNc8I",
       "title": "Scatman Cat Challenge $6k",
       "channel": "Main",
       "published": "2025-03-22T04:00:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 21184
     },
     {
       "id": "j5CH-bbkJ2E",
       "title": "Wave Scatman Spam Challenge!",
       "channel": "Main",
       "published": "2025-03-21T22:00:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 18723
     },
     {
       "id": "_evhVbOZe_U",
       "title": "$10,000 Scatman Challenge!",
       "channel": "Main",
       "published": "2025-03-21T10:00:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 17519
     },
     {
       "id": "36EQAjW16_0",
       "title": "$42k Scatman Cat Challenge!",
       "channel": "Main",
       "published": "2025-03-20T16:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 23061
     },
     {
       "id": "xYaLU3iSdD4",
       "title": "Hacker Spider vs. Spam Trap!",
       "channel": "Main",
       "published": "2025-03-20T04:00:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 23125
     },
     {
       "id": "-O-bPX1tveg",
       "title": "Easy vs Impossible Geometry Dash Jump!",
       "channel": "Main",
       "published": "2025-03-19T16:00:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 14521
     },
     {
       "id": "wp1IhZb42EU",
       "title": "Rat Dance $15k Wave Challenge!",
       "channel": "Main",
       "published": "2025-03-19T04:01:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 9543
     },
     {
       "id": "K7QRkXsGzF0",
       "title": "🔴 Geometry Dash - Playing GD 😎",
       "channel": "Main",
       "published": "2025-03-19T02:09:39Z",
-      "type": "long"
+      "type": "long",
+      "views": 11284
     },
     {
       "id": "r_C2Jzj0mCw",
       "title": "Scatman 100 Spike Jumpscare!",
       "channel": "Main",
       "published": "2025-03-18T16:00:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 23612
     },
     {
       "id": "zAONVEM93rE",
       "title": "HARDEST SPAM In Geometry Dash!",
       "channel": "Main",
       "published": "2025-03-18T04:00:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 19011
     },
     {
       "id": "GMvHkqGsnYc",
       "title": "$1 vs $1,000 Spider Clicks!",
       "channel": "Main",
       "published": "2025-03-17T16:00:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 7947
     },
     {
       "id": "nkNw_KX6FXI",
       "title": "$10,000 Anxiety Challenge!",
       "channel": "Main",
       "published": "2025-03-17T04:00:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 13783
     },
     {
       "id": "nR2PZIxe02E",
       "title": "Mini UFO Scatman Spam Challenge!",
       "channel": "Main",
       "published": "2025-03-16T16:00:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 15881
     },
     {
       "id": "ASddmgQY0qQ",
       "title": "$15k Rat Dance Challenge!",
       "channel": "Main",
       "published": "2025-03-16T04:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 17940
     },
     {
       "id": "bMZCITX2rLU",
       "title": "$69k Rat Dance Challenge!",
       "channel": "Main",
       "published": "2025-03-15T16:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 18897
     },
     {
       "id": "mOmU3rJGsIo",
       "title": "$5,000 Anxiety Challenge!",
       "channel": "Main",
       "published": "2025-03-15T04:00:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 17115
     },
     {
       "id": "_H9yHBXBjuc",
       "title": "Touch The $10,000 To Keep It!",
       "channel": "Main",
       "published": "2025-03-14T20:30:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 17317
     },
     {
       "id": "zafOJogaiJU",
       "title": "spinning cat challenge $5k",
       "channel": "Main",
       "published": "2025-03-13T20:12:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 7219
     },
     {
       "id": "TjPMG4uDp3M",
       "title": "Rat Dance UFO Spam Challenge",
       "channel": "Main",
       "published": "2025-03-13T10:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 11373
     },
     {
       "id": "JrBWpt9tXY4",
       "title": "Scatman Money Challenge 🤑",
       "channel": "Main",
       "published": "2025-03-11T11:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 5563
     },
     {
       "id": "4PUS5cgrz30",
       "title": "scatman cat challenge $69k",
       "channel": "Main",
       "published": "2025-03-10T16:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 48242
     },
     {
       "id": "6veWH3-aMJ4",
       "title": "Scatman UFO Spam Challenge",
       "channel": "Main",
       "published": "2025-03-10T04:03:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 23456
     },
     {
       "id": "eD7HZ6rCA-k",
       "title": "rat dance challenge $50k 🐀",
       "channel": "Main",
       "published": "2025-03-09T07:47:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 10051
     },
     {
       "id": "e5Oqj2Hhqfs",
       "title": "Kendrick Lamar Challenge $10K 🔥",
       "channel": "Main",
       "published": "2025-03-05T06:26:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 8579
     },
     {
       "id": "0S1bEnpGDm8",
@@ -3430,21 +3773,24 @@
       "title": "rat dance challenge $10k 🐀",
       "channel": "Main",
       "published": "2025-03-03T04:07:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 101724
     },
     {
       "id": "5pyDoqxVHkE",
       "title": "rat dance challenge $5k 🐀",
       "channel": "Main",
       "published": "2025-03-01T19:29:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 10319
     },
     {
       "id": "TTe-gdR391U",
       "title": "5 Clicks vs. 1,000 Clicks in Geometry Dash 😱",
       "channel": "Main",
       "published": "2025-02-27T04:07:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 12032
     },
     {
       "id": "4tJavnm5CQ8",
@@ -3459,14 +3805,16 @@
       "title": "scatman cat challenge $10k",
       "channel": "Main",
       "published": "2025-02-25T21:31:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 103138
     },
     {
       "id": "PL8CHkKZR10",
       "title": "$10,000 Wave Spam Challenge! 😱🔥",
       "channel": "Main",
       "published": "2025-02-25T04:22:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 16768
     },
     {
       "id": "OhckcNX8Gl8",
@@ -3489,1022 +3837,1168 @@
       "title": "scatman cat wave challenge $100k",
       "channel": "Main",
       "published": "2025-02-24T06:42:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 85618
     },
     {
       "id": "6h4lcOLkVlQ",
       "title": "If I Lose This Wave Challenge, I Jump in Snow!",
       "channel": "Main",
       "published": "2025-02-22T04:50:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 17219
     },
     {
       "id": "3Bjy1o0Jzwk",
       "title": "scatman cat challenge $100k",
       "channel": "Main",
       "published": "2025-02-20T04:27:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 105209
     },
     {
       "id": "yGb2C3sH-4A",
       "title": "scatman cat challenge $50k",
       "channel": "Main",
       "published": "2025-02-15T22:37:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 4442595
     },
     {
       "id": "7A1oILaid2c",
       "title": "Chess $5k UFO Challenge",
       "channel": "Main",
       "published": "2025-02-14T18:49:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 109289
     },
     {
       "id": "_d2csiKbkKY",
       "title": "$1 vs $100,000 Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-02-11T22:37:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 17272
     },
     {
       "id": "VvWEbApoqIU",
       "title": "Playing 20 EXTREME Challenges in Geometry Dash",
       "channel": "Main",
       "published": "2025-02-08T15:00:42Z",
-      "type": "long"
+      "type": "long",
+      "views": 6402
     },
     {
       "id": "FPdmLyRETYk",
       "title": "Win The Sigma Boy Challenge For $100,000",
       "channel": "Main",
       "published": "2025-02-07T00:51:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 11751
     },
     {
       "id": "ZjxAxHDVwEA",
       "title": "Cheater vs 5 Level Spam",
       "channel": "Main",
       "published": "2025-02-03T22:04:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 72634
     },
     {
       "id": "Uf9URZbqDnI",
       "title": "Chess $10k Wave Challenge",
       "channel": "Main",
       "published": "2025-02-03T17:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 29889
     },
     {
       "id": "qCAjHxoy-_E",
       "title": "scatman cat challenge $10k",
       "channel": "Main",
       "published": "2025-02-03T05:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 565722
     },
     {
       "id": "is2fPnxdXrM",
       "title": "Chess $1k Jump Challenge",
       "channel": "Main",
       "published": "2025-02-01T18:22:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 29207
     },
     {
       "id": "hgmUmeAJnCA",
       "title": "10 Levels of PHYSICALLY IMPOSSIBLE Wave Spam",
       "channel": "Main",
       "published": "2025-02-01T15:00:51Z",
-      "type": "long"
+      "type": "long",
+      "views": 4425
     },
     {
       "id": "Mf3NbpPylQw",
       "title": "🔴 Playing Pixel Royale 3D w/ GD YouTubers",
       "channel": "Main",
       "published": "2025-02-01T04:19:49Z",
-      "type": "long"
+      "type": "long",
+      "views": 3007
     },
     {
       "id": "6h63UHR46L0",
       "title": "Would You Rather Challenge in Geometry Dash",
       "channel": "Main",
       "published": "2025-01-30T17:00:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 6800
     },
     {
       "id": "Y6Yek7vO8Kg",
       "title": "scatman cat ufo",
       "channel": "Main",
       "published": "2025-01-30T05:00:34Z",
-      "type": "short"
+      "type": "short",
+      "views": 26341
     },
     {
       "id": "ZS-Jw2-jv3s",
       "title": "HITTING 500K SUBSCRIBERS!",
       "channel": "Main",
       "published": "2025-01-29T04:03:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 24071
     },
     {
       "id": "bwLEQ3Nnexg",
       "title": "Sigma Boy Ringtone",
       "channel": "Main",
       "published": "2025-01-28T05:02:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 28710
     },
     {
       "id": "eD9-F7pOC8c",
       "title": "scatman cat",
       "channel": "Main",
       "published": "2025-01-27T05:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 166532
     },
     {
       "id": "fGO8jJUr5sY",
       "title": "World's Tightest Sigma Boy Wave Gap!",
       "channel": "Main",
       "published": "2025-01-25T17:00:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 15946
     },
     {
       "id": "pj_uRw-zitI",
       "title": "Playing 10 Levels Of Spider That Get HARDER And HARDER",
       "channel": "Main",
       "published": "2025-01-25T15:00:05Z",
-      "type": "long"
+      "type": "long",
+      "views": 4065
     },
     {
       "id": "eL9_GXhpfEs",
       "title": "🔴 Playing Geometry Dash in 1.5x Speed!",
       "channel": "Main",
       "published": "2025-01-25T12:51:40Z",
-      "type": "long"
+      "type": "long",
+      "views": 547
     },
     {
       "id": "iPQIq8IbRqg",
       "title": "MUSTAAAAAAAAAAARD",
       "channel": "Main",
       "published": "2025-01-25T05:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 13914
     },
     {
       "id": "B85Kzlsk-lE",
       "title": "Sigma Boy UFO Spam",
       "channel": "Main",
       "published": "2025-01-24T17:00:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 18529
     },
     {
       "id": "DZLa2OT0FJo",
       "title": "Impossible $10k Scatman Wave",
       "channel": "Main",
       "published": "2025-01-24T05:00:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 128753
     },
     {
       "id": "mBC8JBWOhfw",
       "title": "Hacker vs $10k Extreme Spam!",
       "channel": "Main",
       "published": "2025-01-23T17:00:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 9797
     },
     {
       "id": "jwdejReHTVE",
       "title": "Impossible $1k Scatman Jump",
       "channel": "Main",
       "published": "2025-01-21T14:00:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 299853
     },
     {
       "id": "0TwomjfnUMM",
       "title": "PSY $10k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-21T05:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 12696
     },
     {
       "id": "DuHtLA6wxXE",
       "title": "Hacker vs $10k Challenge",
       "channel": "Main",
       "published": "2025-01-20T11:00:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 5341
     },
     {
       "id": "E6rEb9sgJ8I",
       "title": "$10k Sigma Boy Wave Challenge!",
       "channel": "Main",
       "published": "2025-01-19T13:00:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 34521
     },
     {
       "id": "vc-P-4Kf3Ek",
       "title": "Sigma Boy $10k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-18T16:00:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 41654
     },
     {
       "id": "0bx18nUPgIw",
       "title": "Sigma Boy $1k Jump Challenge!",
       "channel": "Main",
       "published": "2025-01-16T17:00:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 9903
     },
     {
       "id": "P8UhnX7ZyeQ",
       "title": "Hacker vs Spider Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-16T05:00:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 22620
     },
     {
       "id": "iFXTvXo0Y0s",
       "title": "Sigma Boy $5k Challenge",
       "channel": "Main",
       "published": "2025-01-15T05:00:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 13380
     },
     {
       "id": "zJizxE4bkH0",
       "title": "Sigma Boy - Geometry Dash",
       "channel": "Main",
       "published": "2025-01-14T17:01:09Z",
-      "type": "long"
+      "type": "long",
+      "views": 4816
     },
     {
       "id": "8d5NzBOIv_Q",
       "title": "Sigma Boy Sync Spider!",
       "channel": "Main",
       "published": "2025-01-14T17:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 21567
     },
     {
       "id": "76pdgckPdPI",
       "title": "Sigma Boy $10k Wave Spam!",
       "channel": "Main",
       "published": "2025-01-14T05:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 25743
     },
     {
       "id": "uXSYqWAgwvE",
       "title": "Sigma Boy $10k Jump",
       "channel": "Main",
       "published": "2025-01-13T17:14:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 14342
     },
     {
       "id": "sAuwDS4S-dA",
       "title": "Sigma Boy $1k Wave Challenge!",
       "channel": "Main",
       "published": "2025-01-13T05:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 15206
     },
     {
       "id": "mq46nL6VCxg",
       "title": "Sigma Boy $100k UFO Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-12T19:00:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 41228
     },
     {
       "id": "RLJNo-AOnxY",
       "title": "Player Vs Tightest Wave Spam",
       "channel": "Main",
       "published": "2025-01-10T17:00:33Z",
-      "type": "short"
+      "type": "short",
+      "views": 13095
     },
     {
       "id": "p8FiEOJNSdY",
       "title": "Race The Saws To Win!",
       "channel": "Main",
       "published": "2025-01-09T17:00:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 171879
     },
     {
       "id": "ZlmvFHvbZd8",
       "title": "Sigma Boy $10k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-09T05:00:33Z",
-      "type": "short"
+      "type": "short",
+      "views": 101153
     },
     {
       "id": "_xa_H6iLTHo",
       "title": "Win The Tightest Wave Spam For $10,000",
       "channel": "Main",
       "published": "2025-01-08T17:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 17246
     },
     {
       "id": "yXC43gJ7G4M",
       "title": "Impossible $10K Sigma Boy Wave Spam!",
       "channel": "Main",
       "published": "2025-01-08T05:00:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 14252
     },
     {
       "id": "IFivqbZi8X0",
       "title": "$10k Sigma Boy Wave Challenge!",
       "channel": "Main",
       "published": "2025-01-07T17:00:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 31838
     },
     {
       "id": "lYlXzvkSZKY",
       "title": "Hacker vs $10k Challenge",
       "channel": "Main",
       "published": "2025-01-07T05:00:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 84716
     },
     {
       "id": "krYEyDEC8Zs",
       "title": "10 Levels Of Sigma Boy Wave",
       "channel": "Main",
       "published": "2025-01-06T17:00:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 44391
     },
     {
       "id": "0kR5_yA5LGY",
       "title": "Sigma Boy $100k Jump Challenge!",
       "channel": "Main",
       "published": "2025-01-06T05:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 12434
     },
     {
       "id": "MO4Jdd8iYw0",
       "title": "Player Vs Tightest Wave Spam",
       "channel": "Main",
       "published": "2025-01-05T05:00:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 23513
     },
     {
       "id": "zGlb_4jV3kE",
       "title": "KSI Challenge For $10,000",
       "channel": "Main",
       "published": "2025-01-04T17:00:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 12588
     },
     {
       "id": "rdOT9JZ5xdQ",
       "title": "Win The Tightest Wave Spam For $100,000",
       "channel": "Main",
       "published": "2025-01-04T05:00:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 42639
     },
     {
       "id": "4an65bOxrps",
       "title": "Sigma Boy $10k UFO Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-03T17:00:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 404843
     },
     {
       "id": "iSmA8JoksE8",
       "title": "World's Tightest Wave Gap!",
       "channel": "Main",
       "published": "2025-01-03T05:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 14623
     },
     {
       "id": "zws40MUil14",
       "title": "Hacker vs $10k Challenge",
       "channel": "Main",
       "published": "2025-01-02T17:00:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 153337
     },
     {
       "id": "FXF1AsZBKVc",
       "title": "Pro Vs $100,000 Challenge!",
       "channel": "Main",
       "published": "2025-01-02T05:00:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 135643
     },
     {
       "id": "OLvT_l-mq8o",
       "title": "Sigma Boy $50k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-02T02:04:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 44752
     },
     {
       "id": "iE1MG8eMJb8",
       "title": "Sigma Boy $10k Spider Spam Challenge!",
       "channel": "Main",
       "published": "2025-01-01T17:00:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 246564
     },
     {
       "id": "UWSZUTuHPI8",
       "title": "Sigma Boy vs Sigma Block",
       "channel": "Main",
       "published": "2025-01-01T04:15:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 20829
     },
     {
       "id": "jHkUSZiPLvg",
       "title": "Sigma Boy $10k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2024-12-31T17:00:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 918346
     },
     {
       "id": "QdMDrSv1WoU",
       "title": "$1,000 Sigma Boy Wave Spam Challenge!",
       "channel": "Main",
       "published": "2024-12-31T07:20:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 13540
     },
     {
       "id": "06iaFVEoruA",
       "title": "Cheater vs $10k Challenge",
       "channel": "Main",
       "published": "2024-12-30T17:00:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 28578
     },
     {
       "id": "N_mEJv3fmck",
       "title": "$10k Sigma Boy Wave Challenge!",
       "channel": "Main",
       "published": "2024-12-30T05:00:15Z",
-      "type": "short"
+      "type": "short",
+      "views": 105133
     },
     {
       "id": "6Sd0rSKuOTM",
       "title": "Sigma Boy $1k Wave Spam Challenge!",
       "channel": "Main",
       "published": "2024-12-29T17:00:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 303418
     },
     {
       "id": "OvtOLfXG6zo",
       "title": "Sigma Boy $100k Jump Challenge!",
       "channel": "Main",
       "published": "2024-12-29T05:00:24Z",
-      "type": "short"
+      "type": "short",
+      "views": 238433
     },
     {
       "id": "SB_NAjH7HB0",
       "title": "Sigma Boy Wave Sync Challenge",
       "channel": "Main",
       "published": "2024-12-28T17:45:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 40294
     },
     {
       "id": "8zSMeQqpz5I",
       "title": "Sigma Boy $1k Challenge",
       "channel": "Main",
       "published": "2024-12-27T19:00:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 33941
     },
     {
       "id": "RRsLNWK317E",
       "title": "MUSTAAAAAAAAAAARD",
       "channel": "Main",
       "published": "2024-12-23T17:00:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 38833
     },
     {
       "id": "lYpDPqohkOk",
       "title": "Geometry Dash: This Monster Is MAD 😡 #shorts",
       "channel": "Main",
       "published": "2024-10-24T16:00:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 6970
     },
     {
       "id": "gZtBh1e26pM",
       "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts",
       "channel": "Main",
       "published": "2024-10-15T02:58:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 10425
     },
     {
       "id": "ZO0cnr6mO8Q",
       "title": "Geometry Dash: Spam To 200 Clicks 💪 #shorts",
       "channel": "Main",
       "published": "2024-10-11T16:00:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 9095
     },
     {
       "id": "aFvLLSD9QOc",
       "title": "Geometry Dash: Brawl Stars Intro Scariest Jump 😱 #shorts",
       "channel": "Main",
       "published": "2024-10-10T16:00:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 20109
     },
     {
       "id": "5oTCr1BWjgc",
       "title": "Geometry Dash: INSANE Snow Jumps! #shorts",
       "channel": "Main",
       "published": "2024-09-28T16:00:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 7674
     },
     {
       "id": "kYKeabyqkRg",
       "title": "🔴 (LIVE) Beating \"TROLLMACHINE\" - 31% (Go = 17%) Day 1 (w/@vee-gd)",
       "channel": "Main",
       "published": "2024-09-16T12:07:07Z",
-      "type": "long"
+      "type": "long",
+      "views": 863
     },
     {
       "id": "zht_EcrbCQw",
       "title": "Geometry Dash: Beat The Wave Challenge Or Get Eaten! #shorts",
       "channel": "Main",
       "published": "2024-09-12T16:00:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 13784
     },
     {
       "id": "Pr6pC6h9Vto",
       "title": "Geometry Dash: Can He Win For His True Love? #shorts",
       "channel": "Main",
       "published": "2024-09-10T16:00:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 23075
     },
     {
       "id": "u6Lrn0uUYlM",
       "title": "Geometry Dash: Complete The Platformer Challenge To Win! #shorts",
       "channel": "Main",
       "published": "2024-09-09T20:00:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 11251
     },
     {
       "id": "OCUOXhyt7-8",
       "title": "Playing 10 Levels Of Wave That Get HARDER And HARDER",
       "channel": "Main",
       "published": "2024-09-08T19:00:15Z",
-      "type": "long"
+      "type": "long",
+      "views": 3489
     },
     {
       "id": "bNU4oqtaJo8",
       "title": "Geometry Dash: Jump Over The Lava Monsters To Survive! #shorts",
       "channel": "Main",
       "published": "2024-09-08T16:00:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 10867
     },
     {
       "id": "Dw-55J-mQkc",
       "title": "Geometry Dash: Jump Over The Spikes To Win $1M! #shorts",
       "channel": "Main",
       "published": "2024-09-06T16:00:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 11055
     },
     {
       "id": "zWJrXFM7KYE",
       "title": "Geometry Dash: Jump Over The Acid Monsters To Survive! #shorts",
       "channel": "Main",
       "published": "2024-09-05T16:01:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 15768
     },
     {
       "id": "db4KWrgJuPY",
       "title": "Geometry Dash: Is This True Love? #shorts",
       "channel": "Main",
       "published": "2024-09-04T16:00:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 56318
     },
     {
       "id": "7jvOCHYxxQ8",
       "title": "Geometry Dash: Jump Over The Sharks To Survive! #shorts",
       "channel": "Main",
       "published": "2024-09-03T16:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 14088
     },
     {
       "id": "-ZS2xSCzxuE",
       "title": "Building The BEST Wave Challenge!",
       "channel": "Main",
       "published": "2024-09-01T19:30:00Z",
-      "type": "long"
+      "type": "long",
+      "views": 2714
     },
     {
       "id": "nBA1n2hqSI4",
       "title": "Geometry Dash: Jump Over The Lava To Survive! #shorts",
       "channel": "Main",
       "published": "2024-08-31T16:00:51Z",
-      "type": "short"
+      "type": "short",
+      "views": 12598
     },
     {
       "id": "_ofldh0_Smk",
       "title": "🔴 (LIVE) Playing Globed Geometry Dash (Reading GD DMs)",
       "channel": "Main",
       "published": "2024-08-31T12:23:57Z",
-      "type": "long"
+      "type": "long",
+      "views": 1613
     },
     {
       "id": "rb_feZYZUzw",
       "title": "Geometry Dash: Sigma Block 🗿 #shorts",
       "channel": "Main",
       "published": "2024-08-30T04:00:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 19971
     },
     {
       "id": "ObEoHHF8eFw",
       "title": "Geometry Dash: Double Life 👥 #shorts",
       "channel": "Main",
       "published": "2024-08-29T16:00:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 318242
     },
     {
       "id": "wY8GBZa0ZjU",
       "title": "Geometry Dash: History Of GD 🧠 #shorts",
       "channel": "Main",
       "published": "2024-08-29T04:00:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 25856
     },
     {
       "id": "OkN23FjQFiM",
       "title": "Geometry Dash: It's Raining Tacos 🌮 #shorts",
       "channel": "Main",
       "published": "2024-08-28T16:00:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 27203
     },
     {
       "id": "mQ5T05fP9ik",
       "title": "Geometry Dash: World's Tightest Mini Wave Challenge! #shorts",
       "channel": "Main",
       "published": "2024-08-27T04:00:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 15977
     },
     {
       "id": "EWzjtIkiL4c",
       "title": "Geometry Dash: Tightest Mini Wave Challenge! #shorts",
       "channel": "Main",
       "published": "2024-08-26T19:00:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 7615
     },
     {
       "id": "awycbnbr404",
       "title": "🔴 (LIVE) Geometry Dash Level Requests! (Reading GD DMs)",
       "channel": "Main",
       "published": "2024-08-26T13:21:26Z",
-      "type": "long"
+      "type": "long",
+      "views": 1674
     },
     {
       "id": "ZJuvmlfemOE",
       "title": "Geometry Dash: Bread 🍞 #shorts",
       "channel": "Main",
       "published": "2024-08-23T19:00:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 20655
     },
     {
       "id": "LiaPW1Z8OhU",
       "title": "Beating Bloodbath - 27% (Go = 20%) Day 1",
       "channel": "Main",
       "published": "2024-08-21T07:29:24Z",
-      "type": "long"
+      "type": "long",
+      "views": 3514
     },
     {
       "id": "HiT8SR-fZmg",
       "title": "Geometry Dash Level Requests!",
       "channel": "Main",
       "published": "2024-08-20T15:02:40Z",
-      "type": "long"
+      "type": "long",
+      "views": 1676
     },
     {
       "id": "Arn8j98rhCs",
       "title": "Geometry Dash: Easy Mini Swing-Copter Challenge! #shorts",
       "channel": "Main",
       "published": "2024-08-19T19:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 11979
     },
     {
       "id": "TMpQZXQW484",
       "title": "Geometry Dash: Knights Vs Gnomes Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-08-15T19:00:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 10706
     },
     {
       "id": "4L3PGW0Yq44",
       "title": "Geometry Dash Level Requests!",
       "channel": "Main",
       "published": "2024-08-15T16:04:58Z",
-      "type": "long"
+      "type": "long",
+      "views": 2835
     },
     {
       "id": "Spv_CeivffQ",
       "title": "Geometry Dash: IMPOSSIBLE Tight Wave Challenge! #shorts",
       "channel": "Main",
       "published": "2024-08-14T19:00:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 18401
     },
     {
       "id": "yatVwSBLGNE",
       "title": "Geometry Dash: MrBeast Challenge For $69,000 #shorts",
       "channel": "Main",
       "published": "2024-08-13T19:00:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 28592
     },
     {
       "id": "2QXQA6Rz438",
       "title": "Building A Wave Challenge!",
       "channel": "Main",
       "published": "2024-08-12T19:51:33Z",
-      "type": "long"
+      "type": "long",
+      "views": 376
     },
     {
       "id": "U6wt4xZTEIQ",
       "title": "Geometry Dash: Jump Over Spikes To Survive! #shorts",
       "channel": "Main",
       "published": "2024-08-12T19:00:15Z",
-      "type": "short"
+      "type": "short",
+      "views": 17283
     },
     {
       "id": "HLhpeYY1ogM",
       "title": "Geometry Dash: IMPOSSIBLE Swingcopter Challenge! #shorts",
       "channel": "Main",
       "published": "2024-08-11T19:00:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 27620
     },
     {
       "id": "brN2S-fZrfI",
       "title": "Geometry Dash: Tight UFO Spam For $1M #shorts",
       "channel": "Main",
       "published": "2024-08-07T19:00:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 12043
     },
     {
       "id": "w3ozZ1_nVNs",
       "title": "Geometry Dash: History Of GD! #shorts",
       "channel": "Main",
       "published": "2024-08-06T19:00:35Z",
-      "type": "short"
+      "type": "short",
+      "views": 17318
     },
     {
       "id": "X8tiOj6OBSY",
       "title": "Playing The BiteSterxBeastSMP (IP Is In Discord)",
       "channel": "Main",
       "published": "2024-08-06T15:40:52Z",
-      "type": "long"
+      "type": "long",
+      "views": 587
     },
     {
       "id": "bEyCEWL5O1A",
       "title": "Geometry Dash: Back On Track Hold Version! #shorts",
       "channel": "Main",
       "published": "2024-08-05T19:00:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 23848
     },
     {
       "id": "UhXAF8lFegI",
       "title": "Geometry Dash: Xbox Vs PS5 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-08-04T19:00:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 13513
     },
     {
       "id": "L7PrTo2iNpk",
       "title": "Geometry Dash: Fun To Rhyme! #shorts",
       "channel": "Main",
       "published": "2024-07-30T19:00:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 51905
     },
     {
       "id": "xoHNxz7A9kI",
       "title": "Geometry Dash: YouTube Vs TikTok Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-07-29T19:00:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 17822
     },
     {
       "id": "xUpV361Ispg",
       "title": "Beating \"The Lost Existence\" - 82% (Go = 45%) Day 6",
       "channel": "Main",
       "published": "2024-07-24T23:48:10Z",
-      "type": "long"
+      "type": "long",
+      "views": 12818
     },
     {
       "id": "77pzgOHtJMo",
       "title": "Beating \"The Lost Existence\" - 78% (Go = 45%) Day 5",
       "channel": "Main",
       "published": "2024-07-24T03:18:50Z",
-      "type": "long"
+      "type": "long",
+      "views": 5504
     },
     {
       "id": "rVZkTbtqHTs",
       "title": "Beating \"The Lost Existence\" - 71% (Go = 33%) Day 4",
       "channel": "Main",
       "published": "2024-07-23T17:51:35Z",
-      "type": "long"
+      "type": "long",
+      "views": 82754
     },
     {
       "id": "Gce94KZ1-GM",
       "title": "Geometry Dash 10 Levels of Difficulty! #shorts",
       "channel": "Main",
       "published": "2024-07-21T16:10:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 10204
     },
     {
       "id": "nbGFTFzBol0",
       "title": "Beating \"The Lost Existence\" - 71% (Go = 33%) Day 3",
       "channel": "Main",
       "published": "2024-07-20T05:58:33Z",
-      "type": "long"
+      "type": "long",
+      "views": 115512
     },
     {
       "id": "tc1oSigIOAs",
       "title": "If I Die, I Switch With My Friend",
       "channel": "Main",
       "published": "2024-07-19T16:00:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 2230
     },
     {
       "id": "hzhvqf7FVkE",
       "title": "Geometry Dash Level Requests!",
       "channel": "Main",
       "published": "2024-07-19T03:49:59Z",
-      "type": "long"
+      "type": "long",
+      "views": 28408
     },
     {
       "id": "lGQV5t6rihI",
       "title": "Beating \"The Lost Existence\" - 49% (Go = 33%) Day 2",
       "channel": "Main",
       "published": "2024-07-14T19:53:41Z",
-      "type": "long"
+      "type": "long",
+      "views": 91383
     },
     {
       "id": "YbDnV1AofYs",
       "title": "Geometry Dash $1,000 Vs $100,000 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-07-13T17:13:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 12015
     },
     {
       "id": "LfFEYuu92MQ",
       "title": "Beating The Lost Existence - 47% (Go = 33%) Day 1",
       "channel": "Main",
       "published": "2024-07-12T18:16:18Z",
-      "type": "long"
+      "type": "long",
+      "views": 121032
     },
     {
       "id": "Hx6HRN48Mdk",
       "title": "Geometry Dash: World's Tightest Wave Challenge! #shorts",
       "channel": "Main",
       "published": "2024-07-10T19:13:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 16582
     },
     {
       "id": "WQJeUASfHW0",
       "title": "Geometry Dash: Extreme Vs Easy Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-07-09T19:09:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 31462
     },
     {
       "id": "VJE7uDB5K9g",
       "title": "Late Night Minecraft!",
       "channel": "Main",
       "published": "2024-07-06T08:03:41Z",
-      "type": "long"
+      "type": "long",
+      "views": 15907
     },
     {
       "id": "t__q0YEvFF0",
       "title": "Geometry Dash: INSANE Tight Wave! #shorts",
       "channel": "Main",
       "published": "2024-07-05T19:00:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 17205
     },
     {
       "id": "KPVVfuAOtKo",
       "title": "Geometry Dash: Stereo Madness Hold Version! #shorts",
       "channel": "Main",
       "published": "2024-07-04T19:00:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 34093
     },
     {
       "id": "JRBd4Ic2YU4",
       "title": "World's Hardest Cube Jump Ever! #shorts",
       "channel": "Main",
       "published": "2024-07-03T20:32:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 35970
     },
     {
       "id": "FBnkqrJNgQ8",
       "title": "Geometry Dash: HARDEST Swingcopter Challenge! #shorts",
       "channel": "Main",
       "published": "2024-07-03T01:00:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 14984
     },
     {
       "id": "dSwNbFWn2sQ",
       "title": "Geometry Dash: IMPOSSIBLE Sync Challenge! #shorts",
       "channel": "Main",
       "published": "2024-06-28T19:31:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 14966
     },
     {
       "id": "E0PdenIxh7w",
       "title": "Geometry Dash: IMPOSSIBLE Portal Challenge! #shorts",
       "channel": "Main",
       "published": "2024-06-27T19:32:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 17747
     },
     {
       "id": "tAAeT_FAMhY",
       "title": "Geometry Dash Impossible Wave Challenge! #shorts",
       "channel": "Main",
       "published": "2024-06-26T13:25:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 20213
     },
     {
       "id": "F_7moGQUzx8",
       "title": "Geometry Dash Level Requests!",
       "channel": "Main",
       "published": "2024-06-24T10:08:51Z",
-      "type": "long"
+      "type": "long",
+      "views": 537
     },
     {
       "id": "bPNZCioBNuA",
       "title": "Geometry Dash $69 Vs $69,420 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-06-24T10:00:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 23371
     },
     {
       "id": "ik2owpIb3UA",
       "title": "Geometry Dash World's Tightest Wave Challenge #shorts",
       "channel": "Main",
       "published": "2024-06-23T20:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 15564
     },
     {
       "id": "vJdQosQW8aA",
       "title": "Geometry Dash Wave Tutorial! #shorts",
       "channel": "Main",
       "published": "2024-06-17T23:54:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 15248
     },
     {
       "id": "scnlX4D44-M",
       "title": "Level Requests In Geometry Dash",
       "channel": "Main",
       "published": "2024-06-16T00:01:25Z",
-      "type": "long"
+      "type": "long",
+      "views": 12087
     },
     {
       "id": "VUpPsWzjJzk",
       "title": "Geometry Dash $10 Vs $10,000 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-06-15T23:06:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 14702
     },
     {
       "id": "DKzjoXsOTds",
       "title": "Level Requests In Geometry Dash",
       "channel": "Main",
       "published": "2024-06-06T12:19:57Z",
-      "type": "long"
+      "type": "long",
+      "views": 7297
     },
     {
       "id": "3J7vFRS5bJM",
       "title": "Playing Minecraft Hardcore (w/@SamsterBoi)",
       "channel": "Main",
       "published": "2024-06-03T11:05:51Z",
-      "type": "long"
+      "type": "long",
+      "views": 4947
     },
     {
       "id": "WuwKnhjsINA",
       "title": "Geometry Dash: 1 Click = $1 Vs Death Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-05-27T19:08:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 89655
     },
     {
       "id": "iDUwzeF5iSg",
       "title": "Deadlocked, But It's Super Nerfed",
       "channel": "Main",
       "published": "2024-05-24T19:00:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 5337
     },
     {
       "id": "TFEPz_8m6Kw",
       "title": "Turning Deadlocked Into An Easy Level",
       "channel": "Main",
       "published": "2024-05-20T12:38:21Z",
-      "type": "long"
+      "type": "long",
+      "views": 786
     },
     {
       "id": "k5WmQ00PoOs",
       "title": "300K Celebration! (Geometry Dash Level Requests)",
       "channel": "Main",
       "published": "2024-05-16T10:57:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 2889
     },
     {
       "id": "Bs9kl0ujX6Y",
       "title": "Geometry Dash 1 Click = $1 Vs $100 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-05-12T21:13:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 47735
     },
     {
       "id": "AGIqBH3oSEg",
       "title": "Playing The Endless Challenge In Geometry Dash!",
       "channel": "Main",
       "published": "2024-05-05T13:46:08Z",
-      "type": "long"
+      "type": "long",
+      "views": 2560
     },
     {
       "id": "mDRu06nhH5o",
       "title": "Geometry Dash 1IQ Vs 100IQ Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-05-04T23:38:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 81632
     },
     {
       "id": "cHWhTeo6r5s",
@@ -4519,294 +5013,336 @@
       "title": "Beating \"How To Platformer\"",
       "channel": "Main",
       "published": "2024-04-28T12:27:30Z",
-      "type": "long"
+      "type": "long",
+      "views": 3145
     },
     {
       "id": "G9-BpzwQixc",
       "title": "Geometry Dash $5 Vs $10,000 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-23T21:00:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 111421
     },
     {
       "id": "tK0U9HOOwS0",
       "title": "Geometry Dash 1IQ Vs 1,000IQ Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-22T23:26:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 245837
     },
     {
       "id": "eVFe2lrQDs0",
       "title": "Geometry Dash Smallest Spike Vs Biggest Spike Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-21T20:58:02Z",
-      "type": "short"
+      "type": "short",
+      "views": 3144369
     },
     {
       "id": "eNegHjpBSkM",
       "title": "Geometry Dash $1 Vs $1,000 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-20T18:19:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 28760
     },
     {
       "id": "NprWsyo-44o",
       "title": "IM IN ROBLOX NOW!",
       "channel": "Main",
       "published": "2024-04-20T16:00:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 8655
     },
     {
       "id": "_FMcXyXW16c",
       "title": "World's Hardest Spider Spam Challenge On Mobile #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-04-18T15:30:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 672441
     },
     {
       "id": "cDzaliOOSRQ",
       "title": "Geometry Dash 1IQ Vs 100IQ Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-13T03:35:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 713188
     },
     {
       "id": "djlceOpezcY",
       "title": "Geometry Dash $10 Vs $1,000 Path Challenges! #shorts",
       "channel": "Main",
       "published": "2024-04-11T00:52:06Z",
-      "type": "short"
+      "type": "short",
+      "views": 34233
     },
     {
       "id": "JyYw8fyk9_Y",
       "title": "Level Requests In Geometry Dash!",
       "channel": "Main",
       "published": "2024-04-09T06:48:42Z",
-      "type": "long"
+      "type": "long",
+      "views": 3149
     },
     {
       "id": "p4JVc7IZGcM",
       "title": "Sigma Block #shorts",
       "channel": "Main",
       "published": "2024-04-09T05:01:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 96916
     },
     {
       "id": "zCJLkecpVDw",
       "title": "World's Hardest Spider Spam Challenge On An Enter Button #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-04-07T19:26:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 105890
     },
     {
       "id": "O6AGlgxTz6Y",
       "title": "Playing Buffed Main Levels In Geometry Dash!",
       "channel": "Main",
       "published": "2024-04-07T18:29:38Z",
-      "type": "long"
+      "type": "long",
+      "views": 1390
     },
     {
       "id": "jMFCDKLl4wc",
       "title": "Level Requests In Geometry Dash!",
       "channel": "Main",
       "published": "2024-04-07T16:56:04Z",
-      "type": "long"
+      "type": "long",
+      "views": 2864
     },
     {
       "id": "NOLkp21yDUA",
       "title": "All Difficulties in GD #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-04-06T18:46:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 80450
     },
     {
       "id": "As4vPWPX67U",
       "title": "Level Requests In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-04-06T15:16:05Z",
-      "type": "long"
+      "type": "long",
+      "views": 2228
     },
     {
       "id": "BTdjuV-sDFA",
       "title": "Tightest UFO Jump Ever #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-04-06T01:17:42Z",
-      "type": "short"
+      "type": "short",
+      "views": 47321
     },
     {
       "id": "nsETyNnIfH8",
       "title": "Beating Aleph 0 (Hard Demon)",
       "channel": "Main",
       "published": "2024-04-03T15:14:49Z",
-      "type": "long"
+      "type": "long",
+      "views": 399
     },
     {
       "id": "G6-MxlE2EOg",
       "title": "World's Hardest Cube Jump Ever #shorts",
       "channel": "Main",
       "published": "2024-04-01T13:00:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 20090303
     },
     {
       "id": "HqUZ_IR6s0o",
       "title": "World's Hardest Spider Spam Challenge On A Keyboard #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-04-01T05:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 164547
     },
     {
       "id": "H0-PeM_5NOs",
       "title": "Worlds Most Impossible UFO Challenge In Geometry Dash #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-26T07:43:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 19493
     },
     {
       "id": "yZqe6vJ8_VY",
       "title": "$100 Quiz For My Friend In Geometry Dash! #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-23T04:55:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 41566
     },
     {
       "id": "oF7a4FHoNsU",
       "title": "World's Hardest Spider Spam Challenge On An Xbox Controller #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-21T02:47:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 64762
     },
     {
       "id": "XdC0El4A4dQ",
       "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-20T02:18:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 59674
     },
     {
       "id": "ndh9Vyck4CA",
       "title": "Playing \"Deeper Space\" With Friends! #shorts",
       "channel": "Main",
       "published": "2024-03-18T08:40:03Z",
-      "type": "long"
+      "type": "long",
+      "views": 4530
     },
     {
       "id": "Bg8IT7YMmhE",
       "title": "Geometry Dash: NOOB VS PRO WAVE CHALLENGE! #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-18T01:54:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 22034
     },
     {
       "id": "5G73PRwnsWA",
       "title": "Do You Love Me In Geometry Dash (BAD ENDING) #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-16T04:43:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 31780
     },
     {
       "id": "c86eY9a2ikc",
       "title": "World's Hardest Spider Spam Challenge On Mobile #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-15T11:40:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 415683
     },
     {
       "id": "iPPueXzKJgU",
       "title": "World's Most Synced Spider Challenge! #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-12T11:05:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 28854
     },
     {
       "id": "0BDPtNyQZXY",
       "title": "World's Hardest Spider Spam Challenge In Geometry Dash #shorts #geometrydash",
       "channel": "Main",
       "published": "2024-03-10T23:32:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 800718
     },
     {
       "id": "OLTH1JJ9zx4",
       "title": "Impossible Wave Challenge For $10,000 #shorts",
       "channel": "Main",
       "published": "2024-03-06T11:32:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 33109
     },
     {
       "id": "YPqcpiRgCi4",
       "title": "\"Stayed Gone\" As A Geometry Dash Layout Level #shorts #hazbinhotel",
       "channel": "Main",
       "published": "2024-03-03T04:29:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 40563
     },
     {
       "id": "_3LIQq5-cVE",
       "title": "Ship Challenge For $1,000 #shorts",
       "channel": "Main",
       "published": "2024-02-26T10:52:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 20224
     },
     {
       "id": "FuTCgWeMIgU",
       "title": "Level Requests In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-02-26T09:51:20Z",
-      "type": "long"
+      "type": "long",
+      "views": 4278
     },
     {
       "id": "gltDsdvuyCU",
       "title": "Level Requests In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-02-25T16:28:58Z",
-      "type": "long"
+      "type": "long",
+      "views": 2000
     },
     {
       "id": "LoHs3GDJ84Q",
       "title": "TIDAL WAVE GOT UNRATED…",
       "channel": "Main",
       "published": "2024-02-20T12:37:33Z",
-      "type": "long"
+      "type": "long",
+      "views": 4955
     },
     {
       "id": "c-bjxUhHQz4",
       "title": "Proving I'm Not Fake By Playing \"10 Levels of Wave!\" #shorts",
       "channel": "Main",
       "published": "2024-02-07T20:00:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 18611
     },
     {
       "id": "6sjx4GRFXSo",
       "title": "World's Hardest Cube Jump #shorts",
       "channel": "Main",
       "published": "2024-02-06T20:00:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 43305
     },
     {
       "id": "IkBSJPwjOTk",
       "title": "Sigma Block #shorts",
       "channel": "Main",
       "published": "2024-02-06T08:00:13Z",
-      "type": "short"
+      "type": "short",
+      "views": 2041378
     },
     {
       "id": "TtXqLIMJo5k",
       "title": "World's Most Calming Challenge #shorts",
       "channel": "Main",
       "published": "2024-02-05T20:29:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 27521
     },
     {
       "id": "R8EfyT4YJ_E",
       "title": "Geometry Dash MrBeast Challenge For $1,000,000 On Mobile #shorts",
       "channel": "Main",
       "published": "2024-02-04T22:33:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 23433
     },
     {
       "id": "hEnbqd0iHSo",
       "title": "Geometry Dash Lobotomy Memes #shorts",
       "channel": "Main",
       "published": "2024-02-04T07:11:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 21688
     },
     {
       "id": "u9QxJ1_qltk",
@@ -4837,14 +5373,16 @@
       "title": "Lobotomy Humor In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-01-20T08:51:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 23499
     },
     {
       "id": "8URh3qxCZqg",
       "title": "Worlds Most Super Hardest And Tightest Wave Challenge Ever #shorts",
       "channel": "Main",
       "published": "2024-01-18T02:45:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 20865
     },
     {
       "id": "x0nQCbg55DQ",
@@ -4860,7 +5398,7 @@
       "channel": "JoshSham",
       "published": "2024-01-12T16:25:38Z",
       "type": "short",
-      "views": 68245
+      "views": 68249
     },
     {
       "id": "SxkMtbFAfRc",
@@ -4875,959 +5413,1096 @@
       "title": "Worlds Tightest And Hardest Swingcopter Challenge in Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-01-10T06:12:25Z",
-      "type": "short"
+      "type": "short",
+      "views": 200359
     },
     {
       "id": "IeJSfo3KPNg",
       "title": "World's Most Hardest Wave Challenge In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-01-04T16:00:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 17118
     },
     {
       "id": "SV3MXy5k4os",
       "title": "World's Most Hardest Straight Fly in Geometry Dash #shorts",
       "channel": "Main",
       "published": "2024-01-04T06:07:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 48998
     },
     {
       "id": "hKAxQw5IlZg",
       "title": "Geometry Dash MrBeast Challenge For $100,000 #shorts",
       "channel": "Main",
       "published": "2024-01-03T04:09:28Z",
-      "type": "short"
+      "type": "short",
+      "views": 1659020
     },
     {
       "id": "8EFblMYVVYA",
       "title": "World's Hardest Triple Spike Cube Jump In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-12-26T02:40:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 6880228
     },
     {
       "id": "PI6cwORg20c",
       "title": "World's Most Hardest And Tightest Spider Challenge In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-12-24T22:21:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 3990272
     },
     {
       "id": "Dt_tDfBRLQc",
       "title": "Working On Robot Dash 2 in Geometry Dash",
       "channel": "Main",
       "published": "2023-12-24T09:27:41Z",
-      "type": "long"
+      "type": "long",
+      "views": 633
     },
     {
       "id": "Knssaoph-U0",
       "title": "2.2 IS HERE!!!",
       "channel": "Main",
       "published": "2023-12-20T15:26:13Z",
-      "type": "long"
+      "type": "long",
+      "views": 666
     },
     {
       "id": "f2xN1z3oUyw",
       "title": "Impossible Challenge In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-12-17T19:03:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 19788
     },
     {
       "id": "WG3SKDoPNjc",
       "title": "$1,000 Ship Challenge In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-12-15T03:26:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 16859
     },
     {
       "id": "SLoQ1xR8vOU",
       "title": "WORLDS HARDEST BALL CHALLENGE FOR $10,000 #shorts",
       "channel": "Main",
       "published": "2023-12-14T06:50:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 15110
     },
     {
       "id": "dclAsd3Di-M",
       "title": "WORLDS HARDEST TIGHT WAVE EVER!! #shorts",
       "channel": "Main",
       "published": "2023-12-11T12:28:34Z",
-      "type": "short"
+      "type": "short",
+      "views": 17385
     },
     {
       "id": "0P-IhPlej64",
       "title": "LEVEL REQUESTS!!!! (SEND ID'S IN FORMS) #live",
       "channel": "Main",
       "published": "2023-12-11T11:39:42Z",
-      "type": "long"
+      "type": "long",
+      "views": 578
     },
     {
       "id": "OiMIx1EyULI",
       "title": "2.2 IS OUT!!!",
       "channel": "Main",
       "published": "2023-12-11T11:00:19Z",
-      "type": "long"
+      "type": "long",
+      "views": 16087
     },
     {
       "id": "UN0UjR4CaiQ",
       "title": "Red Flags in Geometry Dash!! #shorts",
       "channel": "Main",
       "published": "2023-12-07T12:03:16Z",
-      "type": "short"
+      "type": "short",
+      "views": 119002
     },
     {
       "id": "8JXlyV5n4jU",
       "title": "Geometry Dash MrBeast Challenge For $25,245 #shorts",
       "channel": "Main",
       "published": "2023-12-06T19:30:00Z",
-      "type": "short"
+      "type": "short",
+      "views": 42409
     },
     {
       "id": "DpZ8bs9A7LA",
       "title": "Geometry Dash Extreme Levels Challenge!! #shorts",
       "channel": "Main",
       "published": "2023-12-06T11:34:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 15736
     },
     {
       "id": "tpGT0xqh0xI",
       "title": "LEVEL 10 IS IMPOSSIBLE!!! #shorts",
       "channel": "Main",
       "published": "2023-11-30T05:15:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 25108
     },
     {
       "id": "fb6dYlqP_PI",
       "title": "WORLD'S HARDEST AND TIGHTEST DUEL SHIP!!! #shorts",
       "channel": "Main",
       "published": "2023-11-26T20:52:08Z",
-      "type": "short"
+      "type": "short",
+      "views": 32150
     },
     {
       "id": "dUO1-axDbfI",
       "title": "WORLD'S HARDEST AND TIGHTEST DUEL WAVE!!! #shorts",
       "channel": "Main",
       "published": "2023-11-25T05:43:38Z",
-      "type": "short"
+      "type": "short",
+      "views": 584255
     },
     {
       "id": "1d7Bk9nWIqs",
       "title": "World's Hardest And Most Tightest Ball Challenge Ever #shorts",
       "channel": "Main",
       "published": "2023-11-20T03:54:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 21421
     },
     {
       "id": "yCkf-Lpzdi4",
       "title": "LEVEL REQUESTS!!!! (SEND ID'S IN FORMS) #live",
       "channel": "Main",
       "published": "2023-11-19T18:22:16Z",
-      "type": "long"
+      "type": "long",
+      "views": 956
     },
     {
       "id": "3uEqIkwHmjQ",
       "title": "World's Most Hardest Timed Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-11-18T16:33:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 25423
     },
     {
       "id": "L0vDv7pvc2s",
       "title": "Beating Minecraft w/Girlfriend #live",
       "channel": "Main",
       "published": "2023-11-18T15:08:08Z",
-      "type": "long"
+      "type": "long",
+      "views": 440
     },
     {
       "id": "oSWq3VoMVEs",
       "title": "Playing BiteSterxBeast Challenges In Geometry Dash #live",
       "channel": "Main",
       "published": "2023-11-18T11:41:15Z",
-      "type": "long"
+      "type": "long",
+      "views": 444
     },
     {
       "id": "85s-joInSXg",
       "title": "World's Hardest And Tightest Mini Wave #shorts",
       "channel": "Main",
       "published": "2023-11-15T02:19:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 230607
     },
     {
       "id": "HLCBnggHkAg",
       "title": "Geometry Dash MrBeast Challenge For $1,000 (SWAG ROUTE) #shorts",
       "channel": "Main",
       "published": "2023-11-13T04:49:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 414819
     },
     {
       "id": "ccLNy-SjiX4",
       "title": "Discord Would You Rather Questions In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-11-12T17:29:29Z",
-      "type": "short"
+      "type": "short",
+      "views": 20025
     },
     {
       "id": "gLhXKCo94sE",
       "title": "2.2's Release Date!",
       "channel": "Main",
       "published": "2023-11-08T05:19:55Z",
-      "type": "long"
+      "type": "long",
+      "views": 39556
     },
     {
       "id": "uggPhT2LKuA",
       "title": "Hardest Spider Challenge #shorts",
       "channel": "Main",
       "published": "2023-11-06T04:56:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 129095
     },
     {
       "id": "4MqPqrO0PiM",
       "title": "Geometry Dash 2.2 Dropped On IOS!",
       "channel": "Main",
       "published": "2023-11-05T21:16:25Z",
-      "type": "long"
+      "type": "long",
+      "views": 62101
     },
     {
       "id": "uMj8pHmwXQw",
       "title": "Hardest And Tightest Wave Spam Ever #shorts",
       "channel": "Main",
       "published": "2023-11-04T05:07:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 372043
     },
     {
       "id": "FrreT2cgIsg",
       "title": "Future Funk II 96% (Go At 46%) #live",
       "channel": "Main",
       "published": "2023-10-30T09:57:35Z",
-      "type": "long"
+      "type": "long",
+      "views": 1047
     },
     {
       "id": "HxjK49ZEMls",
       "title": "Geometry Dash MrBeast Challenge For $10,101 #shorts",
       "channel": "Main",
       "published": "2023-10-30T04:45:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 433478
     },
     {
       "id": "q1uKZmvW_K8",
       "title": "Future Funk II 96% (Go At 46%) #live",
       "channel": "Main",
       "published": "2023-10-29T11:02:33Z",
-      "type": "long"
+      "type": "long",
+      "views": 709
     },
     {
       "id": "whbMMpwCcJo",
       "title": "World's Tightest Wave Gap In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-10-26T01:25:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 40449
     },
     {
       "id": "h9noCUahqAc",
       "title": "Future Funk II 71% (Go At 46%) #live",
       "channel": "Main",
       "published": "2023-10-24T12:51:28Z",
-      "type": "long"
+      "type": "long",
+      "views": 731
     },
     {
       "id": "NsbwTKikkLU",
       "title": "World's Easiest Ball And Wave For $100 #shorts",
       "channel": "Main",
       "published": "2023-10-23T03:38:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 982377
     },
     {
       "id": "D2v7yYmaaho",
       "title": "Extending Slaughterhouse In Geometry Dash #live",
       "channel": "Main",
       "published": "2023-10-22T03:31:18Z",
-      "type": "long"
+      "type": "long",
+      "views": 1140
     },
     {
       "id": "tTzxHGQtg4I",
       "title": "Geometry Dash MrBeast Challenge For $562,000 #shorts",
       "channel": "Main",
       "published": "2023-10-21T18:05:49Z",
-      "type": "short"
+      "type": "short",
+      "views": 293478
     },
     {
       "id": "fphrJdYXarU",
       "title": "Attempting To Beat Future Funk II #live",
       "channel": "Main",
       "published": "2023-10-21T16:10:16Z",
-      "type": "long"
+      "type": "long",
+      "views": 568
     },
     {
       "id": "80ax7_ROmoY",
       "title": "Hardest Cube Jump Ever #shorts",
       "channel": "Main",
       "published": "2023-10-18T23:23:19Z",
-      "type": "short"
+      "type": "short",
+      "views": 294938
     },
     {
       "id": "ONeWSS3lyjU",
       "title": "Geometry Dash KaiGuy Challenge For $1,000 #shorts",
       "channel": "Main",
       "published": "2023-10-17T13:25:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 23874
     },
     {
       "id": "obp3Pp3P20s",
       "title": "5 GD Shorts Creators Play Real Challenges #shorts",
       "channel": "Main",
       "published": "2023-10-16T13:36:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 18670
     },
     {
       "id": "2qU3RLYh4Ks",
       "title": "Hardest And Tightest Mini Ship Gap Ever #shorts",
       "channel": "Main",
       "published": "2023-10-16T01:17:27Z",
-      "type": "short"
+      "type": "short",
+      "views": 29414
     },
     {
       "id": "aKCwBOsImxM",
       "title": "5 GD Shorts Creators Play Real Challenges",
       "channel": "Main",
       "published": "2023-10-15T17:00:16Z",
-      "type": "long"
+      "type": "long",
+      "views": 7285
     },
     {
       "id": "So7s_wKFy2g",
       "title": "World's Hardest And Tightest Mini Wave #shorts",
       "channel": "Main",
       "published": "2023-10-13T02:26:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 68974
     },
     {
       "id": "Ot6Xyw6zCjM",
       "title": "World's Hardest UFO Orb Clicks #shorts",
       "channel": "Main",
       "published": "2023-10-11T03:27:22Z",
-      "type": "short"
+      "type": "short",
+      "views": 47156
     },
     {
       "id": "u1tF8tIjzIQ",
       "title": "Loverboy As A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-10-10T09:58:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 42017
     },
     {
       "id": "Yot6gveXnYM",
       "title": "World's Hardest Tight Wave Gap Ever #shorts",
       "channel": "Main",
       "published": "2023-10-08T23:05:54Z",
-      "type": "short"
+      "type": "short",
+      "views": 99880
     },
     {
       "id": "Us6IEf9LtEQ",
       "title": "Building A Rated Level (before 2.2) Day: 1 #live",
       "channel": "Main",
       "published": "2023-10-08T00:03:46Z",
-      "type": "long"
+      "type": "long",
+      "views": 812
     },
     {
       "id": "8Co4-Hdd_2A",
       "title": "Geometry Dash MrBeast Challenge For $69,420 #shorts",
       "channel": "Main",
       "published": "2023-10-07T05:33:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 6011040
     },
     {
       "id": "lwV_FA98H4k",
       "title": "Raiding Streamers Live (LEVEL REQUESTS) #live",
       "channel": "Main",
       "published": "2023-10-06T11:51:08Z",
-      "type": "long"
+      "type": "long",
+      "views": 657
     },
     {
       "id": "z9Shlm5DK4M",
       "title": "World's Most Hardest Timed Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-10-05T10:43:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 9806134
     },
     {
       "id": "XzUYSX3rifY",
       "title": "World's Most Tightest Dash Orb Ever #shorts",
       "channel": "Main",
       "published": "2023-10-02T18:48:10Z",
-      "type": "short"
+      "type": "short",
+      "views": 49917
     },
     {
       "id": "kzcE21LjOj0",
       "title": "World's Hardest Consistent Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-10-01T20:02:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 47420
     },
     {
       "id": "BAruVmO_xUw",
       "title": "100K",
       "channel": "Main",
       "published": "2023-10-01T12:18:39Z",
-      "type": "long"
+      "type": "long",
+      "views": 1242
     },
     {
       "id": "09CBdpvcEIg",
       "title": "World's Hardest Tight Mini-Wave In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-09-30T04:19:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 187843
     },
     {
       "id": "MN7j4xfMzqA",
       "title": "Geometry Dash MrBeast Challenge For $69,420 #shorts",
       "channel": "Main",
       "published": "2023-09-28T20:20:05Z",
-      "type": "short"
+      "type": "short",
+      "views": 40790
     },
     {
       "id": "TgrdN-mhpP0",
       "title": "GRINDING 100 DEMONS!!!! #live",
       "channel": "Main",
       "published": "2023-09-27T11:38:57Z",
-      "type": "long"
+      "type": "long",
+      "views": 804
     },
     {
       "id": "a7RtUnc_cTA",
       "title": "World's Hardest Tight Wave In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-09-27T02:44:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 175235
     },
     {
       "id": "hIMCY9ZxAA8",
       "title": "Humor In Geometry Dash 2.2 #shorts",
       "channel": "Main",
       "published": "2023-09-26T03:31:50Z",
-      "type": "short"
+      "type": "short",
+      "views": 1087459
     },
     {
       "id": "IrvyiYO26x4",
       "title": "World's Easiest Wave Challenge (Smurf Cat) #shorts",
       "channel": "Main",
       "published": "2023-09-25T10:29:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 183922
     },
     {
       "id": "5ch4vP6EsIY",
       "title": "Geometry Dash Rip-Offs #2 #shorts",
       "channel": "Main",
       "published": "2023-09-25T03:53:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 23505
     },
     {
       "id": "eAzoo34V7Aw",
       "title": "Tightest Wave Challenge Ever #shorts",
       "channel": "Main",
       "published": "2023-09-24T16:45:45Z",
-      "type": "short"
+      "type": "short",
+      "views": 26220
     },
     {
       "id": "nKbQti7Ocv4",
       "title": "Reading Asked Questions! #shorts",
       "channel": "Main",
       "published": "2023-09-23T05:22:03Z",
-      "type": "short"
+      "type": "short",
+      "views": 8116
     },
     {
       "id": "qnuziy-g0G8",
       "title": "Geometry Dash Rip-Offs #1 #shorts",
       "channel": "Main",
       "published": "2023-09-22T11:59:31Z",
-      "type": "short"
+      "type": "short",
+      "views": 19069
     },
     {
       "id": "4zdG4MY8P0E",
       "title": "Tightest Cube In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-09-19T17:11:43Z",
-      "type": "short"
+      "type": "short",
+      "views": 23945
     },
     {
       "id": "J6Si5ujbjgs",
       "title": "Do You Love Me In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-09-19T01:34:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 308402
     },
     {
       "id": "hVkFvpF-ppM",
       "title": "LEVEL REQUESTS!!!! #live",
       "channel": "Main",
       "published": "2023-09-17T11:58:38Z",
-      "type": "long"
+      "type": "long",
+      "views": 664
     },
     {
       "id": "UcdIMOGcoLw",
       "title": "My Friend Made Me A Challenge For $6,969 #shorts",
       "channel": "Main",
       "published": "2023-09-17T03:11:01Z",
-      "type": "short"
+      "type": "short",
+      "views": 19988
     },
     {
       "id": "ssWvMnWgerc",
       "title": "Hardest Tight Wave Ever Created #shorts",
       "channel": "Main",
       "published": "2023-09-16T20:45:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 29569
     },
     {
       "id": "m-z_qQVcXwQ",
       "title": "Hardest Cube Jump Ever #shorts",
       "channel": "Main",
       "published": "2023-09-14T04:10:37Z",
-      "type": "short"
+      "type": "short",
+      "views": 25403167
     },
     {
       "id": "_6K9UEAv_qw",
       "title": "Beating Crazy III",
       "channel": "Main",
       "published": "2023-09-13T02:54:24Z",
-      "type": "long"
+      "type": "long",
+      "views": 401
     },
     {
       "id": "Nga5tZYpkd0",
       "title": "Geometry Dash MrBeast Challenge For $100,000 #shorts",
       "channel": "Main",
       "published": "2023-09-11T18:44:18Z",
-      "type": "short"
+      "type": "short",
+      "views": 1346924
     },
     {
       "id": "tiWjvNYtxEs",
       "title": "World's Hardest And Tightest Ball And Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-09-11T07:35:26Z",
-      "type": "short"
+      "type": "short",
+      "views": 5995617
     },
     {
       "id": "cC4Sl2AfxiI",
       "title": "I Think I Downloaded The Wrong Deadlocked",
       "channel": "Main",
       "published": "2023-09-09T15:36:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 17256
     },
     {
       "id": "Irn2Z1_GTmg",
       "title": "Worlds Hardest Tight Wave In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-09-06T05:37:46Z",
-      "type": "short"
+      "type": "short",
+      "views": 407846
     },
     {
       "id": "E3xlhg-PKtU",
       "title": "Playing Geometry Dash Rip-Offs In Roblox",
       "channel": "Main",
       "published": "2023-09-05T16:00:09Z",
-      "type": "long"
+      "type": "long",
+      "views": 193752
     },
     {
       "id": "bRrqr0bOwmo",
       "title": "Blast Processing With Late Clicks #shorts",
       "channel": "Main",
       "published": "2023-09-05T08:30:09Z",
-      "type": "short"
+      "type": "short",
+      "views": 18906
     },
     {
       "id": "Bd-veRtzfnk",
       "title": "World's Hardest Tight Wave In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-08-31T01:13:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 472299
     },
     {
       "id": "w3r5XpuFLIc",
       "title": "10K #live",
       "channel": "Main",
       "published": "2023-08-30T20:40:19Z",
-      "type": "long"
+      "type": "long",
+      "views": 399
     },
     {
       "id": "QDCqNlDJyqw",
       "title": "If I Die I Have To Give My Friend $100  (w/@SamsterBoi) #shorts",
       "channel": "Main",
       "published": "2023-08-30T08:44:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 8927
     },
     {
       "id": "MRD1tL-NmiE",
       "title": "\"Calling - Metro Boomin\" But It's A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-08-30T06:17:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 17498
     },
     {
       "id": "HlOkRdsfLB0",
       "title": "I Think I Downloaded The Wrong Level AGAIN #shorts",
       "channel": "Main",
       "published": "2023-08-29T07:39:39Z",
-      "type": "short"
+      "type": "short",
+      "views": 23032
     },
     {
       "id": "n1mveZi1ZfQ",
       "title": "\"Gravity Is Created\" But It's A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-08-29T05:02:20Z",
-      "type": "short"
+      "type": "short",
+      "views": 17123
     },
     {
       "id": "XQZxlQunClM",
       "title": "\"Gravity Is Created\" But It's A Geometry Dash Layout",
       "channel": "Main",
       "published": "2023-08-29T04:34:42Z",
-      "type": "long"
+      "type": "long",
+      "views": 2153
     },
     {
       "id": "sOhakAl_aWA",
       "title": "I Think I Downloaded The Wrong Level #shorts",
       "channel": "Main",
       "published": "2023-08-28T08:16:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 20810
     },
     {
       "id": "zSvy73kjT-g",
       "title": "Geometry Dash MrBeast Challenge For $1,000 #shorts",
       "channel": "Main",
       "published": "2023-08-28T08:16:15Z",
-      "type": "short"
+      "type": "short",
+      "views": 2950305
     },
     {
       "id": "ZTduxFavAWo",
       "title": "ROAD TO 4K!!! #live",
       "channel": "Main",
       "published": "2023-08-27T11:37:47Z",
-      "type": "long"
+      "type": "long",
+      "views": 438
     },
     {
       "id": "Aw2huc7JMuA",
       "title": "Proving That Im Actually Good At Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-08-25T05:03:47Z",
-      "type": "short"
+      "type": "short",
+      "views": 23508
     },
     {
       "id": "6NxwgJ8wyXg",
       "title": "Hardest Triple Spike Challenge #shorts",
       "channel": "Main",
       "published": "2023-08-24T03:57:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 92442
     },
     {
       "id": "2RDd5PIXh5M",
       "title": "ROAD TO 3K #live",
       "channel": "Main",
       "published": "2023-08-23T00:30:14Z",
-      "type": "long"
+      "type": "long",
+      "views": 374
     },
     {
       "id": "q6CCtGSu8T0",
       "title": "NOT STOPPING STREAM UNTIL I BEAT BUTITI II (ended due to lost bitrate) #live",
       "channel": "Main",
       "published": "2023-08-22T15:04:56Z",
-      "type": "long"
+      "type": "long",
+      "views": 161
     },
     {
       "id": "9LYzYzCCb80",
       "title": "A Subscriber Made An Impossible Wave Challenge For Me #shorts",
       "channel": "Main",
       "published": "2023-08-22T05:17:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 25458
     },
     {
       "id": "rwOcPH-WTQs",
       "title": "World's Hardest And Tightest Ship Gap #shorts",
       "channel": "Main",
       "published": "2023-08-22T04:30:44Z",
-      "type": "short"
+      "type": "short",
+      "views": 406504
     },
     {
       "id": "ivMlh-O6z6o",
       "title": "NOT STOPPING STREAM UNTIL I BEAT BUTITI II #live",
       "channel": "Main",
       "published": "2023-08-22T00:34:05Z",
-      "type": "long"
+      "type": "long",
+      "views": 55
     },
     {
       "id": "iPwg52rhdAg",
       "title": "something #live",
       "channel": "Main",
       "published": "2023-08-21T18:45:54Z",
-      "type": "long"
+      "type": "long",
+      "views": 231
     },
     {
       "id": "OVmxpVNWdOg",
       "title": "Lightwork No Reaction #shorts",
       "channel": "Main",
       "published": "2023-08-21T13:51:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 26115
     },
     {
       "id": "FVZ9LoslrAw",
       "title": "World's Hardest And Tightest Mini Wave #shorts",
       "channel": "Main",
       "published": "2023-08-21T02:53:55Z",
-      "type": "short"
+      "type": "short",
+      "views": 894561
     },
     {
       "id": "cEunAta4Q_k",
       "title": "Hardest Wave Spam Challenge #shorts",
       "channel": "Main",
       "published": "2023-08-18T02:49:36Z",
-      "type": "short"
+      "type": "short",
+      "views": 243759
     },
     {
       "id": "dxnBSU9uvNM",
       "title": "Geometry Dash MrBeast Challenge For $1,000,000 #shorts",
       "channel": "Main",
       "published": "2023-08-17T01:57:48Z",
-      "type": "short"
+      "type": "short",
+      "views": 1245458
     },
     {
       "id": "pAHbwFyVvaw",
       "title": "Hardest Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-08-16T19:38:41Z",
-      "type": "short"
+      "type": "short",
+      "views": 867750
     },
     {
       "id": "qDUE9pzOZkk",
       "title": "My Reaction To 2.2's Release #shorts",
       "channel": "Main",
       "published": "2023-08-15T23:58:12Z",
-      "type": "short"
+      "type": "short",
+      "views": 6215
     },
     {
       "id": "JwviQcZKvN0",
       "title": "Reacting To Geometry Dash 10-Year Anniversary #live",
       "channel": "Main",
       "published": "2023-08-14T08:55:02Z",
-      "type": "long"
+      "type": "long",
+      "views": 486
     },
     {
       "id": "vWFEuooRQs8",
       "title": "Hardest Robot Challenge #shorts",
       "channel": "Main",
       "published": "2023-08-12T17:20:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 465999
     },
     {
       "id": "OCB5n4HEARA",
       "title": "Making 50//50 (By: Vantage) Into A Layout #live",
       "channel": "Main",
       "published": "2023-08-12T16:24:14Z",
-      "type": "long"
+      "type": "long",
+      "views": 149
     },
     {
       "id": "_XVja9_tnwI",
       "title": "Hardest Spider Challenge #shorts",
       "channel": "Main",
       "published": "2023-08-11T06:24:52Z",
-      "type": "short"
+      "type": "short",
+      "views": 17403
     },
     {
       "id": "5ibbb9Sx_AQ",
       "title": "I Just Wanna Dance But Its A Geometry Dash Layout",
       "channel": "Main",
       "published": "2023-08-06T17:03:53Z",
-      "type": "short"
+      "type": "short",
+      "views": 14399
     },
     {
       "id": "sAhCeQmohyA",
       "title": "So There Is A Big Problem #shorts",
       "channel": "Main",
       "published": "2023-08-05T14:36:40Z",
-      "type": "short"
+      "type": "short",
+      "views": 3412
     },
     {
       "id": "UVX5mhH8HCc",
       "title": "Not Stopping Stream Until I Beat Butiti II",
       "channel": "Main",
       "published": "2023-08-05T05:33:36Z",
-      "type": "long"
+      "type": "long",
+      "views": 106
     },
     {
       "id": "ALb603-Gxxk",
       "title": "Not Stopping Stream Until I Beat Butiti II",
       "channel": "Main",
       "published": "2023-08-04T13:37:11Z",
-      "type": "long"
+      "type": "long",
+      "views": 62
     },
     {
       "id": "q5ONYEvSIg8",
       "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts",
       "channel": "Main",
       "published": "2023-07-31T03:07:58Z",
-      "type": "short"
+      "type": "short",
+      "views": 11374771
     },
     {
       "id": "v7o-4GB_L1U",
       "title": "Attempting To Beat Butiti II Part X",
       "channel": "Main",
       "published": "2023-07-30T07:09:32Z",
-      "type": "long"
+      "type": "long",
+      "views": 68
     },
     {
       "id": "L6K3MKDvA20",
       "title": "Playing \"Gun Duel\" Until The Game Gets Revived",
       "channel": "Main",
       "published": "2023-07-29T11:16:01Z",
-      "type": "long"
+      "type": "long",
+      "views": 132
     },
     {
       "id": "4zSsz7-OS9k",
       "title": "Murder Plot As A Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-07-29T02:03:11Z",
-      "type": "short"
+      "type": "short",
+      "views": 6015
     },
     {
       "id": "YkIM0tU7KAk",
       "title": "Gigachad Phonk As A Wave Challenge #shorts",
       "channel": "Main",
       "published": "2023-07-28T03:32:56Z",
-      "type": "short"
+      "type": "short",
+      "views": 21629
     },
     {
       "id": "rR1BynwKRO4",
       "title": "Skibidi Toilet But Its A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-07-23T05:17:14Z",
-      "type": "short"
+      "type": "short",
+      "views": 19153
     },
     {
       "id": "xPfRKV7LwqQ",
       "title": "NickEh30 Meme But It's A Geometry Dash Level #shorts",
       "channel": "Main",
       "published": "2023-06-27T20:23:17Z",
-      "type": "short"
+      "type": "short",
+      "views": 10667
     },
     {
       "id": "p0LManA4gys",
       "title": "Geometry Dash But It's The \"Nuh Uh\" Sound Effect #shorts",
       "channel": "Main",
       "published": "2023-06-21T14:08:15Z",
-      "type": "short"
+      "type": "short",
+      "views": 6420
     },
     {
       "id": "QsV0OYxBSVs",
       "title": "Secret Path On Back On Track In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-06-12T22:14:59Z",
-      "type": "short"
+      "type": "short",
+      "views": 7666
     },
     {
       "id": "moTmfW701uY",
       "title": "Sweet Little Bumble Bee But Its A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-06-09T17:38:57Z",
-      "type": "short"
+      "type": "short",
+      "views": 7191
     },
     {
       "id": "ATbTMcsSZgM",
       "title": "Sweet Little Bumble Bee But Its A Geometry Dash Layout",
       "channel": "Main",
       "published": "2023-06-08T15:44:31Z",
-      "type": "long"
+      "type": "long",
+      "views": 4257
     },
     {
       "id": "90_zes2CWWQ",
       "title": "Secret Path On Stereo Madness In Geometry Dash #shorts",
       "channel": "Main",
       "published": "2023-06-08T04:51:30Z",
-      "type": "short"
+      "type": "short",
+      "views": 10238
     },
     {
       "id": "qs9OtmGY8qI",
       "title": "How To Make A Geometry Dash Level #shorts",
       "channel": "Main",
       "published": "2023-06-07T18:23:32Z",
-      "type": "short"
+      "type": "short",
+      "views": 7094
     },
     {
       "id": "OSEExYU1UbE",
       "title": "Rhythm Hell But It's A Geometry Dash Level",
       "channel": "Main",
       "published": "2023-06-01T05:00:15Z",
-      "type": "long"
+      "type": "long",
+      "views": 3681
     },
     {
       "id": "Ifvn3fVb4nc",
       "title": "Rhythm Hell But It's A Geometry Dash Level #shorts",
       "channel": "Main",
       "published": "2023-06-01T05:00:07Z",
-      "type": "short"
+      "type": "short",
+      "views": 9441
     },
     {
       "id": "fLb3ESe2JSQ",
       "title": "'Video Games' But It's A Geometry Dash Layout #shorts",
       "channel": "Main",
       "published": "2023-05-14T05:03:21Z",
-      "type": "short"
+      "type": "short",
+      "views": 11472
     },
     {
       "id": "NlCRDoF_mvQ",
       "title": "'Video Games' By: \"Tenacious D\" But It's A Geometry Dash Layout",
       "channel": "Main",
       "published": "2023-05-14T01:15:56Z",
-      "type": "long"
+      "type": "long",
+      "views": 705307
     },
     {
       "id": "CS7gWf-akNM",
       "title": "Geometry Dash But It's The Metal Pipe Sound Effect",
       "channel": "Main",
       "published": "2023-04-14T03:00:04Z",
-      "type": "short"
+      "type": "short",
+      "views": 18088
     },
     {
       "id": "Q914sBuxTHE",
       "title": "Bowser Sings Peaches But It's A Geometry Dash Layout.",
       "channel": "Main",
       "published": "2023-04-12T05:25:00Z",
-      "type": "long"
+      "type": "long",
+      "views": 2211
     },
     {
       "id": "5hHYy8QfGGE",
       "title": "Hexagon Force But Its Sang By adbul_cisse",
       "channel": "Main",
       "published": "2022-11-07T02:00:02Z",
-      "type": "long"
+      "type": "long",
+      "views": 9988
     },
     {
       "id": "OjoN7z6EZ30",
       "title": "Stop Posting About Baller But Its A Geometry Dash Layout",
       "channel": "Main",
       "published": "2022-10-26T01:02:23Z",
-      "type": "long"
+      "type": "long",
+      "views": 1765
     },
     {
       "id": "iMJ3B9G7-_g",
       "title": "Stereo Madness But Its Sang By adbul_cisse",
       "channel": "Main",
       "published": "2022-03-16T19:19:18Z",
-      "type": "long"
+      "type": "long",
+      "views": 325488
     },
     {
       "id": "VPYZICbt5fY",
       "title": "The Rock's Verse But Its a Geometry Dash Layout",
       "channel": "Main",
       "published": "2021-10-23T19:00:18Z",
-      "type": "long"
+      "type": "long",
+      "views": 1382212
     },
     {
       "id": "IY9zpmEPZo0",
       "title": "I slammed my penith But It’s A Geometry Dash Layout",
       "channel": "Main",
       "published": "2021-09-18T22:09:04Z",
-      "type": "long"
+      "type": "long",
+      "views": 8200
     },
     {
       "id": "mqP_Grgtkls",
       "title": "Making A Layout In Under 10 Minutes In Geometry Dash",
       "channel": "Main",
       "published": "2021-09-06T14:00:13Z",
-      "type": "long"
+      "type": "long",
+      "views": 1555
     }
   ],
   "_cache": {
@@ -6655,6 +7330,6 @@
       "IY9zpmEPZo0": "long",
       "mqP_Grgtkls": "long"
     },
-    "full_sync": "2026-11-16T18:33:03+00:00"
+    "full_sync": "2026-11-16T19:01:53+00:00"
   }
 }
