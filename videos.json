@@ -1,5 +1,27 @@
 {
-  "updated": "2026-11-16T18:03:03+00:00",
+  "updated": "2026-11-16T18:36:35+00:00",
+  "channels": {
+    "Main": {
+      "handle": "BiteSterxBeast",
+      "avatar": "https://yt3.ggpht.com/x0j_eUPI02JGr2cG6jo-IDOzmRnb0i3XO8C10o9rFSC9KMUmX-OmqB_tvaUp816FwQamu0tVFQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "Experiments": {
+      "handle": "BiteSterxBeastExperiments",
+      "avatar": "https://yt3.ggpht.com/KGyo1Po0gakzWM0pz0cub9_t_PBzinLQpnA8QhFwXHYdwENdwydxlb6EDC9Wq9Pkty2vVMqERw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "Extras": {
+      "handle": "BiteSterxBeastExtras",
+      "avatar": "https://yt3.ggpht.com/0cgIpv03B8Z83_5aJIQjA7zQmbFBUCnewGZfW8i14fZY9jQYrxbpHLpjgKVxJg7EIec_CpWzFyE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "Minecraft": {
+      "handle": "BitePlaysMC",
+      "avatar": "https://yt3.ggpht.com/JNimMDNlQtoawMWUPHGvQgTt0bngcG94iEdmoRzU2F8o3Lgsfn3odeS0y5CtMtbhzkcQtY1J=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "JoshSham": {
+      "handle": "JoshSham",
+      "avatar": "https://yt3.ggpht.com/PRmU0X60-8dXlLZfQq6qX6EytACI43Qamfv7KEBESwdfxB6BMPdYtWINGkdWf4L2tyXrw9e4Ztc=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
   "best": [
     {
       "id": "w99_cL4ZVP8",
@@ -439,10 +461,24 @@
       "type": "short"
     },
     {
+      "id": "tDCCU0GVp1Q",
+      "title": "Gamemode VS Speed Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2026-09-09T16:02:20Z",
+      "type": "short"
+    },
+    {
       "id": "WgK5l6PoYf0",
       "title": "I need food but... 😔",
       "channel": "Minecraft",
       "published": "2026-09-09T16:01:46Z",
+      "type": "short"
+    },
+    {
+      "id": "pDO2W7dN0dE",
+      "title": "Gamemode Vs IMPOSSIBLE Falling Spikes! 🤯💪",
+      "channel": "Main",
+      "published": "2026-09-09T06:21:38Z",
       "type": "short"
     },
     {
@@ -453,10 +489,66 @@
       "type": "short"
     },
     {
+      "id": "f7vOUYSZvxY",
+      "title": "🔴 (LIVE) Playing 100 Levels Of Difficulty!",
+      "channel": "Main",
+      "published": "2026-09-08T01:08:02Z",
+      "type": "long"
+    },
+    {
+      "id": "6kOmdixVnHM",
+      "title": "Gamemodes Vs Platform Stairs! 🤯🔥",
+      "channel": "Main",
+      "published": "2026-09-07T21:35:55Z",
+      "type": "short"
+    },
+    {
+      "id": "u9pfR9cyFX0",
+      "title": "Easy vs Impossible Wave Challenge! 🤯😱",
+      "channel": "Main",
+      "published": "2026-09-06T04:00:24Z",
+      "type": "short"
+    },
+    {
+      "id": "mzco5kH41KQ",
+      "title": "Fingerdash: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-09-04T14:00:27Z",
+      "type": "long"
+    },
+    {
+      "id": "gWTe8L0Hlpk",
+      "title": "Homer Simpson Vs EXTREME Wave! 🔥🤯",
+      "channel": "Main",
+      "published": "2026-09-01T04:28:28Z",
+      "type": "short"
+    },
+    {
+      "id": "qC08CLmADCU",
+      "title": "Homer Simpson Vs IMPOSSIBLE Mini Spider! 💪🤯",
+      "channel": "Main",
+      "published": "2026-08-25T22:23:39Z",
+      "type": "short"
+    },
+    {
       "id": "RBc5JIefR18",
       "title": "Never Letting Bro Build Again 😭",
       "channel": "Minecraft",
       "published": "2026-08-24T17:03:52Z",
+      "type": "short"
+    },
+    {
+      "id": "fSDwd39j638",
+      "title": "Scatman Vs EXTREME Dash Orb Challenge! 🤯💪",
+      "channel": "Main",
+      "published": "2026-08-24T17:01:50Z",
+      "type": "short"
+    },
+    {
+      "id": "Zkx83Yd_osw",
+      "title": "Verity Vs IMPOSSIBLE Mini Ball Challenge! 💪🔥",
+      "channel": "Main",
+      "published": "2026-08-20T22:32:43Z",
       "type": "short"
     },
     {
@@ -467,10 +559,31 @@
       "type": "short"
     },
     {
+      "id": "PGx969t3waQ",
+      "title": "Homer Challenge Vs EXTREME UFO! 🤯🔥",
+      "channel": "Main",
+      "published": "2026-08-17T20:59:03Z",
+      "type": "short"
+    },
+    {
+      "id": "q4VpgVB0k_Y",
+      "title": "INSANE Homer Challenge VS 30 Spikes! 🤯💪",
+      "channel": "Main",
+      "published": "2026-08-16T18:21:30Z",
+      "type": "short"
+    },
+    {
       "id": "qyLGaxZILG4",
       "title": "Making Stereo Madness IMPOSSIBLE",
       "channel": "Experiments",
       "published": "2026-08-13T15:18:41Z",
+      "type": "short"
+    },
+    {
+      "id": "U1VFxXsRuKg",
+      "title": "EXTREME Homer Cube Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-08-11T21:00:47Z",
       "type": "short"
     },
     {
@@ -488,6 +601,13 @@
       "type": "short"
     },
     {
+      "id": "FockJ-Q2MSA",
+      "title": "Du Bist Gut Genug vs EXTREME Spider Challenge! 😎💪",
+      "channel": "Main",
+      "published": "2026-07-18T22:38:25Z",
+      "type": "short"
+    },
+    {
       "id": "G2oEt7KELeo",
       "title": "🔴 BiteMC Lifesteal SMP Live | Hanging with the Server",
       "channel": "Minecraft",
@@ -502,6 +622,13 @@
       "type": "long"
     },
     {
+      "id": "BVKWp8jAv48",
+      "title": "Du Bist Gut Genug vs EXTREME Wave Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-07-13T22:37:36Z",
+      "type": "short"
+    },
+    {
       "id": "JE0rJGh3FcE",
       "title": "YOU GUYS ARE RICH IN MY SERVER 💸",
       "channel": "Minecraft",
@@ -509,10 +636,31 @@
       "type": "short"
     },
     {
+      "id": "_8kiLlD12bA",
+      "title": "Du Bist Gut Genug Vs IMPOSSIBLE Mini Ball Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-07-04T20:15:54Z",
+      "type": "short"
+    },
+    {
+      "id": "7ZFMddzA1bc",
+      "title": "Du Bist Gut Genug Vs IMPOSSIBLE Mini Spider Challenge! 🤯🔥",
+      "channel": "Main",
+      "published": "2026-07-02T20:51:29Z",
+      "type": "short"
+    },
+    {
       "id": "1o9b3CS-Cpg",
       "title": "YOU GUYS CONTROL MY MINECRAFT SERVER 📉",
       "channel": "Minecraft",
       "published": "2026-06-29T13:31:15Z",
+      "type": "short"
+    },
+    {
+      "id": "23SC0Ohkvu0",
+      "title": "Du Bist Gut Genug UFO vs EXTREME Cube Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2026-06-28T03:35:48Z",
       "type": "short"
     },
     {
@@ -530,10 +678,66 @@
       "type": "long"
     },
     {
+      "id": "pBH4plAoebQ",
+      "title": "Scatman Vs EXTREME Cube Challenge! 🤯💪",
+      "channel": "Main",
+      "published": "2026-06-13T19:22:51Z",
+      "type": "short"
+    },
+    {
+      "id": "SsfN79rPWOw",
+      "title": "Tiki Tiki VS IMPOSSIBLE 100 Spider Click Challenge! 🤯🔥",
+      "channel": "Main",
+      "published": "2026-06-12T21:05:38Z",
+      "type": "short"
+    },
+    {
+      "id": "b7itT-1Vu4w",
+      "title": "Scatman Cube Vs IMPOSSIBLE Cube Jumps! 💪😎",
+      "channel": "Main",
+      "published": "2026-06-08T23:54:24Z",
+      "type": "short"
+    },
+    {
+      "id": "8lMKYfIMFZA",
+      "title": "Scatman Vs IMPOSSIBLE Mini Spider Challenge! 💪🔥",
+      "channel": "Main",
+      "published": "2026-06-07T00:43:52Z",
+      "type": "short"
+    },
+    {
+      "id": "FJXksISjYvY",
+      "title": "EXTREME Scatman Cube Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-06-04T18:49:13Z",
+      "type": "short"
+    },
+    {
+      "id": "6gD0mU6JiN0",
+      "title": "Scatman vs EXTREME Robot Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2026-06-01T17:32:09Z",
+      "type": "short"
+    },
+    {
       "id": "-vd0K3jWpx4",
       "title": "POV: You Were Young On Minecraft 😢",
       "channel": "Minecraft",
       "published": "2026-06-01T05:30:24Z",
+      "type": "short"
+    },
+    {
+      "id": "pLXXc1b4o_A",
+      "title": "Scatman Vs IMPOSSIBLE Wave Challenge! 🔥😎",
+      "channel": "Main",
+      "published": "2026-06-01T04:13:42Z",
+      "type": "short"
+    },
+    {
+      "id": "rd1R1AJnnuA",
+      "title": "Scatman vs EXTREME Wave Challenge! 🤯🔥",
+      "channel": "Main",
+      "published": "2026-05-31T19:52:19Z",
       "type": "short"
     },
     {
@@ -551,10 +755,24 @@
       "type": "short"
     },
     {
+      "id": "Z2fUNsZOZWA",
+      "title": "Scatman Vs IMPOSSIBLE Cube Challenge! 💪😎",
+      "channel": "Main",
+      "published": "2026-05-28T03:12:59Z",
+      "type": "short"
+    },
+    {
       "id": "kWI2uW-XNVc",
       "title": "POV: You Tell Bro To Build An Iron Farm... 🤯",
       "channel": "Minecraft",
       "published": "2026-05-27T21:58:56Z",
+      "type": "short"
+    },
+    {
+      "id": "u4Y8l1V8pZ0",
+      "title": "Scatman Jump vs EXTREME Cube Spikes! 😎🔥",
+      "channel": "Main",
+      "published": "2026-05-27T00:38:12Z",
       "type": "short"
     },
     {
@@ -590,6 +808,13 @@
       "title": "POV: You Can't Afford Totems 😭",
       "channel": "Minecraft",
       "published": "2026-05-07T18:23:10Z",
+      "type": "short"
+    },
+    {
+      "id": "J9_Vz_OYqkQ",
+      "title": "Scatman Vs IMPOSSIBLE Ball Challenge! 💪🔥",
+      "channel": "Main",
+      "published": "2026-05-04T01:04:01Z",
       "type": "short"
     },
     {
@@ -635,6 +860,27 @@
       "type": "long"
     },
     {
+      "id": "0rH3GYwsaEw",
+      "title": "The Seven Seas: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-03-16T14:00:04Z",
+      "type": "long"
+    },
+    {
+      "id": "D8DCzv98A_Y",
+      "title": "Cube Vs IMPOSSIBLE Scatman Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-03-09T02:21:11Z",
+      "type": "short"
+    },
+    {
+      "id": "tHsO3dgXeIs",
+      "title": "Scatman Vs IMPOSSIBLE UFO Challenge! 🔥😎",
+      "channel": "Main",
+      "published": "2026-03-02T04:45:26Z",
+      "type": "short"
+    },
+    {
       "id": "GxuqrGba1FY",
       "title": "🔴Geometry Dash Deathlink With 25 Players",
       "channel": "Experiments",
@@ -642,10 +888,45 @@
       "type": "long"
     },
     {
+      "id": "YnykzN_wAg4",
+      "title": "🔴 (LIVE) PLAYING MINIGAMES! 🔥",
+      "channel": "Main",
+      "published": "2026-02-15T08:37:26Z",
+      "type": "long"
+    },
+    {
+      "id": "4IIW__HbhOM",
+      "title": "Spider Vs IMPOSSIBLE Scatman Challenge! 😂🔥",
+      "channel": "Main",
+      "published": "2026-02-13T03:10:29Z",
+      "type": "short"
+    },
+    {
       "id": "mVYZlxm6l4s",
       "title": "Playing Geometry Dash As A Worm (🔴Recording)",
       "channel": "Experiments",
       "published": "2026-02-07T17:43:34Z",
+      "type": "long"
+    },
+    {
+      "id": "XefqIr6W28Y",
+      "title": "Dash: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2026-01-30T15:01:06Z",
+      "type": "long"
+    },
+    {
+      "id": "-lp_hzaQxJY",
+      "title": "🔴 (LIVE) PLAYING MINIGAMES! 🔥",
+      "channel": "Main",
+      "published": "2026-01-26T09:15:09Z",
+      "type": "long"
+    },
+    {
+      "id": "SdW3xVnGlc0",
+      "title": "🔴 (LIVE) GEOMETRY DASH LIVE 🔥",
+      "channel": "Main",
+      "published": "2026-01-25T03:22:55Z",
       "type": "long"
     },
     {
@@ -656,10 +937,52 @@
       "type": "short"
     },
     {
+      "id": "d5E-NTv7BTs",
+      "title": "🔴 (LIVE) DEMON GRINDING 🔥",
+      "channel": "Main",
+      "published": "2026-01-20T05:09:50Z",
+      "type": "long"
+    },
+    {
+      "id": "RTaLyjc_YjE",
+      "title": "🔴 (LIVE) DEMON GRINDING 🔥",
+      "channel": "Main",
+      "published": "2026-01-19T05:32:03Z",
+      "type": "long"
+    },
+    {
+      "id": "OmNRV6aU8cU",
+      "title": "Scatman Spider Vs UFO Spam! 🔥😂",
+      "channel": "Main",
+      "published": "2026-01-17T06:39:21Z",
+      "type": "short"
+    },
+    {
+      "id": "C8f5dstdFbo",
+      "title": "EXTREME Miau Miau Spider Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-01-14T17:01:48Z",
+      "type": "short"
+    },
+    {
       "id": "rA8MQRZOkc4",
       "title": "Making Decode Wave IMPOSSIBLE",
       "channel": "Experiments",
       "published": "2026-01-13T11:54:04Z",
+      "type": "short"
+    },
+    {
+      "id": "oT6f_0JgA4k",
+      "title": "Gamemodes Vs EXTREME Jump Challenge! 🤣",
+      "channel": "Main",
+      "published": "2026-01-12T17:01:34Z",
+      "type": "short"
+    },
+    {
+      "id": "y9NdgZzxTto",
+      "title": "Gamemodes Vs IMPOSSIBLE Gap Challenge! 🤣",
+      "channel": "Main",
+      "published": "2026-01-12T06:20:26Z",
       "type": "short"
     },
     {
@@ -668,6 +991,27 @@
       "channel": "Experiments",
       "published": "2026-01-09T12:48:25Z",
       "type": "long"
+    },
+    {
+      "id": "K1NxESDXjOA",
+      "title": "Miau Miau Wave Vs IMPOSSIBLE Wall Challenge! 😂🔥",
+      "channel": "Main",
+      "published": "2026-01-05T17:05:27Z",
+      "type": "short"
+    },
+    {
+      "id": "KD82YKnvkwg",
+      "title": "Golden Kpop vs UFO Crusher! 😂🔥",
+      "channel": "Main",
+      "published": "2026-01-04T23:56:36Z",
+      "type": "short"
+    },
+    {
+      "id": "SnlyLRdL-gI",
+      "title": "EXTREME Miau Miau Cube Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2026-01-01T22:27:01Z",
+      "type": "short"
     },
     {
       "id": "q1wFkBNe8Ec",
@@ -705,10 +1049,31 @@
       "type": "long"
     },
     {
+      "id": "vmg5oFlIy10",
+      "title": "🔴 (LIVE) PLAYING Sh*tty GRIEF | 59% 🔥",
+      "channel": "Main",
+      "published": "2025-12-24T04:25:15Z",
+      "type": "long"
+    },
+    {
+      "id": "CG73j_VcoTE",
+      "title": "$1 vs $1,000 Wave Spam Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2025-12-22T23:16:54Z",
+      "type": "short"
+    },
+    {
       "id": "8T2XKDz92KQ",
       "title": "Making Polargeist Coin IMPOSSIBLE",
       "channel": "Experiments",
       "published": "2025-12-16T01:00:28Z",
+      "type": "short"
+    },
+    {
+      "id": "-al2eWJTPX4",
+      "title": "Golden Kpop Jump vs EXTREME Cube Spikes! 😎🔥",
+      "channel": "Main",
+      "published": "2025-12-11T17:00:58Z",
       "type": "short"
     },
     {
@@ -719,10 +1084,129 @@
       "type": "short"
     },
     {
+      "id": "ugaKFX_ILzM",
+      "title": "67 Math Vs UFO Click Spam! 🤣🔥",
+      "channel": "Main",
+      "published": "2025-12-08T05:01:18Z",
+      "type": "short"
+    },
+    {
       "id": "0oHAPy779ms",
       "title": "Making Triple Spikes IMPOSSIBLE",
       "channel": "Experiments",
       "published": "2025-12-07T21:30:36Z",
+      "type": "short"
+    },
+    {
+      "id": "gLT_VQnsRxU",
+      "title": "Kpop Soda Pop Saved! 😎",
+      "channel": "Main",
+      "published": "2025-12-03T17:02:21Z",
+      "type": "short"
+    },
+    {
+      "id": "FY-i5bgFCT4",
+      "title": "Kpop Golden Vs 67 Wave Spam! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-12-01T17:01:13Z",
+      "type": "short"
+    },
+    {
+      "id": "de94AmOVS8A",
+      "title": "Golden Kpop Vs $1,000 Wave Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2025-11-27T19:06:41Z",
+      "type": "short"
+    },
+    {
+      "id": "pa01aAVm8U8",
+      "title": "Kpop Golden Wave Vs UFO Challenge! 🔥🤣",
+      "channel": "Main",
+      "published": "2025-11-23T17:11:03Z",
+      "type": "short"
+    },
+    {
+      "id": "S-HqF24UGQ8",
+      "title": "Golden Kpop Vs EXTREME Wave Challenge 🔥😎",
+      "channel": "Main",
+      "published": "2025-11-23T05:14:08Z",
+      "type": "short"
+    },
+    {
+      "id": "4A2ET0OjqVg",
+      "title": "Golden Kpop vs. 67 Click Spider Spam Crusher! 😱",
+      "channel": "Main",
+      "published": "2025-11-17T17:02:22Z",
+      "type": "short"
+    },
+    {
+      "id": "L_EzN3uJ8is",
+      "title": "EXTREME Golden Kpop Robot Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-11-17T05:01:20Z",
+      "type": "short"
+    },
+    {
+      "id": "2O-3GrMhdaI",
+      "title": "Golden Kpop vs 7 Level Jumps! 😎🔥",
+      "channel": "Main",
+      "published": "2025-11-16T17:02:49Z",
+      "type": "short"
+    },
+    {
+      "id": "YpJ10BK9k0c",
+      "title": "Payload: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2025-11-16T15:15:42Z",
+      "type": "long"
+    },
+    {
+      "id": "swB8s2uQWC0",
+      "title": "Easy vs Impossible Kpop Golden Wave Challenge! 😭😎",
+      "channel": "Main",
+      "published": "2025-11-13T17:02:59Z",
+      "type": "short"
+    },
+    {
+      "id": "43-YU-m2uXQ",
+      "title": "EXTREME Kpop Golden Wave Gap! 😎🔥",
+      "channel": "Main",
+      "published": "2025-11-13T05:01:01Z",
+      "type": "short"
+    },
+    {
+      "id": "2GJsakCFgVg",
+      "title": "EXTREME Golden Kpop Mini Ball Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-11-12T17:03:03Z",
+      "type": "short"
+    },
+    {
+      "id": "dMzBtG-bLMA",
+      "title": "Kpop Golden Vs Impossible 67 Click Trap! 😎",
+      "channel": "Main",
+      "published": "2025-11-12T05:00:41Z",
+      "type": "short"
+    },
+    {
+      "id": "kfV93IKHn2k",
+      "title": "EXTREME Golden Kpop Cube Challenge! 🤣",
+      "channel": "Main",
+      "published": "2025-11-07T06:02:04Z",
+      "type": "short"
+    },
+    {
+      "id": "cTDZ6JW0UBA",
+      "title": "Scatman Mini Spider Challenge! 🤣",
+      "channel": "Main",
+      "published": "2025-11-03T17:01:42Z",
+      "type": "short"
+    },
+    {
+      "id": "gSW_84jjpas",
+      "title": "Kpop Golden Saved!? 😱",
+      "channel": "Main",
+      "published": "2025-11-03T05:01:23Z",
       "type": "short"
     },
     {
@@ -733,11 +1217,53 @@
       "type": "long"
     },
     {
+      "id": "ACV35lJzOMQ",
+      "title": "Which Gamemodes Can Pass This Slope Challenge? 😂",
+      "channel": "Main",
+      "published": "2025-10-30T05:38:42Z",
+      "type": "short"
+    },
+    {
+      "id": "usoy74IJLHI",
+      "title": "Gamemodes Vs Impossible Spike Platform Challenge! 😭",
+      "channel": "Main",
+      "published": "2025-10-29T04:21:14Z",
+      "type": "short"
+    },
+    {
+      "id": "1xMT1YvOhuE",
+      "title": "Gamemodes Vs IMPOSSIBLE Dash Challenge! 🤣",
+      "channel": "Main",
+      "published": "2025-10-28T16:02:47Z",
+      "type": "short"
+    },
+    {
+      "id": "xZrLt9SyR7g",
+      "title": "Gamemodes Vs Extreme Platformer Challenge! 😱",
+      "channel": "Main",
+      "published": "2025-10-28T06:16:26Z",
+      "type": "short"
+    },
+    {
+      "id": "LmZSKFcVWnc",
+      "title": "EXTREME Golden Kpop Spider Challenge! 🤑",
+      "channel": "Main",
+      "published": "2025-10-27T17:13:14Z",
+      "type": "short"
+    },
+    {
       "id": "saRwyyv1unE",
       "title": "🔴 WEDNESDAY NIGHT STREAM!!",
       "channel": "JoshSham",
       "published": "2025-10-23T15:23:38Z",
       "type": "long"
+    },
+    {
+      "id": "GlqhqlKuHJQ",
+      "title": "Brainrot Soda Pop vs Among Us Platform Challenge! 🤑😎",
+      "channel": "Main",
+      "published": "2025-10-21T16:05:33Z",
+      "type": "short"
     },
     {
       "id": "EV46XaxAoqY",
@@ -747,11 +1273,312 @@
       "type": "long"
     },
     {
+      "id": "Xpm7B1HEehE",
+      "title": "Which Gamemode Will Pass This Platformer Challenge? 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-21T04:01:28Z",
+      "type": "short"
+    },
+    {
+      "id": "jbAVHJvB8Wo",
+      "title": "Brainrot Soda Pop Vs Platform Parkour Challenge! 😂😱",
+      "channel": "Main",
+      "published": "2025-10-20T16:14:02Z",
+      "type": "short"
+    },
+    {
+      "id": "Kw27g0TZYbs",
+      "title": "Italian Soda Pop Vs Speed Challenge! 😂🤑",
+      "channel": "Main",
+      "published": "2025-10-20T04:01:01Z",
+      "type": "short"
+    },
+    {
+      "id": "SKaYCsEDlIw",
+      "title": "Halloween Soda Pop vs Gamemode Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-10-19T16:01:16Z",
+      "type": "short"
+    },
+    {
+      "id": "KaLuNVzeNa0",
+      "title": "Halloween Soda Pop vs Speed Platform Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-19T07:10:22Z",
+      "type": "short"
+    },
+    {
+      "id": "mM3cVZz3Lnc",
+      "title": "Extreme Orb Challenge: $10,000 Spike Gap! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-16T16:04:40Z",
+      "type": "short"
+    },
+    {
+      "id": "OiEH6VyFBIM",
+      "title": "Gamemodes Vs EXTREME Zigzag Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-16T04:00:37Z",
+      "type": "short"
+    },
+    {
+      "id": "8vrcz_0wy1k",
+      "title": "Speed Ball Challenge: Which Speed Will Win? 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-13T16:38:23Z",
+      "type": "short"
+    },
+    {
+      "id": "BO8qEa0dLyM",
+      "title": "Which Gamemode Can Survive The Fall? 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-13T04:00:48Z",
+      "type": "short"
+    },
+    {
+      "id": "cTakTW86Y-k",
+      "title": "Extreme Checkmark Challenge: What Gamemode Will Escape? 🤣",
+      "channel": "Main",
+      "published": "2025-10-12T20:09:20Z",
+      "type": "short"
+    },
+    {
+      "id": "uZCtfMYA0qY",
+      "title": "Gamemodes Vs Spike Stairs! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-12T04:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "pNSO7EN-c7E",
+      "title": "Gamemodes Vs Slope Height Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2025-10-09T16:03:28Z",
+      "type": "short"
+    },
+    {
+      "id": "oU_3Xb5YSxw",
+      "title": "Gamemodes Vs Parkour Challenge! 😭🔥",
+      "channel": "Main",
+      "published": "2025-10-09T04:04:53Z",
+      "type": "short"
+    },
+    {
+      "id": "IOraVV0aqSw",
+      "title": "Gamemodes Vs Platformer Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-10-06T16:02:05Z",
+      "type": "short"
+    },
+    {
+      "id": "olA8CsTki_Y",
+      "title": "Gamemodes Vs Platform Stairs! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-06T07:07:44Z",
+      "type": "short"
+    },
+    {
+      "id": "YmfU9V-x8JM",
+      "title": "Gamemodes Vs Platform Jump Challenge! 😱🤣",
+      "channel": "Main",
+      "published": "2025-10-05T08:23:09Z",
+      "type": "short"
+    },
+    {
+      "id": "or_Q9kOYGX8",
+      "title": "Gamemodes Vs Spike Crusher! 😱🔥",
+      "channel": "Main",
+      "published": "2025-10-04T04:00:58Z",
+      "type": "short"
+    },
+    {
+      "id": "rkNMdwHiexs",
+      "title": "Gamemodes Vs IMPOSSIBLE Spiral Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-10-03T07:23:47Z",
+      "type": "short"
+    },
+    {
+      "id": "PZ5Tw3z8TBs",
+      "title": "Gamemodes Vs IMPOSSIBLE Spike Stairs! 😎🔥",
+      "channel": "Main",
+      "published": "2025-10-02T16:01:48Z",
+      "type": "short"
+    },
+    {
+      "id": "FB2b8n9iOM4",
+      "title": "Gamemodes Vs Impossible Parkour Challenge! 😭🤣",
+      "channel": "Main",
+      "published": "2025-10-02T04:56:30Z",
+      "type": "short"
+    },
+    {
+      "id": "CVJuqFtfXpE",
+      "title": "Orb Spam Vs Spike Wall Challenge! 🤣🔥",
+      "channel": "Main",
+      "published": "2025-10-01T16:03:21Z",
+      "type": "short"
+    },
+    {
+      "id": "IUKWU6XG94c",
+      "title": "Gamemode VS IMPOSSIBLE Stairs! 😎🔥",
+      "channel": "Main",
+      "published": "2025-10-01T04:17:16Z",
+      "type": "short"
+    },
+    {
+      "id": "bRJ1n0FnOF4",
+      "title": "$10,000 Orb Climbing Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-09-30T16:03:55Z",
+      "type": "short"
+    },
+    {
+      "id": "0Z690ehY2OU",
+      "title": "Gamemodes Vs Climbing Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2025-09-30T04:30:00Z",
+      "type": "short"
+    },
+    {
+      "id": "SA0D8ERDJog",
+      "title": "Gamemode VS Speed Challenge! 😎",
+      "channel": "Main",
+      "published": "2025-09-29T16:01:46Z",
+      "type": "short"
+    },
+    {
+      "id": "HozaUM0Uebo",
+      "title": "Gamemodes VS EXTREME Slope Challenge! 😭🔥",
+      "channel": "Main",
+      "published": "2025-09-29T04:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "_zwzLphwyKA",
+      "title": "Gamemode Vs IMPOSSIBLE Falling Spikes! 🤣🔥",
+      "channel": "Main",
+      "published": "2025-09-28T16:01:31Z",
+      "type": "short"
+    },
+    {
       "id": "4mJHpd26Uyk",
       "title": "Can You Find the Tiny Hiders in Minecraft?",
       "channel": "Minecraft",
       "published": "2025-09-28T15:29:42Z",
       "type": "long"
+    },
+    {
+      "id": "GyTCDcQsrOQ",
+      "title": "Gamemodes VS Impossible Stairs Challenge! 🤑",
+      "channel": "Main",
+      "published": "2025-09-28T04:00:45Z",
+      "type": "short"
+    },
+    {
+      "id": "TpQfmgAbR84",
+      "title": "Spider Vs IMPOSSIBLE Scatman Challenge! 😺🔥",
+      "channel": "Main",
+      "published": "2025-09-26T11:33:13Z",
+      "type": "short"
+    },
+    {
+      "id": "MOzXf26DTVc",
+      "title": "Which Orbs Can Pass This Challenge? 🤑",
+      "channel": "Main",
+      "published": "2025-09-25T04:56:13Z",
+      "type": "short"
+    },
+    {
+      "id": "YnafwKcZ9Yg",
+      "title": "Brainrot Soda Pop VS 100 Click Spider Spam! 😱🔥",
+      "channel": "Main",
+      "published": "2025-09-24T16:05:01Z",
+      "type": "short"
+    },
+    {
+      "id": "74EhysS2EN0",
+      "title": "Brainrot Funk vs $10k Wave Gap! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-09-24T04:09:13Z",
+      "type": "short"
+    },
+    {
+      "id": "g9h5h24Jix0",
+      "title": "Italian Soda Pop VS Robot Challenge! 😎🔥",
+      "channel": "Main",
+      "published": "2025-09-22T16:03:21Z",
+      "type": "short"
+    },
+    {
+      "id": "P1RlHxW80eI",
+      "title": "Wave Spam Vs Italian Soda Pop! 😭🌊",
+      "channel": "Main",
+      "published": "2025-09-22T04:00:30Z",
+      "type": "short"
+    },
+    {
+      "id": "kOrugle4Bgc",
+      "title": "Italian Brainrot Restoration Saved?! 😎🔥",
+      "channel": "Main",
+      "published": "2025-09-20T16:01:06Z",
+      "type": "short"
+    },
+    {
+      "id": "37YxysQFzi8",
+      "title": "Italian Brainrot Restoration vs 6 Level UFO Spam! 😎",
+      "channel": "Main",
+      "published": "2025-09-20T06:04:25Z",
+      "type": "short"
+    },
+    {
+      "id": "uuiUzhPKcUI",
+      "title": "Extreme Cube Trap Challenge! 🔥",
+      "channel": "Main",
+      "published": "2025-09-15T16:01:53Z",
+      "type": "short"
+    },
+    {
+      "id": "wM4KZ5-R2BM",
+      "title": "Impossible 100 Click Trap! 🤑🤣",
+      "channel": "Main",
+      "published": "2025-09-15T04:00:38Z",
+      "type": "short"
+    },
+    {
+      "id": "eUWFJvNPRW8",
+      "title": "Impossible UFO Challenge vs Cube Jump! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-09-14T04:00:55Z",
+      "type": "short"
+    },
+    {
+      "id": "stjvbnx-LOQ",
+      "title": "Sigma Funk Block Saved!? 😎🔥",
+      "channel": "Main",
+      "published": "2025-09-13T04:55:59Z",
+      "type": "short"
+    },
+    {
+      "id": "9t4-LKrGZWU",
+      "title": "Easy vs Hard vs Impossible Dropper! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-09-09T04:00:35Z",
+      "type": "short"
+    },
+    {
+      "id": "v7lHk-Y62sQ",
+      "title": "Easy vs Impossible Wave Challenge! 😭😎",
+      "channel": "Main",
+      "published": "2025-09-07T16:00:58Z",
+      "type": "short"
+    },
+    {
+      "id": "31c0q5gaeQc",
+      "title": "7 Levels of UFO Jumps! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-09-07T04:48:33Z",
+      "type": "short"
     },
     {
       "id": "lK-3l0Q9lsE",
@@ -761,11 +1588,53 @@
       "type": "long"
     },
     {
+      "id": "IRJEuxJ7ziM",
+      "title": "EXTREME 10K Wave Gap! 😎🔥",
+      "channel": "Main",
+      "published": "2025-09-01T20:24:37Z",
+      "type": "short"
+    },
+    {
       "id": "qAdxg0I1sSY",
       "title": "🔴 (LIVE) Playing Minecraft Hardcore - Day 1",
       "channel": "Minecraft",
       "published": "2025-09-01T15:58:42Z",
       "type": "long"
+    },
+    {
+      "id": "wCbf08deTus",
+      "title": "Sigma Block Saved?! 😎",
+      "channel": "Main",
+      "published": "2025-08-31T17:29:38Z",
+      "type": "short"
+    },
+    {
+      "id": "vTfxr9AE__Q",
+      "title": "Brainrot Funk Ball Challenge Vs Wave Spam! 😂🔥",
+      "channel": "Main",
+      "published": "2025-08-28T16:01:25Z",
+      "type": "short"
+    },
+    {
+      "id": "GDMSCpGfSuI",
+      "title": "Brainrot Police Vs EXTREME Wave Gap! 🤯",
+      "channel": "Main",
+      "published": "2025-08-28T04:24:22Z",
+      "type": "short"
+    },
+    {
+      "id": "DAOBSR4Fa6Y",
+      "title": "🔴 (LIVE) Rating Your GD Icons! 🔥",
+      "channel": "Main",
+      "published": "2025-08-28T00:55:59Z",
+      "type": "long"
+    },
+    {
+      "id": "QeulazOhVTo",
+      "title": "Brainrot Funk VS EXTREME Ball Challenge! 🤣🤑",
+      "channel": "Main",
+      "published": "2025-08-26T04:17:45Z",
+      "type": "short"
     },
     {
       "id": "rH_LHXJm1Aw",
@@ -775,11 +1644,39 @@
       "type": "long"
     },
     {
+      "id": "zWhxclhcWT8",
+      "title": "Brainrot Funk $10,000 Challenge! 😎",
+      "channel": "Main",
+      "published": "2025-08-25T04:20:39Z",
+      "type": "short"
+    },
+    {
+      "id": "6qDW3K-_8O0",
+      "title": "Brainrot Funk Spider Challenge! 🤑",
+      "channel": "Main",
+      "published": "2025-08-24T16:01:18Z",
+      "type": "short"
+    },
+    {
+      "id": "33zkCx8_vak",
+      "title": "Italian Brainrot Funk Vs UFO Spam Challenge! 😎",
+      "channel": "Main",
+      "published": "2025-08-24T04:00:43Z",
+      "type": "short"
+    },
+    {
       "id": "heNTDh4XOag",
       "title": "Minecraft, But Blocks Are Random",
       "channel": "Minecraft",
       "published": "2025-08-19T19:05:24Z",
       "type": "long"
+    },
+    {
+      "id": "9Xe8tr5vdf8",
+      "title": "Brainrot Funk Saved!? 😱",
+      "channel": "Main",
+      "published": "2025-08-19T16:00:41Z",
+      "type": "short"
     },
     {
       "id": "8rtyqFft1Pk",
@@ -789,6 +1686,790 @@
       "type": "long"
     },
     {
+      "id": "NzJBisw4LOQ",
+      "title": "Lububu vs 100 Click Spam Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-08-12T16:02:18Z",
+      "type": "short"
+    },
+    {
+      "id": "Iw1WU_P2010",
+      "title": "Labubu vs 6 Level Cube Spam 🤣",
+      "channel": "Main",
+      "published": "2025-08-12T04:11:38Z",
+      "type": "short"
+    },
+    {
+      "id": "nbZWC9KjRR4",
+      "title": "Labubu vs EXTREME Wave Challenge! 😂🔥",
+      "channel": "Main",
+      "published": "2025-08-11T04:03:53Z",
+      "type": "short"
+    },
+    {
+      "id": "kgDwkP7wYaw",
+      "title": "🔴 (LIVE) Geometry Dash W/ @djlefave",
+      "channel": "Main",
+      "published": "2025-08-09T16:08:43Z",
+      "type": "long"
+    },
+    {
+      "id": "iql9bhlg0Hk",
+      "title": "🔴 (LIVE) Geometry Dash W/ @DJLeFave",
+      "channel": "Main",
+      "published": "2025-08-09T02:50:23Z",
+      "type": "long"
+    },
+    {
+      "id": "rr87_J9if9M",
+      "title": "Labubu $10,000 Wave Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2025-08-08T04:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "YAzHTku2WDQ",
+      "title": "🔴 (LIVE) Beating \"Crazy III\" - 56% (Go = 38%) Day 2",
+      "channel": "Main",
+      "published": "2025-08-07T14:29:52Z",
+      "type": "long"
+    },
+    {
+      "id": "mkpOjN8kwLg",
+      "title": "Labubu VS 100 Click Spam Trap! 🔥😱",
+      "channel": "Main",
+      "published": "2025-08-06T16:09:47Z",
+      "type": "short"
+    },
+    {
+      "id": "SooBoY8VlgA",
+      "title": "UNBOXING GOLD PLAYBUTTON! 🎉",
+      "channel": "Main",
+      "published": "2025-08-06T14:13:51Z",
+      "type": "long"
+    },
+    {
+      "id": "0znBEme6uck",
+      "title": "🔴 (LIVE) Beating \"Crazy III\" - 49% (Go = 38%) Day 1",
+      "channel": "Main",
+      "published": "2025-08-06T04:41:07Z",
+      "type": "long"
+    },
+    {
+      "id": "4-uiI2ePATE",
+      "title": "Labubu Vs Spider Challenge! 🤑🔥",
+      "channel": "Main",
+      "published": "2025-08-05T04:07:01Z",
+      "type": "short"
+    },
+    {
+      "id": "AFtCJuVQH3o",
+      "title": "Labubu VS 100 Click Spider Spam! 😱🔥",
+      "channel": "Main",
+      "published": "2025-08-04T16:00:57Z",
+      "type": "short"
+    },
+    {
+      "id": "vmkHiDs5N8s",
+      "title": "Labubu Spikes Get Harder! 🔥😱",
+      "channel": "Main",
+      "published": "2025-08-04T07:00:02Z",
+      "type": "short"
+    },
+    {
+      "id": "0O10Vltaue0",
+      "title": "Swingcopter Challenge Vs Robot Brainrot! 🤣",
+      "channel": "Main",
+      "published": "2025-08-02T04:07:52Z",
+      "type": "short"
+    },
+    {
+      "id": "MDi1xPKii54",
+      "title": "Spider Challenge Vs UFO Brainrot! 😂",
+      "channel": "Main",
+      "published": "2025-07-28T05:23:08Z",
+      "type": "short"
+    },
+    {
+      "id": "4imTtdXOvsE",
+      "title": "Wave Spam Vs Italian Extinction! 😭🌊",
+      "channel": "Main",
+      "published": "2025-07-26T04:17:36Z",
+      "type": "short"
+    },
+    {
+      "id": "YJ6v2TqaeRI",
+      "title": "Italian Rappers Saved!? 😱",
+      "channel": "Main",
+      "published": "2025-07-24T16:17:31Z",
+      "type": "short"
+    },
+    {
+      "id": "O0BFz_5zQMQ",
+      "title": "Labubu Brainrot vs 6 Level Spider Spam! 🤣",
+      "channel": "Main",
+      "published": "2025-07-22T04:18:42Z",
+      "type": "short"
+    },
+    {
+      "id": "1Dz2zBLiu0Q",
+      "title": "1M SUBSCRIBERS CELEBRATION!!! 🎉",
+      "channel": "Main",
+      "published": "2025-07-21T05:52:22Z",
+      "type": "long"
+    },
+    {
+      "id": "pgvAtPngQXY",
+      "title": "Italian Brainrot Ball Challenge VS Wave Spam! 😂",
+      "channel": "Main",
+      "published": "2025-07-21T04:35:56Z",
+      "type": "short"
+    },
+    {
+      "id": "CbVpG-g2LXs",
+      "title": "🔴 (LIVE) Beating \"Interstellar Infant\" - 87% (Go = 60%) Day 1",
+      "channel": "Main",
+      "published": "2025-07-19T18:34:05Z",
+      "type": "long"
+    },
+    {
+      "id": "FsehkY5-K44",
+      "title": "Italian Brainrot vs 100 Click Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-19T16:07:42Z",
+      "type": "short"
+    },
+    {
+      "id": "FYZYNCqJZjg",
+      "title": "Labubu Brainrot Saved!? 😱",
+      "channel": "Main",
+      "published": "2025-07-19T04:04:22Z",
+      "type": "short"
+    },
+    {
+      "id": "smoKYBEBTpo",
+      "title": "Zombie Brainrot VS Insane Wave Challenge! 🦈🧟",
+      "channel": "Main",
+      "published": "2025-07-18T16:04:48Z",
+      "type": "short"
+    },
+    {
+      "id": "WrFm4Rz-vhA",
+      "title": "Italian Coffin Dance VS Robot Challenge! 🦈⚰️",
+      "channel": "Main",
+      "published": "2025-07-18T04:00:45Z",
+      "type": "short"
+    },
+    {
+      "id": "xDkuPw5m8-c",
+      "title": "Italian Pirate Brainrot vs Ball Challenge!🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-07-17T04:08:25Z",
+      "type": "short"
+    },
+    {
+      "id": "Ap5lS_4HvU8",
+      "title": "Anime UFO Crusher Vs Insane Cube! 😂",
+      "channel": "Main",
+      "published": "2025-07-16T04:12:34Z",
+      "type": "short"
+    },
+    {
+      "id": "4UaBGqKrpuc",
+      "title": "Italian Anime Brainrot vs 6 Level Spider Spam! 🦈🕷️",
+      "channel": "Main",
+      "published": "2025-07-15T04:04:38Z",
+      "type": "short"
+    },
+    {
+      "id": "w3FCsb3WKZc",
+      "title": "Anime Brainrot Vs Wave Challenge! 🌊",
+      "channel": "Main",
+      "published": "2025-07-14T16:08:53Z",
+      "type": "short"
+    },
+    {
+      "id": "f_Jof8pnhBI",
+      "title": "Italian Anime Crusher Vs Extreme UFO! 😂",
+      "channel": "Main",
+      "published": "2025-07-14T04:01:22Z",
+      "type": "short"
+    },
+    {
+      "id": "2wOgdb7oLGM",
+      "title": "Italian Extinction vs Zombie Brainrot 100 Click Spam! 🦈🧟",
+      "channel": "Main",
+      "published": "2025-07-13T14:01:23Z",
+      "type": "short"
+    },
+    {
+      "id": "rhHVjbpeFeM",
+      "title": "Italian Anime Vs Extreme Wave! 🌊",
+      "channel": "Main",
+      "published": "2025-07-13T04:06:45Z",
+      "type": "short"
+    },
+    {
+      "id": "Cs_c8OywaV0",
+      "title": "Italian Anime vs 100 Click Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-12T16:01:52Z",
+      "type": "short"
+    },
+    {
+      "id": "kdVqXGuGmsg",
+      "title": "Italian Anime vs 100 Click Trap!",
+      "channel": "Main",
+      "published": "2025-07-12T04:06:16Z",
+      "type": "short"
+    },
+    {
+      "id": "UpGcrEpsgBo",
+      "title": "Italian Anime Brainrot vs $100K Tight Ball! 😂🦈",
+      "channel": "Main",
+      "published": "2025-07-11T16:03:58Z",
+      "type": "short"
+    },
+    {
+      "id": "c8RtFg8U1Go",
+      "title": "Italian Brainrot Squid Game Vs UFO Spam Challenge! 🦈",
+      "channel": "Main",
+      "published": "2025-07-11T04:09:41Z",
+      "type": "short"
+    },
+    {
+      "id": "M0_2FdYGk7M",
+      "title": "Italian Brainrot vs Spider Spam Challenge! 🕷️",
+      "channel": "Main",
+      "published": "2025-07-10T16:04:02Z",
+      "type": "short"
+    },
+    {
+      "id": "DKgHPtCuuJY",
+      "title": "Italian Extinction Coffin Dance Spider Challenge! 🦈⚰️",
+      "channel": "Main",
+      "published": "2025-07-10T05:09:18Z",
+      "type": "short"
+    },
+    {
+      "id": "EtaNSVUEou8",
+      "title": "Italian Brainrot Squid Game Saved!? 🦈😭",
+      "channel": "Main",
+      "published": "2025-07-09T16:04:51Z",
+      "type": "short"
+    },
+    {
+      "id": "iGqbfQObTQA",
+      "title": "Power Trip: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2025-07-09T14:01:14Z",
+      "type": "long"
+    },
+    {
+      "id": "YW29jFCFrWc",
+      "title": "Italian Brainrot Squid Game vs EXTREME Wave Challenge! 🦈😂",
+      "channel": "Main",
+      "published": "2025-07-09T04:10:24Z",
+      "type": "short"
+    },
+    {
+      "id": "K01P4fGDmEE",
+      "title": "Italian Extinction vs EXTREME Wave Gap! 🐊🦈",
+      "channel": "Main",
+      "published": "2025-07-08T17:17:09Z",
+      "type": "short"
+    },
+    {
+      "id": "tOBQSJ8OgTw",
+      "title": "HITTING 900K SUBSCRIBERS!!",
+      "channel": "Main",
+      "published": "2025-07-08T04:49:08Z",
+      "type": "long"
+    },
+    {
+      "id": "p_sAWLrHCmM",
+      "title": "Italian Tralaleritos Brainrot vs $10,000 Wave Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-08T04:00:41Z",
+      "type": "short"
+    },
+    {
+      "id": "QWNlI7wQzaY",
+      "title": "Italian Tralaleritos Brainrot vs UFO Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-07T16:03:24Z",
+      "type": "short"
+    },
+    {
+      "id": "-rts8Ig-ArY",
+      "title": "Italian Brainrot vs Squid Game Cube Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-07T04:02:03Z",
+      "type": "short"
+    },
+    {
+      "id": "3pzFQe-tFpQ",
+      "title": "Italian Tralaleritos Brainrot vs 7 Level Cube Jumps 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-06T16:01:24Z",
+      "type": "short"
+    },
+    {
+      "id": "X0IdKBXM7i8",
+      "title": "Italian Tralaleritos Brainrot vs 100 Click Trap! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-06T04:00:30Z",
+      "type": "short"
+    },
+    {
+      "id": "1LObHPocmH8",
+      "title": "Italian Tralaleritos Brainrot vs Cube Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-05T16:01:57Z",
+      "type": "short"
+    },
+    {
+      "id": "3GoOEoDCo68",
+      "title": "Italian Tralaleritos Brainrot vs 69 Click Spider Spam! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-05T04:01:07Z",
+      "type": "short"
+    },
+    {
+      "id": "hud7k8s3F1E",
+      "title": "Italian Tralaleritos Brainrot vs 6 Level Cube Spam 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-04T16:02:19Z",
+      "type": "short"
+    },
+    {
+      "id": "XOKOooRf7cU",
+      "title": "Italian Tralaleritos Brainrot vs Robot Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-04T06:10:14Z",
+      "type": "short"
+    },
+    {
+      "id": "6EWshNAtvZc",
+      "title": "Italian Tralaleritos Brainrot Saved!? 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-03T16:03:10Z",
+      "type": "short"
+    },
+    {
+      "id": "6eF4hty7wZQ",
+      "title": "Italian Tralaleritos Brainrot vs Cube Trap Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-03T04:17:13Z",
+      "type": "short"
+    },
+    {
+      "id": "q7ejs2XKhVY",
+      "title": "Italian Extinction vs 7 Level Cube Jumps 🦈☠️",
+      "channel": "Main",
+      "published": "2025-07-02T16:06:47Z",
+      "type": "short"
+    },
+    {
+      "id": "nToe8eJh7kU",
+      "title": "Italian Brainrot vs 500 Click $100k Trap! 🦈💰",
+      "channel": "Main",
+      "published": "2025-07-02T04:00:38Z",
+      "type": "short"
+    },
+    {
+      "id": "VnghR5tgFYs",
+      "title": "Italian Extinction Coffin Dance vs Spider Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-07-01T16:03:50Z",
+      "type": "short"
+    },
+    {
+      "id": "5h9VNHPRWfY",
+      "title": "Italian Tralaleritos Coffin Dance⚰️🦈",
+      "channel": "Main",
+      "published": "2025-07-01T04:06:00Z",
+      "type": "short"
+    },
+    {
+      "id": "oVHtDhkkW0I",
+      "title": "EXTREME Italian Extinction Spider Challenge! 🦈☠️",
+      "channel": "Main",
+      "published": "2025-06-30T16:03:31Z",
+      "type": "short"
+    },
+    {
+      "id": "DrsccEXF_C0",
+      "title": "HITTING 800K SUBSCRIBERS!!",
+      "channel": "Main",
+      "published": "2025-06-30T12:46:51Z",
+      "type": "long"
+    },
+    {
+      "id": "hYMTwADGaAQ",
+      "title": "Italian Pirate Brainrot vs 6 Level Cube Spam 🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-30T04:00:50Z",
+      "type": "short"
+    },
+    {
+      "id": "4gDBl9kOFHQ",
+      "title": "Italian Pirate Brainrot vs $90k Jump Challenge!🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-29T16:01:24Z",
+      "type": "short"
+    },
+    {
+      "id": "sVyAzdCJHLM",
+      "title": "Italian Pirate Brainrot vs UFO Challenge! 🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-29T04:01:12Z",
+      "type": "short"
+    },
+    {
+      "id": "y5I5C3yOnRQ",
+      "title": "EXTREME Italian Pirate Brainrot Cube Challenge! 🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-28T16:01:49Z",
+      "type": "short"
+    },
+    {
+      "id": "Wkpn2Z2nQdM",
+      "title": "Italian Pirate Brainrot vs 100 Click Spam Challenge!🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-28T04:00:49Z",
+      "type": "short"
+    },
+    {
+      "id": "JSX_vNBaRRg",
+      "title": "EXTREME Zombie Extinction Spider Challenge! 🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-27T16:01:32Z",
+      "type": "short"
+    },
+    {
+      "id": "-8EyUOeHRtA",
+      "title": "Italian Pirate Brainrot Saved!? 🦈🏴‍☠️",
+      "channel": "Main",
+      "published": "2025-06-27T04:01:00Z",
+      "type": "short"
+    },
+    {
+      "id": "_Ltmub77AqY",
+      "title": "Zombie Extinction vs $70k Jump Challenge! 🦈🧟",
+      "channel": "Main",
+      "published": "2025-06-26T16:06:52Z",
+      "type": "short"
+    },
+    {
+      "id": "GSQmbBjVCTs",
+      "title": "Nock Em: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2025-06-26T14:00:26Z",
+      "type": "long"
+    },
+    {
+      "id": "_cgmnz6Kwzo",
+      "title": "Zombie Extinction vs 6 Level Cube Spam 🦈🧟",
+      "channel": "Main",
+      "published": "2025-06-26T04:01:23Z",
+      "type": "short"
+    },
+    {
+      "id": "IWvtSF2-ZPQ",
+      "title": "Zombie Extinction vs 500 Click Spider Trap! 🦈🧟",
+      "channel": "Main",
+      "published": "2025-06-25T16:05:57Z",
+      "type": "short"
+    },
+    {
+      "id": "043ZbFaPyc4",
+      "title": "Italian Extinction vs 100 Click Trap! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-25T04:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "ktuhwCvxHo0",
+      "title": "Zombie Extinction Saved?! 🦈🧟",
+      "channel": "Main",
+      "published": "2025-06-24T16:03:49Z",
+      "type": "short"
+    },
+    {
+      "id": "hEAQwD4inaw",
+      "title": "Zombie Extinction vs 7 Level Jumps! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-24T04:00:45Z",
+      "type": "short"
+    },
+    {
+      "id": "gOOduoOlSFA",
+      "title": "Italian Extinction Coffin Dance Saved?! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-23T16:03:47Z",
+      "type": "short"
+    },
+    {
+      "id": "KmJDK8H0KMo",
+      "title": "Italian Extinction vs 6 Level Cube Spam 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-23T04:01:12Z",
+      "type": "short"
+    },
+    {
+      "id": "5S3pCWYIPSw",
+      "title": "Italian Extinction vs UFO Spam Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-22T16:02:55Z",
+      "type": "short"
+    },
+    {
+      "id": "3OPmghfxmeQ",
+      "title": "Italian Extinction Coffin Dance vs 100 Click Trap! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-22T04:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "iyip0pEKoyI",
+      "title": "EXTREME Italian Extinction Spider Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-21T16:01:43Z",
+      "type": "short"
+    },
+    {
+      "id": "eoMTWCooAaY",
+      "title": "Italian Extinction Saved!? 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-21T04:00:45Z",
+      "type": "short"
+    },
+    {
+      "id": "uTPNOqzyBhE",
+      "title": "Italian Extinction vs $60k Jump Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-20T16:03:14Z",
+      "type": "short"
+    },
+    {
+      "id": "0GDevPyl59Y",
+      "title": "Italian Extinction vs $10k Wave Gap! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-20T04:01:01Z",
+      "type": "short"
+    },
+    {
+      "id": "mkJ1pq__11E",
+      "title": "Italian Brainrot Extinction Saved 🦈🫡",
+      "channel": "Main",
+      "published": "2025-06-19T16:02:59Z",
+      "type": "short"
+    },
+    {
+      "id": "Aab1ckKSneg",
+      "title": "EXTREME Italian Extinction Robot Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-19T04:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "NkG4xNOqYyw",
+      "title": "Italian Extinction vs $50k Jump Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-18T16:04:28Z",
+      "type": "short"
+    },
+    {
+      "id": "0jitSI5xphM",
+      "title": "Italian Extinction vs $10K Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-18T04:00:48Z",
+      "type": "short"
+    },
+    {
+      "id": "dlh6v6QptNs",
+      "title": "Italian Extinction vs 6 Level Ball Spam 🦈",
+      "channel": "Main",
+      "published": "2025-06-17T16:03:45Z",
+      "type": "short"
+    },
+    {
+      "id": "_zC9k6vqnR8",
+      "title": "🔴 (LIVE) If I Speak, The Stream Ends...",
+      "channel": "Main",
+      "published": "2025-06-17T13:32:55Z",
+      "type": "long"
+    },
+    {
+      "id": "fuOJbPrkJKM",
+      "title": "Press Start: Normal vs Full Version",
+      "channel": "Main",
+      "published": "2025-06-17T13:01:14Z",
+      "type": "long"
+    },
+    {
+      "id": "xQf2oE6DH8I",
+      "title": "Hardcore Scatman Mini Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-06-17T04:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "WjF2gG7EbhA",
+      "title": "🔴 (LIVE) If I Speak, The Stream Ends...",
+      "channel": "Main",
+      "published": "2025-06-17T02:11:23Z",
+      "type": "long"
+    },
+    {
+      "id": "IMbH46Hy9hM",
+      "title": "Italian Extinction vs 7 Level Jumps 🦈",
+      "channel": "Main",
+      "published": "2025-06-16T16:04:43Z",
+      "type": "short"
+    },
+    {
+      "id": "FJO2rJkhXDg",
+      "title": "Italian Extinction Sigma Block 🗿",
+      "channel": "Main",
+      "published": "2025-06-16T04:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "6xq8HghCJ5o",
+      "title": "Italian Extinction UFO vs Massive Spikes! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-15T16:03:42Z",
+      "type": "short"
+    },
+    {
+      "id": "SRzcQ9rASZQ",
+      "title": "Italian Extinction vs $40k Jump Challenge! 🦈🐊",
+      "channel": "Main",
+      "published": "2025-06-15T04:00:43Z",
+      "type": "short"
+    },
+    {
+      "id": "B2tiiPnQxkI",
+      "title": "EXTREME Italian Brainrot Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-06-14T16:01:16Z",
+      "type": "short"
+    },
+    {
+      "id": "J7wkIaMjM7Q",
+      "title": "Italian Brainrot $30k Challenge!",
+      "channel": "Main",
+      "published": "2025-06-14T04:01:14Z",
+      "type": "short"
+    },
+    {
+      "id": "k7zbmfqK8js",
+      "title": "Italian Brainrot vs 6 Level Ball Spam 🦈",
+      "channel": "Main",
+      "published": "2025-06-13T16:06:17Z",
+      "type": "short"
+    },
+    {
+      "id": "YY-yuQlAZ58",
+      "title": "EXTREME Scatman Mini Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-06-13T04:01:32Z",
+      "type": "short"
+    },
+    {
+      "id": "Ut1UwIAwWKc",
+      "title": "Italian Brainrot vs Spider Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-06-12T16:05:21Z",
+      "type": "short"
+    },
+    {
+      "id": "7L7zD4nmwK0",
+      "title": "Job Application vs 5 Levels Of Wave 📃",
+      "channel": "Main",
+      "published": "2025-06-12T04:01:09Z",
+      "type": "short"
+    },
+    {
+      "id": "rFdc8H8--uo",
+      "title": "Italian Brainrot vs 6 Level UFO Spam!",
+      "channel": "Main",
+      "published": "2025-06-11T16:05:29Z",
+      "type": "short"
+    },
+    {
+      "id": "fq66xAIVKTw",
+      "title": "Italian Brainrot vs 100 Click Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-06-11T04:01:31Z",
+      "type": "short"
+    },
+    {
+      "id": "TRBO8xqWvSg",
+      "title": "Italian Brainrot $20k Challenge!",
+      "channel": "Main",
+      "published": "2025-06-10T16:04:11Z",
+      "type": "short"
+    },
+    {
+      "id": "lEaiXTVBFUM",
+      "title": "EXTREME Italian Brainrot Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-06-10T04:01:07Z",
+      "type": "short"
+    },
+    {
+      "id": "Uy8DSCEAbpI",
+      "title": "EXTREME Scatman UFO Challenge!",
+      "channel": "Main",
+      "published": "2025-06-09T16:03:20Z",
+      "type": "short"
+    },
+    {
+      "id": "qq9ms4u3uqs",
+      "title": "EXTREME Scatman Robot Challenge!",
+      "channel": "Main",
+      "published": "2025-06-09T04:01:13Z",
+      "type": "short"
+    },
+    {
+      "id": "KPtGF9NYazY",
+      "title": "Italian Brainrot vs 6 Level Cube Spam 🦈",
+      "channel": "Main",
+      "published": "2025-06-08T16:01:39Z",
+      "type": "short"
+    },
+    {
+      "id": "D4sJRbrHRxc",
+      "title": "EXTREME Scatman Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-06-08T04:00:42Z",
+      "type": "short"
+    },
+    {
+      "id": "tlPtrLhNO-8",
+      "title": "Italian Brainrot vs 6 Level Spam 🦈",
+      "channel": "Main",
+      "published": "2025-06-07T16:01:53Z",
+      "type": "short"
+    },
+    {
+      "id": "IV6MY3JR1kk",
+      "title": "Italian Brainrot Challenge $10,000",
+      "channel": "Main",
+      "published": "2025-06-07T04:01:01Z",
+      "type": "short"
+    },
+    {
+      "id": "06FQMgyl9_M",
+      "title": "EXTREME Scatman Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-06-06T16:03:31Z",
+      "type": "short"
+    },
+    {
       "id": "xK42U1gldZI",
       "title": "🔴 (LIVE) Best Of BitePlaysMC",
       "channel": "Minecraft",
@@ -796,10 +2477,87 @@
       "type": "long"
     },
     {
+      "id": "qChf_sgc1w4",
+      "title": "EXTREME Scatman Ball Challenge!",
+      "channel": "Main",
+      "published": "2025-06-06T04:00:56Z",
+      "type": "short"
+    },
+    {
+      "id": "o06uES7cNik",
+      "title": "Italian Brainrot Sigma Block 🗿",
+      "channel": "Main",
+      "published": "2025-06-05T16:04:11Z",
+      "type": "short"
+    },
+    {
+      "id": "6tsgnKRKcAA",
+      "title": "Hardest Cube Jump Ever",
+      "channel": "Main",
+      "published": "2025-06-05T04:01:01Z",
+      "type": "short"
+    },
+    {
+      "id": "0iu6ksYGXtE",
+      "title": "EXTREME Scatman Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-06-04T16:04:07Z",
+      "type": "short"
+    },
+    {
+      "id": "jH15OGg7VU4",
+      "title": "EXTREME Scatman Mini Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-06-04T04:00:50Z",
+      "type": "short"
+    },
+    {
+      "id": "m6CGsmPHA54",
+      "title": "The Hardest $10,000 Challenge In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-06-03T16:03:11Z",
+      "type": "short"
+    },
+    {
+      "id": "g6IJQTQA88k",
+      "title": "Insane Scatman Mini Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-06-03T04:00:53Z",
+      "type": "short"
+    },
+    {
+      "id": "Ru3GF9OO2fE",
+      "title": "Easy vs Demon Cube Jump!",
+      "channel": "Main",
+      "published": "2025-06-02T04:00:37Z",
+      "type": "short"
+    },
+    {
+      "id": "2vHAJCizAiA",
+      "title": "$1 vs $100M Scatman UFO!",
+      "channel": "Main",
+      "published": "2025-06-01T19:01:10Z",
+      "type": "short"
+    },
+    {
       "id": "j7GpOsCL4Ik",
       "title": "Minecraft Wordle 4.5",
       "channel": "Minecraft",
       "published": "2025-06-01T10:01:13Z",
+      "type": "short"
+    },
+    {
+      "id": "ysjSLY1zpbw",
+      "title": "Montagem Tomada Sigma Block 🗿",
+      "channel": "Main",
+      "published": "2025-06-01T07:00:49Z",
+      "type": "short"
+    },
+    {
+      "id": "XyZrRLZ6jZM",
+      "title": "Insane Scatman Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-05-31T16:01:46Z",
       "type": "short"
     },
     {
@@ -810,10 +2568,38 @@
       "type": "short"
     },
     {
+      "id": "zftg-gJKbNk",
+      "title": "Insane Scatman Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-05-31T04:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "NyYXoqnU3AU",
+      "title": "Insane UFO Challenge!",
+      "channel": "Main",
+      "published": "2025-05-30T16:03:16Z",
+      "type": "short"
+    },
+    {
       "id": "0YFZTCi0jVY",
       "title": "Minecraft Wordle 4",
       "channel": "Minecraft",
       "published": "2025-05-30T10:00:02Z",
+      "type": "short"
+    },
+    {
+      "id": "3LA9W0mn-sQ",
+      "title": "Italian Brainrot Wave Challenge! 🦈",
+      "channel": "Main",
+      "published": "2025-05-30T04:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "NFCrpjmHpXE",
+      "title": "Los Voltaje Sigma Block 🗿",
+      "channel": "Main",
+      "published": "2025-05-29T16:02:44Z",
       "type": "short"
     },
     {
@@ -824,10 +2610,24 @@
       "type": "short"
     },
     {
+      "id": "C6GqKuWYl4E",
+      "title": "Insane Scatman Ball Challenge!",
+      "channel": "Main",
+      "published": "2025-05-29T04:00:51Z",
+      "type": "short"
+    },
+    {
       "id": "cAAuckBlxGA",
       "title": "Minecraft Wordle 3",
       "channel": "Minecraft",
       "published": "2025-05-28T10:01:06Z",
+      "type": "short"
+    },
+    {
+      "id": "erMDZWjHBTg",
+      "title": "Impossible Cube Trap Challenge!",
+      "channel": "Main",
+      "published": "2025-05-27T17:01:00Z",
       "type": "short"
     },
     {
@@ -838,6 +2638,13 @@
       "type": "short"
     },
     {
+      "id": "S5imL3CAbZ0",
+      "title": "Can You Survive Growing Spikes?!",
+      "channel": "Main",
+      "published": "2025-05-27T05:00:27Z",
+      "type": "short"
+    },
+    {
       "id": "KEHBroVeFCk",
       "title": "Minecraft Wordle 2",
       "channel": "Minecraft",
@@ -845,10 +2652,94 @@
       "type": "short"
     },
     {
+      "id": "a4m5UhPE7G8",
+      "title": "Insane Scatman Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-05-24T16:00:00Z",
+      "type": "short"
+    },
+    {
+      "id": "k6lYRK_ZisY",
+      "title": "Insane Scatman Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-05-24T04:00:51Z",
+      "type": "short"
+    },
+    {
+      "id": "t_H2hgxdvSY",
+      "title": "$10,000 Italian Brainrot Challenge!",
+      "channel": "Main",
+      "published": "2025-05-23T04:05:00Z",
+      "type": "short"
+    },
+    {
+      "id": "YBR7jYrll3A",
+      "title": "Can You Survive Growing Blocks?!",
+      "channel": "Main",
+      "published": "2025-05-22T11:46:59Z",
+      "type": "short"
+    },
+    {
+      "id": "B_9Yv5Lq6d0",
+      "title": "Impossible Italian Brainrot Robot Challenge!",
+      "channel": "Main",
+      "published": "2025-05-19T04:23:40Z",
+      "type": "short"
+    },
+    {
+      "id": "VOYWIDaMo3w",
+      "title": "Geometry Dash MrBeast Challenge For $1,000",
+      "channel": "Main",
+      "published": "2025-05-18T04:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "DTKSI9ymFTw",
+      "title": "Impossible Scatman Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-05-15T04:00:29Z",
+      "type": "short"
+    },
+    {
+      "id": "6eY5gG3Jl08",
+      "title": "Impossible Scatman Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-05-14T04:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "0SeO_LwmHvo",
+      "title": "Impossible Scatman Mini UFO Challenge!",
+      "channel": "Main",
+      "published": "2025-05-13T04:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "bPOD08ELOEc",
+      "title": "Impossible Scatman Mini Cube Challenge!",
+      "channel": "Main",
+      "published": "2025-05-12T04:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "lQ_YlMdGvt8",
+      "title": "Impossible Scatman Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-05-08T04:00:51Z",
+      "type": "short"
+    },
+    {
       "id": "b_wMxZUBQVc",
       "title": "Minecraft Wordle 1",
       "channel": "Minecraft",
       "published": "2025-05-07T11:17:37Z",
+      "type": "short"
+    },
+    {
+      "id": "0EguoD4heTM",
+      "title": "Impossible Scatman Mini Robot Challenge!",
+      "channel": "Main",
+      "published": "2025-05-06T16:00:02Z",
       "type": "short"
     },
     {
@@ -866,10 +2757,542 @@
       "type": "short"
     },
     {
+      "id": "nI7bE4vpQJs",
+      "title": "Impossible Scatman Mini Ball Challenge!",
+      "channel": "Main",
+      "published": "2025-05-05T04:00:52Z",
+      "type": "short"
+    },
+    {
       "id": "rDlFSUxmvdU",
       "title": "Minecraft Telepathy 1",
       "channel": "Minecraft",
       "published": "2025-05-04T05:13:05Z",
+      "type": "short"
+    },
+    {
+      "id": "xP7tJ2IWySo",
+      "title": "Cheater vs Ball Spam!",
+      "channel": "Main",
+      "published": "2025-05-03T04:01:07Z",
+      "type": "short"
+    },
+    {
+      "id": "3ThOYqiKzRw",
+      "title": "Cheater vs Mini UFO Spam!",
+      "channel": "Main",
+      "published": "2025-05-02T16:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "hoTYu8nCCGI",
+      "title": "Spider vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-05-02T04:00:56Z",
+      "type": "short"
+    },
+    {
+      "id": "T5EJdzHdR1Y",
+      "title": "Hacker vs Mini UFO Spam!",
+      "channel": "Main",
+      "published": "2025-05-01T16:00:50Z",
+      "type": "short"
+    },
+    {
+      "id": "tfo-_0pvnV0",
+      "title": "Cheater vs Wave Spam!",
+      "channel": "Main",
+      "published": "2025-05-01T04:01:06Z",
+      "type": "short"
+    },
+    {
+      "id": "PKdZSzHUcbE",
+      "title": "Mini Wave vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-30T16:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "coIM0sxjeMw",
+      "title": "Wave vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-30T04:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "P2okpdRqkfQ",
+      "title": "Cheater vs Cube Spam!",
+      "channel": "Main",
+      "published": "2025-04-29T16:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "2kZ4eTyUGYo",
+      "title": "Robot vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-29T04:00:03Z",
+      "type": "short"
+    },
+    {
+      "id": "DqGkfZwUHAY",
+      "title": "Mini Cube vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-28T16:00:22Z",
+      "type": "short"
+    },
+    {
+      "id": "qGw4GBuNWBY",
+      "title": "Mini Spider vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-27T16:01:10Z",
+      "type": "short"
+    },
+    {
+      "id": "UaGpZDJ9NjE",
+      "title": "Mini Robot vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-27T16:00:49Z",
+      "type": "short"
+    },
+    {
+      "id": "7t6mtnQsEy8",
+      "title": "Ball vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-27T04:00:16Z",
+      "type": "short"
+    },
+    {
+      "id": "TS9v0Jyc6_s",
+      "title": "Cheater vs UFO Spam!",
+      "channel": "Main",
+      "published": "2025-04-26T16:00:42Z",
+      "type": "short"
+    },
+    {
+      "id": "DidYhEJ1uHo",
+      "title": "Cube vs Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-26T04:00:12Z",
+      "type": "short"
+    },
+    {
+      "id": "Iq5rtVu3k0M",
+      "title": "Cheater vs Robot Spam!",
+      "channel": "Main",
+      "published": "2025-04-25T16:00:26Z",
+      "type": "short"
+    },
+    {
+      "id": "fL2pGOZIcGg",
+      "title": "$10,000 IMPOSSIBLE Spider Challenge!",
+      "channel": "Main",
+      "published": "2025-04-25T04:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "cKzpf83iDSY",
+      "title": "MONTAGEM TOMADA $30,000 Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-24T16:01:03Z",
+      "type": "short"
+    },
+    {
+      "id": "VpZ47jmEpCA",
+      "title": "MONTAGEM TOMADA $20,000 Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-24T04:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "kGXMOVNVqUE",
+      "title": "MONTAGEM TOMADA $10,000 Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-23T16:07:37Z",
+      "type": "short"
+    },
+    {
+      "id": "hClNnAH1L8Q",
+      "title": "scatman cat challenge $30k",
+      "channel": "Main",
+      "published": "2025-04-23T04:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "7Cehtk6UGrM",
+      "title": "Sigma Block 🗿",
+      "channel": "Main",
+      "published": "2025-04-22T16:00:09Z",
+      "type": "short"
+    },
+    {
+      "id": "RIxX7WI4Xkw",
+      "title": "$10,000 IMPOSSIBLE Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-21T04:00:27Z",
+      "type": "short"
+    },
+    {
+      "id": "HqlnKgbpy8A",
+      "title": "HARDEST Wave Spam in Geometry Dash",
+      "channel": "Main",
+      "published": "2025-04-20T17:30:07Z",
+      "type": "short"
+    },
+    {
+      "id": "LMYuplTlEhM",
+      "title": "Insane Spider Spam vs Impossible Trap!",
+      "channel": "Main",
+      "published": "2025-04-19T16:00:35Z",
+      "type": "short"
+    },
+    {
+      "id": "CkIvLC1077I",
+      "title": "Only 1% Of Players Can Beat This Spam!",
+      "channel": "Main",
+      "published": "2025-04-19T04:00:20Z",
+      "type": "short"
+    },
+    {
+      "id": "6iWECanmYFs",
+      "title": "Mini Rat Dance Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-04-16T04:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "qg-kex_CLPM",
+      "title": "Extreme $100M Ball Challenge!",
+      "channel": "Main",
+      "published": "2025-04-10T04:00:51Z",
+      "type": "short"
+    },
+    {
+      "id": "LlJZwiUq1-k",
+      "title": "$20k Scatman Cat Challenge!",
+      "channel": "Main",
+      "published": "2025-04-09T04:02:19Z",
+      "type": "short"
+    },
+    {
+      "id": "UCcqZOWEKQA",
+      "title": "IMPOSSIBLE Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-03T16:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "DUs_WU9djCM",
+      "title": "$10 vs $100,000 Robot Click Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-03T04:00:10Z",
+      "type": "short"
+    },
+    {
+      "id": "c5joZPsyCN4",
+      "title": "5 Orb Clicks vs. 1,000 Orb Clicks in Geometry Dash",
+      "channel": "Main",
+      "published": "2025-04-02T16:01:00Z",
+      "type": "short"
+    },
+    {
+      "id": "Ci1esDiRUbo",
+      "title": "$5,000 IMPOSSIBLE Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-04-02T04:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "e0Ns1VYn6mc",
+      "title": "$0 vs $100M Scatman Swingcopter Challenge!",
+      "channel": "Main",
+      "published": "2025-04-01T16:00:50Z",
+      "type": "short"
+    },
+    {
+      "id": "gF4Pv9SUH3M",
+      "title": "WORLD’S HARDEST BALL Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-04-01T04:30:29Z",
+      "type": "short"
+    },
+    {
+      "id": "ssR8jHvnW6c",
+      "title": "Touch The $1,000,000 To Keep It!",
+      "channel": "Main",
+      "published": "2025-03-31T16:01:10Z",
+      "type": "short"
+    },
+    {
+      "id": "1FbAO80I8u0",
+      "title": "Pro vs Noob Click Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-03-31T04:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "L_483DaUd0U",
+      "title": "Insane UFO Spam vs Impossible Trap!",
+      "channel": "Main",
+      "published": "2025-03-30T16:00:32Z",
+      "type": "short"
+    },
+    {
+      "id": "8HACwC1WVB4",
+      "title": "🔴 Geometry Dash - Verifying A Level...",
+      "channel": "Main",
+      "published": "2025-03-29T21:36:17Z",
+      "type": "long"
+    },
+    {
+      "id": "2pKV0M1wh-o",
+      "title": "$5,000 Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-03-29T04:00:03Z",
+      "type": "short"
+    },
+    {
+      "id": "Tzk9SgmhGCE",
+      "title": "sCATman $10K Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-03-28T16:00:26Z",
+      "type": "short"
+    },
+    {
+      "id": "QSFqCjik88k",
+      "title": "$5,000 Rat Dance Challenge In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-27T16:00:28Z",
+      "type": "short"
+    },
+    {
+      "id": "wH_DphBEKbM",
+      "title": "Scatman Cat Wave Challenge In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-27T04:00:48Z",
+      "type": "short"
+    },
+    {
+      "id": "alihpGIAixU",
+      "title": "Cheater vs 100 Click Spam Challenge In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-26T16:00:02Z",
+      "type": "short"
+    },
+    {
+      "id": "CDVyUIorb-8",
+      "title": "$0 vs $100M Scatman UFO Challenge!",
+      "channel": "Main",
+      "published": "2025-03-26T04:00:09Z",
+      "type": "short"
+    },
+    {
+      "id": "jIMdTygI2nw",
+      "title": "rat dance",
+      "channel": "Main",
+      "published": "2025-03-26T00:27:37Z",
+      "type": "short"
+    },
+    {
+      "id": "ANFuIAYr2mc",
+      "title": "Scatman Cat Challenge $100k In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-25T16:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "xLH5EQglrY4",
+      "title": "WORLD'S HARDEST SPAM In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-25T04:00:52Z",
+      "type": "short"
+    },
+    {
+      "id": "OQd8BvZBbTs",
+      "title": "Scatman Jumpscare 0.1x Speed Challenge!",
+      "channel": "Main",
+      "published": "2025-03-24T16:00:25Z",
+      "type": "short"
+    },
+    {
+      "id": "sDQhKEbQHMs",
+      "title": "$10K Rat Dance Challenge!",
+      "channel": "Main",
+      "published": "2025-03-24T04:00:52Z",
+      "type": "short"
+    },
+    {
+      "id": "VlfxZWA3aYA",
+      "title": "$0 vs $100M Scatman Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-03-23T16:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "N2BwORTNc8I",
+      "title": "Scatman Cat Challenge $6k",
+      "channel": "Main",
+      "published": "2025-03-22T04:00:18Z",
+      "type": "short"
+    },
+    {
+      "id": "j5CH-bbkJ2E",
+      "title": "Wave Scatman Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-03-21T22:00:38Z",
+      "type": "short"
+    },
+    {
+      "id": "_evhVbOZe_U",
+      "title": "$10,000 Scatman Challenge!",
+      "channel": "Main",
+      "published": "2025-03-21T10:00:46Z",
+      "type": "short"
+    },
+    {
+      "id": "36EQAjW16_0",
+      "title": "$42k Scatman Cat Challenge!",
+      "channel": "Main",
+      "published": "2025-03-20T16:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "xYaLU3iSdD4",
+      "title": "Hacker Spider vs. Spam Trap!",
+      "channel": "Main",
+      "published": "2025-03-20T04:00:57Z",
+      "type": "short"
+    },
+    {
+      "id": "-O-bPX1tveg",
+      "title": "Easy vs Impossible Geometry Dash Jump!",
+      "channel": "Main",
+      "published": "2025-03-19T16:00:00Z",
+      "type": "short"
+    },
+    {
+      "id": "wp1IhZb42EU",
+      "title": "Rat Dance $15k Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-03-19T04:01:00Z",
+      "type": "short"
+    },
+    {
+      "id": "K7QRkXsGzF0",
+      "title": "🔴 Geometry Dash - Playing GD 😎",
+      "channel": "Main",
+      "published": "2025-03-19T02:09:39Z",
+      "type": "long"
+    },
+    {
+      "id": "r_C2Jzj0mCw",
+      "title": "Scatman 100 Spike Jumpscare!",
+      "channel": "Main",
+      "published": "2025-03-18T16:00:56Z",
+      "type": "short"
+    },
+    {
+      "id": "zAONVEM93rE",
+      "title": "HARDEST SPAM In Geometry Dash!",
+      "channel": "Main",
+      "published": "2025-03-18T04:00:56Z",
+      "type": "short"
+    },
+    {
+      "id": "GMvHkqGsnYc",
+      "title": "$1 vs $1,000 Spider Clicks!",
+      "channel": "Main",
+      "published": "2025-03-17T16:00:19Z",
+      "type": "short"
+    },
+    {
+      "id": "nkNw_KX6FXI",
+      "title": "$10,000 Anxiety Challenge!",
+      "channel": "Main",
+      "published": "2025-03-17T04:00:43Z",
+      "type": "short"
+    },
+    {
+      "id": "nR2PZIxe02E",
+      "title": "Mini UFO Scatman Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-03-16T16:00:56Z",
+      "type": "short"
+    },
+    {
+      "id": "ASddmgQY0qQ",
+      "title": "$15k Rat Dance Challenge!",
+      "channel": "Main",
+      "published": "2025-03-16T04:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "bMZCITX2rLU",
+      "title": "$69k Rat Dance Challenge!",
+      "channel": "Main",
+      "published": "2025-03-15T16:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "mOmU3rJGsIo",
+      "title": "$5,000 Anxiety Challenge!",
+      "channel": "Main",
+      "published": "2025-03-15T04:00:38Z",
+      "type": "short"
+    },
+    {
+      "id": "_H9yHBXBjuc",
+      "title": "Touch The $10,000 To Keep It!",
+      "channel": "Main",
+      "published": "2025-03-14T20:30:06Z",
+      "type": "short"
+    },
+    {
+      "id": "zafOJogaiJU",
+      "title": "spinning cat challenge $5k",
+      "channel": "Main",
+      "published": "2025-03-13T20:12:52Z",
+      "type": "short"
+    },
+    {
+      "id": "TjPMG4uDp3M",
+      "title": "Rat Dance UFO Spam Challenge",
+      "channel": "Main",
+      "published": "2025-03-13T10:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "JrBWpt9tXY4",
+      "title": "Scatman Money Challenge 🤑",
+      "channel": "Main",
+      "published": "2025-03-11T11:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "4PUS5cgrz30",
+      "title": "scatman cat challenge $69k",
+      "channel": "Main",
+      "published": "2025-03-10T16:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "6veWH3-aMJ4",
+      "title": "Scatman UFO Spam Challenge",
+      "channel": "Main",
+      "published": "2025-03-10T04:03:52Z",
+      "type": "short"
+    },
+    {
+      "id": "eD7HZ6rCA-k",
+      "title": "rat dance challenge $50k 🐀",
+      "channel": "Main",
+      "published": "2025-03-09T07:47:54Z",
+      "type": "short"
+    },
+    {
+      "id": "e5Oqj2Hhqfs",
+      "title": "Kendrick Lamar Challenge $10K 🔥",
+      "channel": "Main",
+      "published": "2025-03-05T06:26:51Z",
       "type": "short"
     },
     {
@@ -880,10 +3303,45 @@
       "type": "long"
     },
     {
+      "id": "Hrl2C4u3usk",
+      "title": "rat dance challenge $10k 🐀",
+      "channel": "Main",
+      "published": "2025-03-03T04:07:59Z",
+      "type": "short"
+    },
+    {
+      "id": "5pyDoqxVHkE",
+      "title": "rat dance challenge $5k 🐀",
+      "channel": "Main",
+      "published": "2025-03-01T19:29:18Z",
+      "type": "short"
+    },
+    {
+      "id": "TTe-gdR391U",
+      "title": "5 Clicks vs. 1,000 Clicks in Geometry Dash 😱",
+      "channel": "Main",
+      "published": "2025-02-27T04:07:46Z",
+      "type": "short"
+    },
+    {
       "id": "4tJavnm5CQ8",
       "title": "I Regret Playing This SCARY Digging Game...",
       "channel": "JoshSham",
       "published": "2025-02-26T05:30:19Z",
+      "type": "short"
+    },
+    {
+      "id": "KI2G_GkjJyo",
+      "title": "scatman cat challenge $10k",
+      "channel": "Main",
+      "published": "2025-02-25T21:31:45Z",
+      "type": "short"
+    },
+    {
+      "id": "PL8CHkKZR10",
+      "title": "$10,000 Wave Spam Challenge! 😱🔥",
+      "channel": "Main",
+      "published": "2025-02-25T04:22:47Z",
       "type": "short"
     },
     {
@@ -901,11 +3359,1327 @@
       "type": "long"
     },
     {
+      "id": "jlHOL7PMtF0",
+      "title": "scatman cat wave challenge $100k",
+      "channel": "Main",
+      "published": "2025-02-24T06:42:36Z",
+      "type": "short"
+    },
+    {
+      "id": "6h4lcOLkVlQ",
+      "title": "If I Lose This Wave Challenge, I Jump in Snow!",
+      "channel": "Main",
+      "published": "2025-02-22T04:50:11Z",
+      "type": "short"
+    },
+    {
+      "id": "3Bjy1o0Jzwk",
+      "title": "scatman cat challenge $100k",
+      "channel": "Main",
+      "published": "2025-02-20T04:27:10Z",
+      "type": "short"
+    },
+    {
+      "id": "yGb2C3sH-4A",
+      "title": "scatman cat challenge $50k",
+      "channel": "Main",
+      "published": "2025-02-15T22:37:57Z",
+      "type": "short"
+    },
+    {
+      "id": "7A1oILaid2c",
+      "title": "Chess $5k UFO Challenge",
+      "channel": "Main",
+      "published": "2025-02-14T18:49:22Z",
+      "type": "short"
+    },
+    {
+      "id": "_d2csiKbkKY",
+      "title": "$1 vs $100,000 Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-02-11T22:37:16Z",
+      "type": "short"
+    },
+    {
+      "id": "VvWEbApoqIU",
+      "title": "Playing 20 EXTREME Challenges in Geometry Dash",
+      "channel": "Main",
+      "published": "2025-02-08T15:00:42Z",
+      "type": "long"
+    },
+    {
+      "id": "FPdmLyRETYk",
+      "title": "Win The Sigma Boy Challenge For $100,000",
+      "channel": "Main",
+      "published": "2025-02-07T00:51:06Z",
+      "type": "short"
+    },
+    {
+      "id": "ZjxAxHDVwEA",
+      "title": "Cheater vs 5 Level Spam",
+      "channel": "Main",
+      "published": "2025-02-03T22:04:53Z",
+      "type": "short"
+    },
+    {
+      "id": "Uf9URZbqDnI",
+      "title": "Chess $10k Wave Challenge",
+      "channel": "Main",
+      "published": "2025-02-03T17:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "qCAjHxoy-_E",
+      "title": "scatman cat challenge $10k",
+      "channel": "Main",
+      "published": "2025-02-03T05:00:51Z",
+      "type": "short"
+    },
+    {
+      "id": "is2fPnxdXrM",
+      "title": "Chess $1k Jump Challenge",
+      "channel": "Main",
+      "published": "2025-02-01T18:22:54Z",
+      "type": "short"
+    },
+    {
+      "id": "hgmUmeAJnCA",
+      "title": "10 Levels of PHYSICALLY IMPOSSIBLE Wave Spam",
+      "channel": "Main",
+      "published": "2025-02-01T15:00:51Z",
+      "type": "long"
+    },
+    {
+      "id": "Mf3NbpPylQw",
+      "title": "🔴 Playing Pixel Royale 3D w/ GD YouTubers",
+      "channel": "Main",
+      "published": "2025-02-01T04:19:49Z",
+      "type": "long"
+    },
+    {
+      "id": "6h63UHR46L0",
+      "title": "Would You Rather Challenge in Geometry Dash",
+      "channel": "Main",
+      "published": "2025-01-30T17:00:07Z",
+      "type": "short"
+    },
+    {
+      "id": "Y6Yek7vO8Kg",
+      "title": "scatman cat ufo",
+      "channel": "Main",
+      "published": "2025-01-30T05:00:34Z",
+      "type": "short"
+    },
+    {
+      "id": "ZS-Jw2-jv3s",
+      "title": "HITTING 500K SUBSCRIBERS!",
+      "channel": "Main",
+      "published": "2025-01-29T04:03:11Z",
+      "type": "long"
+    },
+    {
+      "id": "bwLEQ3Nnexg",
+      "title": "Sigma Boy Ringtone",
+      "channel": "Main",
+      "published": "2025-01-28T05:02:03Z",
+      "type": "short"
+    },
+    {
+      "id": "eD9-F7pOC8c",
+      "title": "scatman cat",
+      "channel": "Main",
+      "published": "2025-01-27T05:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "fGO8jJUr5sY",
+      "title": "World's Tightest Sigma Boy Wave Gap!",
+      "channel": "Main",
+      "published": "2025-01-25T17:00:44Z",
+      "type": "short"
+    },
+    {
+      "id": "pj_uRw-zitI",
+      "title": "Playing 10 Levels Of Spider That Get HARDER And HARDER",
+      "channel": "Main",
+      "published": "2025-01-25T15:00:05Z",
+      "type": "long"
+    },
+    {
+      "id": "eL9_GXhpfEs",
+      "title": "🔴 Playing Geometry Dash in 1.5x Speed!",
+      "channel": "Main",
+      "published": "2025-01-25T12:51:40Z",
+      "type": "long"
+    },
+    {
+      "id": "iPQIq8IbRqg",
+      "title": "MUSTAAAAAAAAAAARD",
+      "channel": "Main",
+      "published": "2025-01-25T05:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "B85Kzlsk-lE",
+      "title": "Sigma Boy UFO Spam",
+      "channel": "Main",
+      "published": "2025-01-24T17:00:21Z",
+      "type": "short"
+    },
+    {
+      "id": "DZLa2OT0FJo",
+      "title": "Impossible $10k Scatman Wave",
+      "channel": "Main",
+      "published": "2025-01-24T05:00:14Z",
+      "type": "short"
+    },
+    {
+      "id": "mBC8JBWOhfw",
+      "title": "Hacker vs $10k Extreme Spam!",
+      "channel": "Main",
+      "published": "2025-01-23T17:00:50Z",
+      "type": "short"
+    },
+    {
+      "id": "jwdejReHTVE",
+      "title": "Impossible $1k Scatman Jump",
+      "channel": "Main",
+      "published": "2025-01-21T14:00:55Z",
+      "type": "short"
+    },
+    {
+      "id": "0TwomjfnUMM",
+      "title": "PSY $10k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-21T05:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "DuHtLA6wxXE",
+      "title": "Hacker vs $10k Challenge",
+      "channel": "Main",
+      "published": "2025-01-20T11:00:26Z",
+      "type": "short"
+    },
+    {
+      "id": "E6rEb9sgJ8I",
+      "title": "$10k Sigma Boy Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-01-19T13:00:14Z",
+      "type": "short"
+    },
+    {
+      "id": "vc-P-4Kf3Ek",
+      "title": "Sigma Boy $10k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-18T16:00:59Z",
+      "type": "short"
+    },
+    {
+      "id": "0bx18nUPgIw",
+      "title": "Sigma Boy $1k Jump Challenge!",
+      "channel": "Main",
+      "published": "2025-01-16T17:00:00Z",
+      "type": "short"
+    },
+    {
+      "id": "P8UhnX7ZyeQ",
+      "title": "Hacker vs Spider Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-16T05:00:27Z",
+      "type": "short"
+    },
+    {
+      "id": "iFXTvXo0Y0s",
+      "title": "Sigma Boy $5k Challenge",
+      "channel": "Main",
+      "published": "2025-01-15T05:00:41Z",
+      "type": "short"
+    },
+    {
+      "id": "zJizxE4bkH0",
+      "title": "Sigma Boy - Geometry Dash",
+      "channel": "Main",
+      "published": "2025-01-14T17:01:09Z",
+      "type": "long"
+    },
+    {
+      "id": "8d5NzBOIv_Q",
+      "title": "Sigma Boy Sync Spider!",
+      "channel": "Main",
+      "published": "2025-01-14T17:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "76pdgckPdPI",
+      "title": "Sigma Boy $10k Wave Spam!",
+      "channel": "Main",
+      "published": "2025-01-14T05:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "uXSYqWAgwvE",
+      "title": "Sigma Boy $10k Jump",
+      "channel": "Main",
+      "published": "2025-01-13T17:14:06Z",
+      "type": "short"
+    },
+    {
+      "id": "sAuwDS4S-dA",
+      "title": "Sigma Boy $1k Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-01-13T05:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "mq46nL6VCxg",
+      "title": "Sigma Boy $100k UFO Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-12T19:00:36Z",
+      "type": "short"
+    },
+    {
+      "id": "RLJNo-AOnxY",
+      "title": "Player Vs Tightest Wave Spam",
+      "channel": "Main",
+      "published": "2025-01-10T17:00:33Z",
+      "type": "short"
+    },
+    {
+      "id": "p8FiEOJNSdY",
+      "title": "Race The Saws To Win!",
+      "channel": "Main",
+      "published": "2025-01-09T17:00:53Z",
+      "type": "short"
+    },
+    {
+      "id": "ZlmvFHvbZd8",
+      "title": "Sigma Boy $10k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-09T05:00:33Z",
+      "type": "short"
+    },
+    {
+      "id": "_xa_H6iLTHo",
+      "title": "Win The Tightest Wave Spam For $10,000",
+      "channel": "Main",
+      "published": "2025-01-08T17:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "yXC43gJ7G4M",
+      "title": "Impossible $10K Sigma Boy Wave Spam!",
+      "channel": "Main",
+      "published": "2025-01-08T05:00:48Z",
+      "type": "short"
+    },
+    {
+      "id": "IFivqbZi8X0",
+      "title": "$10k Sigma Boy Wave Challenge!",
+      "channel": "Main",
+      "published": "2025-01-07T17:00:29Z",
+      "type": "short"
+    },
+    {
+      "id": "lYlXzvkSZKY",
+      "title": "Hacker vs $10k Challenge",
+      "channel": "Main",
+      "published": "2025-01-07T05:00:38Z",
+      "type": "short"
+    },
+    {
+      "id": "krYEyDEC8Zs",
+      "title": "10 Levels Of Sigma Boy Wave",
+      "channel": "Main",
+      "published": "2025-01-06T17:00:54Z",
+      "type": "short"
+    },
+    {
+      "id": "0kR5_yA5LGY",
+      "title": "Sigma Boy $100k Jump Challenge!",
+      "channel": "Main",
+      "published": "2025-01-06T05:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "MO4Jdd8iYw0",
+      "title": "Player Vs Tightest Wave Spam",
+      "channel": "Main",
+      "published": "2025-01-05T05:00:16Z",
+      "type": "short"
+    },
+    {
+      "id": "zGlb_4jV3kE",
+      "title": "KSI Challenge For $10,000",
+      "channel": "Main",
+      "published": "2025-01-04T17:00:53Z",
+      "type": "short"
+    },
+    {
+      "id": "rdOT9JZ5xdQ",
+      "title": "Win The Tightest Wave Spam For $100,000",
+      "channel": "Main",
+      "published": "2025-01-04T05:00:45Z",
+      "type": "short"
+    },
+    {
+      "id": "4an65bOxrps",
+      "title": "Sigma Boy $10k UFO Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-03T17:00:05Z",
+      "type": "short"
+    },
+    {
+      "id": "iSmA8JoksE8",
+      "title": "World's Tightest Wave Gap!",
+      "channel": "Main",
+      "published": "2025-01-03T05:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "zws40MUil14",
+      "title": "Hacker vs $10k Challenge",
+      "channel": "Main",
+      "published": "2025-01-02T17:00:58Z",
+      "type": "short"
+    },
+    {
+      "id": "FXF1AsZBKVc",
+      "title": "Pro Vs $100,000 Challenge!",
+      "channel": "Main",
+      "published": "2025-01-02T05:00:18Z",
+      "type": "short"
+    },
+    {
+      "id": "OLvT_l-mq8o",
+      "title": "Sigma Boy $50k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-02T02:04:32Z",
+      "type": "short"
+    },
+    {
+      "id": "iE1MG8eMJb8",
+      "title": "Sigma Boy $10k Spider Spam Challenge!",
+      "channel": "Main",
+      "published": "2025-01-01T17:00:39Z",
+      "type": "short"
+    },
+    {
+      "id": "UWSZUTuHPI8",
+      "title": "Sigma Boy vs Sigma Block",
+      "channel": "Main",
+      "published": "2025-01-01T04:15:04Z",
+      "type": "short"
+    },
+    {
+      "id": "jHkUSZiPLvg",
+      "title": "Sigma Boy $10k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2024-12-31T17:00:52Z",
+      "type": "short"
+    },
+    {
+      "id": "QdMDrSv1WoU",
+      "title": "$1,000 Sigma Boy Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2024-12-31T07:20:00Z",
+      "type": "short"
+    },
+    {
+      "id": "06iaFVEoruA",
+      "title": "Cheater vs $10k Challenge",
+      "channel": "Main",
+      "published": "2024-12-30T17:00:00Z",
+      "type": "short"
+    },
+    {
+      "id": "N_mEJv3fmck",
+      "title": "$10k Sigma Boy Wave Challenge!",
+      "channel": "Main",
+      "published": "2024-12-30T05:00:15Z",
+      "type": "short"
+    },
+    {
+      "id": "6Sd0rSKuOTM",
+      "title": "Sigma Boy $1k Wave Spam Challenge!",
+      "channel": "Main",
+      "published": "2024-12-29T17:00:06Z",
+      "type": "short"
+    },
+    {
+      "id": "OvtOLfXG6zo",
+      "title": "Sigma Boy $100k Jump Challenge!",
+      "channel": "Main",
+      "published": "2024-12-29T05:00:24Z",
+      "type": "short"
+    },
+    {
+      "id": "SB_NAjH7HB0",
+      "title": "Sigma Boy Wave Sync Challenge",
+      "channel": "Main",
+      "published": "2024-12-28T17:45:02Z",
+      "type": "short"
+    },
+    {
+      "id": "8zSMeQqpz5I",
+      "title": "Sigma Boy $1k Challenge",
+      "channel": "Main",
+      "published": "2024-12-27T19:00:08Z",
+      "type": "short"
+    },
+    {
+      "id": "RRsLNWK317E",
+      "title": "MUSTAAAAAAAAAAARD",
+      "channel": "Main",
+      "published": "2024-12-23T17:00:32Z",
+      "type": "short"
+    },
+    {
+      "id": "lYpDPqohkOk",
+      "title": "Geometry Dash: This Monster Is MAD 😡 #shorts",
+      "channel": "Main",
+      "published": "2024-10-24T16:00:47Z",
+      "type": "short"
+    },
+    {
+      "id": "gZtBh1e26pM",
+      "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts",
+      "channel": "Main",
+      "published": "2024-10-15T02:58:44Z",
+      "type": "short"
+    },
+    {
+      "id": "ZO0cnr6mO8Q",
+      "title": "Geometry Dash: Spam To 200 Clicks 💪 #shorts",
+      "channel": "Main",
+      "published": "2024-10-11T16:00:37Z",
+      "type": "short"
+    },
+    {
+      "id": "aFvLLSD9QOc",
+      "title": "Geometry Dash: Brawl Stars Intro Scariest Jump 😱 #shorts",
+      "channel": "Main",
+      "published": "2024-10-10T16:00:01Z",
+      "type": "short"
+    },
+    {
+      "id": "5oTCr1BWjgc",
+      "title": "Geometry Dash: INSANE Snow Jumps! #shorts",
+      "channel": "Main",
+      "published": "2024-09-28T16:00:07Z",
+      "type": "short"
+    },
+    {
+      "id": "kYKeabyqkRg",
+      "title": "🔴 (LIVE) Beating \"TROLLMACHINE\" - 31% (Go = 17%) Day 1 (w/@vee-gd)",
+      "channel": "Main",
+      "published": "2024-09-16T12:07:07Z",
+      "type": "long"
+    },
+    {
+      "id": "zht_EcrbCQw",
+      "title": "Geometry Dash: Beat The Wave Challenge Or Get Eaten! #shorts",
+      "channel": "Main",
+      "published": "2024-09-12T16:00:59Z",
+      "type": "short"
+    },
+    {
+      "id": "Pr6pC6h9Vto",
+      "title": "Geometry Dash: Can He Win For His True Love? #shorts",
+      "channel": "Main",
+      "published": "2024-09-10T16:00:30Z",
+      "type": "short"
+    },
+    {
+      "id": "u6Lrn0uUYlM",
+      "title": "Geometry Dash: Complete The Platformer Challenge To Win! #shorts",
+      "channel": "Main",
+      "published": "2024-09-09T20:00:18Z",
+      "type": "short"
+    },
+    {
+      "id": "OCUOXhyt7-8",
+      "title": "Playing 10 Levels Of Wave That Get HARDER And HARDER",
+      "channel": "Main",
+      "published": "2024-09-08T19:00:15Z",
+      "type": "long"
+    },
+    {
+      "id": "bNU4oqtaJo8",
+      "title": "Geometry Dash: Jump Over The Lava Monsters To Survive! #shorts",
+      "channel": "Main",
+      "published": "2024-09-08T16:00:37Z",
+      "type": "short"
+    },
+    {
+      "id": "Dw-55J-mQkc",
+      "title": "Geometry Dash: Jump Over The Spikes To Win $1M! #shorts",
+      "channel": "Main",
+      "published": "2024-09-06T16:00:12Z",
+      "type": "short"
+    },
+    {
+      "id": "zWJrXFM7KYE",
+      "title": "Geometry Dash: Jump Over The Acid Monsters To Survive! #shorts",
+      "channel": "Main",
+      "published": "2024-09-05T16:01:03Z",
+      "type": "short"
+    },
+    {
+      "id": "db4KWrgJuPY",
+      "title": "Geometry Dash: Is This True Love? #shorts",
+      "channel": "Main",
+      "published": "2024-09-04T16:00:40Z",
+      "type": "short"
+    },
+    {
+      "id": "7jvOCHYxxQ8",
+      "title": "Geometry Dash: Jump Over The Sharks To Survive! #shorts",
+      "channel": "Main",
+      "published": "2024-09-03T16:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "-ZS2xSCzxuE",
+      "title": "Building The BEST Wave Challenge!",
+      "channel": "Main",
+      "published": "2024-09-01T19:30:00Z",
+      "type": "long"
+    },
+    {
+      "id": "nBA1n2hqSI4",
+      "title": "Geometry Dash: Jump Over The Lava To Survive! #shorts",
+      "channel": "Main",
+      "published": "2024-08-31T16:00:51Z",
+      "type": "short"
+    },
+    {
+      "id": "_ofldh0_Smk",
+      "title": "🔴 (LIVE) Playing Globed Geometry Dash (Reading GD DMs)",
+      "channel": "Main",
+      "published": "2024-08-31T12:23:57Z",
+      "type": "long"
+    },
+    {
+      "id": "rb_feZYZUzw",
+      "title": "Geometry Dash: Sigma Block 🗿 #shorts",
+      "channel": "Main",
+      "published": "2024-08-30T04:00:37Z",
+      "type": "short"
+    },
+    {
+      "id": "ObEoHHF8eFw",
+      "title": "Geometry Dash: Double Life 👥 #shorts",
+      "channel": "Main",
+      "published": "2024-08-29T16:00:22Z",
+      "type": "short"
+    },
+    {
+      "id": "wY8GBZa0ZjU",
+      "title": "Geometry Dash: History Of GD 🧠 #shorts",
+      "channel": "Main",
+      "published": "2024-08-29T04:00:43Z",
+      "type": "short"
+    },
+    {
+      "id": "OkN23FjQFiM",
+      "title": "Geometry Dash: It's Raining Tacos 🌮 #shorts",
+      "channel": "Main",
+      "published": "2024-08-28T16:00:22Z",
+      "type": "short"
+    },
+    {
+      "id": "mQ5T05fP9ik",
+      "title": "Geometry Dash: World's Tightest Mini Wave Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-08-27T04:00:28Z",
+      "type": "short"
+    },
+    {
+      "id": "EWzjtIkiL4c",
+      "title": "Geometry Dash: Tightest Mini Wave Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-08-26T19:00:07Z",
+      "type": "short"
+    },
+    {
+      "id": "awycbnbr404",
+      "title": "🔴 (LIVE) Geometry Dash Level Requests! (Reading GD DMs)",
+      "channel": "Main",
+      "published": "2024-08-26T13:21:26Z",
+      "type": "long"
+    },
+    {
+      "id": "ZJuvmlfemOE",
+      "title": "Geometry Dash: Bread 🍞 #shorts",
+      "channel": "Main",
+      "published": "2024-08-23T19:00:18Z",
+      "type": "short"
+    },
+    {
+      "id": "LiaPW1Z8OhU",
+      "title": "Beating Bloodbath - 27% (Go = 20%) Day 1",
+      "channel": "Main",
+      "published": "2024-08-21T07:29:24Z",
+      "type": "long"
+    },
+    {
+      "id": "HiT8SR-fZmg",
+      "title": "Geometry Dash Level Requests!",
+      "channel": "Main",
+      "published": "2024-08-20T15:02:40Z",
+      "type": "long"
+    },
+    {
+      "id": "Arn8j98rhCs",
+      "title": "Geometry Dash: Easy Mini Swing-Copter Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-08-19T19:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "TMpQZXQW484",
+      "title": "Geometry Dash: Knights Vs Gnomes Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-08-15T19:00:27Z",
+      "type": "short"
+    },
+    {
+      "id": "4L3PGW0Yq44",
+      "title": "Geometry Dash Level Requests!",
+      "channel": "Main",
+      "published": "2024-08-15T16:04:58Z",
+      "type": "long"
+    },
+    {
+      "id": "Spv_CeivffQ",
+      "title": "Geometry Dash: IMPOSSIBLE Tight Wave Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-08-14T19:00:13Z",
+      "type": "short"
+    },
+    {
+      "id": "yatVwSBLGNE",
+      "title": "Geometry Dash: MrBeast Challenge For $69,000 #shorts",
+      "channel": "Main",
+      "published": "2024-08-13T19:00:27Z",
+      "type": "short"
+    },
+    {
+      "id": "2QXQA6Rz438",
+      "title": "Building A Wave Challenge!",
+      "channel": "Main",
+      "published": "2024-08-12T19:51:33Z",
+      "type": "long"
+    },
+    {
+      "id": "U6wt4xZTEIQ",
+      "title": "Geometry Dash: Jump Over Spikes To Survive! #shorts",
+      "channel": "Main",
+      "published": "2024-08-12T19:00:15Z",
+      "type": "short"
+    },
+    {
+      "id": "HLhpeYY1ogM",
+      "title": "Geometry Dash: IMPOSSIBLE Swingcopter Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-08-11T19:00:06Z",
+      "type": "short"
+    },
+    {
+      "id": "brN2S-fZrfI",
+      "title": "Geometry Dash: Tight UFO Spam For $1M #shorts",
+      "channel": "Main",
+      "published": "2024-08-07T19:00:19Z",
+      "type": "short"
+    },
+    {
+      "id": "w3ozZ1_nVNs",
+      "title": "Geometry Dash: History Of GD! #shorts",
+      "channel": "Main",
+      "published": "2024-08-06T19:00:35Z",
+      "type": "short"
+    },
+    {
+      "id": "X8tiOj6OBSY",
+      "title": "Playing The BiteSterxBeastSMP (IP Is In Discord)",
+      "channel": "Main",
+      "published": "2024-08-06T15:40:52Z",
+      "type": "long"
+    },
+    {
+      "id": "bEyCEWL5O1A",
+      "title": "Geometry Dash: Back On Track Hold Version! #shorts",
+      "channel": "Main",
+      "published": "2024-08-05T19:00:17Z",
+      "type": "short"
+    },
+    {
+      "id": "UhXAF8lFegI",
+      "title": "Geometry Dash: Xbox Vs PS5 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-08-04T19:00:13Z",
+      "type": "short"
+    },
+    {
+      "id": "L7PrTo2iNpk",
+      "title": "Geometry Dash: Fun To Rhyme! #shorts",
+      "channel": "Main",
+      "published": "2024-07-30T19:00:09Z",
+      "type": "short"
+    },
+    {
+      "id": "xoHNxz7A9kI",
+      "title": "Geometry Dash: YouTube Vs TikTok Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-07-29T19:00:26Z",
+      "type": "short"
+    },
+    {
+      "id": "xUpV361Ispg",
+      "title": "Beating \"The Lost Existence\" - 82% (Go = 45%) Day 6",
+      "channel": "Main",
+      "published": "2024-07-24T23:48:10Z",
+      "type": "long"
+    },
+    {
+      "id": "77pzgOHtJMo",
+      "title": "Beating \"The Lost Existence\" - 78% (Go = 45%) Day 5",
+      "channel": "Main",
+      "published": "2024-07-24T03:18:50Z",
+      "type": "long"
+    },
+    {
+      "id": "rVZkTbtqHTs",
+      "title": "Beating \"The Lost Existence\" - 71% (Go = 33%) Day 4",
+      "channel": "Main",
+      "published": "2024-07-23T17:51:35Z",
+      "type": "long"
+    },
+    {
+      "id": "Gce94KZ1-GM",
+      "title": "Geometry Dash 10 Levels of Difficulty! #shorts",
+      "channel": "Main",
+      "published": "2024-07-21T16:10:55Z",
+      "type": "short"
+    },
+    {
+      "id": "nbGFTFzBol0",
+      "title": "Beating \"The Lost Existence\" - 71% (Go = 33%) Day 3",
+      "channel": "Main",
+      "published": "2024-07-20T05:58:33Z",
+      "type": "long"
+    },
+    {
+      "id": "tc1oSigIOAs",
+      "title": "If I Die, I Switch With My Friend",
+      "channel": "Main",
+      "published": "2024-07-19T16:00:11Z",
+      "type": "long"
+    },
+    {
+      "id": "hzhvqf7FVkE",
+      "title": "Geometry Dash Level Requests!",
+      "channel": "Main",
+      "published": "2024-07-19T03:49:59Z",
+      "type": "long"
+    },
+    {
+      "id": "lGQV5t6rihI",
+      "title": "Beating \"The Lost Existence\" - 49% (Go = 33%) Day 2",
+      "channel": "Main",
+      "published": "2024-07-14T19:53:41Z",
+      "type": "long"
+    },
+    {
+      "id": "YbDnV1AofYs",
+      "title": "Geometry Dash $1,000 Vs $100,000 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-07-13T17:13:05Z",
+      "type": "short"
+    },
+    {
+      "id": "LfFEYuu92MQ",
+      "title": "Beating The Lost Existence - 47% (Go = 33%) Day 1",
+      "channel": "Main",
+      "published": "2024-07-12T18:16:18Z",
+      "type": "long"
+    },
+    {
+      "id": "Hx6HRN48Mdk",
+      "title": "Geometry Dash: World's Tightest Wave Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-07-10T19:13:01Z",
+      "type": "short"
+    },
+    {
+      "id": "WQJeUASfHW0",
+      "title": "Geometry Dash: Extreme Vs Easy Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-07-09T19:09:46Z",
+      "type": "short"
+    },
+    {
+      "id": "VJE7uDB5K9g",
+      "title": "Late Night Minecraft!",
+      "channel": "Main",
+      "published": "2024-07-06T08:03:41Z",
+      "type": "long"
+    },
+    {
+      "id": "t__q0YEvFF0",
+      "title": "Geometry Dash: INSANE Tight Wave! #shorts",
+      "channel": "Main",
+      "published": "2024-07-05T19:00:28Z",
+      "type": "short"
+    },
+    {
+      "id": "KPVVfuAOtKo",
+      "title": "Geometry Dash: Stereo Madness Hold Version! #shorts",
+      "channel": "Main",
+      "published": "2024-07-04T19:00:09Z",
+      "type": "short"
+    },
+    {
+      "id": "JRBd4Ic2YU4",
+      "title": "World's Hardest Cube Jump Ever! #shorts",
+      "channel": "Main",
+      "published": "2024-07-03T20:32:17Z",
+      "type": "short"
+    },
+    {
+      "id": "FBnkqrJNgQ8",
+      "title": "Geometry Dash: HARDEST Swingcopter Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-07-03T01:00:00Z",
+      "type": "short"
+    },
+    {
+      "id": "dSwNbFWn2sQ",
+      "title": "Geometry Dash: IMPOSSIBLE Sync Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-06-28T19:31:02Z",
+      "type": "short"
+    },
+    {
+      "id": "E0PdenIxh7w",
+      "title": "Geometry Dash: IMPOSSIBLE Portal Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-06-27T19:32:04Z",
+      "type": "short"
+    },
+    {
+      "id": "tAAeT_FAMhY",
+      "title": "Geometry Dash Impossible Wave Challenge! #shorts",
+      "channel": "Main",
+      "published": "2024-06-26T13:25:54Z",
+      "type": "short"
+    },
+    {
+      "id": "F_7moGQUzx8",
+      "title": "Geometry Dash Level Requests!",
+      "channel": "Main",
+      "published": "2024-06-24T10:08:51Z",
+      "type": "long"
+    },
+    {
+      "id": "bPNZCioBNuA",
+      "title": "Geometry Dash $69 Vs $69,420 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-06-24T10:00:29Z",
+      "type": "short"
+    },
+    {
+      "id": "ik2owpIb3UA",
+      "title": "Geometry Dash World's Tightest Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2024-06-23T20:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "vJdQosQW8aA",
+      "title": "Geometry Dash Wave Tutorial! #shorts",
+      "channel": "Main",
+      "published": "2024-06-17T23:54:19Z",
+      "type": "short"
+    },
+    {
+      "id": "scnlX4D44-M",
+      "title": "Level Requests In Geometry Dash",
+      "channel": "Main",
+      "published": "2024-06-16T00:01:25Z",
+      "type": "long"
+    },
+    {
+      "id": "VUpPsWzjJzk",
+      "title": "Geometry Dash $10 Vs $10,000 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-06-15T23:06:10Z",
+      "type": "short"
+    },
+    {
+      "id": "DKzjoXsOTds",
+      "title": "Level Requests In Geometry Dash",
+      "channel": "Main",
+      "published": "2024-06-06T12:19:57Z",
+      "type": "long"
+    },
+    {
+      "id": "3J7vFRS5bJM",
+      "title": "Playing Minecraft Hardcore (w/@SamsterBoi)",
+      "channel": "Main",
+      "published": "2024-06-03T11:05:51Z",
+      "type": "long"
+    },
+    {
+      "id": "WuwKnhjsINA",
+      "title": "Geometry Dash: 1 Click = $1 Vs Death Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-05-27T19:08:29Z",
+      "type": "short"
+    },
+    {
+      "id": "iDUwzeF5iSg",
+      "title": "Deadlocked, But It's Super Nerfed",
+      "channel": "Main",
+      "published": "2024-05-24T19:00:11Z",
+      "type": "long"
+    },
+    {
+      "id": "TFEPz_8m6Kw",
+      "title": "Turning Deadlocked Into An Easy Level",
+      "channel": "Main",
+      "published": "2024-05-20T12:38:21Z",
+      "type": "long"
+    },
+    {
+      "id": "k5WmQ00PoOs",
+      "title": "300K Celebration! (Geometry Dash Level Requests)",
+      "channel": "Main",
+      "published": "2024-05-16T10:57:11Z",
+      "type": "long"
+    },
+    {
+      "id": "Bs9kl0ujX6Y",
+      "title": "Geometry Dash 1 Click = $1 Vs $100 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-05-12T21:13:06Z",
+      "type": "short"
+    },
+    {
+      "id": "AGIqBH3oSEg",
+      "title": "Playing The Endless Challenge In Geometry Dash!",
+      "channel": "Main",
+      "published": "2024-05-05T13:46:08Z",
+      "type": "long"
+    },
+    {
+      "id": "mDRu06nhH5o",
+      "title": "Geometry Dash 1IQ Vs 100IQ Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-05-04T23:38:31Z",
+      "type": "short"
+    },
+    {
       "id": "cHWhTeo6r5s",
       "title": "These Two Horror Games Are NOT SCARY",
       "channel": "JoshSham",
       "published": "2024-04-30T15:00:36Z",
       "type": "long"
+    },
+    {
+      "id": "eF02MSJVMRE",
+      "title": "Beating \"How To Platformer\"",
+      "channel": "Main",
+      "published": "2024-04-28T12:27:30Z",
+      "type": "long"
+    },
+    {
+      "id": "G9-BpzwQixc",
+      "title": "Geometry Dash $5 Vs $10,000 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-23T21:00:17Z",
+      "type": "short"
+    },
+    {
+      "id": "tK0U9HOOwS0",
+      "title": "Geometry Dash 1IQ Vs 1,000IQ Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-22T23:26:39Z",
+      "type": "short"
+    },
+    {
+      "id": "eVFe2lrQDs0",
+      "title": "Geometry Dash Smallest Spike Vs Biggest Spike Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-21T20:58:02Z",
+      "type": "short"
+    },
+    {
+      "id": "eNegHjpBSkM",
+      "title": "Geometry Dash $1 Vs $1,000 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-20T18:19:22Z",
+      "type": "short"
+    },
+    {
+      "id": "NprWsyo-44o",
+      "title": "IM IN ROBLOX NOW!",
+      "channel": "Main",
+      "published": "2024-04-20T16:00:11Z",
+      "type": "long"
+    },
+    {
+      "id": "_FMcXyXW16c",
+      "title": "World's Hardest Spider Spam Challenge On Mobile #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-04-18T15:30:13Z",
+      "type": "short"
+    },
+    {
+      "id": "cDzaliOOSRQ",
+      "title": "Geometry Dash 1IQ Vs 100IQ Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-13T03:35:40Z",
+      "type": "short"
+    },
+    {
+      "id": "djlceOpezcY",
+      "title": "Geometry Dash $10 Vs $1,000 Path Challenges! #shorts",
+      "channel": "Main",
+      "published": "2024-04-11T00:52:06Z",
+      "type": "short"
+    },
+    {
+      "id": "JyYw8fyk9_Y",
+      "title": "Level Requests In Geometry Dash!",
+      "channel": "Main",
+      "published": "2024-04-09T06:48:42Z",
+      "type": "long"
+    },
+    {
+      "id": "p4JVc7IZGcM",
+      "title": "Sigma Block #shorts",
+      "channel": "Main",
+      "published": "2024-04-09T05:01:07Z",
+      "type": "short"
+    },
+    {
+      "id": "zCJLkecpVDw",
+      "title": "World's Hardest Spider Spam Challenge On An Enter Button #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-04-07T19:26:04Z",
+      "type": "short"
+    },
+    {
+      "id": "O6AGlgxTz6Y",
+      "title": "Playing Buffed Main Levels In Geometry Dash!",
+      "channel": "Main",
+      "published": "2024-04-07T18:29:38Z",
+      "type": "long"
+    },
+    {
+      "id": "jMFCDKLl4wc",
+      "title": "Level Requests In Geometry Dash!",
+      "channel": "Main",
+      "published": "2024-04-07T16:56:04Z",
+      "type": "long"
+    },
+    {
+      "id": "NOLkp21yDUA",
+      "title": "All Difficulties in GD #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-04-06T18:46:59Z",
+      "type": "short"
+    },
+    {
+      "id": "As4vPWPX67U",
+      "title": "Level Requests In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-04-06T15:16:05Z",
+      "type": "long"
+    },
+    {
+      "id": "BTdjuV-sDFA",
+      "title": "Tightest UFO Jump Ever #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-04-06T01:17:42Z",
+      "type": "short"
+    },
+    {
+      "id": "nsETyNnIfH8",
+      "title": "Beating Aleph 0 (Hard Demon)",
+      "channel": "Main",
+      "published": "2024-04-03T15:14:49Z",
+      "type": "long"
+    },
+    {
+      "id": "G6-MxlE2EOg",
+      "title": "World's Hardest Cube Jump Ever #shorts",
+      "channel": "Main",
+      "published": "2024-04-01T13:00:14Z",
+      "type": "short"
+    },
+    {
+      "id": "HqUZ_IR6s0o",
+      "title": "World's Hardest Spider Spam Challenge On A Keyboard #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-04-01T05:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "H0-PeM_5NOs",
+      "title": "Worlds Most Impossible UFO Challenge In Geometry Dash #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-26T07:43:08Z",
+      "type": "short"
+    },
+    {
+      "id": "yZqe6vJ8_VY",
+      "title": "$100 Quiz For My Friend In Geometry Dash! #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-23T04:55:37Z",
+      "type": "short"
+    },
+    {
+      "id": "oF7a4FHoNsU",
+      "title": "World's Hardest Spider Spam Challenge On An Xbox Controller #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-21T02:47:16Z",
+      "type": "short"
+    },
+    {
+      "id": "XdC0El4A4dQ",
+      "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-20T02:18:07Z",
+      "type": "short"
+    },
+    {
+      "id": "ndh9Vyck4CA",
+      "title": "Playing \"Deeper Space\" With Friends! #shorts",
+      "channel": "Main",
+      "published": "2024-03-18T08:40:03Z",
+      "type": "long"
+    },
+    {
+      "id": "Bg8IT7YMmhE",
+      "title": "Geometry Dash: NOOB VS PRO WAVE CHALLENGE! #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-18T01:54:28Z",
+      "type": "short"
+    },
+    {
+      "id": "5G73PRwnsWA",
+      "title": "Do You Love Me In Geometry Dash (BAD ENDING) #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-16T04:43:44Z",
+      "type": "short"
+    },
+    {
+      "id": "c86eY9a2ikc",
+      "title": "World's Hardest Spider Spam Challenge On Mobile #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-15T11:40:10Z",
+      "type": "short"
+    },
+    {
+      "id": "iPPueXzKJgU",
+      "title": "World's Most Synced Spider Challenge! #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-12T11:05:31Z",
+      "type": "short"
+    },
+    {
+      "id": "0BDPtNyQZXY",
+      "title": "World's Hardest Spider Spam Challenge In Geometry Dash #shorts #geometrydash",
+      "channel": "Main",
+      "published": "2024-03-10T23:32:13Z",
+      "type": "short"
+    },
+    {
+      "id": "OLTH1JJ9zx4",
+      "title": "Impossible Wave Challenge For $10,000 #shorts",
+      "channel": "Main",
+      "published": "2024-03-06T11:32:41Z",
+      "type": "short"
+    },
+    {
+      "id": "YPqcpiRgCi4",
+      "title": "\"Stayed Gone\" As A Geometry Dash Layout Level #shorts #hazbinhotel",
+      "channel": "Main",
+      "published": "2024-03-03T04:29:41Z",
+      "type": "short"
+    },
+    {
+      "id": "_3LIQq5-cVE",
+      "title": "Ship Challenge For $1,000 #shorts",
+      "channel": "Main",
+      "published": "2024-02-26T10:52:54Z",
+      "type": "short"
+    },
+    {
+      "id": "FuTCgWeMIgU",
+      "title": "Level Requests In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-02-26T09:51:20Z",
+      "type": "long"
+    },
+    {
+      "id": "gltDsdvuyCU",
+      "title": "Level Requests In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-02-25T16:28:58Z",
+      "type": "long"
+    },
+    {
+      "id": "LoHs3GDJ84Q",
+      "title": "TIDAL WAVE GOT UNRATED…",
+      "channel": "Main",
+      "published": "2024-02-20T12:37:33Z",
+      "type": "long"
+    },
+    {
+      "id": "c-bjxUhHQz4",
+      "title": "Proving I'm Not Fake By Playing \"10 Levels of Wave!\" #shorts",
+      "channel": "Main",
+      "published": "2024-02-07T20:00:28Z",
+      "type": "short"
+    },
+    {
+      "id": "6sjx4GRFXSo",
+      "title": "World's Hardest Cube Jump #shorts",
+      "channel": "Main",
+      "published": "2024-02-06T20:00:05Z",
+      "type": "short"
+    },
+    {
+      "id": "IkBSJPwjOTk",
+      "title": "Sigma Block #shorts",
+      "channel": "Main",
+      "published": "2024-02-06T08:00:13Z",
+      "type": "short"
+    },
+    {
+      "id": "TtXqLIMJo5k",
+      "title": "World's Most Calming Challenge #shorts",
+      "channel": "Main",
+      "published": "2024-02-05T20:29:03Z",
+      "type": "short"
+    },
+    {
+      "id": "R8EfyT4YJ_E",
+      "title": "Geometry Dash MrBeast Challenge For $1,000,000 On Mobile #shorts",
+      "channel": "Main",
+      "published": "2024-02-04T22:33:41Z",
+      "type": "short"
+    },
+    {
+      "id": "hEnbqd0iHSo",
+      "title": "Geometry Dash Lobotomy Memes #shorts",
+      "channel": "Main",
+      "published": "2024-02-04T07:11:50Z",
+      "type": "short"
     },
     {
       "id": "u9QxJ1_qltk",
@@ -929,6 +4703,20 @@
       "type": "short"
     },
     {
+      "id": "hiLbdlv9nPM",
+      "title": "Lobotomy Humor In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-01-20T08:51:45Z",
+      "type": "short"
+    },
+    {
+      "id": "8URh3qxCZqg",
+      "title": "Worlds Most Super Hardest And Tightest Wave Challenge Ever #shorts",
+      "channel": "Main",
+      "published": "2024-01-18T02:45:00Z",
+      "type": "short"
+    },
+    {
       "id": "x0nQCbg55DQ",
       "title": "Playing Baldi's Basics... On Crack.. (Raldi's Crackhouse)",
       "channel": "JoshSham",
@@ -948,6 +4736,965 @@
       "channel": "JoshSham",
       "published": "2024-01-12T03:53:59Z",
       "type": "short"
+    },
+    {
+      "id": "QSnI-66_5NM",
+      "title": "Worlds Tightest And Hardest Swingcopter Challenge in Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-01-10T06:12:25Z",
+      "type": "short"
+    },
+    {
+      "id": "IeJSfo3KPNg",
+      "title": "World's Most Hardest Wave Challenge In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-01-04T16:00:11Z",
+      "type": "short"
+    },
+    {
+      "id": "SV3MXy5k4os",
+      "title": "World's Most Hardest Straight Fly in Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2024-01-04T06:07:16Z",
+      "type": "short"
+    },
+    {
+      "id": "hKAxQw5IlZg",
+      "title": "Geometry Dash MrBeast Challenge For $100,000 #shorts",
+      "channel": "Main",
+      "published": "2024-01-03T04:09:28Z",
+      "type": "short"
+    },
+    {
+      "id": "8EFblMYVVYA",
+      "title": "World's Hardest Triple Spike Cube Jump In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-12-26T02:40:29Z",
+      "type": "short"
+    },
+    {
+      "id": "PI6cwORg20c",
+      "title": "World's Most Hardest And Tightest Spider Challenge In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-12-24T22:21:05Z",
+      "type": "short"
+    },
+    {
+      "id": "Dt_tDfBRLQc",
+      "title": "Working On Robot Dash 2 in Geometry Dash",
+      "channel": "Main",
+      "published": "2023-12-24T09:27:41Z",
+      "type": "long"
+    },
+    {
+      "id": "Knssaoph-U0",
+      "title": "2.2 IS HERE!!!",
+      "channel": "Main",
+      "published": "2023-12-20T15:26:13Z",
+      "type": "long"
+    },
+    {
+      "id": "f2xN1z3oUyw",
+      "title": "Impossible Challenge In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-12-17T19:03:37Z",
+      "type": "short"
+    },
+    {
+      "id": "WG3SKDoPNjc",
+      "title": "$1,000 Ship Challenge In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-12-15T03:26:37Z",
+      "type": "short"
+    },
+    {
+      "id": "SLoQ1xR8vOU",
+      "title": "WORLDS HARDEST BALL CHALLENGE FOR $10,000 #shorts",
+      "channel": "Main",
+      "published": "2023-12-14T06:50:52Z",
+      "type": "short"
+    },
+    {
+      "id": "dclAsd3Di-M",
+      "title": "WORLDS HARDEST TIGHT WAVE EVER!! #shorts",
+      "channel": "Main",
+      "published": "2023-12-11T12:28:34Z",
+      "type": "short"
+    },
+    {
+      "id": "0P-IhPlej64",
+      "title": "LEVEL REQUESTS!!!! (SEND ID'S IN FORMS) #live",
+      "channel": "Main",
+      "published": "2023-12-11T11:39:42Z",
+      "type": "long"
+    },
+    {
+      "id": "OiMIx1EyULI",
+      "title": "2.2 IS OUT!!!",
+      "channel": "Main",
+      "published": "2023-12-11T11:00:19Z",
+      "type": "long"
+    },
+    {
+      "id": "UN0UjR4CaiQ",
+      "title": "Red Flags in Geometry Dash!! #shorts",
+      "channel": "Main",
+      "published": "2023-12-07T12:03:16Z",
+      "type": "short"
+    },
+    {
+      "id": "8JXlyV5n4jU",
+      "title": "Geometry Dash MrBeast Challenge For $25,245 #shorts",
+      "channel": "Main",
+      "published": "2023-12-06T19:30:00Z",
+      "type": "short"
+    },
+    {
+      "id": "DpZ8bs9A7LA",
+      "title": "Geometry Dash Extreme Levels Challenge!! #shorts",
+      "channel": "Main",
+      "published": "2023-12-06T11:34:54Z",
+      "type": "short"
+    },
+    {
+      "id": "tpGT0xqh0xI",
+      "title": "LEVEL 10 IS IMPOSSIBLE!!! #shorts",
+      "channel": "Main",
+      "published": "2023-11-30T05:15:59Z",
+      "type": "short"
+    },
+    {
+      "id": "fb6dYlqP_PI",
+      "title": "WORLD'S HARDEST AND TIGHTEST DUEL SHIP!!! #shorts",
+      "channel": "Main",
+      "published": "2023-11-26T20:52:08Z",
+      "type": "short"
+    },
+    {
+      "id": "dUO1-axDbfI",
+      "title": "WORLD'S HARDEST AND TIGHTEST DUEL WAVE!!! #shorts",
+      "channel": "Main",
+      "published": "2023-11-25T05:43:38Z",
+      "type": "short"
+    },
+    {
+      "id": "1d7Bk9nWIqs",
+      "title": "World's Hardest And Most Tightest Ball Challenge Ever #shorts",
+      "channel": "Main",
+      "published": "2023-11-20T03:54:14Z",
+      "type": "short"
+    },
+    {
+      "id": "yCkf-Lpzdi4",
+      "title": "LEVEL REQUESTS!!!! (SEND ID'S IN FORMS) #live",
+      "channel": "Main",
+      "published": "2023-11-19T18:22:16Z",
+      "type": "long"
+    },
+    {
+      "id": "3uEqIkwHmjQ",
+      "title": "World's Most Hardest Timed Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-11-18T16:33:46Z",
+      "type": "short"
+    },
+    {
+      "id": "L0vDv7pvc2s",
+      "title": "Beating Minecraft w/Girlfriend #live",
+      "channel": "Main",
+      "published": "2023-11-18T15:08:08Z",
+      "type": "long"
+    },
+    {
+      "id": "oSWq3VoMVEs",
+      "title": "Playing BiteSterxBeast Challenges In Geometry Dash #live",
+      "channel": "Main",
+      "published": "2023-11-18T11:41:15Z",
+      "type": "long"
+    },
+    {
+      "id": "85s-joInSXg",
+      "title": "World's Hardest And Tightest Mini Wave #shorts",
+      "channel": "Main",
+      "published": "2023-11-15T02:19:40Z",
+      "type": "short"
+    },
+    {
+      "id": "HLCBnggHkAg",
+      "title": "Geometry Dash MrBeast Challenge For $1,000 (SWAG ROUTE) #shorts",
+      "channel": "Main",
+      "published": "2023-11-13T04:49:46Z",
+      "type": "short"
+    },
+    {
+      "id": "ccLNy-SjiX4",
+      "title": "Discord Would You Rather Questions In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-11-12T17:29:29Z",
+      "type": "short"
+    },
+    {
+      "id": "gLhXKCo94sE",
+      "title": "2.2's Release Date!",
+      "channel": "Main",
+      "published": "2023-11-08T05:19:55Z",
+      "type": "long"
+    },
+    {
+      "id": "uggPhT2LKuA",
+      "title": "Hardest Spider Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-11-06T04:56:41Z",
+      "type": "short"
+    },
+    {
+      "id": "4MqPqrO0PiM",
+      "title": "Geometry Dash 2.2 Dropped On IOS!",
+      "channel": "Main",
+      "published": "2023-11-05T21:16:25Z",
+      "type": "long"
+    },
+    {
+      "id": "uMj8pHmwXQw",
+      "title": "Hardest And Tightest Wave Spam Ever #shorts",
+      "channel": "Main",
+      "published": "2023-11-04T05:07:37Z",
+      "type": "short"
+    },
+    {
+      "id": "FrreT2cgIsg",
+      "title": "Future Funk II 96% (Go At 46%) #live",
+      "channel": "Main",
+      "published": "2023-10-30T09:57:35Z",
+      "type": "long"
+    },
+    {
+      "id": "HxjK49ZEMls",
+      "title": "Geometry Dash MrBeast Challenge For $10,101 #shorts",
+      "channel": "Main",
+      "published": "2023-10-30T04:45:01Z",
+      "type": "short"
+    },
+    {
+      "id": "q1uKZmvW_K8",
+      "title": "Future Funk II 96% (Go At 46%) #live",
+      "channel": "Main",
+      "published": "2023-10-29T11:02:33Z",
+      "type": "long"
+    },
+    {
+      "id": "whbMMpwCcJo",
+      "title": "World's Tightest Wave Gap In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-10-26T01:25:58Z",
+      "type": "short"
+    },
+    {
+      "id": "h9noCUahqAc",
+      "title": "Future Funk II 71% (Go At 46%) #live",
+      "channel": "Main",
+      "published": "2023-10-24T12:51:28Z",
+      "type": "long"
+    },
+    {
+      "id": "NsbwTKikkLU",
+      "title": "World's Easiest Ball And Wave For $100 #shorts",
+      "channel": "Main",
+      "published": "2023-10-23T03:38:01Z",
+      "type": "short"
+    },
+    {
+      "id": "D2v7yYmaaho",
+      "title": "Extending Slaughterhouse In Geometry Dash #live",
+      "channel": "Main",
+      "published": "2023-10-22T03:31:18Z",
+      "type": "long"
+    },
+    {
+      "id": "tTzxHGQtg4I",
+      "title": "Geometry Dash MrBeast Challenge For $562,000 #shorts",
+      "channel": "Main",
+      "published": "2023-10-21T18:05:49Z",
+      "type": "short"
+    },
+    {
+      "id": "fphrJdYXarU",
+      "title": "Attempting To Beat Future Funk II #live",
+      "channel": "Main",
+      "published": "2023-10-21T16:10:16Z",
+      "type": "long"
+    },
+    {
+      "id": "80ax7_ROmoY",
+      "title": "Hardest Cube Jump Ever #shorts",
+      "channel": "Main",
+      "published": "2023-10-18T23:23:19Z",
+      "type": "short"
+    },
+    {
+      "id": "ONeWSS3lyjU",
+      "title": "Geometry Dash KaiGuy Challenge For $1,000 #shorts",
+      "channel": "Main",
+      "published": "2023-10-17T13:25:53Z",
+      "type": "short"
+    },
+    {
+      "id": "obp3Pp3P20s",
+      "title": "5 GD Shorts Creators Play Real Challenges #shorts",
+      "channel": "Main",
+      "published": "2023-10-16T13:36:47Z",
+      "type": "short"
+    },
+    {
+      "id": "2qU3RLYh4Ks",
+      "title": "Hardest And Tightest Mini Ship Gap Ever #shorts",
+      "channel": "Main",
+      "published": "2023-10-16T01:17:27Z",
+      "type": "short"
+    },
+    {
+      "id": "aKCwBOsImxM",
+      "title": "5 GD Shorts Creators Play Real Challenges",
+      "channel": "Main",
+      "published": "2023-10-15T17:00:16Z",
+      "type": "long"
+    },
+    {
+      "id": "So7s_wKFy2g",
+      "title": "World's Hardest And Tightest Mini Wave #shorts",
+      "channel": "Main",
+      "published": "2023-10-13T02:26:46Z",
+      "type": "short"
+    },
+    {
+      "id": "Ot6Xyw6zCjM",
+      "title": "World's Hardest UFO Orb Clicks #shorts",
+      "channel": "Main",
+      "published": "2023-10-11T03:27:22Z",
+      "type": "short"
+    },
+    {
+      "id": "u1tF8tIjzIQ",
+      "title": "Loverboy As A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-10-10T09:58:45Z",
+      "type": "short"
+    },
+    {
+      "id": "Yot6gveXnYM",
+      "title": "World's Hardest Tight Wave Gap Ever #shorts",
+      "channel": "Main",
+      "published": "2023-10-08T23:05:54Z",
+      "type": "short"
+    },
+    {
+      "id": "Us6IEf9LtEQ",
+      "title": "Building A Rated Level (before 2.2) Day: 1 #live",
+      "channel": "Main",
+      "published": "2023-10-08T00:03:46Z",
+      "type": "long"
+    },
+    {
+      "id": "8Co4-Hdd_2A",
+      "title": "Geometry Dash MrBeast Challenge For $69,420 #shorts",
+      "channel": "Main",
+      "published": "2023-10-07T05:33:48Z",
+      "type": "short"
+    },
+    {
+      "id": "lwV_FA98H4k",
+      "title": "Raiding Streamers Live (LEVEL REQUESTS) #live",
+      "channel": "Main",
+      "published": "2023-10-06T11:51:08Z",
+      "type": "long"
+    },
+    {
+      "id": "z9Shlm5DK4M",
+      "title": "World's Most Hardest Timed Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-10-05T10:43:12Z",
+      "type": "short"
+    },
+    {
+      "id": "XzUYSX3rifY",
+      "title": "World's Most Tightest Dash Orb Ever #shorts",
+      "channel": "Main",
+      "published": "2023-10-02T18:48:10Z",
+      "type": "short"
+    },
+    {
+      "id": "kzcE21LjOj0",
+      "title": "World's Hardest Consistent Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-10-01T20:02:36Z",
+      "type": "short"
+    },
+    {
+      "id": "BAruVmO_xUw",
+      "title": "100K",
+      "channel": "Main",
+      "published": "2023-10-01T12:18:39Z",
+      "type": "long"
+    },
+    {
+      "id": "09CBdpvcEIg",
+      "title": "World's Hardest Tight Mini-Wave In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-09-30T04:19:58Z",
+      "type": "short"
+    },
+    {
+      "id": "MN7j4xfMzqA",
+      "title": "Geometry Dash MrBeast Challenge For $69,420 #shorts",
+      "channel": "Main",
+      "published": "2023-09-28T20:20:05Z",
+      "type": "short"
+    },
+    {
+      "id": "TgrdN-mhpP0",
+      "title": "GRINDING 100 DEMONS!!!! #live",
+      "channel": "Main",
+      "published": "2023-09-27T11:38:57Z",
+      "type": "long"
+    },
+    {
+      "id": "a7RtUnc_cTA",
+      "title": "World's Hardest Tight Wave In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-09-27T02:44:50Z",
+      "type": "short"
+    },
+    {
+      "id": "hIMCY9ZxAA8",
+      "title": "Humor In Geometry Dash 2.2 #shorts",
+      "channel": "Main",
+      "published": "2023-09-26T03:31:50Z",
+      "type": "short"
+    },
+    {
+      "id": "IrvyiYO26x4",
+      "title": "World's Easiest Wave Challenge (Smurf Cat) #shorts",
+      "channel": "Main",
+      "published": "2023-09-25T10:29:46Z",
+      "type": "short"
+    },
+    {
+      "id": "5ch4vP6EsIY",
+      "title": "Geometry Dash Rip-Offs #2 #shorts",
+      "channel": "Main",
+      "published": "2023-09-25T03:53:59Z",
+      "type": "short"
+    },
+    {
+      "id": "eAzoo34V7Aw",
+      "title": "Tightest Wave Challenge Ever #shorts",
+      "channel": "Main",
+      "published": "2023-09-24T16:45:45Z",
+      "type": "short"
+    },
+    {
+      "id": "nKbQti7Ocv4",
+      "title": "Reading Asked Questions! #shorts",
+      "channel": "Main",
+      "published": "2023-09-23T05:22:03Z",
+      "type": "short"
+    },
+    {
+      "id": "qnuziy-g0G8",
+      "title": "Geometry Dash Rip-Offs #1 #shorts",
+      "channel": "Main",
+      "published": "2023-09-22T11:59:31Z",
+      "type": "short"
+    },
+    {
+      "id": "4zdG4MY8P0E",
+      "title": "Tightest Cube In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-09-19T17:11:43Z",
+      "type": "short"
+    },
+    {
+      "id": "J6Si5ujbjgs",
+      "title": "Do You Love Me In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-09-19T01:34:44Z",
+      "type": "short"
+    },
+    {
+      "id": "hVkFvpF-ppM",
+      "title": "LEVEL REQUESTS!!!! #live",
+      "channel": "Main",
+      "published": "2023-09-17T11:58:38Z",
+      "type": "long"
+    },
+    {
+      "id": "UcdIMOGcoLw",
+      "title": "My Friend Made Me A Challenge For $6,969 #shorts",
+      "channel": "Main",
+      "published": "2023-09-17T03:11:01Z",
+      "type": "short"
+    },
+    {
+      "id": "ssWvMnWgerc",
+      "title": "Hardest Tight Wave Ever Created #shorts",
+      "channel": "Main",
+      "published": "2023-09-16T20:45:17Z",
+      "type": "short"
+    },
+    {
+      "id": "m-z_qQVcXwQ",
+      "title": "Hardest Cube Jump Ever #shorts",
+      "channel": "Main",
+      "published": "2023-09-14T04:10:37Z",
+      "type": "short"
+    },
+    {
+      "id": "_6K9UEAv_qw",
+      "title": "Beating Crazy III",
+      "channel": "Main",
+      "published": "2023-09-13T02:54:24Z",
+      "type": "long"
+    },
+    {
+      "id": "Nga5tZYpkd0",
+      "title": "Geometry Dash MrBeast Challenge For $100,000 #shorts",
+      "channel": "Main",
+      "published": "2023-09-11T18:44:18Z",
+      "type": "short"
+    },
+    {
+      "id": "tiWjvNYtxEs",
+      "title": "World's Hardest And Tightest Ball And Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-09-11T07:35:26Z",
+      "type": "short"
+    },
+    {
+      "id": "cC4Sl2AfxiI",
+      "title": "I Think I Downloaded The Wrong Deadlocked",
+      "channel": "Main",
+      "published": "2023-09-09T15:36:12Z",
+      "type": "short"
+    },
+    {
+      "id": "Irn2Z1_GTmg",
+      "title": "Worlds Hardest Tight Wave In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-09-06T05:37:46Z",
+      "type": "short"
+    },
+    {
+      "id": "E3xlhg-PKtU",
+      "title": "Playing Geometry Dash Rip-Offs In Roblox",
+      "channel": "Main",
+      "published": "2023-09-05T16:00:09Z",
+      "type": "long"
+    },
+    {
+      "id": "bRrqr0bOwmo",
+      "title": "Blast Processing With Late Clicks #shorts",
+      "channel": "Main",
+      "published": "2023-09-05T08:30:09Z",
+      "type": "short"
+    },
+    {
+      "id": "Bd-veRtzfnk",
+      "title": "World's Hardest Tight Wave In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-08-31T01:13:07Z",
+      "type": "short"
+    },
+    {
+      "id": "w3r5XpuFLIc",
+      "title": "10K #live",
+      "channel": "Main",
+      "published": "2023-08-30T20:40:19Z",
+      "type": "long"
+    },
+    {
+      "id": "QDCqNlDJyqw",
+      "title": "If I Die I Have To Give My Friend $100  (w/@SamsterBoi) #shorts",
+      "channel": "Main",
+      "published": "2023-08-30T08:44:32Z",
+      "type": "short"
+    },
+    {
+      "id": "MRD1tL-NmiE",
+      "title": "\"Calling - Metro Boomin\" But It's A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-08-30T06:17:39Z",
+      "type": "short"
+    },
+    {
+      "id": "HlOkRdsfLB0",
+      "title": "I Think I Downloaded The Wrong Level AGAIN #shorts",
+      "channel": "Main",
+      "published": "2023-08-29T07:39:39Z",
+      "type": "short"
+    },
+    {
+      "id": "n1mveZi1ZfQ",
+      "title": "\"Gravity Is Created\" But It's A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-08-29T05:02:20Z",
+      "type": "short"
+    },
+    {
+      "id": "XQZxlQunClM",
+      "title": "\"Gravity Is Created\" But It's A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2023-08-29T04:34:42Z",
+      "type": "long"
+    },
+    {
+      "id": "sOhakAl_aWA",
+      "title": "I Think I Downloaded The Wrong Level #shorts",
+      "channel": "Main",
+      "published": "2023-08-28T08:16:53Z",
+      "type": "short"
+    },
+    {
+      "id": "zSvy73kjT-g",
+      "title": "Geometry Dash MrBeast Challenge For $1,000 #shorts",
+      "channel": "Main",
+      "published": "2023-08-28T08:16:15Z",
+      "type": "short"
+    },
+    {
+      "id": "ZTduxFavAWo",
+      "title": "ROAD TO 4K!!! #live",
+      "channel": "Main",
+      "published": "2023-08-27T11:37:47Z",
+      "type": "long"
+    },
+    {
+      "id": "Aw2huc7JMuA",
+      "title": "Proving That Im Actually Good At Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-08-25T05:03:47Z",
+      "type": "short"
+    },
+    {
+      "id": "6NxwgJ8wyXg",
+      "title": "Hardest Triple Spike Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-08-24T03:57:07Z",
+      "type": "short"
+    },
+    {
+      "id": "2RDd5PIXh5M",
+      "title": "ROAD TO 3K #live",
+      "channel": "Main",
+      "published": "2023-08-23T00:30:14Z",
+      "type": "long"
+    },
+    {
+      "id": "q6CCtGSu8T0",
+      "title": "NOT STOPPING STREAM UNTIL I BEAT BUTITI II (ended due to lost bitrate) #live",
+      "channel": "Main",
+      "published": "2023-08-22T15:04:56Z",
+      "type": "long"
+    },
+    {
+      "id": "9LYzYzCCb80",
+      "title": "A Subscriber Made An Impossible Wave Challenge For Me #shorts",
+      "channel": "Main",
+      "published": "2023-08-22T05:17:32Z",
+      "type": "short"
+    },
+    {
+      "id": "rwOcPH-WTQs",
+      "title": "World's Hardest And Tightest Ship Gap #shorts",
+      "channel": "Main",
+      "published": "2023-08-22T04:30:44Z",
+      "type": "short"
+    },
+    {
+      "id": "ivMlh-O6z6o",
+      "title": "NOT STOPPING STREAM UNTIL I BEAT BUTITI II #live",
+      "channel": "Main",
+      "published": "2023-08-22T00:34:05Z",
+      "type": "long"
+    },
+    {
+      "id": "iPwg52rhdAg",
+      "title": "something #live",
+      "channel": "Main",
+      "published": "2023-08-21T18:45:54Z",
+      "type": "long"
+    },
+    {
+      "id": "OVmxpVNWdOg",
+      "title": "Lightwork No Reaction #shorts",
+      "channel": "Main",
+      "published": "2023-08-21T13:51:56Z",
+      "type": "short"
+    },
+    {
+      "id": "FVZ9LoslrAw",
+      "title": "World's Hardest And Tightest Mini Wave #shorts",
+      "channel": "Main",
+      "published": "2023-08-21T02:53:55Z",
+      "type": "short"
+    },
+    {
+      "id": "cEunAta4Q_k",
+      "title": "Hardest Wave Spam Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-08-18T02:49:36Z",
+      "type": "short"
+    },
+    {
+      "id": "dxnBSU9uvNM",
+      "title": "Geometry Dash MrBeast Challenge For $1,000,000 #shorts",
+      "channel": "Main",
+      "published": "2023-08-17T01:57:48Z",
+      "type": "short"
+    },
+    {
+      "id": "pAHbwFyVvaw",
+      "title": "Hardest Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-08-16T19:38:41Z",
+      "type": "short"
+    },
+    {
+      "id": "qDUE9pzOZkk",
+      "title": "My Reaction To 2.2's Release #shorts",
+      "channel": "Main",
+      "published": "2023-08-15T23:58:12Z",
+      "type": "short"
+    },
+    {
+      "id": "JwviQcZKvN0",
+      "title": "Reacting To Geometry Dash 10-Year Anniversary #live",
+      "channel": "Main",
+      "published": "2023-08-14T08:55:02Z",
+      "type": "long"
+    },
+    {
+      "id": "vWFEuooRQs8",
+      "title": "Hardest Robot Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-08-12T17:20:04Z",
+      "type": "short"
+    },
+    {
+      "id": "OCB5n4HEARA",
+      "title": "Making 50//50 (By: Vantage) Into A Layout #live",
+      "channel": "Main",
+      "published": "2023-08-12T16:24:14Z",
+      "type": "long"
+    },
+    {
+      "id": "_XVja9_tnwI",
+      "title": "Hardest Spider Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-08-11T06:24:52Z",
+      "type": "short"
+    },
+    {
+      "id": "5ibbb9Sx_AQ",
+      "title": "I Just Wanna Dance But Its A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2023-08-06T17:03:53Z",
+      "type": "short"
+    },
+    {
+      "id": "sAhCeQmohyA",
+      "title": "So There Is A Big Problem #shorts",
+      "channel": "Main",
+      "published": "2023-08-05T14:36:40Z",
+      "type": "short"
+    },
+    {
+      "id": "UVX5mhH8HCc",
+      "title": "Not Stopping Stream Until I Beat Butiti II",
+      "channel": "Main",
+      "published": "2023-08-05T05:33:36Z",
+      "type": "long"
+    },
+    {
+      "id": "ALb603-Gxxk",
+      "title": "Not Stopping Stream Until I Beat Butiti II",
+      "channel": "Main",
+      "published": "2023-08-04T13:37:11Z",
+      "type": "long"
+    },
+    {
+      "id": "q5ONYEvSIg8",
+      "title": "Geometry Dash MrBeast Challenge For $10,000 #shorts",
+      "channel": "Main",
+      "published": "2023-07-31T03:07:58Z",
+      "type": "short"
+    },
+    {
+      "id": "v7o-4GB_L1U",
+      "title": "Attempting To Beat Butiti II Part X",
+      "channel": "Main",
+      "published": "2023-07-30T07:09:32Z",
+      "type": "long"
+    },
+    {
+      "id": "L6K3MKDvA20",
+      "title": "Playing \"Gun Duel\" Until The Game Gets Revived",
+      "channel": "Main",
+      "published": "2023-07-29T11:16:01Z",
+      "type": "long"
+    },
+    {
+      "id": "4zSsz7-OS9k",
+      "title": "Murder Plot As A Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-07-29T02:03:11Z",
+      "type": "short"
+    },
+    {
+      "id": "YkIM0tU7KAk",
+      "title": "Gigachad Phonk As A Wave Challenge #shorts",
+      "channel": "Main",
+      "published": "2023-07-28T03:32:56Z",
+      "type": "short"
+    },
+    {
+      "id": "rR1BynwKRO4",
+      "title": "Skibidi Toilet But Its A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-07-23T05:17:14Z",
+      "type": "short"
+    },
+    {
+      "id": "xPfRKV7LwqQ",
+      "title": "NickEh30 Meme But It's A Geometry Dash Level #shorts",
+      "channel": "Main",
+      "published": "2023-06-27T20:23:17Z",
+      "type": "short"
+    },
+    {
+      "id": "p0LManA4gys",
+      "title": "Geometry Dash But It's The \"Nuh Uh\" Sound Effect #shorts",
+      "channel": "Main",
+      "published": "2023-06-21T14:08:15Z",
+      "type": "short"
+    },
+    {
+      "id": "QsV0OYxBSVs",
+      "title": "Secret Path On Back On Track In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-06-12T22:14:59Z",
+      "type": "short"
+    },
+    {
+      "id": "moTmfW701uY",
+      "title": "Sweet Little Bumble Bee But Its A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-06-09T17:38:57Z",
+      "type": "short"
+    },
+    {
+      "id": "ATbTMcsSZgM",
+      "title": "Sweet Little Bumble Bee But Its A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2023-06-08T15:44:31Z",
+      "type": "long"
+    },
+    {
+      "id": "90_zes2CWWQ",
+      "title": "Secret Path On Stereo Madness In Geometry Dash #shorts",
+      "channel": "Main",
+      "published": "2023-06-08T04:51:30Z",
+      "type": "short"
+    },
+    {
+      "id": "qs9OtmGY8qI",
+      "title": "How To Make A Geometry Dash Level #shorts",
+      "channel": "Main",
+      "published": "2023-06-07T18:23:32Z",
+      "type": "short"
+    },
+    {
+      "id": "OSEExYU1UbE",
+      "title": "Rhythm Hell But It's A Geometry Dash Level",
+      "channel": "Main",
+      "published": "2023-06-01T05:00:15Z",
+      "type": "long"
+    },
+    {
+      "id": "Ifvn3fVb4nc",
+      "title": "Rhythm Hell But It's A Geometry Dash Level #shorts",
+      "channel": "Main",
+      "published": "2023-06-01T05:00:07Z",
+      "type": "short"
+    },
+    {
+      "id": "fLb3ESe2JSQ",
+      "title": "'Video Games' But It's A Geometry Dash Layout #shorts",
+      "channel": "Main",
+      "published": "2023-05-14T05:03:21Z",
+      "type": "short"
+    },
+    {
+      "id": "NlCRDoF_mvQ",
+      "title": "'Video Games' By: \"Tenacious D\" But It's A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2023-05-14T01:15:56Z",
+      "type": "long"
+    },
+    {
+      "id": "CS7gWf-akNM",
+      "title": "Geometry Dash But It's The Metal Pipe Sound Effect",
+      "channel": "Main",
+      "published": "2023-04-14T03:00:04Z",
+      "type": "short"
+    },
+    {
+      "id": "Q914sBuxTHE",
+      "title": "Bowser Sings Peaches But It's A Geometry Dash Layout.",
+      "channel": "Main",
+      "published": "2023-04-12T05:25:00Z",
+      "type": "long"
+    },
+    {
+      "id": "5hHYy8QfGGE",
+      "title": "Hexagon Force But Its Sang By adbul_cisse",
+      "channel": "Main",
+      "published": "2022-11-07T02:00:02Z",
+      "type": "long"
+    },
+    {
+      "id": "OjoN7z6EZ30",
+      "title": "Stop Posting About Baller But Its A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2022-10-26T01:02:23Z",
+      "type": "long"
+    },
+    {
+      "id": "iMJ3B9G7-_g",
+      "title": "Stereo Madness But Its Sang By adbul_cisse",
+      "channel": "Main",
+      "published": "2022-03-16T19:19:18Z",
+      "type": "long"
+    },
+    {
+      "id": "VPYZICbt5fY",
+      "title": "The Rock's Verse But Its a Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2021-10-23T19:00:18Z",
+      "type": "long"
+    },
+    {
+      "id": "IY9zpmEPZo0",
+      "title": "I slammed my penith But It’s A Geometry Dash Layout",
+      "channel": "Main",
+      "published": "2021-09-18T22:09:04Z",
+      "type": "long"
+    },
+    {
+      "id": "mqP_Grgtkls",
+      "title": "Making A Layout In Under 10 Minutes In Geometry Dash",
+      "channel": "Main",
+      "published": "2021-09-06T14:00:13Z",
+      "type": "long"
     }
   ],
   "_cache": {
@@ -957,6 +5704,13 @@
       "BiteSterxBeastExtras": "UUPNT4l2KeOV1sjmK2fO8M3Q",
       "BitePlaysMC": "UUHUeagSDY0qgEA_7VjHRjJw",
       "JoshSham": "UUyURvTMvIrCAxJAQ2MHFa0g"
+    },
+    "avatars": {
+      "JoshSham": "https://yt3.ggpht.com/PRmU0X60-8dXlLZfQq6qX6EytACI43Qamfv7KEBESwdfxB6BMPdYtWINGkdWf4L2tyXrw9e4Ztc=s800-c-k-c0x00ffffff-no-rj",
+      "BiteSterxBeastExperiments": "https://yt3.ggpht.com/KGyo1Po0gakzWM0pz0cub9_t_PBzinLQpnA8QhFwXHYdwENdwydxlb6EDC9Wq9Pkty2vVMqERw=s800-c-k-c0x00ffffff-no-rj",
+      "BiteSterxBeast": "https://yt3.ggpht.com/x0j_eUPI02JGr2cG6jo-IDOzmRnb0i3XO8C10o9rFSC9KMUmX-OmqB_tvaUp816FwQamu0tVFQ=s800-c-k-c0x00ffffff-no-rj",
+      "BiteSterxBeastExtras": "https://yt3.ggpht.com/0cgIpv03B8Z83_5aJIQjA7zQmbFBUCnewGZfW8i14fZY9jQYrxbpHLpjgKVxJg7EIec_CpWzFyE=s800-c-k-c0x00ffffff-no-rj",
+      "BitePlaysMC": "https://yt3.ggpht.com/JNimMDNlQtoawMWUPHGvQgTt0bngcG94iEdmoRzU2F8o3Lgsfn3odeS0y5CtMtbhzkcQtY1J=s800-c-k-c0x00ffffff-no-rj"
     },
     "types": {
       "ViYQZQIloD8": "short",
@@ -1091,7 +5845,683 @@
       "hnarsW5qlBc": "short",
       "x0nQCbg55DQ": "long",
       "2zD8jkCteO4": "short",
-      "SxkMtbFAfRc": "short"
-    }
+      "SxkMtbFAfRc": "short",
+      "tDCCU0GVp1Q": "short",
+      "pDO2W7dN0dE": "short",
+      "f7vOUYSZvxY": "long",
+      "6kOmdixVnHM": "short",
+      "u9pfR9cyFX0": "short",
+      "mzco5kH41KQ": "long",
+      "gWTe8L0Hlpk": "short",
+      "qC08CLmADCU": "short",
+      "fSDwd39j638": "short",
+      "Zkx83Yd_osw": "short",
+      "PGx969t3waQ": "short",
+      "q4VpgVB0k_Y": "short",
+      "U1VFxXsRuKg": "short",
+      "FockJ-Q2MSA": "short",
+      "BVKWp8jAv48": "short",
+      "_8kiLlD12bA": "short",
+      "7ZFMddzA1bc": "short",
+      "23SC0Ohkvu0": "short",
+      "pBH4plAoebQ": "short",
+      "SsfN79rPWOw": "short",
+      "b7itT-1Vu4w": "short",
+      "8lMKYfIMFZA": "short",
+      "FJXksISjYvY": "short",
+      "6gD0mU6JiN0": "short",
+      "pLXXc1b4o_A": "short",
+      "rd1R1AJnnuA": "short",
+      "Z2fUNsZOZWA": "short",
+      "u4Y8l1V8pZ0": "short",
+      "J9_Vz_OYqkQ": "short",
+      "0rH3GYwsaEw": "long",
+      "D8DCzv98A_Y": "short",
+      "tHsO3dgXeIs": "short",
+      "YnykzN_wAg4": "long",
+      "4IIW__HbhOM": "short",
+      "XefqIr6W28Y": "long",
+      "-lp_hzaQxJY": "long",
+      "SdW3xVnGlc0": "long",
+      "d5E-NTv7BTs": "long",
+      "RTaLyjc_YjE": "long",
+      "OmNRV6aU8cU": "short",
+      "C8f5dstdFbo": "short",
+      "oT6f_0JgA4k": "short",
+      "y9NdgZzxTto": "short",
+      "K1NxESDXjOA": "short",
+      "KD82YKnvkwg": "short",
+      "SnlyLRdL-gI": "short",
+      "vmg5oFlIy10": "long",
+      "CG73j_VcoTE": "short",
+      "-al2eWJTPX4": "short",
+      "ugaKFX_ILzM": "short",
+      "gLT_VQnsRxU": "short",
+      "FY-i5bgFCT4": "short",
+      "de94AmOVS8A": "short",
+      "pa01aAVm8U8": "short",
+      "S-HqF24UGQ8": "short",
+      "4A2ET0OjqVg": "short",
+      "L_EzN3uJ8is": "short",
+      "2O-3GrMhdaI": "short",
+      "YpJ10BK9k0c": "long",
+      "swB8s2uQWC0": "short",
+      "43-YU-m2uXQ": "short",
+      "2GJsakCFgVg": "short",
+      "dMzBtG-bLMA": "short",
+      "kfV93IKHn2k": "short",
+      "cTDZ6JW0UBA": "short",
+      "gSW_84jjpas": "short",
+      "ACV35lJzOMQ": "short",
+      "usoy74IJLHI": "short",
+      "1xMT1YvOhuE": "short",
+      "xZrLt9SyR7g": "short",
+      "LmZSKFcVWnc": "short",
+      "GlqhqlKuHJQ": "short",
+      "Xpm7B1HEehE": "short",
+      "jbAVHJvB8Wo": "short",
+      "Kw27g0TZYbs": "short",
+      "SKaYCsEDlIw": "short",
+      "KaLuNVzeNa0": "short",
+      "mM3cVZz3Lnc": "short",
+      "OiEH6VyFBIM": "short",
+      "8vrcz_0wy1k": "short",
+      "BO8qEa0dLyM": "short",
+      "cTakTW86Y-k": "short",
+      "uZCtfMYA0qY": "short",
+      "pNSO7EN-c7E": "short",
+      "oU_3Xb5YSxw": "short",
+      "IOraVV0aqSw": "short",
+      "olA8CsTki_Y": "short",
+      "YmfU9V-x8JM": "short",
+      "or_Q9kOYGX8": "short",
+      "rkNMdwHiexs": "short",
+      "PZ5Tw3z8TBs": "short",
+      "FB2b8n9iOM4": "short",
+      "CVJuqFtfXpE": "short",
+      "IUKWU6XG94c": "short",
+      "bRJ1n0FnOF4": "short",
+      "0Z690ehY2OU": "short",
+      "SA0D8ERDJog": "short",
+      "HozaUM0Uebo": "short",
+      "_zwzLphwyKA": "short",
+      "GyTCDcQsrOQ": "short",
+      "TpQfmgAbR84": "short",
+      "MOzXf26DTVc": "short",
+      "YnafwKcZ9Yg": "short",
+      "74EhysS2EN0": "short",
+      "g9h5h24Jix0": "short",
+      "P1RlHxW80eI": "short",
+      "kOrugle4Bgc": "short",
+      "37YxysQFzi8": "short",
+      "uuiUzhPKcUI": "short",
+      "wM4KZ5-R2BM": "short",
+      "eUWFJvNPRW8": "short",
+      "stjvbnx-LOQ": "short",
+      "9t4-LKrGZWU": "short",
+      "v7lHk-Y62sQ": "short",
+      "31c0q5gaeQc": "short",
+      "IRJEuxJ7ziM": "short",
+      "wCbf08deTus": "short",
+      "vTfxr9AE__Q": "short",
+      "GDMSCpGfSuI": "short",
+      "DAOBSR4Fa6Y": "long",
+      "QeulazOhVTo": "short",
+      "zWhxclhcWT8": "short",
+      "6qDW3K-_8O0": "short",
+      "33zkCx8_vak": "short",
+      "9Xe8tr5vdf8": "short",
+      "NzJBisw4LOQ": "short",
+      "Iw1WU_P2010": "short",
+      "nbZWC9KjRR4": "short",
+      "kgDwkP7wYaw": "long",
+      "iql9bhlg0Hk": "long",
+      "rr87_J9if9M": "short",
+      "YAzHTku2WDQ": "long",
+      "mkpOjN8kwLg": "short",
+      "SooBoY8VlgA": "long",
+      "0znBEme6uck": "long",
+      "4-uiI2ePATE": "short",
+      "AFtCJuVQH3o": "short",
+      "vmkHiDs5N8s": "short",
+      "0O10Vltaue0": "short",
+      "MDi1xPKii54": "short",
+      "4imTtdXOvsE": "short",
+      "YJ6v2TqaeRI": "short",
+      "O0BFz_5zQMQ": "short",
+      "1Dz2zBLiu0Q": "long",
+      "pgvAtPngQXY": "short",
+      "CbVpG-g2LXs": "long",
+      "FsehkY5-K44": "short",
+      "FYZYNCqJZjg": "short",
+      "smoKYBEBTpo": "short",
+      "WrFm4Rz-vhA": "short",
+      "xDkuPw5m8-c": "short",
+      "Ap5lS_4HvU8": "short",
+      "4UaBGqKrpuc": "short",
+      "w3FCsb3WKZc": "short",
+      "f_Jof8pnhBI": "short",
+      "2wOgdb7oLGM": "short",
+      "rhHVjbpeFeM": "short",
+      "Cs_c8OywaV0": "short",
+      "kdVqXGuGmsg": "short",
+      "UpGcrEpsgBo": "short",
+      "c8RtFg8U1Go": "short",
+      "M0_2FdYGk7M": "short",
+      "DKgHPtCuuJY": "short",
+      "EtaNSVUEou8": "short",
+      "iGqbfQObTQA": "long",
+      "YW29jFCFrWc": "short",
+      "K01P4fGDmEE": "short",
+      "tOBQSJ8OgTw": "long",
+      "p_sAWLrHCmM": "short",
+      "QWNlI7wQzaY": "short",
+      "-rts8Ig-ArY": "short",
+      "3pzFQe-tFpQ": "short",
+      "X0IdKBXM7i8": "short",
+      "1LObHPocmH8": "short",
+      "3GoOEoDCo68": "short",
+      "hud7k8s3F1E": "short",
+      "XOKOooRf7cU": "short",
+      "6EWshNAtvZc": "short",
+      "6eF4hty7wZQ": "short",
+      "q7ejs2XKhVY": "short",
+      "nToe8eJh7kU": "short",
+      "VnghR5tgFYs": "short",
+      "5h9VNHPRWfY": "short",
+      "oVHtDhkkW0I": "short",
+      "DrsccEXF_C0": "long",
+      "hYMTwADGaAQ": "short",
+      "4gDBl9kOFHQ": "short",
+      "sVyAzdCJHLM": "short",
+      "y5I5C3yOnRQ": "short",
+      "Wkpn2Z2nQdM": "short",
+      "JSX_vNBaRRg": "short",
+      "-8EyUOeHRtA": "short",
+      "_Ltmub77AqY": "short",
+      "GSQmbBjVCTs": "long",
+      "_cgmnz6Kwzo": "short",
+      "IWvtSF2-ZPQ": "short",
+      "043ZbFaPyc4": "short",
+      "ktuhwCvxHo0": "short",
+      "hEAQwD4inaw": "short",
+      "gOOduoOlSFA": "short",
+      "KmJDK8H0KMo": "short",
+      "5S3pCWYIPSw": "short",
+      "3OPmghfxmeQ": "short",
+      "iyip0pEKoyI": "short",
+      "eoMTWCooAaY": "short",
+      "uTPNOqzyBhE": "short",
+      "0GDevPyl59Y": "short",
+      "mkJ1pq__11E": "short",
+      "Aab1ckKSneg": "short",
+      "NkG4xNOqYyw": "short",
+      "0jitSI5xphM": "short",
+      "dlh6v6QptNs": "short",
+      "_zC9k6vqnR8": "long",
+      "fuOJbPrkJKM": "long",
+      "xQf2oE6DH8I": "short",
+      "WjF2gG7EbhA": "long",
+      "IMbH46Hy9hM": "short",
+      "FJO2rJkhXDg": "short",
+      "6xq8HghCJ5o": "short",
+      "SRzcQ9rASZQ": "short",
+      "B2tiiPnQxkI": "short",
+      "J7wkIaMjM7Q": "short",
+      "k7zbmfqK8js": "short",
+      "YY-yuQlAZ58": "short",
+      "Ut1UwIAwWKc": "short",
+      "7L7zD4nmwK0": "short",
+      "rFdc8H8--uo": "short",
+      "fq66xAIVKTw": "short",
+      "TRBO8xqWvSg": "short",
+      "lEaiXTVBFUM": "short",
+      "Uy8DSCEAbpI": "short",
+      "qq9ms4u3uqs": "short",
+      "KPtGF9NYazY": "short",
+      "D4sJRbrHRxc": "short",
+      "tlPtrLhNO-8": "short",
+      "IV6MY3JR1kk": "short",
+      "06FQMgyl9_M": "short",
+      "qChf_sgc1w4": "short",
+      "o06uES7cNik": "short",
+      "6tsgnKRKcAA": "short",
+      "0iu6ksYGXtE": "short",
+      "jH15OGg7VU4": "short",
+      "m6CGsmPHA54": "short",
+      "g6IJQTQA88k": "short",
+      "Ru3GF9OO2fE": "short",
+      "2vHAJCizAiA": "short",
+      "ysjSLY1zpbw": "short",
+      "XyZrRLZ6jZM": "short",
+      "zftg-gJKbNk": "short",
+      "NyYXoqnU3AU": "short",
+      "3LA9W0mn-sQ": "short",
+      "NFCrpjmHpXE": "short",
+      "C6GqKuWYl4E": "short",
+      "erMDZWjHBTg": "short",
+      "S5imL3CAbZ0": "short",
+      "a4m5UhPE7G8": "short",
+      "k6lYRK_ZisY": "short",
+      "t_H2hgxdvSY": "short",
+      "YBR7jYrll3A": "short",
+      "B_9Yv5Lq6d0": "short",
+      "VOYWIDaMo3w": "short",
+      "DTKSI9ymFTw": "short",
+      "6eY5gG3Jl08": "short",
+      "0SeO_LwmHvo": "short",
+      "bPOD08ELOEc": "short",
+      "lQ_YlMdGvt8": "short",
+      "0EguoD4heTM": "short",
+      "nI7bE4vpQJs": "short",
+      "xP7tJ2IWySo": "short",
+      "3ThOYqiKzRw": "short",
+      "hoTYu8nCCGI": "short",
+      "T5EJdzHdR1Y": "short",
+      "tfo-_0pvnV0": "short",
+      "PKdZSzHUcbE": "short",
+      "coIM0sxjeMw": "short",
+      "P2okpdRqkfQ": "short",
+      "2kZ4eTyUGYo": "short",
+      "DqGkfZwUHAY": "short",
+      "qGw4GBuNWBY": "short",
+      "UaGpZDJ9NjE": "short",
+      "7t6mtnQsEy8": "short",
+      "TS9v0Jyc6_s": "short",
+      "DidYhEJ1uHo": "short",
+      "Iq5rtVu3k0M": "short",
+      "fL2pGOZIcGg": "short",
+      "cKzpf83iDSY": "short",
+      "VpZ47jmEpCA": "short",
+      "kGXMOVNVqUE": "short",
+      "hClNnAH1L8Q": "short",
+      "7Cehtk6UGrM": "short",
+      "RIxX7WI4Xkw": "short",
+      "HqlnKgbpy8A": "short",
+      "LMYuplTlEhM": "short",
+      "CkIvLC1077I": "short",
+      "6iWECanmYFs": "short",
+      "qg-kex_CLPM": "short",
+      "LlJZwiUq1-k": "short",
+      "UCcqZOWEKQA": "short",
+      "DUs_WU9djCM": "short",
+      "c5joZPsyCN4": "short",
+      "Ci1esDiRUbo": "short",
+      "e0Ns1VYn6mc": "short",
+      "gF4Pv9SUH3M": "short",
+      "ssR8jHvnW6c": "short",
+      "1FbAO80I8u0": "short",
+      "L_483DaUd0U": "short",
+      "8HACwC1WVB4": "long",
+      "2pKV0M1wh-o": "short",
+      "Tzk9SgmhGCE": "short",
+      "QSFqCjik88k": "short",
+      "wH_DphBEKbM": "short",
+      "alihpGIAixU": "short",
+      "CDVyUIorb-8": "short",
+      "jIMdTygI2nw": "short",
+      "ANFuIAYr2mc": "short",
+      "xLH5EQglrY4": "short",
+      "OQd8BvZBbTs": "short",
+      "sDQhKEbQHMs": "short",
+      "VlfxZWA3aYA": "short",
+      "N2BwORTNc8I": "short",
+      "j5CH-bbkJ2E": "short",
+      "_evhVbOZe_U": "short",
+      "36EQAjW16_0": "short",
+      "xYaLU3iSdD4": "short",
+      "-O-bPX1tveg": "short",
+      "wp1IhZb42EU": "short",
+      "K7QRkXsGzF0": "long",
+      "r_C2Jzj0mCw": "short",
+      "zAONVEM93rE": "short",
+      "GMvHkqGsnYc": "short",
+      "nkNw_KX6FXI": "short",
+      "nR2PZIxe02E": "short",
+      "ASddmgQY0qQ": "short",
+      "bMZCITX2rLU": "short",
+      "mOmU3rJGsIo": "short",
+      "_H9yHBXBjuc": "short",
+      "zafOJogaiJU": "short",
+      "TjPMG4uDp3M": "short",
+      "JrBWpt9tXY4": "short",
+      "4PUS5cgrz30": "short",
+      "6veWH3-aMJ4": "short",
+      "eD7HZ6rCA-k": "short",
+      "e5Oqj2Hhqfs": "short",
+      "Hrl2C4u3usk": "short",
+      "5pyDoqxVHkE": "short",
+      "TTe-gdR391U": "short",
+      "KI2G_GkjJyo": "short",
+      "PL8CHkKZR10": "short",
+      "jlHOL7PMtF0": "short",
+      "6h4lcOLkVlQ": "short",
+      "3Bjy1o0Jzwk": "short",
+      "yGb2C3sH-4A": "short",
+      "7A1oILaid2c": "short",
+      "_d2csiKbkKY": "short",
+      "VvWEbApoqIU": "long",
+      "FPdmLyRETYk": "short",
+      "ZjxAxHDVwEA": "short",
+      "Uf9URZbqDnI": "short",
+      "qCAjHxoy-_E": "short",
+      "is2fPnxdXrM": "short",
+      "hgmUmeAJnCA": "long",
+      "Mf3NbpPylQw": "long",
+      "6h63UHR46L0": "short",
+      "Y6Yek7vO8Kg": "short",
+      "ZS-Jw2-jv3s": "long",
+      "bwLEQ3Nnexg": "short",
+      "eD9-F7pOC8c": "short",
+      "fGO8jJUr5sY": "short",
+      "pj_uRw-zitI": "long",
+      "eL9_GXhpfEs": "long",
+      "iPQIq8IbRqg": "short",
+      "B85Kzlsk-lE": "short",
+      "DZLa2OT0FJo": "short",
+      "mBC8JBWOhfw": "short",
+      "jwdejReHTVE": "short",
+      "0TwomjfnUMM": "short",
+      "DuHtLA6wxXE": "short",
+      "E6rEb9sgJ8I": "short",
+      "vc-P-4Kf3Ek": "short",
+      "0bx18nUPgIw": "short",
+      "P8UhnX7ZyeQ": "short",
+      "iFXTvXo0Y0s": "short",
+      "zJizxE4bkH0": "long",
+      "8d5NzBOIv_Q": "short",
+      "76pdgckPdPI": "short",
+      "uXSYqWAgwvE": "short",
+      "sAuwDS4S-dA": "short",
+      "mq46nL6VCxg": "short",
+      "RLJNo-AOnxY": "short",
+      "p8FiEOJNSdY": "short",
+      "ZlmvFHvbZd8": "short",
+      "_xa_H6iLTHo": "short",
+      "yXC43gJ7G4M": "short",
+      "IFivqbZi8X0": "short",
+      "lYlXzvkSZKY": "short",
+      "krYEyDEC8Zs": "short",
+      "0kR5_yA5LGY": "short",
+      "MO4Jdd8iYw0": "short",
+      "zGlb_4jV3kE": "short",
+      "rdOT9JZ5xdQ": "short",
+      "4an65bOxrps": "short",
+      "iSmA8JoksE8": "short",
+      "zws40MUil14": "short",
+      "FXF1AsZBKVc": "short",
+      "OLvT_l-mq8o": "short",
+      "iE1MG8eMJb8": "short",
+      "UWSZUTuHPI8": "short",
+      "jHkUSZiPLvg": "short",
+      "QdMDrSv1WoU": "short",
+      "06iaFVEoruA": "short",
+      "N_mEJv3fmck": "short",
+      "6Sd0rSKuOTM": "short",
+      "OvtOLfXG6zo": "short",
+      "SB_NAjH7HB0": "short",
+      "8zSMeQqpz5I": "short",
+      "RRsLNWK317E": "short",
+      "lYpDPqohkOk": "short",
+      "gZtBh1e26pM": "short",
+      "ZO0cnr6mO8Q": "short",
+      "aFvLLSD9QOc": "short",
+      "5oTCr1BWjgc": "short",
+      "kYKeabyqkRg": "long",
+      "zht_EcrbCQw": "short",
+      "Pr6pC6h9Vto": "short",
+      "u6Lrn0uUYlM": "short",
+      "OCUOXhyt7-8": "long",
+      "bNU4oqtaJo8": "short",
+      "Dw-55J-mQkc": "short",
+      "zWJrXFM7KYE": "short",
+      "db4KWrgJuPY": "short",
+      "7jvOCHYxxQ8": "short",
+      "-ZS2xSCzxuE": "long",
+      "nBA1n2hqSI4": "short",
+      "_ofldh0_Smk": "long",
+      "rb_feZYZUzw": "short",
+      "ObEoHHF8eFw": "short",
+      "wY8GBZa0ZjU": "short",
+      "OkN23FjQFiM": "short",
+      "mQ5T05fP9ik": "short",
+      "EWzjtIkiL4c": "short",
+      "awycbnbr404": "long",
+      "ZJuvmlfemOE": "short",
+      "LiaPW1Z8OhU": "long",
+      "HiT8SR-fZmg": "long",
+      "Arn8j98rhCs": "short",
+      "TMpQZXQW484": "short",
+      "4L3PGW0Yq44": "long",
+      "Spv_CeivffQ": "short",
+      "yatVwSBLGNE": "short",
+      "2QXQA6Rz438": "long",
+      "U6wt4xZTEIQ": "short",
+      "HLhpeYY1ogM": "short",
+      "brN2S-fZrfI": "short",
+      "w3ozZ1_nVNs": "short",
+      "X8tiOj6OBSY": "long",
+      "bEyCEWL5O1A": "short",
+      "UhXAF8lFegI": "short",
+      "L7PrTo2iNpk": "short",
+      "xoHNxz7A9kI": "short",
+      "xUpV361Ispg": "long",
+      "77pzgOHtJMo": "long",
+      "rVZkTbtqHTs": "long",
+      "Gce94KZ1-GM": "short",
+      "nbGFTFzBol0": "long",
+      "tc1oSigIOAs": "long",
+      "hzhvqf7FVkE": "long",
+      "lGQV5t6rihI": "long",
+      "YbDnV1AofYs": "short",
+      "LfFEYuu92MQ": "long",
+      "Hx6HRN48Mdk": "short",
+      "WQJeUASfHW0": "short",
+      "VJE7uDB5K9g": "long",
+      "t__q0YEvFF0": "short",
+      "KPVVfuAOtKo": "short",
+      "JRBd4Ic2YU4": "short",
+      "FBnkqrJNgQ8": "short",
+      "dSwNbFWn2sQ": "short",
+      "E0PdenIxh7w": "short",
+      "tAAeT_FAMhY": "short",
+      "F_7moGQUzx8": "long",
+      "bPNZCioBNuA": "short",
+      "ik2owpIb3UA": "short",
+      "vJdQosQW8aA": "short",
+      "scnlX4D44-M": "long",
+      "VUpPsWzjJzk": "short",
+      "DKzjoXsOTds": "long",
+      "3J7vFRS5bJM": "long",
+      "WuwKnhjsINA": "short",
+      "iDUwzeF5iSg": "long",
+      "TFEPz_8m6Kw": "long",
+      "k5WmQ00PoOs": "long",
+      "Bs9kl0ujX6Y": "short",
+      "AGIqBH3oSEg": "long",
+      "mDRu06nhH5o": "short",
+      "eF02MSJVMRE": "long",
+      "G9-BpzwQixc": "short",
+      "tK0U9HOOwS0": "short",
+      "eVFe2lrQDs0": "short",
+      "eNegHjpBSkM": "short",
+      "NprWsyo-44o": "long",
+      "_FMcXyXW16c": "short",
+      "cDzaliOOSRQ": "short",
+      "djlceOpezcY": "short",
+      "JyYw8fyk9_Y": "long",
+      "p4JVc7IZGcM": "short",
+      "zCJLkecpVDw": "short",
+      "O6AGlgxTz6Y": "long",
+      "jMFCDKLl4wc": "long",
+      "NOLkp21yDUA": "short",
+      "As4vPWPX67U": "long",
+      "BTdjuV-sDFA": "short",
+      "nsETyNnIfH8": "long",
+      "G6-MxlE2EOg": "short",
+      "HqUZ_IR6s0o": "short",
+      "H0-PeM_5NOs": "short",
+      "yZqe6vJ8_VY": "short",
+      "oF7a4FHoNsU": "short",
+      "XdC0El4A4dQ": "short",
+      "ndh9Vyck4CA": "long",
+      "Bg8IT7YMmhE": "short",
+      "5G73PRwnsWA": "short",
+      "c86eY9a2ikc": "short",
+      "iPPueXzKJgU": "short",
+      "0BDPtNyQZXY": "short",
+      "OLTH1JJ9zx4": "short",
+      "YPqcpiRgCi4": "short",
+      "_3LIQq5-cVE": "short",
+      "FuTCgWeMIgU": "long",
+      "gltDsdvuyCU": "long",
+      "LoHs3GDJ84Q": "long",
+      "c-bjxUhHQz4": "short",
+      "6sjx4GRFXSo": "short",
+      "IkBSJPwjOTk": "short",
+      "TtXqLIMJo5k": "short",
+      "R8EfyT4YJ_E": "short",
+      "hEnbqd0iHSo": "short",
+      "hiLbdlv9nPM": "short",
+      "8URh3qxCZqg": "short",
+      "QSnI-66_5NM": "short",
+      "IeJSfo3KPNg": "short",
+      "SV3MXy5k4os": "short",
+      "hKAxQw5IlZg": "short",
+      "8EFblMYVVYA": "short",
+      "PI6cwORg20c": "short",
+      "Dt_tDfBRLQc": "long",
+      "Knssaoph-U0": "long",
+      "f2xN1z3oUyw": "short",
+      "WG3SKDoPNjc": "short",
+      "SLoQ1xR8vOU": "short",
+      "dclAsd3Di-M": "short",
+      "0P-IhPlej64": "long",
+      "OiMIx1EyULI": "long",
+      "UN0UjR4CaiQ": "short",
+      "8JXlyV5n4jU": "short",
+      "DpZ8bs9A7LA": "short",
+      "tpGT0xqh0xI": "short",
+      "fb6dYlqP_PI": "short",
+      "dUO1-axDbfI": "short",
+      "1d7Bk9nWIqs": "short",
+      "yCkf-Lpzdi4": "long",
+      "3uEqIkwHmjQ": "short",
+      "L0vDv7pvc2s": "long",
+      "oSWq3VoMVEs": "long",
+      "85s-joInSXg": "short",
+      "HLCBnggHkAg": "short",
+      "ccLNy-SjiX4": "short",
+      "gLhXKCo94sE": "long",
+      "uggPhT2LKuA": "short",
+      "4MqPqrO0PiM": "long",
+      "uMj8pHmwXQw": "short",
+      "FrreT2cgIsg": "long",
+      "HxjK49ZEMls": "short",
+      "q1uKZmvW_K8": "long",
+      "whbMMpwCcJo": "short",
+      "h9noCUahqAc": "long",
+      "NsbwTKikkLU": "short",
+      "D2v7yYmaaho": "long",
+      "tTzxHGQtg4I": "short",
+      "fphrJdYXarU": "long",
+      "80ax7_ROmoY": "short",
+      "ONeWSS3lyjU": "short",
+      "obp3Pp3P20s": "short",
+      "2qU3RLYh4Ks": "short",
+      "aKCwBOsImxM": "long",
+      "So7s_wKFy2g": "short",
+      "Ot6Xyw6zCjM": "short",
+      "u1tF8tIjzIQ": "short",
+      "Yot6gveXnYM": "short",
+      "Us6IEf9LtEQ": "long",
+      "8Co4-Hdd_2A": "short",
+      "lwV_FA98H4k": "long",
+      "z9Shlm5DK4M": "short",
+      "XzUYSX3rifY": "short",
+      "kzcE21LjOj0": "short",
+      "BAruVmO_xUw": "long",
+      "09CBdpvcEIg": "short",
+      "MN7j4xfMzqA": "short",
+      "TgrdN-mhpP0": "long",
+      "a7RtUnc_cTA": "short",
+      "hIMCY9ZxAA8": "short",
+      "IrvyiYO26x4": "short",
+      "5ch4vP6EsIY": "short",
+      "eAzoo34V7Aw": "short",
+      "nKbQti7Ocv4": "short",
+      "qnuziy-g0G8": "short",
+      "4zdG4MY8P0E": "short",
+      "J6Si5ujbjgs": "short",
+      "hVkFvpF-ppM": "long",
+      "UcdIMOGcoLw": "short",
+      "ssWvMnWgerc": "short",
+      "m-z_qQVcXwQ": "short",
+      "_6K9UEAv_qw": "long",
+      "Nga5tZYpkd0": "short",
+      "tiWjvNYtxEs": "short",
+      "cC4Sl2AfxiI": "short",
+      "Irn2Z1_GTmg": "short",
+      "E3xlhg-PKtU": "long",
+      "bRrqr0bOwmo": "short",
+      "Bd-veRtzfnk": "short",
+      "w3r5XpuFLIc": "long",
+      "QDCqNlDJyqw": "short",
+      "MRD1tL-NmiE": "short",
+      "HlOkRdsfLB0": "short",
+      "n1mveZi1ZfQ": "short",
+      "XQZxlQunClM": "long",
+      "sOhakAl_aWA": "short",
+      "zSvy73kjT-g": "short",
+      "ZTduxFavAWo": "long",
+      "Aw2huc7JMuA": "short",
+      "6NxwgJ8wyXg": "short",
+      "2RDd5PIXh5M": "long",
+      "q6CCtGSu8T0": "long",
+      "9LYzYzCCb80": "short",
+      "rwOcPH-WTQs": "short",
+      "ivMlh-O6z6o": "long",
+      "iPwg52rhdAg": "long",
+      "OVmxpVNWdOg": "short",
+      "FVZ9LoslrAw": "short",
+      "cEunAta4Q_k": "short",
+      "dxnBSU9uvNM": "short",
+      "pAHbwFyVvaw": "short",
+      "qDUE9pzOZkk": "short",
+      "JwviQcZKvN0": "long",
+      "vWFEuooRQs8": "short",
+      "OCB5n4HEARA": "long",
+      "_XVja9_tnwI": "short",
+      "5ibbb9Sx_AQ": "short",
+      "sAhCeQmohyA": "short",
+      "UVX5mhH8HCc": "long",
+      "ALb603-Gxxk": "long",
+      "q5ONYEvSIg8": "short",
+      "v7o-4GB_L1U": "long",
+      "L6K3MKDvA20": "long",
+      "4zSsz7-OS9k": "short",
+      "YkIM0tU7KAk": "short",
+      "rR1BynwKRO4": "short",
+      "xPfRKV7LwqQ": "short",
+      "p0LManA4gys": "short",
+      "QsV0OYxBSVs": "short",
+      "moTmfW701uY": "short",
+      "ATbTMcsSZgM": "long",
+      "90_zes2CWWQ": "short",
+      "qs9OtmGY8qI": "short",
+      "OSEExYU1UbE": "long",
+      "Ifvn3fVb4nc": "short",
+      "fLb3ESe2JSQ": "short",
+      "NlCRDoF_mvQ": "long",
+      "CS7gWf-akNM": "short",
+      "Q914sBuxTHE": "long",
+      "5hHYy8QfGGE": "long",
+      "OjoN7z6EZ30": "long",
+      "iMJ3B9G7-_g": "long",
+      "VPYZICbt5fY": "long",
+      "IY9zpmEPZo0": "long",
+      "mqP_Grgtkls": "long"
+    },
+    "full_sync": "2026-11-16T18:33:03+00:00"
   }
 }
