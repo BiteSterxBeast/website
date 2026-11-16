@@ -1,23 +1,30 @@
 """
 Updates videos.json for bitesterxbeast.com.
 
-- Gets the newest uploads from all four channels with the YouTube Data API v3.
+- Keeps EVERY upload from every channel in videos.json.
+  * Full sync (first run, then once a day): pages through each channel's whole upload
+    list. This also drops videos you deleted or made private and picks up title changes.
+  * Quick sync (every other run): only grabs each channel's newest 50 uploads and adds
+    them to what's already saved.
 - Figures out which uploads are Shorts and which are long-form.
+- Grabs each channel's profile picture.
 - Reads best-videos.txt and looks up each video's title.
 
 Runs on GitHub Actions every 30 minutes (see .github/workflows/update-videos.yml).
 Needs a repository secret named YOUTUBE_API_KEY. Uses only the Python standard library.
-Uses about 300 of the API's 10,000 free daily quota units.
+Quota (10,000 free units a day): a quick sync costs about 12 units (~580 a day);
+a full sync costs about 1 unit per 25 videos (roughly 40-60 units for ~1,000 videos).
 """
 
 import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -33,8 +40,8 @@ CHANNELS = [
     ("JoshSham", "JoshSham"),
 ]
 
-PER_CHANNEL = 50   # newest uploads kept per channel (50 is the most one API call returns)
-MAX_RECENT = None  # no overall cap, so every channel keeps all of its videos for "See more"
+PER_PAGE = 50          # most videos one API call returns
+FULL_SYNC_HOURS = 24   # how often to re-read every channel's whole upload list
 SHORT_MAX_SECONDS = 180  # fallback rule if the Shorts check can't tell
 
 API = "https://www.googleapis.com/youtube/v3/"
@@ -72,19 +79,47 @@ def channel_uploads_playlist(handle):
     return items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
 
 
-def latest_uploads(playlist_id, label):
-    data = api("playlistItems", part="snippet,contentDetails",
-               playlistId=playlist_id, maxResults=PER_CHANNEL)
-    videos = []
+def _upload_items(item, label):
+    vid = item["contentDetails"].get("videoId")
+    published = (item["contentDetails"].get("videoPublishedAt")
+                 or item["snippet"].get("publishedAt", ""))
+    title = item["snippet"].get("title", "")
+    if vid and title not in ("Private video", "Deleted video"):
+        return {"id": vid, "title": title, "channel": label, "published": published}
+    return None
+
+
+def channel_uploads(playlist_id, label, everything):
+    """Newest 50 uploads, or every upload when everything=True (1 quota unit per 50)."""
+    videos, token = [], None
+    while True:
+        params = dict(part="snippet,contentDetails", playlistId=playlist_id, maxResults=PER_PAGE)
+        if token:
+            params["pageToken"] = token
+        data = api("playlistItems", **params)
+        for item in data.get("items", []):
+            v = _upload_items(item, label)
+            if v:
+                videos.append(v)
+        token = data.get("nextPageToken")
+        if not everything or not token:
+            return videos
+
+
+def channel_avatars(playlists):
+    """{handle: profile picture URL} for every channel, in one call (1 quota unit).
+    A channel's uploads playlist is its channel ID with UC swapped for UU."""
+    ids = {"UC" + pl[2:]: handle for handle, pl in playlists.items() if pl.startswith("UU")}
+    if not ids:
+        return {}
+    data = api("channels", part="snippet", id=",".join(ids), maxResults=50)
+    out = {}
     for item in data.get("items", []):
-        vid = item["contentDetails"].get("videoId")
-        published = (item["contentDetails"].get("videoPublishedAt")
-                     or item["snippet"].get("publishedAt", ""))
-        title = item["snippet"].get("title", "")
-        if vid and title not in ("Private video", "Deleted video"):
-            videos.append({"id": vid, "title": title, "channel": label,
-                           "published": published})
-    return videos
+        thumbs = item["snippet"].get("thumbnails", {})
+        best = thumbs.get("high") or thumbs.get("medium") or thumbs.get("default") or {}
+        if item["id"] in ids and best.get("url"):
+            out[ids[item["id"]]] = best["url"]
+    return out
 
 
 def video_details(ids):
@@ -135,8 +170,12 @@ def shorts_url_status(video_id):
 
 
 def detect_type(video_id, seconds):
-    """youtube.com/shorts/ID loads for a Short and redirects for a regular video.
-    If YouTube won't answer, fall back to length (Shorts are 3 minutes or less)."""
+    """Anything over 3 minutes can't be a Short. Otherwise: youtube.com/shorts/ID loads
+    for a Short and redirects for a regular video. If YouTube won't answer, fall back
+    to length (Shorts are 3 minutes or less)."""
+    if seconds > SHORT_MAX_SECONDS:
+        return "long"
+    time.sleep(0.2)  # go easy on YouTube when checking a lot of videos at once
     code = shorts_url_status(video_id)
     if code == 200:
         return "short"
@@ -196,62 +235,95 @@ def build(existing):
     cache = existing.get("_cache", {})
     playlists = dict(cache.get("playlists", {}))
     types = dict(cache.get("types", {}))
-    old_recent = existing.get("recent", [])
+    avatars = dict(cache.get("avatars", {}))
+    old_videos = existing.get("recent", [])
     failures = 0
 
-    # Recent uploads from every channel
-    recent = []
+    now = datetime.now(timezone.utc)
+    last_full = cache.get("full_sync")
+    full = True
+    if last_full:
+        try:
+            full = now - datetime.fromisoformat(last_full) >= timedelta(hours=FULL_SYNC_HOURS)
+        except ValueError:
+            pass
+    print("FULL sync: reading every upload" if full else "Quick sync: newest uploads only")
+
+    videos, fetched_ids = [], set()
+    all_ok = True
     for label, handle in CHANNELS:
+        old = [v for v in old_videos if v.get("channel") == label]
         try:
             if handle not in playlists:
                 playlists[handle] = channel_uploads_playlist(handle)
                 print(f"@{handle} -> uploads playlist {playlists[handle]}")
-            vids = latest_uploads(playlists[handle], label)
-            print(f"{label}: {len(vids)} uploads")
-            recent.extend(vids)
+            got = channel_uploads(playlists[handle], label, everything=full)
+            print(f"{label}: {len(got)} uploads fetched")
+            fetched_ids |= {v["id"] for v in got}
+            if full:
+                videos.extend(got)              # the whole list, straight from YouTube
+            else:
+                newer = {v["id"]: v for v in got}
+                videos.extend(newer.values())    # newest (fresh titles)...
+                videos.extend(v for v in old if v["id"] not in newer)  # ...plus everything saved
         except Exception as e:
             failures += 1
+            all_ok = False
             print(f"WARNING: {label} (@{handle}) failed: {e}", file=sys.stderr)
-            recent.extend(v for v in old_recent if v.get("channel") == label)
+            videos.extend(old)
 
     seen = {}
-    for v in recent:
+    for v in videos:
         seen[v["id"]] = v
-    recent = sorted(seen.values(), key=lambda v: v["published"], reverse=True)
+    videos = sorted(seen.values(), key=lambda v: v["published"], reverse=True)
 
     best_ids = read_best_ids()
 
-    # One batched lookup for durations, live status and best-video titles
+    # Details (length, live status) for what we just fetched, plus best-video titles.
+    # Old saved videos don't need looking up again.
     details = {}
     try:
-        details = video_details({v["id"] for v in recent} | set(best_ids))
+        details = video_details(fetched_ids | set(best_ids))
     except Exception as e:
         print(f"WARNING: video details failed: {e}", file=sys.stderr)
 
     # drop upcoming premieres / live streams that haven't happened yet
-    recent = [v for v in recent if details.get(v["id"], {}).get("live") != "upcoming"]
-    if MAX_RECENT:
-        recent = recent[:MAX_RECENT]
+    videos = [v for v in videos if details.get(v["id"], {}).get("live") != "upcoming"]
 
-    for v in recent:
+    new_types = 0
+    for v in videos:
         if v["id"] not in types:
             t = detect_type(v["id"], details.get(v["id"], {}).get("seconds", 0))
             if t:
                 types[v["id"]] = t
+                new_types += 1
         v["type"] = types.get(v["id"], "unknown")
+    if new_types:
+        print(f"Sorted {new_types} new videos into Shorts / long-form")
+
+    try:
+        got = channel_avatars(playlists)
+        avatars.update(got)
+    except Exception as e:
+        print(f"WARNING: profile pictures failed: {e}", file=sys.stderr)
 
     best = []
     for vid in best_ids:
         d = details.get(vid, {})
         best.append({"id": vid, "title": d.get("title", ""), "channel": d.get("channel", "")})
 
-    keep = {v["id"] for v in recent}
+    keep = {v["id"] for v in videos}
     data = {
+        "channels": {label: {"handle": handle, "avatar": avatars.get(handle, "")}
+                     for label, handle in CHANNELS},
         "best": best,
-        "recent": recent,
+        "recent": videos,
         "_cache": {
             "playlists": playlists,
+            "avatars": avatars,
             "types": {k: t for k, t in types.items() if k in keep},
+            # only count a full sync as done if every channel worked
+            "full_sync": now.isoformat(timespec="seconds") if (full and all_ok) else last_full,
         },
     }
     return data, failures
@@ -266,15 +338,15 @@ def main():
     data, failures = build(existing)
 
     def comparable(d):
-        return {k: d.get(k) for k in ("best", "recent", "_cache")}
+        return {k: d.get(k) for k in ("channels", "best", "recent", "_cache")}
 
     if comparable(data) != comparable(existing):
         data["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        ordered = {"updated": data["updated"], "best": data["best"],
-                   "recent": data["recent"], "_cache": data["_cache"]}
+        ordered = {"updated": data["updated"], "channels": data["channels"],
+                   "best": data["best"], "recent": data["recent"], "_cache": data["_cache"]}
         OUT_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n",
                             encoding="utf-8")
-        print(f"Wrote {len(data['recent'])} recent and {len(data['best'])} best videos.")
+        print(f"Wrote {len(data['recent'])} videos and {len(data['best'])} best videos.")
     else:
         print("No changes.")
 
