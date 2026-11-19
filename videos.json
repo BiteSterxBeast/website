@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T17:31:39+00:00",
+  "updated": "2026-11-19T18:00:55+00:00",
   "channels": {
     "Main": {
       "handle": "BiteSterxBeast",
@@ -62,7 +62,7 @@
       "channel": "Main",
       "published": "2026-11-16T05:00:25Z",
       "type": "long",
-      "views": 23240
+      "views": 23389
     },
     {
       "id": "y0-Y6ae7JlY",
@@ -70,7 +70,7 @@
       "channel": "Experiments",
       "published": "2026-11-15T22:11:16Z",
       "type": "short",
-      "views": 2203
+      "views": 2210
     },
     {
       "id": "8Uvgi0Y-NGI",
@@ -78,7 +78,7 @@
       "channel": "Main",
       "published": "2026-11-15T20:07:13Z",
       "type": "short",
-      "views": 47146
+      "views": 47170
     },
     {
       "id": "QMrG884lBTs",
@@ -86,7 +86,7 @@
       "channel": "Main",
       "published": "2026-11-13T20:09:05Z",
       "type": "long",
-      "views": 36069
+      "views": 36108
     },
     {
       "id": "SenCqqTkJJo",
@@ -110,7 +110,7 @@
       "channel": "Main",
       "published": "2026-11-10T20:00:40Z",
       "type": "short",
-      "views": 156658
+      "views": 156760
     },
     {
       "id": "FBqkqVGbjwo",
@@ -118,7 +118,7 @@
       "channel": "Main",
       "published": "2026-11-09T15:00:32Z",
       "type": "long",
-      "views": 35654
+      "views": 35657
     },
     {
       "id": "IkvNwFgsLgk",
@@ -142,7 +142,7 @@
       "channel": "Main",
       "published": "2026-11-06T20:02:14Z",
       "type": "short",
-      "views": 155875
+      "views": 155908
     },
     {
       "id": "Xsx7yVNxOnU",
@@ -150,7 +150,7 @@
       "channel": "Main",
       "published": "2026-11-06T15:00:11Z",
       "type": "long",
-      "views": 34904
+      "views": 34908
     },
     {
       "id": "nkUm5GOs_EY",
@@ -158,7 +158,7 @@
       "channel": "Main",
       "published": "2026-11-06T12:25:27Z",
       "type": "short",
-      "views": 29370
+      "views": 29365
     },
     {
       "id": "BPrIj5Gp6n8",
@@ -174,7 +174,7 @@
       "channel": "Main",
       "published": "2026-11-05T08:01:04Z",
       "type": "short",
-      "views": 28536
+      "views": 28535
     },
     {
       "id": "1WNz6Li0PBM",
@@ -182,7 +182,7 @@
       "channel": "Main",
       "published": "2026-11-04T20:02:36Z",
       "type": "short",
-      "views": 46268
+      "views": 46267
     },
     {
       "id": "RE1X46UVtCM",
@@ -190,7 +190,7 @@
       "channel": "Minecraft",
       "published": "2026-11-04T19:01:12Z",
       "type": "long",
-      "views": 2618
+      "views": 2621
     },
     {
       "id": "fq7hBScBCV8",
@@ -198,7 +198,7 @@
       "channel": "Main",
       "published": "2026-11-04T08:00:44Z",
       "type": "short",
-      "views": 26354
+      "views": 26357
     },
     {
       "id": "PSC6inH1F6k",
@@ -206,7 +206,7 @@
       "channel": "Main",
       "published": "2026-11-03T20:02:07Z",
       "type": "short",
-      "views": 951535
+      "views": 951877
     },
     {
       "id": "AVXlK9Siq_c",
@@ -222,7 +222,7 @@
       "channel": "Main",
       "published": "2026-11-02T20:02:49Z",
       "type": "short",
-      "views": 45919
+      "views": 45917
     },
     {
       "id": "uMPlu78ImJ0",
@@ -230,7 +230,7 @@
       "channel": "Main",
       "published": "2026-11-02T08:01:02Z",
       "type": "short",
-      "views": 5083
+      "views": 5086
     },
     {
       "id": "tk5Trvuyz-I",
@@ -238,7 +238,7 @@
       "channel": "Main",
       "published": "2026-11-01T21:00:06Z",
       "type": "long",
-      "views": 35151
+      "views": 35161
     },
     {
       "id": "jbclSjEUPQM",
@@ -246,7 +246,7 @@
       "channel": "Main",
       "published": "2026-11-01T20:00:58Z",
       "type": "short",
-      "views": 38182
+      "views": 38181
     },
     {
       "id": "CE621MQjNhk",
@@ -286,7 +286,7 @@
       "channel": "Main",
       "published": "2026-10-26T19:08:46Z",
       "type": "short",
-      "views": 12820
+      "views": 12821
     },
     {
       "id": "H6HT6ccoxkQ",
@@ -414,7 +414,7 @@
       "channel": "Main",
       "published": "2026-10-12T07:00:39Z",
       "type": "short",
-      "views": 541413
+      "views": 541411
     },
     {
       "id": "xwyClhg4D4A",
@@ -470,7 +470,7 @@
       "channel": "Main",
       "published": "2026-10-02T14:00:38Z",
       "type": "long",
-      "views": 135783
+      "views": 135812
     },
     {
       "id": "wuqaiKWvUNs",
@@ -1070,7 +1070,7 @@
       "channel": "Experiments",
       "published": "2026-01-25T01:30:47Z",
       "type": "short",
-      "views": 936900
+      "views": 936899
     },
     {
       "id": "d5E-NTv7BTs",
@@ -5406,7 +5406,7 @@
       "channel": "JoshSham",
       "published": "2024-01-12T16:25:38Z",
       "type": "short",
-      "views": 68358
+      "views": 68354
     },
     {
       "id": "SxkMtbFAfRc",
