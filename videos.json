@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T11:59:27+00:00",
+  "updated": "2026-11-21T12:00:51+00:00",
   "channels": {
     "Main": {
       "handle": "BiteSterxBeast",
@@ -134,7 +134,7 @@
       "channel": "Main",
       "published": "2026-11-08T20:01:56Z",
       "type": "short",
-      "views": 33126
+      "views": 33123
     },
     {
       "id": "ihWC-tzdlSE",
@@ -142,7 +142,7 @@
       "channel": "Main",
       "published": "2026-11-08T08:00:43Z",
       "type": "short",
-      "views": 33796
+      "views": 33800
     },
     {
       "id": "Ui3CGCpSHwE",
@@ -214,7 +214,7 @@
       "channel": "Main",
       "published": "2026-11-03T20:02:07Z",
       "type": "short",
-      "views": 966582
+      "views": 966606
     },
     {
       "id": "AVXlK9Siq_c",
@@ -238,7 +238,7 @@
       "channel": "Main",
       "published": "2026-11-02T08:01:02Z",
       "type": "short",
-      "views": 5119
+      "views": 5123
     },
     {
       "id": "tk5Trvuyz-I",
@@ -246,7 +246,7 @@
       "channel": "Main",
       "published": "2026-11-01T21:00:06Z",
       "type": "long",
-      "views": 36048
+      "views": 36015
     },
     {
       "id": "jbclSjEUPQM",
@@ -278,7 +278,7 @@
       "channel": "Main",
       "published": "2026-10-28T07:01:00Z",
       "type": "short",
-      "views": 51664
+      "views": 51660
     },
     {
       "id": "3KmB5wcLvVw",
@@ -422,7 +422,7 @@
       "channel": "Main",
       "published": "2026-10-12T07:00:39Z",
       "type": "short",
-      "views": 541464
+      "views": 541465
     },
     {
       "id": "xwyClhg4D4A",
@@ -462,7 +462,7 @@
       "channel": "Main",
       "published": "2026-10-07T21:41:56Z",
       "type": "short",
-      "views": 8929
+      "views": 8931
     },
     {
       "id": "baxXT2v8DII",
@@ -494,7 +494,7 @@
       "channel": "Main",
       "published": "2026-09-30T14:00:23Z",
       "type": "long",
-      "views": 65169
+      "views": 65159
     },
     {
       "id": "CKrXAw-Haak",
@@ -3782,7 +3782,7 @@
       "channel": "JoshSham",
       "published": "2025-03-04T18:04:06Z",
       "type": "long",
-      "views": 1494
+      "views": 1498
     },
     {
       "id": "Hrl2C4u3usk",
